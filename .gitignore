@@ -1,2 +1,4 @@
-*/.*
-*/bin/*
+.DS_Store
+code/.classpath
+code/bin/*
+code/db/test.db
