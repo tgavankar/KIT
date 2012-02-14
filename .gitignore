@@ -2,3 +2,4 @@
 code/.classpath
 code/bin/*
 code/db/test.db
+.metadata/
