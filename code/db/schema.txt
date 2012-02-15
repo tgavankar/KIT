@@ -1,0 +1,5 @@
+upc_map
+	id PRIMARY KEY ASC INT
+	upc VARCHAR(16) UNIQUE
+	name VARCHAR(250)
+	amount VARCHAR(16)
