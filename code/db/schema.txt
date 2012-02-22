@@ -3,3 +3,14 @@ upc_map
 	upc VARCHAR(16) UNIQUE
 	name VARCHAR(250)
 	amount VARCHAR(16)
+
+upc_custom
+	id PRIMARY KEY ASC INT
+	upc_id INT FOREIGN KEY upc_map.id
+	source VARCHAR(10) - "online" or "user"
+	created INT - Unix Time, the number of seconds since 1970-01-01 00:00:00 UTC
+
+scanned_entries
+	id PRIMARY KEY ASC INT
+	upc_id INT FOREIGN KEY upc_map.id
+	created INT - Unix Time, the number of seconds since 1970-01-01 00:00:00 UTC
