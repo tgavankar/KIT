@@ -152,4 +152,17 @@ public class ConsoleUI implements UI {
 		return out;
 	}
 
+	@Override
+	public UPCEntry promptUnknonwnUPCEntry(String upc) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Unknown UPC code.\nPlease enter the name of the item:");
+		String itemName = scanner.nextLine().trim();
+		
+		System.out.println("Whats' the amount of the item?");
+		String itemAmount = scanner.nextLine().trim();
+				
+		return new UPCEntry(upc, itemName, itemAmount);
+	}
+
 }

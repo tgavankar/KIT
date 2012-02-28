@@ -23,7 +23,7 @@ public class UPCDAO  {
 		conn = DriverManager.getConnection("jdbc:sqlite:" + path);
 	}
 	
-	public UPCEntry lookUp(String upc) {
+	public synchronized UPCEntry lookUp(String upc) {
 		PreparedStatement ps = null;
 		try {
 			String select = "SELECT * FROM " + mapName + " WHERE upc=?";
@@ -50,7 +50,8 @@ public class UPCDAO  {
 		return null;
 	}
 	
-	public boolean addEntry(UPCEntry entry, String source) {
+	//TODO make source enum?
+	public synchronized boolean addEntry(UPCEntry entry, String source) {
 		if(entry == null || !(source == "user" || source == "online")) {
 			return false;
 		}
@@ -117,7 +118,7 @@ public class UPCDAO  {
 		return (count != 0 && count2 != 0);
 	}
 	
-	public boolean removeEntry(UPCEntry entry) throws SQLException {
+	public synchronized boolean removeEntry(UPCEntry entry) throws SQLException {
 		Statement stat = conn.createStatement();
 		// TODO
 		return false;

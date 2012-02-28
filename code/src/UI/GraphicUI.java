@@ -66,4 +66,10 @@ public class GraphicUI implements UI {
 		return null;
 	}
 
+	@Override
+	public UPCEntry promptUnknonwnUPCEntry(String upc) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

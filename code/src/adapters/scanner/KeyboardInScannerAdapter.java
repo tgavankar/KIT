@@ -30,6 +30,7 @@ public class KeyboardInScannerAdapter implements ScannerAdapter {
 
 	@Override
 	public void run() throws ClassNotFoundException, SQLException {
+		// todo refactor this to singleton pattern
 		UPCDAO upcDAO = new UPCDAO();
 		ui.scanModePrompt();
 		while(scanner.hasNext()) {
@@ -77,12 +78,12 @@ public class KeyboardInScannerAdapter implements ScannerAdapter {
 				}
 				
 				if(upc == null) {
-					// TODO
-					//System.out.println("UPC item not found.  ");
-					
+					upc = ui.promptUnknonwnUPCEntry(next);
+					upcDAO.addEntry(upc, "user");
 				}
-				
-				upc = upcDAO.lookUp(upc.getUPC()); // Get db data
+				else {
+					upc = upcDAO.lookUp(upc.getUPC()); // Get db data
+				}
 				
 				InventoryDAO inventory = new InventoryDAO();
 				InventoryEntry scannedEntry = new InventoryEntry(upc);

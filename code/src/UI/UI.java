@@ -23,6 +23,10 @@ public interface UI {
 	
 	public void scanModePrompt();
 	
+	
+	// called by outside members 
+	public UPCEntry promptUnknonwnUPCEntry(String upc);
+	
 	// Returns a long[] of size 2, where long[0] = start-time and long[1] = end-time
 	public long[] getExportTime();
 	
