@@ -2,15 +2,13 @@ package commands;
 
 import java.util.ArrayList;
 
+import UI.UI;
 import exporter.ListGenerator;
-import adapters.db.sqlite.inventory.InventoryDAO;
-import interfaces.Command;
-import interfaces.UserInterface;
 
 public class ExportCommand implements Command {
-	UserInterface ui;
+	UI ui;
 	
-	public ExportCommand(UserInterface ui) {
+	public ExportCommand(UI ui) {
 		this.ui = ui;
 	}
 	

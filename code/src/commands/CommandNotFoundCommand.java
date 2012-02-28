@@ -1,13 +1,12 @@
 package commands;
 
-import interfaces.Command;
-import interfaces.UserInterface;
+import UI.UI;
 
 public class CommandNotFoundCommand implements Command {
-	UserInterface ui;
+	UI ui;
 	String cmd;
 	
-	public CommandNotFoundCommand(UserInterface ui, String c) {
+	public CommandNotFoundCommand(UI ui, String c) {
 		this.ui = ui;
 		this.cmd = c;
 	}

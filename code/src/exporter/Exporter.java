@@ -1,4 +1,4 @@
-package interfaces;
+package exporter;
 
 public interface Exporter {
 

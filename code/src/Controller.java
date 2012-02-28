@@ -1,7 +1,8 @@
-import interfaces.Command;
-import interfaces.UserInterface;
 import UI.ConsoleUI;
 import UI.GraphicUI;
+import UI.UI;
+
+import commands.Command;
 
 
 public class Controller  {
@@ -11,7 +12,7 @@ public class Controller  {
 			return;
 		}
 		
-		UserInterface ui;
+		UI ui;
 		if(args[0].equals("console")) {
 			ui = new ConsoleUI();
 		}

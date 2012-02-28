@@ -9,22 +9,21 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
+import UI.UI;
 import adapters.db.sqlite.inventory.InventoryDAO;
 import adapters.db.sqlite.inventory.InventoryEntry;
 import adapters.db.sqlite.upcMap.UPCDAO;
 import adapters.db.sqlite.upcMap.UPCEntry;
 import au.com.bytecode.opencsv.CSVParser;
 
-import interfaces.ScannerAdapter;
-import interfaces.UserInterface;
 
 
 public class KeyboardInScannerAdapter implements ScannerAdapter {
-	final String queryURL = "http://www.searchupc.com/handlers/upcsearch.ashx?request_type=1&access_token=1193424F-517B-4D65-95BA-DD4CDE915945&upc=";
-	Scanner scanner;
-	UserInterface ui;
+	public final static String queryURL = "http://www.searchupc.com/handlers/upcsearch.ashx?request_type=1&access_token=1193424F-517B-4D65-95BA-DD4CDE915945&upc=";
+	private Scanner scanner;
+	private UI ui;
 	
-	public KeyboardInScannerAdapter(UserInterface ui, InputStream in) {
+	public KeyboardInScannerAdapter(UI ui, InputStream in) {
 		scanner = new Scanner(in);
 		this.ui = ui;
 	}
@@ -78,7 +77,9 @@ public class KeyboardInScannerAdapter implements ScannerAdapter {
 				}
 				
 				if(upc == null) {
-					//TODO: third lookup, ask user for data
+					// TODO
+					//System.out.println("UPC item not found.  ");
+					
 				}
 				
 				upc = upcDAO.lookUp(upc.getUPC()); // Get db data

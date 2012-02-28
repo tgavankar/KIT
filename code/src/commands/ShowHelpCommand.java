@@ -1,12 +1,11 @@
 package commands;
 
-import interfaces.Command;
-import interfaces.UserInterface;
+import UI.UI;
 
 public class ShowHelpCommand implements Command {
-	UserInterface ui;
+	UI ui;
 	
-	public ShowHelpCommand(UserInterface ui) {
+	public ShowHelpCommand(UI ui) {
 		this.ui = ui;
 	}
 	

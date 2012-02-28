@@ -1,5 +1,9 @@
 package adapters.db.sqlite;
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 public class SqliteSample {
   public static void main(String[] args) throws Exception {

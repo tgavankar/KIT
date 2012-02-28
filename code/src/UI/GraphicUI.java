@@ -1,10 +1,10 @@
 package UI;
 
 import adapters.db.sqlite.upcMap.UPCEntry;
-import interfaces.Command;
-import interfaces.UserInterface;
 
-public class GraphicUI implements UserInterface {
+import commands.Command;
+
+public class GraphicUI implements UI {
 
 	@Override
 	public void showMainScreen() {

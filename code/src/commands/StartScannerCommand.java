@@ -1,12 +1,11 @@
 package commands;
 
-import interfaces.Command;
-import interfaces.UserInterface;
+import UI.UI;
 
 public class StartScannerCommand implements Command {
-	UserInterface ui;
+	UI ui;
 	
-	public StartScannerCommand(UserInterface ui) {
+	public StartScannerCommand(UI ui) {
 		this.ui = ui;
 	}
 	

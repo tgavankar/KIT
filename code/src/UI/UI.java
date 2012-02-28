@@ -1,8 +1,10 @@
-package interfaces;
+package UI;
 
 import adapters.db.sqlite.upcMap.UPCEntry;
 
-public interface UserInterface {
+import commands.Command;
+
+public interface UI {
 	public void showMainScreen();
 	
 	public boolean isRunning();

@@ -1,12 +1,11 @@
 package commands;
 
-import interfaces.Command;
-import interfaces.UserInterface;
+import UI.UI;
 
 public class QuitCommand implements Command {
-	UserInterface ui;
+	UI ui;
 	
-	public QuitCommand(UserInterface ui) {
+	public QuitCommand(UI ui) {
 		this.ui = ui;
 	}
 	

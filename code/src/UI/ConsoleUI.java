@@ -6,21 +6,19 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Scanner;
 
-import adapters.db.sqlite.inventory.InventoryEntry;
 import adapters.db.sqlite.upcMap.UPCEntry;
 import adapters.scanner.KeyboardInScannerAdapter;
+import adapters.scanner.ScannerAdapter;
 
+import commands.Command;
 import commands.CommandNotFoundCommand;
 import commands.ExportCommand;
 import commands.QuitCommand;
 import commands.ShowHelpCommand;
 import commands.StartScannerCommand;
 
-import interfaces.Command;
-import interfaces.ScannerAdapter;
-import interfaces.UserInterface;
 
-public class ConsoleUI implements UserInterface {
+public class ConsoleUI implements UI {
 	private boolean isRunning;
 	
 	public ConsoleUI() {
