@@ -3,6 +3,7 @@ package UI;
 import adapters.db.sqlite.upcMap.UPCEntry;
 
 import commands.Command;
+import commands.ExportParameters;
 
 public interface UI {
 	public void showMainScreen();
@@ -28,6 +29,6 @@ public interface UI {
 	public UPCEntry promptUnknonwnUPCEntry(String upc);
 	
 	// Returns a long[] of size 2, where long[0] = start-time and long[1] = end-time
-	public long[] getExportTime();
+	public ExportParameters getExportParameters();
 	
 }

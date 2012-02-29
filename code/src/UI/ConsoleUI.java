@@ -13,6 +13,8 @@ import adapters.scanner.ScannerAdapter;
 import commands.Command;
 import commands.CommandNotFoundCommand;
 import commands.ExportCommand;
+import commands.ExportParameters;
+import commands.ExportParameters.ExportType;
 import commands.QuitCommand;
 import commands.ShowHelpCommand;
 import commands.StartScannerCommand;
@@ -117,31 +119,47 @@ public class ConsoleUI implements UI {
 	}
 
 	@Override
-	public long[] getExportTime() {
-		long[] out = new long[2];
+	public ExportParameters getExportParameters() {
+		ExportParameters out = new ExportParameters();
 		DateFormat df = new SimpleDateFormat("MM-dd-yyyy");
 		Scanner scanner = new Scanner(System.in);
 
-		while(out[0] == 0) {
+		ExportType exportType = ExportType.Other;
+		
+		while(exportType == ExportType.Other){
+			System.out.println("How do you want to export the inventory (e for email, f for file, u for screen output)?");
+			String type = scanner.next().trim().toLowerCase();
+			if(type.equals("email") || type.equals("e")) exportType = ExportType.Email;
+			else if (type.equals("file") || type.equals("f")) exportType = ExportType.File;
+			else if (type.equals("ui") || type.equals("u")) exportType = ExportType.UI;
+			else{
+				System.out.println("Invalid export type.");
+				exportType = ExportType.Other;
+			}
+		}
+				
+		out.type = exportType;
+		
+		while(out.startDate == 0) {
 			System.out.print("Enter start date (MM-DD-YYYY)>");
 			String start = scanner.next();
 			try {
-				out[0] = df.parse(start).getTime() / 1000;
+				out.startDate = df.parse(start).getTime() / 1000;
 			} catch (ParseException e) {
 				// TODO Auto-generated catch block
 				System.out.println("Invalid date format");
 			} 
 		}
 		
-		while(out[1] == 0) {
+		while(out.endDate == 0) {
 			System.out.print("Enter end date or 'now' (MM-DD-YYYY))>");
 			String end = scanner.next();
 			if(end.equals("now")) {
-				out[1] = (new java.util.Date()).getTime() / 1000;
+				out.endDate = (new java.util.Date()).getTime() / 1000;
 			}
 			else {
 				try {
-					out[1] = df.parse(end).getTime() / 1000;
+					out.endDate = df.parse(end).getTime() / 1000;
 				} catch (ParseException e) {
 					// TODO Auto-generated catch block
 					System.out.println("Invalid date format");
