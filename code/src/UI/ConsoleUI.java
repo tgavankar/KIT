@@ -141,7 +141,7 @@ public class ConsoleUI implements UI {
 			}
 			else {
 				try {
-					out[0] = df.parse(end).getTime() / 1000;
+					out[1] = df.parse(end).getTime() / 1000;
 				} catch (ParseException e) {
 					// TODO Auto-generated catch block
 					System.out.println("Invalid date format");
