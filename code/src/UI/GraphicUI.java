@@ -3,6 +3,7 @@ package UI;
 import adapters.db.sqlite.upcMap.UPCEntry;
 
 import commands.Command;
+import commands.ExportParameters;
 
 public class GraphicUI implements UI {
 
@@ -61,7 +62,7 @@ public class GraphicUI implements UI {
 	}
 
 	@Override
-	public long[] getExportTime() {
+	public ExportParameters getExportParameters() {
 		// TODO Auto-generated method stub
 		return null;
 	}
