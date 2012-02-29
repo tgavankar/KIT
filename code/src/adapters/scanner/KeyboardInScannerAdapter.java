@@ -78,12 +78,14 @@ public class KeyboardInScannerAdapter implements ScannerAdapter {
 				}
 				
 				if(upc == null) {
+					//third stage lookup, prompt user for info
 					upc = ui.promptUnknonwnUPCEntry(next);
 					upcDAO.addEntry(upc, "user");
 				}
-				else {
-					upc = upcDAO.lookUp(upc.getUPC()); // Get db data
-				}
+				
+				// Get data from db, guaranteed to be there now
+				upc = upcDAO.lookUp(upc.getUPC()); 
+				
 				
 				InventoryDAO inventory = new InventoryDAO();
 				InventoryEntry scannedEntry = new InventoryEntry(upc);
