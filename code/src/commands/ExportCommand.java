@@ -27,7 +27,7 @@ public class ExportCommand implements Command {
 				FileExporter exp = new FileExporter(param.startDate, param.endDate);
 				try {
 					exp.export();
-				} catch (IOException e1) {
+				} catch (Exception e1) {
 					System.err.println("encountered IO error while exporting to a file.");
 					e1.printStackTrace();
 				}
@@ -36,11 +36,18 @@ public class ExportCommand implements Command {
 				// TODO: need to refactor this to remove println
 				ListGenerator listGen = new ListGenerator(param.startDate, param.endDate);
 				
-				ArrayList<String> list = listGen.getList();
+				ArrayList<String> list;
 				
-				//TODO: Replace with Email/FileExporter depending on user input
-				for(String e : list) {
-					System.out.println(e);
+				try{
+					list= listGen.getList();
+					
+					//TODO: Replace with Email/FileExporter depending on user input
+					for(String e : list) {
+						System.out.println(e);
+					}
+				} catch (Exception e1){
+					System.err.println("encountered IO error while exporting to a file.");
+					e1.printStackTrace();
 				}
 			default: break; 
 		}		

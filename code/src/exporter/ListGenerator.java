@@ -14,7 +14,7 @@ public class ListGenerator {
 		this.end = end;
 	}
 	
-	public ArrayList<String> getList() {
+	public ArrayList<String> getList() throws Exception{
 		ArrayList<String> outList = new ArrayList<String>();
 		
 		InventoryDAO inventory = new InventoryDAO();
