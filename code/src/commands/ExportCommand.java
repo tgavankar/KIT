@@ -22,7 +22,7 @@ public class ExportCommand implements Command {
 		switch(param.type){
 			case Email: 
 				System.err.println("not implemented");
-				return;
+				break;
 			case File: 
 				FileExporter exp = new FileExporter(param.startDate, param.endDate);
 				try {
@@ -31,7 +31,7 @@ public class ExportCommand implements Command {
 					System.err.println("encountered IO error while exporting to a file.");
 					e1.printStackTrace();
 				}
-				return;
+				break;
 			case UI: 
 				// TODO: need to refactor this to remove println
 				ListGenerator listGen = new ListGenerator(param.startDate, param.endDate);
@@ -42,7 +42,7 @@ public class ExportCommand implements Command {
 				for(String e : list) {
 					System.out.println(e);
 				}
-			default: return; 
+			default: break; 
 		}		
 	}	
 }
