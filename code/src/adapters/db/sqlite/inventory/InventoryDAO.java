@@ -16,20 +16,9 @@ public class InventoryDAO {
 	
 	// path by default should be db/test.db
 	//TODO: stop throwing exceptions and gracefully handle them everywhere
-	public InventoryDAO() {		
-		try {
-			Class.forName("org.sqlite.JDBC");
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		String path = "db/kit.db";
-		try {
-			conn = DriverManager.getConnection("jdbc:sqlite:" + path);
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	public InventoryDAO() throws ClassNotFoundException, SQLException{		
+		Class.forName("org.sqlite.JDBC");
+		conn = DriverManager.getConnection("jdbc:sqlite:db/kit.db");
 	}
 	
 	public InventoryDAO(String path) throws ClassNotFoundException, SQLException {		
