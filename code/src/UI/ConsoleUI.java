@@ -29,6 +29,8 @@ public class ConsoleUI implements UI {
 	
 	@Override
 	public void showMainScreen() {
+		if(Config.Config.DeveloperMode)
+			System.out.println("#### YOU ARE IN DEV MODE ####");
 		System.out.println("Welcome to Kitchen Inventory Tracker");
 		System.out.println("Please note that you can enter 'h' or 'help' at the prompt to get a full list of commands");
 		isRunning = true;
@@ -93,10 +95,7 @@ public class ConsoleUI implements UI {
 		ScannerAdapter scanner = new KeyboardInScannerAdapter(this, System.in);
 		try {
 			scanner.run();
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (SQLException e) {
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

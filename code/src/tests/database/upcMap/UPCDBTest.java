@@ -11,13 +11,13 @@ import adapters.db.sqlite.upcMap.UPCDAO;
 import adapters.db.sqlite.upcMap.UPCEntry;
 
 public class UPCDBTest {
-	private String DBPath = "db/testkit.db";
-	private adapters.db.sqlite.upcMap.UPCDAO db;
+	private UPCDAO db;
 	
 	@Before
 	public void initialize(){
 		try{
-			db = new UPCDAO(DBPath);
+			Config.Config.DeveloperMode = true;
+			db = UPCDAO.getInstance();
 		} catch(Exception e){
 			e.printStackTrace();
 			fail();

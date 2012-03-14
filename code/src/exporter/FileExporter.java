@@ -21,7 +21,7 @@ public class FileExporter implements Exporter {
 	
 	public void export() throws IOException,  Exception{
 		OutputStream out = new BufferedOutputStream(new FileOutputStream("export/inventorylist.csv", false));
-		InventoryDAO dao = new InventoryDAO();
+		InventoryDAO dao = InventoryDAO.getInstance();
 		
 		for(InventoryEntry entry : dao.lookUp(start, end)){
 			UPCEntry upc = entry.getUPC();

@@ -7,20 +7,21 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class UPCDAO  {
+	private static UPCDAO singleton = null;
+	
 	private Connection conn = null;
-	public static final String mapName = "upc_map";
-	public static final String customName = "upc_custom";
+	public static final String mapName = Config.Statics.UPCMapName;
+	public static final String customName = Config.Statics.UPCCustomName;
 	
 	// path by default should be db/test.db
-	public UPCDAO() throws ClassNotFoundException, SQLException {		
-		Class.forName("org.sqlite.JDBC");
-		String path = "db/kit.db";
-		conn = DriverManager.getConnection("jdbc:sqlite:" + path);
+	private UPCDAO() throws ClassNotFoundException, SQLException {		
+		Class.forName(Config.Statics.JDBCPath);
+		conn = DriverManager.getConnection(Config.Config.DeveloperMode?Config.Statics.DevDatabasePath:Config.Statics.ProdDatabasePath);
 	}
 	
-	public UPCDAO(String path) throws ClassNotFoundException, SQLException {		
-		Class.forName("org.sqlite.JDBC");
-		conn = DriverManager.getConnection("jdbc:sqlite:" + path);
+	public static synchronized UPCDAO getInstance() throws Exception{
+		if(singleton == null) return (singleton = new UPCDAO());
+		else return singleton;
 	}
 	
 	public synchronized UPCEntry lookUp(String upc) {

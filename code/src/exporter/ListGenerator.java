@@ -17,7 +17,7 @@ public class ListGenerator {
 	public ArrayList<String> getList() throws Exception{
 		ArrayList<String> outList = new ArrayList<String>();
 		
-		InventoryDAO inventory = new InventoryDAO();
+		InventoryDAO inventory = InventoryDAO.getInstance();
 		
 		ArrayList<InventoryEntry> list = inventory.lookUp(start, end);
 		

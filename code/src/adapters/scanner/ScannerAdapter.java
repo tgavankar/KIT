@@ -4,6 +4,6 @@ import java.sql.SQLException;
 
 public interface ScannerAdapter {
 
-	public void run() throws ClassNotFoundException, SQLException;
+	public void run() throws Exception;
 
 }

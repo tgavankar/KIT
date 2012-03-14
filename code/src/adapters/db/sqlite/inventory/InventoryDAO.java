@@ -10,20 +10,22 @@ import java.util.ArrayList;
 import adapters.db.sqlite.upcMap.UPCEntry;
 
 public class InventoryDAO {
+	private static InventoryDAO singleton = null;
+	
 	private Connection conn = null;
-	public static final String mapName = "upc_map";
-	public static final String inventoryName = "scanned_entries";
+	private static final String mapName = Config.Statics.InventoryMapName;
+	private static final String inventoryName = Config.Statics.InventoryEntryName;
 	
 	// path by default should be db/test.db
 	//TODO: stop throwing exceptions and gracefully handle them everywhere
-	public InventoryDAO() throws ClassNotFoundException, SQLException{		
-		Class.forName("org.sqlite.JDBC");
-		conn = DriverManager.getConnection("jdbc:sqlite:db/kit.db");
+	private InventoryDAO() throws ClassNotFoundException, SQLException{		
+		Class.forName(Config.Statics.JDBCPath);
+		conn = DriverManager.getConnection(Config.Config.DeveloperMode?Config.Statics.DevDatabasePath:Config.Statics.ProdDatabasePath);
 	}
 	
-	public InventoryDAO(String path) throws ClassNotFoundException, SQLException {		
-		Class.forName("org.sqlite.JDBC");
-		conn = DriverManager.getConnection("jdbc:sqlite:" + path);
+	public static synchronized InventoryDAO getInstance() throws Exception{
+		if(singleton == null) return (singleton = new InventoryDAO());
+		else return singleton;
 	}
 	
 	public ArrayList<InventoryEntry> lookUp(long start, long end) {
