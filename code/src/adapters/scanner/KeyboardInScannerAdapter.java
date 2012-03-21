@@ -34,7 +34,7 @@ public class KeyboardInScannerAdapter implements ScannerAdapter {
 		UPCDAO upcDAO = UPCDAO.getInstance();
 		ui.scanModePrompt();
 		while(scanner.hasNext()) {
-			String padded = scanner.next();
+			String padded = scanner.next().trim();
 			if(padded.equals("s") || padded.equals("stop"))
 				break;
 			

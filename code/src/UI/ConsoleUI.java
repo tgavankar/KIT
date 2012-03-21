@@ -45,7 +45,7 @@ public class ConsoleUI implements UI {
 	public Command getCommand() {
 		System.out.print("Enter command> ");
 		Scanner scanner = new Scanner(System.in);
-		String command = scanner.next();
+		String command = scanner.next().trim().toLowerCase();
 		Command cmd;
 		if(command.equals("scan") || command.equals("s")) {
 			cmd = new StartScannerCommand(this);
