@@ -6,9 +6,9 @@ public class InventoryEntry {
 	private UPCEntry upc = null;
 	private String created = null;
 	
-	public InventoryEntry(UPCEntry upc) {
+	public InventoryEntry(UPCEntry upc, long timestamp) {
 		this.upc = upc;
-		this.created = Long.toString((new java.util.Date()).getTime() / 1000);
+		this.created = Long.toString(timestamp / 1000);
 	}
 	
 	public InventoryEntry(UPCEntry upc, String created) {

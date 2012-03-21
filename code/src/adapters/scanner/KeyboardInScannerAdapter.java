@@ -88,7 +88,7 @@ public class KeyboardInScannerAdapter implements ScannerAdapter {
 				
 				
 				InventoryDAO inventory = InventoryDAO.getInstance();
-				InventoryEntry scannedEntry = new InventoryEntry(upc);
+				InventoryEntry scannedEntry = new InventoryEntry(upc,(new java.util.Date()).getTime());
 				
 				inventory.addEntry(scannedEntry);
 				
