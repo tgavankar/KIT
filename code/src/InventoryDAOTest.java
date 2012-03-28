@@ -1,0 +1,79 @@
+
+import static org.junit.Assert.*;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
+
+import org.junit.*;
+
+import adapters.db.sqlite.inventory.InventoryDAO;
+import adapters.db.sqlite.inventory.InventoryEntry;
+import adapters.db.sqlite.upcMap.UPCDAO;
+import adapters.db.sqlite.upcMap.UPCEntry;
+
+import Config.Statics;
+
+
+public class InventoryDAOTest {
+	UPCDAO upcd = null;
+	InventoryDAO invd = null;
+	
+	UPCEntry entry = null;
+	
+	@Before
+	public void setUpBeforeClass() throws Exception {
+		new File(Statics.TestDatabasePath).delete();
+		InputStream in = new FileInputStream(Statics.TestCleanDatabasePath);
+		OutputStream out = new FileOutputStream(Statics.TestDatabasePath);
+		byte[] buf = new byte[1024];
+		int len;
+		while ((len = in.read(buf)) > 0) {
+		   out.write(buf, 0, len);
+		}
+		in.close();
+		out.close(); 
+		
+		upcd = UPCDAO.getInstance();
+
+		entry = new UPCEntry("000120000","Whatever","EACH");
+		
+		upcd.addEntry(entry, "user");
+		
+		invd = InventoryDAO.getInstance();
+	}
+
+	@After
+	public void tearDownAfterClass() throws Exception {
+		new File(Statics.TestDatabasePath).delete();
+	}
+
+	@Test(expected=NullPointerException.class)
+	public void addEntryNullTest() {
+		invd.addEntry(null);
+	}
+	
+	@Test
+	public void addEntry() {
+		InventoryEntry inve = new InventoryEntry(entry, System.currentTimeMillis());
+		assertTrue(invd.addEntry(inve));
+	}
+	
+	@Test
+	public void addDuplicateEntry() {
+		InventoryEntry inve = new InventoryEntry(entry, System.currentTimeMillis());
+		assertTrue(invd.addEntry(inve));
+		assertFalse(invd.addEntry(inve));
+	}
+	
+	@Test
+	public void lookupEntry() {
+		long currTime = System.currentTimeMillis();
+		InventoryEntry inve = new InventoryEntry(entry, currTime);
+		assertTrue(invd.addEntry(inve));
+		
+		assertTrue(invd.lookUp(currTime-10, currTime+10).size() > 0);
+	}
+}

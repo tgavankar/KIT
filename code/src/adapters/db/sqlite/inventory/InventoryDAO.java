@@ -20,7 +20,7 @@ public class InventoryDAO {
 	//TODO: stop throwing exceptions and gracefully handle them everywhere
 	private InventoryDAO() throws ClassNotFoundException, SQLException{		
 		Class.forName(Config.Statics.JDBCPath);
-		conn = DriverManager.getConnection(Config.Config.DeveloperMode?Config.Statics.DevDatabasePath:Config.Statics.ProdDatabasePath);
+		conn = DriverManager.getConnection(Config.Config.DeveloperMode?Config.Statics.DevJDBCDatabasePath:Config.Statics.ProdJDBCDatabasePath);
 	}
 	
 	public static synchronized InventoryDAO getInstance() throws Exception{

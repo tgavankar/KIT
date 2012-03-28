@@ -16,7 +16,7 @@ public class UPCDAO  {
 	// path by default should be db/test.db
 	private UPCDAO() throws ClassNotFoundException, SQLException {		
 		Class.forName(Config.Statics.JDBCPath);
-		conn = DriverManager.getConnection(Config.Config.DeveloperMode?Config.Statics.DevDatabasePath:Config.Statics.ProdDatabasePath);
+		conn = DriverManager.getConnection(Config.Config.DeveloperMode?Config.Statics.DevJDBCDatabasePath:Config.Statics.ProdJDBCDatabasePath);
 	}
 	
 	public static synchronized UPCDAO getInstance() throws Exception{
