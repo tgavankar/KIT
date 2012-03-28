@@ -17,7 +17,7 @@ public class UPCDBTest {
 	@Before
 	public void initialize(){
 		try{
-			Config.Config.Mode = ModeType.Test;
+			Config.Config.Mode = ModeType.Dev;
 			db = UPCDAO.getInstance();
 		} catch(Exception e){
 			e.printStackTrace();

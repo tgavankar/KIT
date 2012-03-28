@@ -8,9 +8,9 @@ abstract public class UPCDAO {
 	public static UPCDAO getInstance() throws ClassNotFoundException, SQLException{
 		if(singleton == null){
 			switch(Config.Config.Mode){
-				case Prod: singleton = new DBUPCDAO(Config.Statics.ProdDatabasePath); break;
-				case Dev: singleton = new DBUPCDAO(Config.Statics.DevDatabasePath); break;
-				case Test: singleton = new DBUPCDAO(Config.Statics.TestDatabasePath); break;
+				case Prod: singleton = new DBUPCDAO(Config.Statics.ProdJDBCDatabasePath); break;
+				case Dev: singleton = new DBUPCDAO(Config.Statics.DevJDBCDatabasePath); break;
+				case Test: singleton = new DBUPCDAO(Config.Statics.TestJDBCDatabasePath); break;
 				case Mock: singleton = new MockUPCDAO(); break;
 			}
 			return singleton;

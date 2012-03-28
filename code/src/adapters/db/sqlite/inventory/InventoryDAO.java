@@ -1,6 +1,7 @@
 package adapters.db.sqlite.inventory;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 public abstract class InventoryDAO {
 
@@ -9,10 +10,11 @@ public abstract class InventoryDAO {
 	public static InventoryDAO getInstance() throws ClassNotFoundException, SQLException{
 		if(singleton == null){
 			switch(Config.Config.Mode){
-				case Prod: singleton = new DBInventoryDAO(Config.Statics.ProdDatabasePath); break;
-				case Dev: singleton = new DBInventoryDAO(Config.Statics.DevDatabasePath); break;
-				case Test: singleton = new DBInventoryDAO(Config.Statics.TestDatabasePath); break;
+				case Prod: singleton = new DBInventoryDAO(Config.Statics.ProdJDBCDatabasePath); break;
+				case Dev: singleton = new DBInventoryDAO(Config.Statics.DevJDBCDatabasePath); break;
+				case Test: singleton = new DBInventoryDAO(Config.Statics.TestJDBCDatabasePath); break;
 				case Mock: singleton = new MockInventoryDAO(); break;
+
 			}
 			return singleton;
 		}else return singleton;
@@ -25,6 +27,6 @@ public abstract class InventoryDAO {
 		singleton = null;	
 	}
 	
-	public abstract Iterable<InventoryEntry> lookUp(long start, long end);
+	public abstract ArrayList<InventoryEntry> lookUp(long start, long end);
 	public abstract boolean addEntry(InventoryEntry entry);
 }
