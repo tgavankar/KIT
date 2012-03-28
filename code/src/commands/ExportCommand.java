@@ -3,6 +3,7 @@ package commands;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import Config.Statics;
 import UI.UI;
 import exporter.FileExporter;
 import exporter.ListGenerator;
@@ -26,7 +27,7 @@ public class ExportCommand implements Command {
 			case File: 
 				FileExporter exp = new FileExporter(param.startDate, param.endDate);
 				try {
-					exp.export();
+					exp.export(Statics.ExportPath);
 				} catch (Exception e1) {
 					System.err.println("encountered IO error while exporting to a file.");
 					e1.printStackTrace();

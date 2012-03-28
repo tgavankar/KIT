@@ -6,6 +6,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Scanner;
 
+import Config.Config.ModeType;
 import adapters.db.sqlite.upcMap.UPCEntry;
 import adapters.scanner.KeyboardInScannerAdapter;
 import adapters.scanner.ScannerAdapter;
@@ -29,7 +30,7 @@ public class ConsoleUI implements UI {
 	
 	@Override
 	public void showMainScreen() {
-		if(Config.Config.DeveloperMode)
+		if(Config.Config.Mode == ModeType.Dev)
 			System.out.println("#### YOU ARE IN DEV MODE ####");
 		System.out.println("Welcome to Kitchen Inventory Tracker");
 		System.out.println("Please note that you can enter 'h' or 'help' at the prompt to get a full list of commands");

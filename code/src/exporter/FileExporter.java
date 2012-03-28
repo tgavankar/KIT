@@ -7,8 +7,6 @@ import java.io.BufferedOutputStream;
 
 import adapters.db.sqlite.inventory.InventoryDAO;
 import adapters.db.sqlite.inventory.InventoryEntry;
-import adapters.db.sqlite.upcMap.UPCEntry;
-
 
 public class FileExporter implements Exporter {
 	private long start;
@@ -19,16 +17,12 @@ public class FileExporter implements Exporter {
 		this.end = end;
 	}
 	
-	public void export() throws IOException,  Exception{
-		OutputStream out = new BufferedOutputStream(new FileOutputStream("export/inventorylist.csv", false));
+	public void export(String path) throws IOException,  Exception{
+		OutputStream out = new BufferedOutputStream(new FileOutputStream(path, false));
 		InventoryDAO dao = InventoryDAO.getInstance();
 		
-		for(InventoryEntry entry : dao.lookUp(start, end)){
-			UPCEntry upc = entry.getUPC();
-			String temp = upc.getUPC() + "," + upc.getItemName() + "," + upc.getAmount() + "," + entry.getCreated() + "\n";
-			out.write(temp.getBytes());
-		}
-		
+		for(InventoryEntry entry : dao.lookUp(start, end))			
+			out.write((entry.toCSV() + "\n").getBytes());		
 		out.close();
 	}
 

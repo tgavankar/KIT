@@ -19,7 +19,7 @@ public class ListGenerator {
 		
 		InventoryDAO inventory = InventoryDAO.getInstance();
 		
-		ArrayList<InventoryEntry> list = inventory.lookUp(start, end);
+		ArrayList<InventoryEntry> list = (ArrayList<InventoryEntry>) inventory.lookUp(start, end);
 		
 		for(InventoryEntry e : list) {
 			outList.add(e.toString());

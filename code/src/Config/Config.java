@@ -7,7 +7,13 @@ public class Config {
 		NVDA
 	}
 	
+	public enum ModeType{
+		Prod,
+		Dev,
+		Test,
+		Mock
+	}
 	public static UIType UIMode = UIType.Console;
-	public static boolean DeveloperMode = false;
+	public static ModeType Mode = ModeType.Prod;
 	public static boolean withNVDA = false;
 }

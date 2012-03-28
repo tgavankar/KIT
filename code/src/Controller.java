@@ -7,6 +7,7 @@ import UI.ConsoleUI;
 import UI.GraphicUI;
 import UI.UI;
 import Config.*;
+import Config.Config.ModeType;
 import Config.Config.UIType;
 import commands.Command;
 
@@ -24,9 +25,9 @@ public class Controller  {
 			}else if(args[i].toLowerCase().equals("gui")) {
 				Config.UIMode = UIType.GUI;
 			}else if(args[i].toLowerCase().equals("dev")){
-				Config.DeveloperMode = true;
+				Config.Mode = ModeType.Dev;
 			}else if(args[i].toLowerCase().equals("prod")){
-				Config.DeveloperMode = false;
+				Config.Mode = ModeType.Prod;
 			}else if(args[i].toLowerCase().equals("nvda")) {
 				if(!System.getProperty("os.name").toLowerCase().startsWith("win")) {
 					System.out.println("NVDA is only supported on Windows");

@@ -7,6 +7,7 @@ import static org.junit.Assert.fail;
 import org.junit.Before;
 import org.junit.Test;
 
+import Config.Config.ModeType;
 import adapters.db.sqlite.upcMap.UPCDAO;
 import adapters.db.sqlite.upcMap.UPCEntry;
 
@@ -16,7 +17,7 @@ public class UPCDBTest {
 	@Before
 	public void initialize(){
 		try{
-			Config.Config.DeveloperMode = true;
+			Config.Config.Mode = ModeType.Test;
 			db = UPCDAO.getInstance();
 		} catch(Exception e){
 			e.printStackTrace();
