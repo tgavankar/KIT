@@ -1,0 +1,1985 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META NAME="generator" CONTENT="http://txt2tags.sf.net">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<TITLE>NVDA 2012.1 Hướng dẫn sử dụng</TITLE>
+</HEAD><BODY BGCOLOR="white" TEXT="black">
+<P ALIGN="center"><CENTER><H1>NVDA 2012.1 Hướng dẫn sử dụng</H1>
+<FONT SIZE="4">
+</FONT></CENTER>
+
+<A NAME="toc"></A>
+<H2>Mục lục</H2>
+  <UL>
+
+  <LI><A HREF="#toc2">1. Giới thiệu</A>
+    <UL>
+    <LI><A HREF="#toc3">1.1. Tính năng chung</A>
+    <LI><A HREF="#toc4">1.2. Tính toàn cầu</A>
+    <LI><A HREF="#toc5">1.3. Hỗ trợ bộ tổng hợp tiếng nói</A>
+    <LI><A HREF="#toc6">1.4. Hỗ trợ chữ nổi</A>
+    <LI><A HREF="#toc7">1.5. Giấy phép và Bản quyền</A>
+    </UL>
+  <LI><A HREF="#toc8">2. Yêu cầu hệ thống</A>
+  <LI><A HREF="#toc9">3. Tải NVDA</A>
+  <LI><A HREF="#toc10">4. Cài đặt NVDA</A>
+    <UL>
+    <LI><A HREF="#toc11">4.1. Bản cài đặt NVDA</A>
+    <LI><A HREF="#toc12">4.2. Bản NVDA di động</A>
+      <UL>
+      <LI><A HREF="#toc13">4.2.1. NVDA Portable on a USB key</A>
+      </UL>
+    </UL>
+  <LI><A HREF="#toc14">5. Bắt đầu với NVDA</A>
+    <UL>
+    <LI><A HREF="#toc15">5.1. Lướt qua NVDA</A>
+    <LI><A HREF="#toc16">5.2. Các phím lệnh NVDA</A>
+      <UL>
+      <LI><A HREF="#toc17">5.2.1. Phím bổ trợ NVDA</A>
+      <LI><A HREF="#toc18">5.2.2. Chế độ hỗ trợ đầu vào</A>
+      <LI><A HREF="#toc19">5.2.3. Cách bố trí phím lệnh</A>
+      </UL>
+    <LI><A HREF="#toc20">5.3. Trình đơn NVDA</A>
+    <LI><A HREF="#toc21">5.4. Các phím lệnh cơ bản</A>
+    <LI><A HREF="#toc22">5.5. Thông báo thông tin hệ thống</A>
+    </UL>
+  <LI><A HREF="#toc23">6. Điều hướng NVDA</A>
+    <UL>
+    <LI><A HREF="#toc24">6.1. Điều hướng với con trỏ hệ thống</A>
+    <LI><A HREF="#toc25">6.2. Điều hướng với dấu nháy hệ thống</A>
+    <LI><A HREF="#toc26">6.3. Đối tượng điều hướng</A>
+    <LI><A HREF="#toc27">6.4. Xem văn bản ở đối tượng hiện tại</A>
+    <LI><A HREF="#toc28">6.5. Xem độc lập</A>
+    <LI><A HREF="#toc29">6.6. Di chuyển bằng chuột</A>
+    </UL>
+  <LI><A HREF="#toc30">7. Chế độ duyệt web</A>
+    <UL>
+    <LI><A HREF="#toc31">7.1. Điều hướng bằng phím ký tự</A>
+    <LI><A HREF="#toc32">7.2. Danh sách các phần tử</A>
+    <LI><A HREF="#toc33">7.3. Đối tượng nhúng</A>
+    </UL>
+  <LI><A HREF="#toc34">8. Cấu hình NVDA</A>
+    <UL>
+    <LI><A HREF="#toc35">8.1. Mục ưa thích</A>
+      <UL>
+      <LI><A HREF="#toc36">8.1.1. Các thiết lập chung (NVDA+control+g)</A>
+      <LI><A HREF="#toc37">8.1.2. Lựa chọn bộ tổng hợp (NVDA+control+s)</A>
+      <LI><A HREF="#VoiceSettings">8.1.3. Cài đặt giọng nói (NVDA+control+v)</A>
+      <LI><A HREF="#SynthSettingsRing">8.1.4. Chu kỳ thiết lập bộ đọc</A>
+      <LI><A HREF="#toc40">8.1.5. Thiết lập màn hình chữ nổi</A>
+      <LI><A HREF="#toc41">8.1.6. Thiết lập bàn phím (NVDA+control+k)</A>
+      <LI><A HREF="#toc42">8.1.7. Thiết lập chuột (NVDA+control+m)</A>
+      <LI><A HREF="#toc43">8.1.8. Thiết lập con trỏ xem lại</A>
+      <LI><A HREF="#toc44">8.1.9. Thiết lập trình bày đối tượng (NVDA+control+o)</A>
+      <LI><A HREF="#toc45">8.1.10. Thiết lập chế độ duyệt web (NVDA+control+b)</A>
+      <LI><A HREF="#DocumentFormattingSettings">8.1.11. Thiết lập tài liệu định dạng (NVDA+control+d)</A>
+      <LI><A HREF="#toc47">8.1.12. Từ điển phát âm</A>
+      <LI><A HREF="#toc48">8.1.13. Phát âm Dấu chấm câu / Ký hiệu</A>
+      </UL>
+    <LI><A HREF="#toc49">8.2. Lưu và tải lại cấu hình</A>
+    <LI><A HREF="#toc50">8.3. Cấu hình các tập tin và hồ sơ người dùng</A>
+    </UL>
+  <LI><A HREF="#toc51">9. Công cụ bổ sung</A>
+    <UL>
+    <LI><A HREF="#toc52">9.1. cửa sở log</A>
+    <LI><A HREF="#toc53">9.2. Cửa sổ phát âm</A>
+    <LI><A HREF="#toc54">9.3. Python Console</A>
+    <LI><A HREF="#toc55">9.4. Tải lại phần phụ trợ</A>
+    </UL>
+  <LI><A HREF="#SupportedSpeechSynths">10. Hỗ trợ bộ tổng hợp âm</A>
+    <UL>
+    <LI><A HREF="#toc57">10.1. eSpeak</A>
+    <LI><A HREF="#toc58">10.2. Microsoft Speech API phiên bản 4 (SAPI 4)</A>
+    <LI><A HREF="#toc59">10.3. Microsoft Speech API phiên bản 5 (SAPI 5)</A>
+    <LI><A HREF="#toc60">10.4. Audiologic Tts3</A>
+    <LI><A HREF="#toc61">10.5. Newfon</A>
+    </UL>
+  <LI><A HREF="#SupportedBrailleDisplays">11. Hỗ trợ màn hình chữ nổi</A>
+    <UL>
+    <LI><A HREF="#toc63">11.1. Freedom Scientific Focus/PAC Mate Series</A>
+    <LI><A HREF="#toc64">11.2. Optelec ALVA BC640/680</A>
+    <LI><A HREF="#toc65">11.3. Màn hình Handy Tech</A>
+    <LI><A HREF="#toc66">11.4. MDV Lilli</A>
+    <LI><A HREF="#toc67">11.5. Màn hình chữ nổi Baum/Humanware/APH</A>
+    <LI><A HREF="#toc68">11.6. BRLTTY</A>
+    </UL>
+  <LI><A HREF="#toc69">12. Chủ đề nâng cao</A>
+    <UL>
+    <LI><A HREF="#toc70">12.1. Ánh xạ lại các phím lệnh và các thao tác đầu vào khác</A>
+    </UL>
+  </UL>
+
+<P></P>
+<A NAME="toc2"></A>
+<H2>1. Giới thiệu</H2>
+<P>
+NonVisual Desktop Access (NVDA) là một mã nguồn mở miễn phí đọc màn hình và cho hệ điều hành Microsoft Windows. Cung cấp thông tin phản hồi thông qua bài phát biểu tổng hợp và chữ nổi Braille, nó cho phép người mù hoặc thị lực suy giảm để truy cập vào các máy tính chạy Windows mà không có chi phí nhiều hơn so với một người nhìn thấy. NVDA được phát triển bởi<A HREF="http://www.nvaccess.org/">NV Access</A>, với sự đóng góp từ cộng đồng.
+</P>
+<A NAME="toc3"></A>
+<H3>1.1. Tính năng chung</H3>
+<P>
+NVDA cho phép người khiếm thị và người mắt kém có thề truy cập và tương tác với hệ điều hành Windows và nhiều ứng dụng của bên thứ ba. 
+</P>
+<P>
+Các tính năng nổi bật:
+</P>
+<UL>
+<LI>Hỗ trợ cho các ứng dụng phổ biến bao gồm trình duyệt web, chương trình gửi nhận thư điện tử, internet, chat và các phần mềm ứng dụng văn phòng.
+<LI>Bộ tổng hợp âm hỗ trợ hơn 20 ngôn ngữ
+<LI>Thông báo các định dạng văn bản có sẵn như tên font và kích thước, kiểu dáng và lỗi chính tả.
+<LI>Tự động thông báo văn bản theo con chuột và tùy chọn âm thanh chỉ dẫn của vị trí chuột
+<LI>Hỗ trợ nhiều màn hình chữ nổi
+<LI>Có khả năng chạy độc lập từ USB hoặc phương tiện lưu trữ khác mà không cần cài đặt
+<LI>Dễ dàng sử dụng trình cài đặt âm thanh
+<LI>Dịch sang nhiều ngôn ngữ
+<LI>Hỗ trợ cho tất cả hệ điều hành Windows bao gồm cả 32 bit và 64
+<LI>Có khả năng chạy ở màn hình đăng nhập Windows và màn hình an toàn khác
+<LI>Hỗ trợ tất cả các giao diện tiếp cận phổ biến như Microsoft Active Accessibility, Java Access Bridge, IAccessible2 và UI Automation
+<LI>hỗ trợ cho cửa sổ lệnh trên windows và các ứng dụng chạy bằng dòng lệnh.
+</UL>
+
+<P></P>
+<A NAME="toc4"></A>
+<H3>1.2. Tính toàn cầu</H3>
+<P>
+Tất cả mọi người trên thế giới không phân biệt ngôn ngữ, đều có thể tiếp cận công nghệ một cách bình đẳng bằng NVDA.Ngoài tiếng Anh, NVDA đã được dịch sang hơn 20 ngôn ngữ bao gồm: tiếng Ả Rập, tiếng Bồ Đào Nha, Croatia, Cộng hòa Séc, Phần Lan, Pháp, Galicia, Đức, Hungary, Ý, Nhật, Bồ Đào Nha, tiếng Nga, tiếng Slovak, Tây Ban Nha, Thái Lan, Trung Quốc truyền thống, tiếng Ukraina , Hà Lan Nam Phi, Ba Lan và Việt Nam.
+</P>
+<A NAME="toc5"></A>
+<H3>1.3. Hỗ trợ bộ tổng hợp tiếng nói</H3>
+<P>
+Ngoài việc cung cấp các thông điệp và giao diện của nó trong một số ngôn ngữ, NVDA cũng có thể cho phép người dùng đọc nội dung trong ngôn ngữ bất kỳ, miễn là họ có một bộ tổng hợp tiếng nói có thể nói rằng ngôn ngữ đó.
+</P>
+<P>
+NVDA được đóng gói với <A HREF="http://espeak.sourceforge.net/">eSpeak</A>, là một bộ tổng hợp tiếng nói đa ngôn ngữ với mã nguồn mở, miễn phí.
+</P>
+<P>
+Có thể tìm thấy thông tin các bộ tổng hợp tiếng nói khác mà NVDA hỗ trợ trong phần <A HREF="#SupportedSpeechSynths">Supported Speech Synthesizers</A>
+</P>
+<A NAME="toc6"></A>
+<H3>1.4. Hỗ trợ chữ nổi</H3>
+<P>
+Đối với những người dùng có màn hình chữ nổi riêng, thì NVDA có thể hiển thị chữ nỗi thông qua màn hình chữ nổi đó.
+Vui lòng xem phần hỗ trợ màn hình chữ nỗi trong phần <A HREF="#SupportedBrailleDisplays">Supported Braille Displays</A>
+</P>
+<A NAME="toc7"></A>
+<H3>1.5. Giấy phép và Bản quyền</H3>
+<P>
+Bản quyền NVDA 2006-2012 thuộc những người đóng góp xây dựng NVDA.
+</P>
+<P>
+NVDA được công bố theo các điều khoản của giấy phép GNU( phiên bản 2).
+Bạn được tự do chia sẻ hoặc thay đổi phần mềm này theo cách của bạn hoặc có thề phân phát lại cho người khác mã nguồn của phần mềm này miễn là nó được đi kèm với giấy phép.Điều này cũng áp dụng cho cả hai bản sửa đổi và bản gốc của phần mềm này, cộng với bất kỳ tác vụ phái sinh. Để biết thêm chi tiết, bạn có thể xem đầy đủ giấy phép [<A HREF="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</A>]
+</P>
+<A NAME="toc8"></A>
+<H2>2. Yêu cầu hệ thống</H2>
+<UL>
+<LI>Hệ điều hành: Windows XP, Windows Vista và Windows 7 trên cả 2 phiên bản 32 bit và 64 bit (bao gồm cả hệ điều hành máy chủ).
+<LI>Bộ nhớ: 256 MB hoặc nhiều hơn
+<LI>Tốc độ bộ vi xử lý: 1,0 GHz hoặc cao hơn
+<LI>không gian lưu trữ khoảng 50 MB
+</UL>
+
+<P></P>
+<A NAME="toc9"></A>
+<H2>3. Tải NVDA</H2>
+<P>
+Nếu bạn chưa có một bản sao nào của NVDA, bạn có thể tải xuống từ <A HREF="http://www.nvda-project.org/">www.nvda-project.org</A>.
+</P>
+<P>
+Đi tới phần tải về và bạn sẽ tìm thấy một liên kết để tải phiên bản mới nhất của NVDA.
+</P>
+<P>
+Hiện tại có 2 bản đóng gói của NVDA. Một là bản đóng gói như một trình cài đặt nghĩa là chương trình sẽ nói xuyên suốt quá trình cài đặt NVDA để bạn có thể chạy nó bất kỳ lúc nào từ thanh thực đơn. Hai là bản đóng gói như một tập tin lưu trữ tự bung có chứa phiên bản đầy đủ của NVDA mà bạn có thể chạy từ bất cứ nơi nào, kể cả từ USB hoặc từ đĩa CD.(bản này còn được gọi là bản sao di động của NVDA)
+</P>
+<P>
+Để truy cập vào màn hình đăng nhập Windows, màn hình điều khiển người dùng (UAC) hoặc các màn hình bảo mật khác, cũng như các ứng dụng chạy dưới quyền quản trị viên trong Windows Vista và những windows sau này, bạn phải cài đặt NVDA trên hệ thống của bạn. Không thể sử dụng bản sao di động của NVDA để truy cập vào những màn hình này.
+</P>
+<A NAME="toc10"></A>
+<H2>4. Cài đặt NVDA</H2>
+<A NAME="toc11"></A>
+<H3>4.1. Bản cài đặt NVDA</H3>
+<P>
+Nếu bạn đã có trình cài đặt NVDA, chỉ cần nhấn Enter hoặc nhấp đúp chuột vào tập tin và trình cài đặt sẽ bắt đầu.
+</P>
+<P>
+Khi bắt đầu trình cài đặt, bạn sẽ nghe thấy nhạc cài đặt NVDA. Sau khi nạp, một bản sao tạm thời của NVDA sẽ cho phép bạn làm theo hướng dẫn của trình cài đặt và cài đặt NVDA. Lưu ý rằng nếu bạn đang chạy một bản sao của NVDA tại thời điểm bạn bắt đầu trình cài đặt, trình cài đặt sẽ đóng bản trước đó của bạn. Điều này là cần thiết để chương trình cài đặt có thể cập nhật bất kỳ tập tin thay đổi một cách đúng đắn. Tại thời điểm này, nếu bạn có một bản sao của NVDA đã được cài đặt, trình cài đặt NVDA sẽ gỡ bỏ nó cho bạn, và sau đó nó sẽ bắt đầu cài đặt NVDA.
+</P>
+<P>
+Khi bạn đã cài đặt thành công, trình cài đặt sẽ đưa thông báo rằng quá trình cài đặt của NVDA đã hoàn tất. Nếu muốn cài đặt lại NVDA, Nó có thể yêu cầu bạn khởi động lại hệ thống vào thời điểm này. Điều rất quan trọng vì nếu bạn không khởi động lại hệ thống chương trình sẽ phát sinh những lỗi không mong muốn. Nếu nó không yêu cầu bạn khởi động lại, nhấn vào hoàn tất sẽ đóng chương trình cài đặt và bắt đầu cài đặt phiên bản mới được cài đặt của NVDA.
+</P>
+<A NAME="toc12"></A>
+<H3>4.2. Bản NVDA di động</H3>
+<P>
+Nếu bạn có phiên bản di động của NVDA, bạn chỉ cần nhấn Enter hoặc nhấp đúp chuột vào tập tin, và làm theo các hướng dẫn. Nó sẽ yêu cầu bạn chỉ ra đường dẫn nơi mà bạn muốn lưu trữ các tập tin của NVDA.
+</P>
+<A NAME="toc13"></A>
+<H4>4.2.1. NVDA Portable on a USB key</H4>
+<P>
+Nó có thể tự bung NVDA trên ổ USB để bạn có thể sử dụng nó trên hệ thống máy tính khác.
+</P>
+<P>
+Khi phiên bản di động yêu cầu đường dẫn nơi bạn muốn giải nén nó, nhập vào ổ đĩa USB của bạn, cộng với một thư mục tùy chọn mà bạn muốn đặt NVDA.
+</P>
+<P>
+ví dụ nếu ổ USB của bạn là ổ E:\, bạn có thể nhập vào E:\NVDA, chương trình sẽ giải nén NVDA trong thư mục con NVDA trên ổ đĩa USB của bạn.
+</P>
+<P>
+Lưu ý rằng mặc dù điều này có nghĩa là bây giờ bạn có thể mang theo NVDA và các thiết lập của nó bất cứ nơi nào, chỉ cần cắm vào ổ USB tuy nhiên nó sẽ không tự động bắt đầu NVDA; Bạn sẽ phải bắt đầu NVDA bằng tay từ hoặc Windows Explorer hoặc hộp thoại Run.
+</P>
+<P>
+Để biết thêm thông tin chạy NVDA tự động từ ổ USB, xin vui lòng xem bài viết này: 
+<A HREF="http://www.nvda-project.org/wiki/RunningAutomaticallyFromAUSBDrive">http://www.nvda-project.org/wiki/RunningAutomaticallyFromAUSBDrive</A>
+</P>
+<A NAME="toc14"></A>
+<H2>5. Bắt đầu với NVDA</H2>
+<A NAME="toc15"></A>
+<H3>5.1. Lướt qua NVDA</H3>
+<P>
+Nếu bạn đã cài đặt NVDA với trình cài đặt, bạn có thể chạy NVDA bằng cách nhấn control + alt + n, hoặc chọn NVDA từ trình đơn NVDA trên Start Menu. Ngoài ra bạn có thể gõ NVDA vào hộp thoại Run và nhấn Enter.
+</P>
+<P>
+Để bắt đầu NVDA bằng phiên bản di động, vào thư mục bạn giải nén NVDA, và nhấn Enter hoặc nhấp đúp chuột vào nvda.exe.
+</P>
+<P>
+Khi bắt đầu NVDA, bạn sẽ nghe thấy một loạt âm thanh tăng dần nói cho bạn biết rằng NVDA đang tải. Tùy thuộc vào tốc độ máy tính của bạn, nếu bạn đang chạy NVDA bằng USB hoặc một thiết bị khác chậm hơn, có thể sẽ mất một thời gian ngắn để bắt đầu NVDA. Nếu nó mất thời gian quá lâu, NVDA sẽ nói "NVDA  đang tải. Xin vui lòng đợi ...."
+</P>
+<P>
+Nếu bạn không nghe thấy bất cứ điều này, hoặc bạn nghe thấy âm thanh lỗi Windows, hoặc một loạt âm thanh giảm dần, điều này có nghĩa là NVDA có lỗi, và bạn cần thông báo lỗi cho các nhà lập trình. Để thông báo lỗi Xin hãy vào trang web NVDA .
+</P>
+<P>
+Khi NVDA bắt đầu lần đầu tiên, bạn sẽ nghe thấy một hộp thoại welcome cung cấp cho bạn một số thông tin cơ bản về các phím bổ trợ NVDA và trình đơn NVDA. (Xin xem phần chi tiết về các chủ đề). Hộp thoại welcome có hai hộp kiểm checkbox. Cái đầu tiên cho phép bạn thiết lập phím capslock như một phím bổ trợ NVDA, và thứ hai cho phép bạn thiết lập việc hiển thị hộp thoại welcome mỗi khi NVDA bắt đầu.
+</P>
+<A NAME="toc16"></A>
+<H3>5.2. Các phím lệnh NVDA</H3>
+<A NAME="toc17"></A>
+<H4>5.2.1. Phím bổ trợ NVDA</H4>
+<P>
+Hầu hết các phím lệnh riêng biệt NVDA thường bao gồm cách nhấn một phím đặc biệt được gọi là phím bổ trợ NVDA, nó có thể kết hợp với một hoặc nhiều phím khác.
+Ngoại trứ một số phím lệnh xem văn bản, chỉ sử dụng phím bên bàn phím số (numpad).
+</P>
+<P>
+Có thể cấu hình NVDA sử dụng phím Insert numpad, Insert mở rộng hay phím capslock như là phím bổ trợ NVDA.
+</P>
+<P>
+Mặc định cả 2 phím Insert numpad và Insert Extended đều được thiết lập như là phím bổ trợ NVDA.
+</P>
+<P>
+Trong trường hợp bạn muốn thiết lập phím bổ trợ NVDA làm việc như phím gốc ban đầu ( ví dụ bạn muốn bật phím capslock khi bạn đã thiết lập phím capslock như là phím bổ trợ NVDA) bạn chỉ cần nhấn phím đó 2 lần.
+</P>
+<A NAME="toc18"></A>
+<H4>5.2.2. Chế độ hỗ trợ đầu vào</H4>
+<P>
+Mặc dù có nhiều phím lệnh đã được đề cập trong phần sau của tài liệu hướng dẫn, nhưng bạn có thể dễ dàng khám phá các phím lệnh bằng cách bật chế độ giúp đỡ.
+Many key commands are mentioned through out the rest of this user guide, but an easy way to explore all the different key commands is to turn on input help.
+</P>
+<P>
+Để bật chế độ giúp đỡ, nhấn phím NVDA+1.
+Để tắt chế độ giúp đỡ, nhấn phím NVDA+1 lần nữa.
+Khi đang ở chế độ giúp dỡ, nhấn bất kỳ phím nào, chương trình sẽ đọc thông tin chức năng của phím đó.
+Các phím được nhấn sẽ không có tác dụng thực thi Khi đang ở chế độ giúp đỡ do đó bạn có thể tùy thích nhấn bất kỳ phím nào.
+</P>
+<A NAME="toc19"></A>
+<H4>5.2.3. Cách bố trí phím lệnh</H4>
+<P>
+Hiện tại NVDA đi kèm với 2 bộ phím lệnh.
+Một cái được bố trí cho máy tính để bàn, và một cái được bố trí cho máy tính xách tay.
+Mặc định NVDA được thiết lập sử dụng cho máy tính để bàn, tuy nhiên bạn có thể chuyển sang sử dụng cho máy tính xách tay bằng cách vào trình đơn NVDA, vào tùy chọn Preferences, và chọn mục thiết lập bàn phím.
+</P>
+<P>
+Các phím numpad được sử dụng nhiều khi bố trí theo máy tính để bàn (tắt phím numlock).
+</P>
+<P>
+NVDA currently comes with two sets of key commands.
+There is a layout for Desktops and a layout for Laptops.
+NVDA by default is set to use the Desktop layout, though you can switch to the Laptop layout in the Keyboard Settings, found under Preferences in the NVDA menu.
+Mặc dù hầu hết các máy tính xách tay đều không có phím numpad thật sự, nhưng một số máy tính xách tay có thể mô phỏng phím numpad bằng cách nhấn giữ phím fn + nhấn phím chữ + nhấn phím số phía bên phải bàn phím ( ví dụ 7 8 9 u i o j k l ).
+Nếu máy tính xách tay của bạn không thể làm điều này, hoặc không chó phép bạn bật tắt numlock, bạn có thể chuyển sang cách bố trí theo máy tính xách tay.
+</P>
+<A NAME="toc20"></A>
+<H3>5.3. Trình đơn NVDA</H3>
+<P>
+Các trình đơn NVDA cho phép bạn điều khiển các thiết lập của NVDA, trợ giúp truy cập, lưu và phục hồi cấu hình của bạn, chỉnh sửa từ điển phát âm, bổ sung các công cụ truy cập và thoát NVDA.
+</P>
+<P>
+Trong khi NVDA đang chạy bạn có thể truy cập vào trình đơn NVDA ở bất cứ nơi nào trong windows bằng cách nhấn phím NVDA+n.
+Bạn cũng có thể truy cập trình đơn NVDA trên khay hệ thống. Hoặc nhấp chuột phải vào biểu tượng NVDA nằm trong khay hệ thống, hoặc truy cập vào khay hệ thống bằng cách nhấn phím biểu tượng windows + B, mũi tên xuống vào biểu tượng NVDA và bấm phím ứng dụng nằm bên cạnh phím điều khiển bên phải. 
+Khi menu hiện ra, bạn có thể sử dụng các phím mũi tên để điều hướng các menu, và nhập key để kích hoạt một mục.
+</P>
+<A NAME="toc21"></A>
+<H3>5.4. Các phím lệnh cơ bản</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Chức năng</TH>
+<TH>Phím</TH>
+<TH>Mô tả</TH>
+</TR>
+<TR>
+<TD>Ngừng nói</TD>
+<TD>Control</TD>
+<TD>Ngay lập tức ngừng nói|</TD>
+</TR>
+<TR>
+<TD>Tạm ngừng nói</TD>
+<TD>Shift</TD>
+<TD>Ngay lập tức tạm ngừng nói. Nhấn lần nữa nó sẽ tiếp tục nói (nếu chức năng tạm ngừng được hỗ trợ bởi các bộ tổng hợp hiện hành)</TD>
+</TR>
+<TR>
+<TD>Trình đơn NVDA</TD>
+<TD>NVDA+n</TD>
+<TD>Hiển thị trình đơn NVDA cho phép bạn truy cập vào các mục ưa thích, mục công cụ và mục giúp đỡ</TD>
+</TR>
+<TR>
+<TD>Bật tắt chế độ phát âm</TD>
+<TD>NVDA+s</TD>
+<TD>Bật tắt chế độ phát âm giữa âm thanh, tiếng bíp.</TD>
+</TR>
+<TR>
+<TD>Bật tắt chế độ trợ giúp</TD>
+<TD>NVDA+1</TD>
+<TD>Nhấn bất kỳ phím nào trong chế độ này sẽ thông báo phím và mô tả các phím lệnh NVDA liên kết với nó</TD>
+</TR>
+<TR>
+<TD>Thoát NVDA</TD>
+<TD>NVDA+q</TD>
+<TD>Thoát NVDA</TD>
+</TR>
+<TR>
+<TD>Chuyển qua phím kế tiếp</TD>
+<TD>NVDA+f2</TD>
+<TD>Tells NVDA to pass the next key press straight through to the active application, even if it is normally treeted as an NVDA key command</TD>
+</TR>
+<TR>
+<TD>Bật tắt chế độ ngủ của trình ứng dụng</TD>
+<TD>NVDA+shift+s</TD>
+<TD>Chế độ ngủ sẽ vô hiệu hóa tất cả các lệnh NVDA và  đầu ra âm thanh / chữ nổi đối với trình ứng dụng hiện hành. This is most useful in applications that provide their own speech or screen reading features. Press  this command again to disable self voicing mode.</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc22"></A>
+<H3>5.5. Thông báo thông tin hệ thống</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Chức năng</TH>
+<TH>Phím</TH>
+<TH>Mô tả</TH>
+</TR>
+<TR>
+<TD>Thông báo Ngày / giờ</TD>
+<TD>NVDA+f12</TD>
+<TD>Nhấn 1 lần sẽ thông báo thời gian hiện tại, nhấn 2 lần sẽ thông báo ngày</TD>
+</TR>
+<TR>
+<TD>Thông báo tình trạng pin</TD>
+<TD>NVDA+shift+b</TD>
+<TD>Thông báo tình trạng pin. Ví dụ tình trạng đang sử dụng điện hoặc là số phần trăm pin đã sạc.</TD>
+</TR>
+<TR>
+<TD>Thông báo văn bản clipboard</TD>
+<TD>NVDA+c</TD>
+<TD>Thông báo nếu có văn bản trong bộ nhớ tạm.</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc23"></A>
+<H2>6. Điều hướng NVDA</H2>
+<A NAME="toc24"></A>
+<H3>6.1. Điều hướng với con trỏ hệ thống</H3>
+<P>
+Cách phổ biến nhất để điều hướng trên Windows với NVDA đơn giản là di chuyển xung quanh với các phím lệnh chuẩn của Windows, chẳng hạn như nhấn tab và shift+tab để di chuyển về phía trước và trở lại giữa các bộ điều khiển, nhấn phím Alt để đi đến thanh menu và sau đó sử dụng các mũi tên để điều hướng các menu, và sử dụng alt + tab để di chuyển giữa các ứng dụng đang chạy. 
+Việc điều hướng này sẽ di chuyển con trỏ hệ thống, tức là đối tượng tiếp nhận các phím gõ trên bàn phím. Khi bạn làm điều này, NVDA sẽ thông báo thông tin về các đối tượng con trỏ, chẳng hạn như tên, kiểu của nó, giá trị, trạng thái, mô tả, phím tắt và thông tin vị trí.
+</P>
+<P>
+Có một vài phím lệnh thường sử dụng khi di chuyển với con trỏ /hệ thống:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Chức năng</TH>
+<TH>Phím</TH>
+<TH>Mô tả</TH>
+</TR>
+<TR>
+<TD>Thông báo con trỏ hiện hành</TD>
+<TD>NVDA+tab</TD>
+<TD>thông báo đối tượng hiện hành hoặc các điều khiển hiện hành có con trỏ hệ thống. Nhấn 2 lần sẽ đánh vần thông tin</TD>
+</TR>
+<TR>
+<TD>Thông báo tiêu đề</TD>
+<TD>NVDA+t</TD>
+<TD>Thông báo tiêu đề cửa sổ đang kích hoạt. Nhấn 2 lần sẽ đánh vần thông tin. Nhấn 3 lần sẽ sao chép thông tin vào bộ nhớ tạm</TD>
+</TR>
+<TR>
+<TD>Đọc cửa sổ kích hoạt</TD>
+<TD>NVDA+b</TD>
+<TD>Đọc tất cả các điều khiển trong sổ đang kích hoạt (hữu dụng cho các hộp thoại)</TD>
+</TR>
+<TR>
+<TD>Thông báo thanh trạng thái</TD>
+<TD>NVDA+end</TD>
+<TD>Thông báo thanh trạng thái của trình ứng dụng hiện hành nếu NVDA tìm thấy. Nó cũng di chuyển đối tượng điều hướng tới vị trí này</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc25"></A>
+<H3>6.2. Điều hướng với dấu nháy hệ thống</H3>
+<P>
+Khi con trỏ đang ở đối tượng có thể chỉnh sửa (cũng được biết như dấu nháy hệ thống), bạn có thể dùng phím mũi tên di chuyển xung quanh và chỉnh sửa bình thường.
+NVDA sẽ thông báo khi bạn di chuyển bằng ký tự, bằng từ hay bằng dòng, hoặc thông báo đang chọn văn bảng hay không chọn văn bản.
+</P>
+<P>
+Sau đây là một số phím lệnh liên quan đến dấu nháy hệ thống mà NVDA hỗ trợ:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Chức năng</TH>
+<TH>Phím</TH>
+<TH>Mô tả</TH>
+</TR>
+<TR>
+<TD>Đọc tất cả</TD>
+<TD>NVDA+downArrow</TD>
+<TD>Bắt đầu đọc từ vị trí hiện tại trong một tài liệu hoặc trong các điều khiển chỉnh sửa</TD>
+</TR>
+<TR>
+<TD>Đọc dòng hiện tại</TD>
+<TD>NVDA+upArrow</TD>
+<TD>Đọc dòng hiện tại nơi có vị trí con trỏ hệ thống. Nhấn 2 lần sẽ đánh vần dòng hiện tại.</TD>
+</TR>
+<TR>
+<TD>Đọc việc chọn văn bản hiện hành</TD>
+<TD>NVDA+Shift+upArrow</TD>
+<TD>Đọc bất kỳ việc chọn lựa văn bản hiện tại</TD>
+</TR>
+<TR>
+<TD>Thông báo định dạng văn bản</TD>
+<TD>NVDA+f</TD>
+<TD>Thông báo định dạng của văn bản nới có vị trí con trỏ hệ thống</TD>
+</TR>
+</TABLE>
+
+<P>
+Một số phím sau đây có sẵn khi đang ở trong định dạng bảng:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Chức năng</TH>
+<TH>Phím</TH>
+<TH>Mô tả</TH>
+</TR>
+<TR>
+<TD>Di chuyển đến cột trước đó</TD>
+<TD>control+alt+leftArrow</TD>
+<TD>Di chuyển con trỏ hệ thống đến cột trước đó (trên cùng một dòng)</TD>
+</TR>
+<TR>
+<TD>Di chuyển đến cột kế tiếp</TD>
+<TD>control+alt+rightArrow</TD>
+<TD>Di chuyển con trỏ hệ thống đến cột kế tiếp (trên cùng một dòng)</TD>
+</TR>
+<TR>
+<TD>Di chuyển đến dòng trước đó</TD>
+<TD>control+alt+upArrow</TD>
+<TD>Di chuyển con trỏ hệ thống đến dòng trước đó (trên cùng một cột)</TD>
+</TR>
+<TR>
+<TD>Di chuyển đến cột kế tiếp</TD>
+<TD>control+alt+downArrow</TD>
+<TD>Di chuyển con trỏ hệ thống đến dòng kế tiếp (trên cùng một cột)</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc26"></A>
+<H3>6.3. Đối tượng điều hướng</H3>
+<P>
+Nếu bạn muốn khám phá các trình ứng dụng hoặc các hệ điều hành hiện tại mà không cần di chuyển con trỏ, bạn có thể sử dụng đối tượng điều hướng của NVDA. 
+Điều này cho phép bạn di chuyển giữa thông tin có được về các đối tượng cá nhân như văn bản, nút, hộp kiểm tra, thanh trượt, danh sách và các trường chỉnh sửa văn bản. 
+Khi bạn di chuyển đến một đối tượng, NVDA sẽ thông báo tương tự như cách mà nó thông báo con trỏ hệ thống.
+</P>
+<P>
+Thay vì phải di chuyển qua lại giữa các đối tượng riêng lẻ trên hệ thống, các đối tượng được nhóm lại dưới dạng phân cấp. 
+Điều này có nghĩa rằng bạn phải di chuyển bên trong một số đối tượng để truy cập các đối tượng con của nó. 
+Ví dụ, thay vì di chuyển qua tất cả các mục trong danh sách khi danh sách được duyệt, bạn phải di chuyển bên trong danh sách (tức là di chuyển đến đối tượng con đầu tiên của nó) để truy cập các mục của nó. 
+Bạn có thể di chuyển ra khỏi danh sách (di chuyển đến các đối tượng cha) để lướt qua danh sách.
+Tương tự, nếu bạn gặp một thanh công cụ, bạn phải di chuyển bên trong thanh công cụ (điều hướng đến đối tượng con đầu tiên của nó) để truy cập các điều khiển trong thanh công cụ.
+</P>
+<P>
+Theo mặc định, các đối tượng điều hướng di chuyển cùng với con trỏ hệ thống, mặc dù điều này có thể được bật và tắt.
+</P>
+<P>
+Để điều hướng các đối tượng, sử dụng các phím sau đây:
+</P>
+<TABLE CELLPADDING="4">
+<TR>
+<TH>Chức năng</TH>
+<TH>phím trên máy tính bàn</TH>
+<TH>phím trên máy tính xách tay</TH>
+<TH>Mô tả|</TH>
+</TR>
+<TR>
+<TD>Thông báo đối tượng hiện hành</TD>
+<TD>NVDA+numpad5</TD>
+<TD>NVDA+control+i</TD>
+<TD>Thông báo đối tượng điều hướng hiện hành. Nhấn 2 lần đánh vần thông tin, nhấn 3 lần sao chép tên và giá trị của đối tượng vào vùng nhớ tạm.</TD>
+</TR>
+<TR>
+<TD>Điều hướng tới đối tượng cha</TD>
+<TD>NVDA+numpad8</TD>
+<TD>NVDA+shift+i</TD>
+<TD>Di chuyển tới đối tượng cha của đối tượng điều hướng hiện hành</TD>
+</TR>
+<TR>
+<TD>Điều hướng tới đối tượng trước đó</TD>
+<TD>NVDA+numpad4</TD>
+<TD>NVDA+control+j</TD>
+<TD>Di chuyển trực tiếp tới đối tượng trước đối tượng điều hướng hiện hành</TD>
+</TR>
+<TR>
+<TD>Điều hướng tới đối tượng kế tiếp</TD>
+<TD>NVDA+numpad6</TD>
+<TD>control+NVDA+l</TD>
+<TD>Di chuyển trực tiếp tới đối tượng kế đối tượng điều hướng hiện hành</TD>
+</TR>
+<TR>
+<TD>Điều hướng tới đối tượng con đầu tiên</TD>
+<TD>NVDA+numpad2</TD>
+<TD>NVDA+shift+comma</TD>
+<TD>Di chuyển tới đối tượng con đầu tiên chứa đối tượng điều hướng hiện hành</TD>
+</TR>
+<TR>
+<TD>Điều hướng tới đối tượng con trỏ</TD>
+<TD>NVDA+numpadMinus</TD>
+<TD>NVDA+backspace</TD>
+<TD>Di chuyển tới đối tượng hiện tại có con trỏ hệ thống, và đặt con trỏ xem lại ở vị trí con trỏ hệ thống, nếu nó đang hiển thị</TD>
+</TR>
+<TR>
+<TD>Kích hoạt đối tượng điều hướng hiện hành</TD>
+<TD>NVDA+numpadEnter</TD>
+<TD>NVDA+enter</TD>
+<TD>Kích hoạt đối tượng điều hướng hiện tại (similar to  clicking with the mouse or pressing space when it has the system focus)</TD>
+</TR>
+<TR>
+<TD>Di chuyển con trỏ tới vị trí xem lại hiện hành</TD>
+<TD>NVDA+shift+numpadMinus</TD>
+<TD>NVDA+shift+backspace</TD>
+<TD>Nhấn 1 lần sẽ di chuyển con trỏ hệ thống tới đối tượng điều hướng hiện hành, nhấn 2 lần sẽ di chuyển dấu nháy hệ thống tới vị trí con trỏ xem lại</TD>
+</TR>
+<TR>
+<TD>Thông báo kích thước đối tượng điều hướng</TD>
+<TD>NVDA+numpadDelete</TD>
+<TD>NVDA+delete</TD>
+<TD>Thông báo kích thước của đối tượng điều hướng hiện hành trên màn hình theo phần trăm (bao gồm khoảng cách từ phía trên bên trái của màn hình, và chiều rộng, chiều cao của nó)</TD>
+</TR>
+</TABLE>
+
+<P>
+Lưu ý: Để các phím bên bàn phím số ( hay phím numpad) hoạt động đúng chức năng của nó, yêu cầu tắt phím báo số ( hay phím numlock).
+</P>
+<A NAME="toc27"></A>
+<H3>6.4. Xem văn bản ở đối tượng hiện tại</H3>
+<P>
+NVDA cho phép bạn đọc các nội dung của đối tượng điều hướng hiện hành theo ký tự, theo từ hoặc theo dòng. 
+Điều này rất có lợi trong giao diện điều khiển cửa sổ lệnh của Windows và những giao diện có hạn chế hoặc không tồn tại dấu nháy hệ thống. 
+Khi di chuyển con trỏ xem lại, dấu nháy hệ thống không đi theo cùng, vì vậy bạn có thể xem văn bản với nhưng không thể chỉnh sửa tại vị trí con trỏ xem lại. 
+Tuy nhiên, theo mặc định thì con trỏ xem lại đi theo cùng dấu nháy hệ thống khi dấu nháy hệ thống di chuyển. Điều này có thể được bật và tắt.
+</P>
+<P>
+Sử dụng các phím sau đây để xem lại văn bản:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Chức năng</TH>
+<TH>Phím trên máy tính bàn</TH>
+<TH>Phím trên máy tính xách tay</TH>
+<TH>Mô tả</TH>
+</TR>
+<TR>
+<TD>Di chuyển tới dòng trên cùng</TD>
+<TD>shift+numpad7</TD>
+<TD>NVDA+7</TD>
+<TD>Di chuyển con trỏ xem lại tới dòng trên cùng của đoạn văn bản</TD>
+</TR>
+<TR>
+<TD>Di chuyển tới dòng trước đó</TD>
+<TD>numpad7</TD>
+<TD>NVDA+u</TD>
+<TD>Di chuyển con trỏ xem lại tới dòng trước đó của đoạn văn bản</TD>
+</TR>
+<TR>
+<TD>Thông báo dòng hiện tại</TD>
+<TD>numpad8</TD>
+<TD>NVDA+i</TD>
+<TD>Thông báo dòng hiện tại của đoạn văn bản nơi có vị trí con trỏ xem lại. Nhấn 2 lần đánh vần dòng hiện tại. Nhấn 3 lần đánh vần dòng có mô tả đặc điểm.</TD>
+</TR>
+<TR>
+<TD>Di chuyển tới dòng kế tiếp</TD>
+<TD>numpad9</TD>
+<TD>NVDA+o</TD>
+<TD ALIGN="right">Di chuyển con trỏ xem lại tới dòng kế tiếp của đoạn văn bản</TD>
+</TR>
+<TR>
+<TD>Di chuyển tới dòng dưới cùng</TD>
+<TD>shift+numpad9</TD>
+<TD>NVDA+9</TD>
+<TD>Di chuyển con trỏ xem lại tới dòng dưới cùng của đoạn văn bản</TD>
+</TR>
+<TR>
+<TD>Di chuyển tới từ trước đó</TD>
+<TD>numpad4</TD>
+<TD>NVDA+j</TD>
+<TD>Di chuyển con trỏ xem lại tới từ trước đó của đoạn văn bản</TD>
+</TR>
+<TR>
+<TD>Thông báo từ hiện tại</TD>
+<TD>numpad5</TD>
+<TD>NVDA+k</TD>
+<TD>Thông báo từ hiện tại của đoạn văn bản nơi có vị trí con trỏ xem lại. Nhấn 2 lần đánh vần từ hiện tại. Nhấn 3 lần đánh vần từ có mô tả đặc điểm.</TD>
+</TR>
+<TR>
+<TD>Di chuyển tới từ kế tiếp</TD>
+<TD>numpad6</TD>
+<TD>NVDA+l</TD>
+<TD>Di chuyển con trỏ xem lại tới từ kế tiếp của đoạn văn bản</TD>
+</TR>
+<TR>
+<TD>Di chuyển tới đầu dòng</TD>
+<TD>shift+numpad1</TD>
+<TD>NVDA+shift+u</TD>
+<TD>Di chuyển con trỏ tới đầu dòng hiện tại trong đoạn văn bản</TD>
+</TR>
+<TR>
+<TD>Di chuyển tới ký tự trước đó</TD>
+<TD>numpad1</TD>
+<TD>NVDA+m</TD>
+<TD>Di chuyển con trỏ tới ký tự trước đó trên dòng hiện tại của đoạn văn bản</TD>
+</TR>
+<TR>
+<TD>Thông báo ký tự hiện tại</TD>
+<TD>numpad2</TD>
+<TD>NVDA+comma</TD>
+<TD>Thông báo ký tự hiện hành trên dòng của đoạn văn bản nới có vị trí con trỏ xem lại. Nhấn 2 lần thông báo các mô tả hoặc ví dụ của ký tự đó. Nhấn 3 lần thông báo giá trị của ký tự đó dưới dạng thập phân và thập lục phân.</TD>
+</TR>
+<TR>
+<TD>Di chuyển tới ký tự kế tiếp</TD>
+<TD>numpad3</TD>
+<TD>NVDA+dot</TD>
+<TD>Di chuyển con trỏ tới ký tự kế tiếp trên dòng hiện tại của đoạn văn bản</TD>
+</TR>
+<TR>
+<TD>Di chuyển tới cuối dòng</TD>
+<TD>shift+numpad3</TD>
+<TD>NVDA+shift+o</TD>
+<TD>Di chuyển con trỏ tới cuối dòng hiện tại của đoạn văn bản</TD>
+</TR>
+<TR>
+<TD>Đọc tất cả</TD>
+<TD>numpadPlus</TD>
+<TD>NVDA+shift+downArrow</TD>
+<TD>Đọc từ vị trí hiện hành của con trỏ</TD>
+</TR>
+<TR>
+<TD>sao chép từ vị trí con trỏ</TD>
+<TD>NVDA+f9</TD>
+<TD>NVDA+f9</TD>
+<TD>Bắt đầu sao chép từ vị trí hiện hành của con trỏ. Quá trình sao chép chỉ xảy ra khi bạn nói cho NVDA biết nơi để sao chép</TD>
+</TR>
+<TR>
+<TD>Sao chép tới vị trí con trỏ</TD>
+<TD>NVDA+f10</TD>
+<TD>NVDA+f10</TD>
+<TD>Sao chéo từ vị trí của con trỏ xem lại tới vị trí hiện tại của con trỏ. Sau khi nhấn phím này văn bản sẽ được sao chép tới vùng nhớ tạm của windows</TD>
+</TR>
+</TABLE>
+
+<P>
+Lưu ý: Để các phím numpad hoạt động đúng chức năng của nó, yêu cầu tắt phím numlock
+</P>
+<P>
+Để giúp bạn nhớ các phím này, lưu ý rằng các phím lệnh cơ bản được tổ chức dưới dạng lưới 3x3, từ trên xuống dưới theo dòng, từ và ký tự, và từ trái sang phải theo thứ tự trước đó, hiện tại và kế tiếp.
+Cách bố trí trên được mô phỏng như sau
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>Dòng trước đó</TD>
+<TD>Dòng hiện tại</TD>
+<TD>Dòng kế tiếp</TD>
+</TR>
+<TR>
+<TD>Từ trước đó</TD>
+<TD>Từ hiện tại</TD>
+<TD>Từ kế tiếp</TD>
+</TR>
+<TR>
+<TD>Ký tự trước đó</TD>
+<TD>Ký tự hiện tại</TD>
+<TD>Ký tự kế tiếp</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc28"></A>
+<H3>6.5. Xem độc lập</H3>
+<P>
+Tượng tự như xem lại nội dung của một đối tượng riêng lẻ, NVDA cho phép bạn xem toàn bộ nội dung của tài liệu hay toàn bộ văn bản trên màn hình.
+Điều này được gọi là xem độc lập
+</P>
+<P>
+Hai phím lệnh sau đây được sử dụng để chuyển qua chế độ xem độc lập:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Chức năng</TH>
+<TH>Phím trên máy tính bàn</TH>
+<TH>Phím trên máy tính xách tay</TH>
+<TH>Mô tả</TH>
+</TR>
+<TR>
+<TD>Chuyển sang chế độ xem độc lập l</TD>
+<TD>NVDA+numpad7</TD>
+<TD>NVDA+pageUp</TD>
+<TD>Chuyển tới chế độ xem độc lập, đặt bạn ở vị trí của đối tượng điều hướng hiện hành, cho phép bạn xem màn hình ( hoặc tài liệu) với các phím lệnh xem văn bản.</TD>
+</TR>
+<TR>
+<TD>Chuyển đến đối tượng từ chế độ xem độc lập</TD>
+<TD>NVDA+numpad1</TD>
+<TD>NVDA+pageDown</TD>
+<TD>Di chuyển đến đối tượng đại diện bởi văn bản tại vị trí con trỏ xem lại trong chế độ xem độc lập</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc29"></A>
+<H3>6.6. Di chuyển bằng chuột</H3>
+<P>
+Khi bạn di chuyển bằng chuột, mặc định NVDA sẽ đọc đoạn văn bản trực tiếp dưới con trỏ chuột, như thể nó di chuyển lên trên. Khi được hỗ trợ NVDA sẽ đọc giá trị của đoạn văn bản, mặc dù một vài điều khiển chỉ có thể đọc bằng dòng. 
+</P>
+<P>
+NVDA cũng có thể được cấu hình để thông báo loại điều khiển hoặc đối tượng hiện đang có con trỏ chuột như thể nó di chuyển (ví dụ như danh sách, nút v.v), điều này có thể hữu ích cho người khiếm thị đôi khi các văn bản hiển thị không đủ.
+</P>
+<P>
+NVDA hỗ trơ người dùng hiểu được vị trí con trỏ chuột có liên quan đến các kích thước của màn hình, bằng cách gắn toạ độ con trỏ chuột hiện tại với âm thanh tiếng bíp. Toạ độ con trỏ chuột càng cao thì cao độ của tiếng bíp cũng càng cao. Càng di chuyển con chuột về hướng trái hay phải, âm thanh tiếng bíp càng được phát ra từ hướng trái hoặc phải.
+</P>
+<P>
+Những tính năng bổ sung này không bật theo mặc định trong NVDA, nhưng nếu bạn muốn tận dụng lợi thế của chúng, bạn có thể cấu hình chúng từ hộp thoại cài đặt chuột, được tìm thấy trong trình đơn Preferences trên menu NVDA.
+</P>
+<P>
+Với một con chuột hoặc trackpad nên được dùng để di chuyển với chuột, NVDA có một vài phím lệnh liên quan đến con trỏ chuột:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Chức năng</TH>
+<TH>Phím trên máy tính bàn</TH>
+<TH>Phím trên máy xách tay</TH>
+<TH>Mô tả</TH>
+</TR>
+<TR>
+<TD>Nhấn nút trái chuột</TD>
+<TD>numpadDivide</TD>
+<TD>NVDA+leftArrow</TD>
+<TD>Bấm nút trái chuột một lần. Thông thường nhấn gấp đôi chuột có thể được thực hiện bằng phím này bằng cách nhấn 2 lần liên tiếp</TD>
+</TR>
+<TR>
+<TD>Khoá phím trái chuột</TD>
+<TD>shift+numpadDivide</TD>
+<TD>NVDA+shift+leftArrow</TD>
+<TD>Khoá nút trái chuột. Nhấn lại lần nữa để mở khoá. Để kéo chuột, nhấn phím này để khoá chuột trái và sau đó di chuyển con chuột hoặc sử dụng một trong những con chuột khác có chỉ định phím lệnh</TD>
+</TR>
+<TR>
+<TD>Nhấn nút phải chuột</TD>
+<TD>numpadMultiply</TD>
+<TD>NVDA+rightArrow</TD>
+<TD>Nhấn nút phải chuột một lần.</TD>
+</TR>
+<TR>
+<TD>Khoá phím phải chuột</TD>
+<TD>shift+numpadMultiply</TD>
+<TD>NVDA+shift+rightArrow</TD>
+<TD>Khoá nút phải chuột. Nhấn lại lần nữa để mở khoá. Để kéo chuột, nhấn phím này để khoá chuột phải và sau đó di chuyển con chuột hoặc sử dụng một trong những con chuột khác có chỉ định phím lệnh</TD>
+</TR>
+<TR>
+<TD>Di chuyển chuột đến đối tượng điều hướng hiện tại</TD>
+<TD>NVDA+numpadDivide</TD>
+<TD>NVDA+shift+f9</TD>
+<TD>Di chuyển chuột tới vị trí của đối tượng điều hướng hiện tại và con trỏ xem lại</TD>
+</TR>
+<TR>
+<TD>Di chuyển tới đối tượng dưới con trỏ chuột</TD>
+<TD>NVDA+numpadMultiply</TD>
+<TD>NVDA+shift+f10</TD>
+<TD>Thiết lập đối tượng điều hướng tới đối tượng được đặt tại vị trí con trỏ chuột</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc30"></A>
+<H2>7. Chế độ duyệt web</H2>
+<P>
+Các tài liệu chỉ đọc phức tạp như các trang web có thể được duyệt trong NVDA bằng cách sử dụng chế độ duyệt web.
+Hiện nay NVDA sử dụng chế độ duyệt cho việc đọc tài liệu trong Mozilla Firefox, Microsoft Internet Explorer, Google Chrome, Adobe Reader and Adobe Flash.
+</P>
+<P>
+Ở chế độ duyệt web, nội dung của tài liệu được làm sẵn theo một đại diện phẳng mà nó có thể được di chuyển bằng các phím mũi tên như thể nó là một tài liệu văn bản bình thường.
+Tất cả các phím lệnh dấu nháy hệ thống của NVDA không hoạt động trong chế độ này; ví dụ nói tất cả, thông báo định dạng, phím di chuyển trong bảng 
+Thông tin chẳng hạn như xem văn bản là một liên kết, tiêu đề được thông báo cùng với văn bản khi bạn di chuyển.
+</P>
+<P>
+Đôi khi bạn cần tương tác trực tiếp với các điều khiển trong các tài liệu này. Bạn có thể làm điều này bằng cách chuyển sang chể độ con trỏ, tất cả các phím đều được đi tới các điều khiển.
+Khi đang ở chế độ duyệt, mặc định NVDA sẽ tự động bật sang chế độ con trỏ nếu bạn tab hoặc nhấn vào một điều khiển cụ thể mà yêu cầu nó.
+Ngược lại, việc tab tới hoặc nhấn vào một điều khiển mà không yêu cầu chế độ con trỏ sẽ chuyển về chế độ duyệt. Bạn cũng có thể nhấn phím enter hoặc phím space để chuyển đến chế độ con trỏ.Nhấn thoát sẽ chuyển về chế độ duyệt nếu đang ở chế độ con trỏ. Ngoài ra, bạn có thể chuyển qua chế độ con trỏ bằng tay, và lúc này NVDA sẽ khoá chế độ tự động trừ phi bạn tự thay đổi qua chế độ duyệt.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Chức năng</TH>
+<TH>Phím</TH>
+<TH>mô tả</TH>
+</TR>
+<TR>
+<TD>Bật tắt chế độ duyệt / con trỏ</TD>
+<TD>NVDA+space</TD>
+<TD>Chuyển đổi qua lại giữa chế độ duyệt và chế độ con trỏ</TD>
+</TR>
+<TR>
+<TD>Thoát chế độ con trỏ</TD>
+<TD>escape</TD>
+<TD>chuyển về chế độ duyệt nếu đang bật tự động chế độ con trỏ</TD>
+</TR>
+<TR>
+<TD>Làm mới tài liệu ở chế độ duyệt</TD>
+<TD>NVDA+f5</TD>
+<TD>Tải lại nội dung tài liệu hiện tại (Điều này có ích trong trường hợp nội dung bị lỗi)</TD>
+</TR>
+<TR>
+<TD>Tìm</TD>
+<TD>NVDA+control+f</TD>
+<TD>Hiển thị hộp thoại cho phép bạn gõ chuỗi ký tự cần tìm trong tài liệu hiện hành</TD>
+</TR>
+<TR>
+<TD>Tìm tiếp theo</TD>
+<TD>NVDA+f3</TD>
+<TD>Tìm thấy sự xuất hiện tiếp theo của chuỗi ký tự trong tài liệu văn bản mà bạn đã tìm thấy trước đó</TD>
+</TR>
+<TR>
+<TD>Tìm trước đó</TD>
+<TD>NVDA+shift+f3</TD>
+<TD>Tìm thấy sự xuất hiện trước đó của chuỗi ký tự trong tài liệu văn bản mà bạn đã tìm thấy trước đó</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc31"></A>
+<H3>7.1. Điều hướng bằng phím ký tự</H3>
+<P>
+Trong chế độ duyệt web, để di chuyển nhanh hơn, NVDA cung cấp các phím ký tự để chuyển đến các trường trong tài liệu văn bản.
+</P>
+<P>
+Khi nhấn Các phím ký tự sau đây sẽ di chuyển đến phần tử có sẵn kế tiếp, nếu nhấn kèm theo phím shift sẽ di chuyển đến các phần tử trước đó: 
+</P>
+<UL>
+<LI>h: tiêu đề
+<LI>l: danh sách
+<LI>i: hạng mục danh sách
+<LI>t: bảng
+<LI>k: liên kết
+<LI>n: văn bản 
+<LI>f: form field
+<LI>u: liên kết bình thường
+<LI>v: liên kết đã click
+<LI>e: trường chỉnh sửa
+<LI>b: nút 
+<LI>x: hộp kiểm
+<LI>c: hộp chọn danh sách
+<LI>r: nút radio
+<LI>q: khối trích dẫn
+<LI>s: dấu phân cách
+<LI>m: khung
+<LI>g: đồ hoạ
+<LI>d: ARIA landmark
+<LI>o: đối tượng nhúng
+<LI>1 to 6: thứ tự tiêu đề từ 1 đến 6 
+</UL>
+
+<P></P>
+<A NAME="toc32"></A>
+<H3>7.2. Danh sách các phần tử</H3>
+<P>
+Danh sách các phần tử cung cấp việc truy cập đến danh sách của các liên kết, tiêu đề hoặc các ARIA landmarks trong tài liệu.
+Nút radio cho phép bạn chuyển đổi giữa ba loại thông tin này.
+Trường chỉnh sửa trong hộp thoại cho phép bạn lọc danh sách để giúp bạn tìm kiếm hạng mục cụ thể trên trang.
+Một khi bạn đã lựa chọn một mục, bạn có thể sử dụng các nút đã được cung cấp trong hộp thoại để di chuyển đến, hoặc kích hoạt hạng mục đó.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Chức năng</TH>
+<TH>Phím</TH>
+<TH>Mô tả</TH>
+</TR>
+<TR>
+<TD>Danh sách các phần tử trong chế độ duyệt</TD>
+<TD>NVDA+f7</TD>
+<TD>Trả về danh sách các phần tử torng đó có chứa các liên kết, tiêu đề, và địa danh từ tài liệu hiện tại</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc33"></A>
+<H3>7.3. Đối tượng nhúng</H3>
+<P>
+Đối với những trang có nội dung phong phú sử dụng công nghệ Adobe Flash and Sun Java, khi xuất hiện trong chế độ duyệt web, thì NVDA sẽ thông báo như là "đối tượng nhúng".
+Bạn có thể nhấh phím enter để tương tác vối các đối tượng này.
+Nếu nó có thể truy cập, bạn có thể tab xung quanh nó và tương tác với nó giống như bất kỳ ứng dụng khác. 
+Sau đây là một phím lệnh được hỗ trợ để trở về trang gốc có chứa các đối tượng nhúng:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Chức năng</TH>
+<TH>Phím</TH>
+<TH>Mô tả</TH>
+</TR>
+<TR>
+<TD>Di chuyển đến tài liệu bao gồm chế độ duyệt</TD>
+<TD>NVDA+control+space</TD>
+<TD>Di chuyển con trỏ ra khỏi đối tượng nhúng hiện tại và chuyển đến tài liệu chứa nó.</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc34"></A>
+<H2>8. Cấu hình NVDA</H2>
+<A NAME="toc35"></A>
+<H3>8.1. Mục ưa thích</H3>
+<P>
+Hầu hết các thiết lập NVDA có thể được thay đổi bằng cách sử dụng hộp thoại truy cập thông qua menu con Preference của trình đơn NVDA. Trong tất cả các hộp thoại thiết lập NVDA, bấm nút OK để chấp nhận bất kỳ thay đổi bạn đã thực hiện. Để hủy bỏ bất kỳ thay đổi, nhấn nút Cancel hoặc phím thoát. Một số thiết lập cũng có thể được thay đổi bằng cách sử dụng phím tắt được liệt kê trong các phần dưới đây.
+</P>
+<A NAME="toc36"></A>
+<H4>8.1.1. Các thiết lập chung (NVDA+control+g)</H4>
+<P>
+Có thể tìm thấy hộp thoại thiết lập chung trên trình đơn Preferences.
+Nó bao gồm các tùy chọn sau:
+</P>
+<H5>Ngôn ngữ</H5>
+<P>
+Một hộp danh sách cho phép bạn chọn lựa ngôn ngữ hiển thị giao diện người dùng NVDA và thông điệp.
+Có rất nhiều ngôn ngữ để lựa chọn, tuy nhiên mặc định tùy chọn là ""User Default, Windows".
+Tùy chọn này bảo NVDA sử dụng ngôn ngữ mà hệ điều hành windows đang sử dụng.
+</P>
+<P>
+Lưu ý việc thay đổi ngôn ngữ yêu cầu phải khởi động lại NVDA.
+NVDA sẽ hỏi bạn có muốn khởi động hay không sau khi bạn đã thay đổi các lựa chọn.
+Nhấn ok, và NVDA sẽ khởi động lại.
+</P>
+<H5>Lưu cấu hình và Thoát</H5>
+<P>
+Tùy chọn này là một hộp kiểm checkbox, khi được check, NVDA sẽ tự động lưu cấu hình hiện tại khi bạn thoát.
+</P>
+<H5>Cảnh báo trước khi thoát khỏi NVDA</H5>
+<P>
+Tùy chọn này là một hộp kiểm cho phép bạn lựa chọn có hoặc không có hộp thoại sẽ xuất hiện khi bạn thoát khỏi NVDA nó sẽ hỏi bạn muốn thoát ra hay không. Khi được check, một hộp thoại sẽ xuất hiện hỏi bạn có muốn thoát khỏi NVDA hay không.
+</P>
+<H5>Mức đăng nhập</H5>
+<P>
+Đây là một hộp danh sách cho phép bạn lựa chọn bao nhiêu người dùng NVDA sẽ đăng nhập khi chương trình đang chạy. Thông thường người dùng không cần dùng chức năng này để được đăng nhập. Tuy nhiên nếu bạn muốn cung cấp thông tin về lỗi chương trình, thì đây có thể là một lựa chọn hữu ích.
+</P>
+<H5>Tự động khởi động NVDA sau khi đăng nhập windows</H5>
+<P>
+Nếu tùy chọn này được kích hoạt, NVDA sẽ bắt đầu tự động ngay sau khi bạn đăng nhập vào Windows. Tùy chọn này chỉ có sẵn cho bản cài đặt của NVDA.
+</P>
+<H5>Sử dụng NVDA trên cửa sổ màn hình đăng nhập (yêu cầu quyền quản trị)</H5>
+<P>
+Nếu bạn đăng nhập vào Windows bằng tên người dùng và mật khẩu, sau đó cho kích hoạt chức năng này sẽ làm cho NVDA bắt đầu tự động ở màn hình đăng nhập khi Windows khởi động. Tùy chọn này chỉ có sẵn cho bản cài đặt của NVDA.
+</P>
+<H5>Sử dụng việc lưu các thiết lập hiện tại trên màn hình đăng nhập và các màn hình an toàn khác</H5>
+<P>
+Nhấn nút này sẽ sao chép cấu hình hiện tại bạn đã lưu tới thư mục cấu hình hệ thống của NVDA, để NVDA sẽ sử dụng nó khi chạy trên các màn hình đăng nhập, User Account Control (UAC) và các màn hình an toàn khác. Để chắc chắn rằng tất cả các thiết lập được chuyển giao, đảm bảo trước hết lưu cấu hình của bạn với control + NVDA c + hoặc lưu cấu hình trong trình đơn NVDA. Tùy chọn này chỉ có sẵn cho bản cài đặt của NVDA.
+</P>
+<A NAME="toc37"></A>
+<H4>8.1.2. Lựa chọn bộ tổng hợp (NVDA+control+s)</H4>
+<P>
+Có thể tìm thấy bộ tổng hợp trong menu ưa thích, cho phép bạn lựa chọn bộ tổng hợp âm thanh.
+Khi bạn lựa chọn xong bộ tổng hợp nào, nhấn OK và NVDA sẽ tải lên bộ tổng hợp mà bạn vừa chọn.
+Nếu có lỗi trong quá trình tải bộ tổng hợp, NVDA sẽ gửi thông điệp thông báo, và tiếp tục sử dụng bộ tổng hợp đã chọn trước đó.
+</P>
+<H5>Bộ tổng hợp</H5>
+<P>
+Tùy chọn này cho phép bạn chọn lựa bộ tổng hợp mà bạn ưa thích.
+</P>
+<P>
+NVDA hỗ trợ danh sách bộ tổng hợp âm, để xem chi tiết vui lòng tham khảo phần <A HREF="#SupportedSpeechSynths">Hỗ trợ bộ tổng hợp âm</A>.
+Có một hạng mục đặc biệt luôn xuất hiện trong phần danh sách này là "Không đọc", cho phép bạn sử dụng nvda mà không cần âm thanh.
+Điều này hữu ích cho những người muốn dùng NVDA với màn hình chữ nổi, hoặc cho những nhà lập trình viên sáng sử dụng trình duyệt âm thanh.
+</P>
+<H5>Thiết bị xuất</H5>
+<P>
+Tuỳ chọn này cho phép bạn lựa chọn card âm thanh mà NVDA chỉ định dùng cho bộ tổng hợp âm
+</P>
+<A NAME="VoiceSettings"></A>
+<H4>8.1.3. Cài đặt giọng nói (NVDA+control+v)</H4>
+<P>
+Có thể tìm thấy hộp thoại cài đặt giọng nói trong menu ưa thích, tuỳ chọn này cho phép bạn thay đổi âm thanh của bộ đọc.
+Để truy cập nhanh các tham số điều khiển của giọng đọc, vui lòng xem phần <A HREF="#SynthSettingsRing">Chu kỳ thiết lập bộ đọc</A>.
+</P>
+<P>
+Hộp thoại cài đặt giọng đọc có các tuỳ chọn theo sau:
+</P>
+<H5>Giọng</H5>
+<P>
+Tuỳ chọn đầu tiên mà bạn đi đến trong hộp thoại này là một hộp danh sách liệt kê tất cả các giọng đọc của bộ tổng hợp âm mà bạn đã cài đặt.Bạn có thể dùng các phím mũi tên di chuyển để nghe tất cả các lựa chọn khác nhau.
+Phím mũi tên trái và mũi tên lên sẽ đưa bạn lên trên danh sách, còn phím mũi tên phải và phím mũi tên xuống sẽ di chuyển bạn xuống dưới danh sách.
+</P>
+<P>
+==== bỘ biến thể ===
+Nếu bạn sử dụng bộ tổng hợp âm Espeak được đóng gói kèm với NVDA, thì đây là hộp danh sách mà bạn có thể chọn lựa bộ biến thể cho bộ tổng hợp âm. Bộ biến thể Espeak có phần giống như giọng đọc, như thể họ cung cấp các thuộc tính hơi khác đến giọng đọc espeak.
+Một vài bộ biến thể có âm thanh giống như giọng nam, một số khác giống như giọng nữ, thậm chí có một số giống giọc con ếch.
+</P>
+<H5>Tốc độ</H5>
+<P>
+Tuỳ chọn này cho phép bạn thay đổi tốc độ của giọng đọc.
+Đây là một thanh trượt có giá trị từ 1 đến 100, (0 là tốc độ chậm nhất, 100 là tốc độ nhanh nhất).
+</P>
+<H5>Cao độ</H5>
+<P>
+Tuỳ chọn này cho phép bạn thay đổi cao độ của giọng đọc.
+Đây là một thanh trượt có giá trị từ 1 đến 100, (0 là cao độ thấp nhất, 100 là cao độ cao nhất).
+</P>
+<H5>Âm lượng</H5>
+<P>
+Tuỳ chọn này là một thanh trượt đi từ 0 đến 100, (0 là âm lượng nhỏ nhất, 100 là âm lượng to nhất).
+</P>
+<H5>Biến điệu</H5>
+<P>
+Tuỳ chọn này là một thanh trượt cho phép bạn chọn lựa biến điệu bộ tổng hợp âm thanh (điều chỉnh cao độ lên hay xuống).
+(Hiên tại tuỳ chọn này chỉ hỗ trợ duy nhất cho bộ tổng hợp espeak).
+</P>
+<H5>Mức độ Dấu câu/Ký hiệu</H5>
+<P>
+Key: NVDA+p
+</P>
+<P>
+Tuỳ chọn này cho phép bạn lựa chọn đọc tất cả các dấu câu và các ký hiệu.
+Ví dụ, khi chọn tất cả, tất cả các ký hiệu sẽ được đọc như là một từ.
+</P>
+<H5>Tăng cao độ cho những ký tự hoa</H5>
+<P>
+Nếu chọn thiết lập này sẽ tăng cao độ cho những ký tự hoa.
+</P>
+<H5>Nói "HOA" trước những ký tự hoa</H5>
+<P>
+Khi chọn thiết lập này, NVDA sẽ nói "HOA" trước những ký tự hoa, khi di chuyển xung quanh nó, hoặc sẽ nói khi gõ. Thông thường NVDA sẽ tăng nhẹ cao độ cho bất kỳ ký tự hoa nào, tuy nhiên một vài bộ đọc không hỗ trợ tốt chức năng này, do đó cần phải sử dụng tuỳ chọn này.
+</P>
+<H5>Bíp cho ký tự hoa</H5>
+<P>
+Nếu chọn thiết lập này, NVDA sẽ phát ra tiếng bíp khi gặp ký tự hoa. Giống như thiết lập "nói hoa cho ký tự hoa", chức năng này hữu ích cho bộ tổng hợp nào không thể thay đổi độ cao cho những ký tự hoa.
+</P>
+<A NAME="SynthSettingsRing"></A>
+<H4>8.1.4. Chu kỳ thiết lập bộ đọc</H4>
+<P>
+Nếu bạn muốn thay đổi nhanh thiết lập giọng đọc mà không cần đi đến hộp thoại thiết lập giọng đọc, NVDA hỗ trợ một số phím tắt cho phép bạn thay đổi hầu hết các thiết lập giọng đọc bất cứ nơi nào khi đang chạy NVDA:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Chức năng</TH>
+<TH>Phím trên máy bàn</TH>
+<TH>Phím trên máy xách tay</TH>
+<TH>Mô tả</TH>
+</TR>
+<TR>
+<TD>Chuyển đến phần thiết lập kế tiếp</TD>
+<TD>NVDA+control+rightArrow</TD>
+<TD>NVDA+control+rightArrow</TD>
+<TD>Di chuyển đến phần thiết lập có sẵn kế tiếp sau phần hiện tại, đi xung quanh đến phần thiết lập đầu tiên sau phần cuối cùng</TD>
+</TR>
+<TR>
+<TD>Chuyển đến phần thiết lập trước đó</TD>
+<TD>NVDA+control+leftArrow</TD>
+<TD>NVDA+control+leftArrow</TD>
+<TD>Di chuyển đến phần thiết lập có sẵn kế tiếp trước phần hiện tại, đi xung quanh đến phần thiết lập cuối cùng sau phần đầu tiên</TD>
+</TR>
+<TR>
+<TD>Tăng phần thiết lập hiện tại</TD>
+<TD>NVDA+control+upArrow</TD>
+<TD>NVDA+control+upArrow</TD>
+<TD>Tăng phần thiết lập giọng đọc hiện tại. Ví dụ tăng tốc độ, chọn giọng đọc kế tiếp, tăng âm lượng</TD>
+</TR>
+<TR>
+<TD>Giảm phần thiết lập hiện tại</TD>
+<TD>NVDA+control+downArrow</TD>
+<TD>NVDA+control+downArrow</TD>
+<TD>Giảm phần thiết lập giọng đọc hiện tại.</TD>
+</TR>
+</TABLE>
+
+<P>
+Ví dụ giảm tốc độ, chọn giọng đọc trước đó, giảm âm lượng |
+</P>
+<A NAME="toc40"></A>
+<H4>8.1.5. Thiết lập màn hình chữ nổi</H4>
+<P>
+Có thể tìm thấy chức năng này trong menu ưa thích, sau đó tuỳ chọn thiết lập màn hình chữ nổi, hộp thoại thiết lập màn hình chữ nổi sẽ xuất hiện.
+</P>
+<H5>Màn hình chữ nổi</H5>
+<P>
+Tuỳ chọn đầu tiên bạn sẽ đi đến trong hộp thoại thiết lập màn hình chữ nổi là hộp danh sách nói"màn hình chữ nổi".
+Bạn sẽ thấy một vài lựa chọn tuỳ thuộc vào trình điều khiển màn hình chữ nổi có sẵn trên hệ thống của bạn. Dùng các phím mũi tên để di chuyển giữa các lựa chọn này.
+</P>
+<P>
+Không màn hình chữ nổi nghĩa là bạn không sử dụng màn hình chữ nổi.
+</P>
+<P>
+Để biết thêm chi tiết về màn hình chữ nổi vui lòng xem phần <A HREF="#SupportedBrailleDisplays">Hỗ trợ màn hình chữ nổi</A>
+</P>
+<H5>Bảng chuyển dịch</H5>
+<P>
+Tuỳ chọn kế tiếp bạn sẽ đến là hộp danh sách bảng chuyển dịch.
+Trong hộp danh sách này, bạn sẽ tìm thấy những bảng chữ nổi cho nhiều ngôn ngữ khách nhau. Bạn có thể dùng các phím mũi tên để di chuyển từ bảng chữ nổi này đến bảng chữ nổi khác.
+</P>
+<H5>Mở rộng cho bảng mã máy tính chữ nổi đối với những từ tại vị trí con trỏ</H5>
+<P>
+Tuỳ chọn này sẽ hiển thị những từ tại vị trí con trỏ ở dạng mã máy tính chữ nổi đủ.
+</P>
+<H5>Tốc độ nháy của con trỏ</H5>
+<P>
+Tuỳ chọn này là một trường số cho phép bạn thay đổi tốc độ nháy của con trỏ lên đến một phần nghìn giây.
+</P>
+<H5>Thời gian hiển thị thông điệp (giây)</H5>
+<P>
+Tuỳ chọn này là một trường số cho phép bạn thiết lập thời gian hiển thị thông điệp trên màn hình chữ nổi.
+</P>
+<H5>Điều khiển màn hình chữ nổi</H5>
+<P>
+Key: NVDA+control+t
+</P>
+<P>
+Tuỳ chọn này cho phép bạn lựa chọn hoặc là màn hình chữ nổi sẽ theo sau con trỏ hệ thống, hoặc là nó sẽ theo sau đối tượng điều hướng hay con trỏ xem lại.
+</P>
+<A NAME="toc41"></A>
+<H4>8.1.6. Thiết lập bàn phím (NVDA+control+k)</H4>
+<P>
+Tuỳ chọn này có thể tìm thấy trong trình đơn ưa thích, ở mục " thiết lập bàn phím ...".
+Mục này có các tuỳ chọn sau đây:
+</P>
+<H5>Giao diện bàn phím</H5>
+<P>
+Tuỳ chọn này cho phép bạn lựa chọn kiểu bố trí giao diện bàn phím mà NVDA nên dùng. Hiện tại có 2 kiểu giao diện đó là kiểu máy tính bàn và kiểu máy tính xách tay.
+</P>
+<H5>Dùng phím Hoa như là phím bổ trợ NVDA</H5>
+<P>
+Nếu chọn chức năng này, phím báo Hoa sẽ được sử dụng như phím bổ trợ NVDA.
+</P>
+<H5>Dùng phím insert mở rộng như là phím bổ trợ NVDA</H5>
+<P>
+Nếu chọn chức năng này, phím insert mở rộng ( thường nằm ở phía trên các phím mũi tên gần phím home và end) có thể được dùng như phím bổ trợ NVDA.
+</P>
+<H5>Dùng phím insert ở bàn phím số như là phím bổ trợ NVDA</H5>
+<P>
+Nếu chọn chức năng này, phím insert trên bàn phím số có thể được dùng như phím bổ trợ NVDA.
+</P>
+<H5>Đọc các ký tự gõ</H5>
+<P>
+Key: NVDA+2
+</P>
+<P>
+Khi bật chức năng này, NVDA sẽ đọc tất cả các ký tự mà bạn gõ trên bàn phím.
+</P>
+<H5>Đọc các từ gõ</H5>
+<P>
+Key: NVDA+3
+</P>
+<P>
+Khi bật chức năng này, NVDA sẽ đọc tất cả các từ mà bạn gõ trên bàn phím.
+</P>
+<H5>Bíp nếu gõ ký tự thường khi phím báo hoa đang bật</H5>
+<P>
+Khi kích hoạt chức năng này, nó sẽ phát tiếng bíp nếu bạn gõ ký tự đống thời nhấn phím shift trong khi phím báo hoa đang bật.
+When enabled, a warning beep will be heard if a letter is typed with the shift key while caps lock is on. Nói chung, việc gõ ký tự cùng với phím shift và phím báo hoa đang bật là không cố ý và thường không nhận ra phím báo hoa đang kích hoạt. Do đó việc phát ra tiếng bíp cảnh báo rất hữu ích trong trường hợp này.
+</P>
+<H5>Đọc những phím tắt lệnh</H5>
+<P>
+Key: NVDA+4
+</P>
+<P>
+Khi bật chức năng này, NVDA sẽ thông báo tất cả các phím không thuộc phím ký tự khi bạn gõ trên bàn phím. Bao gồm tổ hợp phím ctrl + các phím ký tự khác.
+</P>
+<A NAME="toc42"></A>
+<H4>8.1.7. Thiết lập chuột (NVDA+control+m)</H4>
+<P>
+Hộp thoại thiết lập chuột có thể tìm thấy trên trình đơn ưa thích, ở mục " Thiết lập chuột ...".
+Mục này có các tùy chọn sau đây:
+</P>
+<H5>Thông báo thay đổi kiểu dáng chuột</H5>
+<P>
+Khi check chọn chức năng này, NVDA sẽ thông báo kiểu dáng của con trỏ chuột mỗi khi nó thay đổi.
+ác con trỏ chuột trong Windows thay đổi hình dạng để chuyển tải thông tin nhất định chẳng hạn như khi một cái gì đó là có thể chỉnh sửa, hoặc khi một cái gì đó đang tải.
+</P>
+<H5>Kích hoạt tính năng theo dõi chuột</H5>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>Phím máy tính bàn</TD>
+<TD>NVDA+m</TD>
+</TR>
+<TR>
+<TD>Phím máy xách tay</TD>
+<TD>NVDA+shift+m</TD>
+</TR>
+</TABLE>
+
+<P>
+Khi bật chức năng này, NVDA sẽ thông báo các văn bản hiện đang ở vị trí con trỏ chuột, khi bạn di chuyển nó xung quanh màn hình. Điều này cho phép bạn tìm thấy những thứ trên màn hình, bằng cách di chuyển chuột, thay vì cố gắng để tìm thấy chúng thông qua các đối tượng điều hướng.
+</P>
+<H5>Đọc văn bản theo độ phân giải</H5>
+<P>
+Tùy chọn này cho phép bạn lựa chọn chính xác bao nhiêu đoạn văn bản sẽ được nói nếu bạn thiết lập NVDA thông báo đoạn văn bản dưới con trỏ chuột khi bạn di chuyển.
+Các tùy chọn có thể là ký tự, từ, dòng hay đoạn văn bản.
+</P>
+<H5>Thông báo kiểu đối tượng khi con trỏ chuột đi đến đối tượng</H5>
+<P>
+Nếu bật chức năng này, NVDA sẽ thông báo kiểu đối tượng khi con trỏ chuột di chuyển bên trong đối tượng đó.
+</P>
+<H5>Nghe tọa độ âm thanh khi di chuyển chuột</H5>
+<P>
+Khi bật chức này, NVDA sẽ phát ra tiếng bíp khi di chuyển chuột, để người dùng có thể tương tác tới những nơi mà con trỏ chuột có liên quan đến kích thước màn hình.
+</P>
+<H5>Độ sáng điều khiển âm lượng tọa độ âm thanh</H5>
+<P>
+Nếu chức năng 'nghe tọa độ âm thanh khi di chuyển chuột' đang được bật, và tiếp theo kích hoạt tính năng này, điều đó có nghĩa là tiếng bíp âm lượng của tọa độ âm thanh được kiểm soát bởi độ sáng màn hình dưới con trỏ chuột.
+Mặc định chức năng này không được kích hoạt.
+</P>
+<A NAME="toc43"></A>
+<H4>8.1.8. Thiết lập con trỏ xem lại</H4>
+<P>
+Có thể tìm thấy chức năng này trong trình đơn ưa nhìn, trong mục xon trỏ xem lại ...
+Hộp thoại này có các tùy chọn sau đây:
+</P>
+<H5>Đi theo con trỏ hệ thống</H5>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>Phím máy tính bàn</TD>
+<TD>NVDA+7</TD>
+</TR>
+<TR>
+<TD>Phím máy tính xách tay</TD>
+<TD>NVDA+control+7</TD>
+</TR>
+</TABLE>
+
+<P>
+Khi bật tính năng này, con trỏ xem lại sẽ được đặt trong cùng đối tượng như con trỏ hệ thống hiện tại khi nó thay đổi.
+</P>
+<H5>Đi theo dấu nháy hệ thống</H5>
+<P>
+Key: NVDA+6
+</P>
+<P>
+Khi bật tính năng này, con trỏ xem lại sẽ được di chuyển đến vị trí của dấu nháy hệt thống mỗi khi nó di chuyển.
+</P>
+<H5>Đi theo con trỏ chuột</H5>
+<P>
+Khi bật tính năng này, con trỏ xem lại sẽ luôn theo sau con con trỏ chuột khi nó di chuyển.
+</P>
+<H5>Chế độ xem đơn giản</H5>
+<P>
+Khi bật tính năng này, NVDA sẽ lọc ra cấp bậc của các đối tượng có thể điều hướng, nhằm loại trừ những đối tượng không sử dụng.
+</P>
+<A NAME="toc44"></A>
+<H4>8.1.9. Thiết lập trình bày đối tượng (NVDA+control+o)</H4>
+<P>
+Có thể tìm thấy chức năng này trong trình đơn ưa nhìn, trong mục " Trình bày đối tượng...".
+Hộp thoại này có các tùy chọn theo sau:
+</P>
+<H5>Thông báo có chú thích</H5>
+<P>
+Khi kích hoạt tính năng này, NVDA sẽ được thông báo mỗi khi xuất hiện dòng chú thích.
+Có nhiều cửa sổ và nhiều điều khiển hiển thị thông điệp ngắn (dòng chú thích hướng dẫn) khi bạn di chuyển con trỏ chuột lên chúng, hoặc đôi khi bạn di chuyển con trỏ đến chúng.
+</P>
+<H5>Thông báo giúp đỡ dạng Balloon</H5>
+<P>
+Khi kích hoạt tính năng này, NVDA sẽ được thông báo mỗi khi xuất hiện giúp đỡ dạng balloon
+This checkbox when checked tells NVDA to announce help balloons as they appear.
+Trợ giúp dạng balloon cũng giống như dòng chú thích, nhưng thường nó có kích cỡ lơn hơn, và chúng thường tương thích với các sự kiện hệ thống khi không cắm cáp mạng, hoặc cảnh báo về các vấn đề liên quan đến phần bảo mật windows.
+</P>
+<H5>Thông báo phím tắt đối tượng</H5>
+<P>
+Khi bật tính năng này, NVDA sẽ bao gồm các phím tắt có tương thích với một đối tượng nhất định hoặc bộ điều khiển khi nó được thông báo.
+Ví dụ Menu tập tin trên thanh menu  có một phím tắt là alt+f.
+</P>
+<H5>Thông báo thông tin vị trí đối tượng</H5>
+<P>
+Tùy chọn này cho phép bạn chọn có thông báo hay không vị trí đối tượng khi di chuyển đến đối tượng với con trỏ hoặc đối tượng điều hướng.
+</P>
+<H5>Đoán thông tin Vị trí đối tượng khi không có sẵn</H5>
+<P>
+Nếu báo cáo thông tin vị trí của đối tượng được bật, tùy chọn này cho phép NVDA đoán thông tin vị trí đối tượng khi nó   không có sẵn cho một điều khiển riêng biệt.
+Khi về, NVDA sẽ thông báo thông tin vị trí cho các điều khiển khác như các menu và thanh công cụ, tuy nhiên thông tin này có thể không chính xác.
+</P>
+<H5>Thông báo các mô tả đối tượng</H5>
+<P>
+Nếu bạn cảm thấy không cần nghe các mô tả cùng với đối tượng thì vui lòng bỏ chọn hộp kiểm này.
+</P>
+<H5>Xuất ra thanh tiến trình</H5>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>Phím trên máy bàn</TD>
+<TD>NVDA+u</TD>
+</TR>
+<TR>
+<TD>Phím trên máy xách tay</TD>
+<TD>NVDA+control+f2</TD>
+</TR>
+</TABLE>
+
+<P>
+Tùy chọn này điều khiển làm thế nào NVDA thông báo cập nhật thanh tiến trình cho bạn.
+</P>
+<P>
+Có các tuỳ chọn theo sau:
+</P>
+<UL>
+<LI>Tắt: Thanh tiến trình sẽ không thông báo khi chúng thay đổi.
+<LI>Nói: NVDA sẽ nói thanh tiến trình tải được bao nhiêu phần trăm. Mỗi khi thanh tiến trình thay đổi, nvda sẽ nói một giá trị mới.
+<LI>Bíp: NVDA sẽ phát ra tiếng bíp mỗi khi thanh tiến trình thay đổi. Tiếng bíp càng to nghĩa là thanh tiếng trình sắp hoàn thành.
+<LI>Bíp và nói: Khi chọn chức năng này nvda sẽ vừa nói vừa phát ra tiếng bíp khi thanh tiến trình cập nhật.
+</UL>
+
+<P></P>
+<H5>Thông báo thanh tiến trình khi chạy nền ( background)</H5>
+<P>
+Khi chọn chức năng này, nvda vẫn tiếp tục thông báo thanh tiến trình cho dù nó đang chạy dưới background.
+Nếu bạn thu nhỏ hoặc chuyển ra khỏi cửa sổ có chứa thanh tiến trình, thì nvda vẫn theo dõi nó, nó cho phép bạn làm những việc khác trong khi nvda vẫn theo dõi thanh tiến trình.
+</P>
+<H5>Báo cáo thay đổi nội dung động</H5>
+<P>
+Key: NVDA+5
+</P>
+<P>
+Bật tắt thông báo khi có nội dung mới đối với những đối tượng đặc thù như là thiết bị đầu cuối và quản lý lược sử trong các chương trình chat.
+</P>
+<A NAME="toc45"></A>
+<H4>8.1.10. Thiết lập chế độ duyệt web (NVDA+control+b)</H4>
+<P>
+Có thể tìm thấy tính năng này trong menu Preferences, mục "Chế độ duyệt ...".
+</P>
+<P>
+Mục này bao gồm các tuỳ chọn sau:
+</P>
+<H5>Số ký tự tối đa trên một dòng</H5>
+<P>
+Trường này cho phép bạn thiết lập chiều dài tối đa của một dòng trên chế độ duyệt web bằng ký tự.
+</P>
+<H5>Số dòng tối đa trên một trang</H5>
+<P>
+Trường này cho phép bạn thiết lập tổng số dòng bạn sẽ di chuyển khi nhấn phím trang trước hoặc trang sau trong khi đang duyệt web.
+</P>
+<H5>Sử dụng màn hình bố trí</H5>
+<P>
+Key: NVDA+v
+</P>
+<P>
+Tùy chọn này cho phép bạn xác định xem nội dung trong trình duyệt như là các liên kết, các trường nên đặt trên một dòng riêng của chúng, hay là nên giữ chúng trên cùng dòng của văn bản như thể nó được hiển thị trực quan. Nếu tùy chọn được kích hoạt nghĩa là mọi thứ sẽ được giữ lại như chúng được hiển thị trực quan, nhưng nếu nó không được kích hoạt thì các trường sẽ được đặt trên một dòng riêng của chúng.
+</P>
+<H5>Báo cáo những bảng được bố trí</H5>
+<P>
+Khi vô hiệu hoá tuỳ chọn này sẽ làm cho NVDA chỉ báo cáo những bảng có chưa dữ liệu dạng bảng (ở những vị trí mà người dùng sẽ dễ nhận biết đây là bảng). Nhưng khi được kích hoạt, NVDA cũng sẽ báo cáo những bảng được sử dụng hoàn toàn trực quan.
+</P>
+<H5>Cấu hình thông báo của các trường như là các liên kết, các tiêu đề</H5>
+<P>
+Vui lòng xem tuỳ chọn này trong phần <A HREF="#DocumentFormattingSettings">Hộp thoại thiết lập đinh dạng tài liệu</A> để cấu hình những trường cần nói khi di chuyển, như là các liên kết, các tiêu đề và các bảng.
+</P>
+<H5>Chế độ con trỏ tự động thay đổi cho con trỏ</H5>
+<P>
+Tuỳ chọn này cho phép chế độ con trỏ sẽ được bật khi con trỏ thay đổi.
+Ví dụ, khi đang ở trang web, nếu bạn nhấn phím tab vào một form, nếu tuỳ chọn này đang được bật, thì chế độ con trỏ sẽ tự động được bật.
+</P>
+<H5>Chế độ con trỏ tự động cho hoạt động dấu nháy</H5>
+<P>
+Khi kích hoạt tuỳ chọn này sẽ cho phép NVDA ra vào chế độ con trỏ khi sử dụng các phím mũi tên.
+Ví dụ, khi nhấn phím mũi tên xuống duyệt web và gặp hộp thoại chỉnh sửa, NVDA sẽ tự động chuyển sang chế độ con trỏ. Nếu bạn di chuyển ra ngoài hộp chỉnh sửa, NVDA sẽ quay lại chế độ duyệt web.
+</P>
+<H5>Âm thanh chỉ dẫn của con trỏ và chế độ Duyệt</H5>
+<P>
+Nếu tùy chọn này được kích hoạt, NVDA sẽ chơi âm thanh đặc biệt khi nó chuyển đổi giữa chế độ duyệt web và chế độ con trỏ hơn là nói thay đổi.
+</P>
+<A NAME="DocumentFormattingSettings"></A>
+<H4>8.1.11. Thiết lập tài liệu định dạng (NVDA+control+d)</H4>
+<P>
+Hộp thoại này được tìm thấy trong menu Preferences, trong mục "tài liệu định dạng ...".
+</P>
+<P>
+Hầu hết các hộp kiểm trong hộp thoại này là để cấu hình những loại định dạng bạn muốn nghe tự động khi bạn di chuyển con trỏ trên tài liệu. Ví dụ, nếu bạn kiểm tra hộp kiểm báo cáo tên font chữ, mỗi lần bạn mũi tên vào văn bản với một phông chữ khác nhau, tên của font sẽ được thông báo.
+</P>
+<P>
+Bạn có thể cấu hình thông báo:
+</P>
+<UL>
+<LI>tên font
+<LI>kích thước phông chữ
+<LI>thuộc tính phông chữ
+<LI>canh chỉnh văn bản
+<LI>Màu sắc
+<LI>phong cách văn bản
+<LI>lỗi chính tả
+<LI>số trang
+<LI>số dòng
+<LI>bảng
+<LI>bảng hàng / cột tiêu đề
+<LI>liên kết
+<LI>tiêu đề
+<LI>danh sách
+<LI>khối trích dẫn
+<LI>Các điểm mốc 
+</UL>
+
+<P></P>
+<H5>Thông báo định dạng thay đổi sau con trỏ</H5>
+<P>
+Nếu kích hoạt, thiết lập này sẽ cho phép NVDA thử dò tìm tất cả những định dạng thay đổi trên một dòng như nó nói chính nó, ngay cả khi thực hiện việc này có thể làm chậm hiệu suất của NVDA.
+</P>
+<P>
+Theo mặc định, NVDA sẽ dò tìm các định dạng ở vị trí của dấu nháy hệ thống hoặc con trỏ xem lại, và trong một số trường hợp có thể dò tìm định dạng trên phần còn lại của dòng, chỉ khi nó không gây ra sự giảm hiệu suất.
+</P>
+<P>
+Kích hoạt tùy chọn này trong khi đọc tài liệu chứng minh trong các ứng dụng như Microsoft Word, nơi mà định dạng là quan trọng.
+</P>
+<A NAME="toc47"></A>
+<H4>8.1.12. Từ điển phát âm</H4>
+<P>
+Menu các từ điển phát âm (tìm thấy trong trình đơn Preferences) có chứa các hộp thoại cho phép bạn quản lý cách NVDA phát âm một từ hoặc cụm từ đặc biệt. Hiện tại có ba loại khác nhau của các từ điển. 
+Đó là:
+They are:
+</P>
+<UL>
+<LI>Mặc định: các quy tắc trong từ điển này ảnh hưởng đến tất cả các phát âm tại NVDA.
+<LI>Giọng: các quy tắc trong từ điển này ảnh hưởng đến cách phát âm cho bộ tổng hợp giọng nói hiện đang được sử dụng.
+<LI>Tạm thời: các quy tắc trong từ điển này ảnh hưởng đến tất cả các phát âm tại NVDA, nhưng chỉ cho ứng dụng đang chạy hiện tại. Những quy định này là tạm thời và sẽ bị mất nếu NVDA được khởi động lại. 
+</UL>
+
+<P></P>
+<P>
+Tất cả các hộp thoại từ điển đều có danh sách các quy tắc mà chúng sẽ được dùng để thực thi các phát âm. Hộp thoại này cũng có các nút như Thêm, chỉnh sửa và loại bỏ.
+</P>
+<P>
+Để thêm một quy tắc mới vào từ điển, bấm vào nút Thêm, và điền vào các trường trong hộp thoại và sau đó nhấn Ok. Bạn sẽ thấy quy tắc mới của bạn trong danh sách. Tuy nhiên để đảm bảo quy tắc của bạn đã thực sự được lưu, hãy chắc chắn là nhấn Ok để thoát khỏi hộp thoại từ điển  một khi bạn đã hoàn tất việc thêm hay chỉnh sửa các quy tắc.
+</P>
+<P>
+Các quy tắc cho từ điển tiếng nói của NVDA cho phép bạn thay đổi một chuỗi ký tự nhau bằng một chuỗi khác. Ví dụ đơn giản là bạn muốn NVDA nói từ ba mỗi khi nó gặp từ bố. Trong hộp thoại thêm quy tắc, cách dễ nhất để làm điều này là gõ từ bố trong trường mẫu, và gõ từ ba trong trường thay thế.loại gia cầm từ trong các trường Hoa văn, và từ con ếch trong lĩnh vực thay thế.
+Bạn cũng có thể thêm phần chú thích cho quy tắc trong trường bình luận ( chẳng hạn như: thay đổi từ bố thành ba).
+</P>
+<P>
+Tuy nhiên từ điển phát âm của NVDA có nhiều chức năng mạnh hơn là thay thế từ đơn giản. Hộp thoại Thêm quy tắc cũng có một hộp kiểm để nói có hoặc không nếu như bạn muốn đặt quy tắc cho trường hợp nhạy cảm (có nghĩa là NVDA nên quan tâm xem các ký tự được viết hoa hay viết thường.Mặc định NVDA sẽ bỏ qua trường hợp này). 
+Một hộp kiểm khách cho phép bạn nói có hay không mẫu từ của bạn là "nhóm từ có quy tắc".
+Một nhóm từ có quy tắc là một nhóm mẫu có chứa các ký hiệu đặc biệt mà nó cho phép bạn dò tìm hơn một ký tự cùng lúc, hoặc dò tìm chỉ các chữ số, hoặc chỉ các ký tự, hay một vài ví dụ. Nhóm từ có quy tắc không được trình bày trong phần hướng dẫn sử dụng, nhưng có nhiều hướng dẫn trên web có thể cung cấp cho bạn thêm thông tin.
+</P>
+<A NAME="toc48"></A>
+<H4>8.1.13. Phát âm Dấu chấm câu / Ký hiệu</H4>
+<P>
+Hộp thoại này cho phép bạn thay đổi cách phát âm dấu chấm câu và các ký hiệu khác, đồng thời mức độ ký hiệu khi chúng được nói.
+</P>
+<P>
+Để thay đổi một ký hiệu, đầu tiên chọn trong danh sách ký hiệu.
+Trường thay thế cho phép bạn thay đổi ký hiệu này thành một đoạn văn bản. Sử dụng trường cấp độ, bạn có thể điều chỉnh mức thấp nhất cho ký hiệu này khi nó được nói.
+When you are finished, press the OK button to save your changes or the Cancel button to discard them.
+</P>
+<A NAME="toc49"></A>
+<H3>8.2. Lưu và tải lại cấu hình</H3>
+<P>
+Theo mặc định NVDA không tự động lưu các thiết lập của bạn, vì vậy nếu bạn thoát khỏi NVDA, và sau đó khởi động lại nó, các thiết lập sẽ trở lại với các giá trị ban đầu. Lưu ý, tuy nhiên, tùy chọn này có thể được thay đổi theo những lựa chọn chung trong trình đơn preferences. Để lưu cài đặt, chọn mục Lưu cấu hình trong trình đơn NVDA.
+</P>
+<P>
+Nếu NVDA được chạy trên một hệ thống tập tin chỉ đọc, như đĩa CD, nó sẽ không thể lưu cài đặt của bạn, và nó sẽ cho bạn biết như vậy.
+</P>
+<P>
+Nếu bạn đã bao giờ phạm sai lầm với các thiết lập của bạn và cần phải quay trở lại các cài đặt đã lưu, chọn "Khôi phục lưu cấu hình" trong trình đơn NVDA.
+</P>
+<P>
+Các phím lệnh sau đây cũng rất hữu ích:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Chức năng</TH>
+<TH>Phím máy tính bàn</TH>
+<TH>Phím máy tính xách tay</TH>
+<TH>Mô tả</TH>
+</TR>
+<TR>
+<TD>Lưu cấu hình</TD>
+<TD>NVDA+control+c</TD>
+<TD>NVDA+control+c</TD>
+<TD>Lưu cấu hình hiện tại để nó không bị mất khi thoát khỏi NVDA</TD>
+</TR>
+<TR>
+<TD>Khôi phục lưu cấu hình</TD>
+<TD>NVDA+control+r</TD>
+<TD>NVDA+control+r</TD>
+<TD>Phục hồi NVDA đến cấu hình đã tồn tại khi bạn lưu lại cấu hình mới nhất của NVDA</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc50"></A>
+<H3>8.3. Cấu hình các tập tin và hồ sơ người dùng</H3>
+<P>
+phiên bản Portable của NVDA lưu trữ tất cả các thiết lập, tùy chỉnh appModules và tùy chỉnh trình điều khiển trong thư mục có tên là userConfig, được tìm thấy trong thư mục NVDA.
+</P>
+<P>
+phiên bản cài đặt của NVDA lưu trữ tất cả các thiết lập, tùy chỉnh appModules và trình điều khiển trong một thư mục NVDA đặc biệt nằm trong hồ sơ người dùng Windows của bạn. Điều này có nghĩa rằng mỗi người sử dụng trên hệ thống có thể có các cài đặt riêng NVDA của họ. Để vào được thư mục cài đặt của bạn cho một phiên bản cài đặt của NVDA, trên menu Start bạn có thể vào chương trình -&gt; NVDA -&gt; tìm thư mục cấu hình người dùng.
+</P>
+<P>
+Việc cài đặt cho NVDA khi chạy trên màn hình đăng nhập hoặc màn hình UAC được lưu trữ trong thư mục systemConfig trong thư mục cài đặt của NVDA. Thông thường, cấu hình này không được đụng vào. Để thay đổi như thế nào NVDA được cấu hình trên màn hình đăng nhập hay màn hình UAC, bạn muốn cấu hình NVDA như thế nào trong khi đăng nhập vào Windows, và sau đó hướng dẫn NVDA để sao chép các cấu hình tới màn hình đăng nhập bằng cách sử dụng các nút trong hộp thoại cài đặt chung.
+</P>
+<A NAME="toc51"></A>
+<H2>9. Công cụ bổ sung</H2>
+<A NAME="toc52"></A>
+<H3>9.1. cửa sở log</H3>
+<P>
+Cửa sổ log được tìm thấy dưới mục công cụ trong menu NVDA, cho phép bạn xem lại tất cả việc nhập xuất xảy ra từ khi bạn mới bắt đầu NVDA cho đến bây giờ.
+</P>
+<P>
+Ngoài việc đọc các nội dung, bạn cũng có thể lưu một bản sao của tập tin log, hoặc tải lại cửa sổ log để nó hiển thị những thông tin đăng xuất gần đây nhất kể từ khi mở cửa sổ log. Những công việc này có sẵn trong menu Log của người xem.
+</P>
+<A NAME="toc53"></A>
+<H3>9.2. Cửa sổ phát âm</H3>
+<P>
+Đối với các nhà phát triển phần mềm hoặc những người mô phỏng NVDA cho khán giả nhìn thấy,thì đây là một cửa sổ nổi có sẵn cho phép bạn xem tất cả các văn bản hiện tại mà NVDA đang nói.
+</P>
+<P>
+Để kích hoạt cửa sổ phát âm, kích vào mục trình đơn "cửa sổ phát âm" dưới mục công cụ trong trình đơn NVDA. Bỏ chọn mục trình đơn để vô hiệu hóa nó.
+</P>
+<P>
+Trong khi cửa sổ phát âm được kích hoạt, nó liên tục cập nhật để hiển thị cho bạn các văn bản hiện hành nhất đang nói. Tuy nhiên, nếu bạn nhấp chuột hoặc đưa con trỏ vào bên trong cửa sổ, NVDA sẽ tạm thời ngừng cập nhật các văn bản, để bạn có thể dễ dàng lựa chọn hoặc sao lại các nội dung hiện có.
+</P>
+<A NAME="toc54"></A>
+<H3>9.3. Python Console</H3>
+<P>
+Các giao diện điều khiển Python NVDA , tìm thấy dưới công cụ trong trình đơn NVDA, là một công cụ phát triển mà có ích để dò tìm lỗi, kiểm tra các phần nội tại bên trong của NVDA, kiểm tra hệ thống phân cấp khả năng truy cập của ứng dụng. 
+Để biết thêm thông tin, xin vui lòng xem <A HREF="http://www.nvda-project.org/wiki/PythonConsole">bài viết Python Console trên trang web NVDA</A>.
+</P>
+<A NAME="toc55"></A>
+<H3>9.4. Tải lại phần phụ trợ</H3>
+<P>
+Một khi mục này được kích hoạt nó sẽ tải lại các mô-đun ứng dụng và các phần bổ sung dùng chung mà không cần khởi động lại NVDA, điều nảy rất hữu ích cho các nhà phát triển.
+</P>
+<A NAME="SupportedSpeechSynths"></A>
+<H2>10. Hỗ trợ bộ tổng hợp âm</H2>
+<P>
+Phần này chứa thông tin về bộ tổng hợp âm được hỗ trợ bởi NVDA.
+</P>
+<A NAME="toc57"></A>
+<H3>10.1. eSpeak</H3>
+<P>
+Bộ tổng hợp <A HREF="http://espeak.sourceforge.net/">eSpeak</A> được xây dựng trực tiếp vào NVDA và không cần bất kỳ trình điều khiển đặc biệt khác hoặc các thành phần được cài đặt.Mặc định NVDA sử dụng Espeak khi chạy . Khi tổng hợp này được xây dựng vào NVDA, đây là một sự lựa chọn tuyệt vời khi chạy NVDA ra một ổ USB hoặc đĩa CD trên các hệ thống khác.
+</P>
+<P>
+Mỗi tiếng nói đi kèm với Espeak đều nói một ngôn ngữ khác nhau. Hiện có hơn 20 ngôn ngữ khác nhau được hỗ trợ bởi Espeak.
+</P>
+<P>
+Ngoài ra còn có nhiều phiên bản có thể được chọn để thay đổi âm thanh của giọng nói.
+</P>
+<A NAME="toc58"></A>
+<H3>10.2. Microsoft Speech API phiên bản 4 (SAPI 4)</H3>
+<P>
+SAPI 4 là một phiên bản cũ hơn của Microsoft thay cho cho phần mềm tổng hợp tiếng nói phần mềm. Nhiều bộ tổng hợp âm đi kèm với tiêu chuẩn này có thể được mua hoặc tải về miễn phí từ các công ty và các trang web khác nhau. Khi sử dụng bộ tổng hợp này với NVDA, những giọng có sẵn (truy cập từ <A HREF="#VoiceSettings">hộp thoại cài đặt giọng đọc</A> hoặc bằng <A HREF="#SynthSettingsRing">Chu kỳ cài đặt bộ tổng hợp</A>) có chứa tất cả những giọng đọc từ bộ cài đặt SAPI 4 được tìm thấy trên hệ thống của bạn.
+</P>
+<P>
+Nếu bạn có giọng đọc SAPI 4 được cài đặt nhưng bộ tổng hợp không thấy xuất hiện trong danh sách bộ tổng hợp của NVDA, thì hãy cài đặt bản nhị phân SAPI 4 chạy trong thời gian thực, có tại <A HREF="http://activex.microsoft.com/activex/controls/sapi/spchapi.exe">http://activex.microsoft.com/activex/controls/sapi/spchapi.exe</A> .
+</P>
+<A NAME="toc59"></A>
+<H3>10.3. Microsoft Speech API phiên bản 5 (SAPI 5)</H3>
+<P>
+SAPI 5 là phiên bản của Microsoft thay cho bộ tổng hợp tiếng nói phần mềm. Nhiều bộ tổng hợp thực hiện theo tiêu chuẩn này có thể được mua hoặc tải về miễn phí từ các công ty khác nhau và các trang web, cho dù hệ thống của bạn có thể đã được cài đặt sẵn ít nhất một giọng nói 5 SAPI. Khi sử dụng bộ tổng hợp với NVDA, những giọng có sẵn (truy cập từ <A HREF="#VoiceSettings">hộp thoại cài đặt giọng đọc</A> hoặc bằng <A HREF="#SynthSettingsRing">Chu kỳ cài đặt bộ tổng hợp</A>) có chứa tất cả những giọng đọc từ bộ cài đặt SAPI 5 được tìm thấy trên hệ thống của bạn.
+</P>
+<A NAME="toc60"></A>
+<H3>10.4. Audiologic Tts3</H3>
+<P>
+Đây là một bộ tổng hợp tiếng nói thương mại đặc biệt cho ngôn ngữ tiếng Ý. Bạn phải có tổng hợp được cài đặt trên hệ thống của bạn để cho nó được sử dụng với NVDA. Để biết thêm thông tin, xin vui lòng truy cập trang web Audiologic tại <A HREF="http://www.audiologic.it">www.audiologic.it</A> .
+</P>
+<A NAME="toc61"></A>
+<H3>10.5. Newfon</H3>
+<P>
+Newfon là một bộ tổng hợp thương mại miễn phí bởi Sergey Shishmintzev, hỗ trợ ngôn ngữ tiếng Nga và tiếng Ukraina. Để tải bộ tổng hợp này, xin vui lòng truy cập vào trang web cộng đồng NVDA Nga: <A HREF="http://ru.nvda-community.org/?page_id=10">http://ru.nvda-community.org/?page_id=10</A>
+</P>
+<A NAME="SupportedBrailleDisplays"></A>
+<H2>11. Hỗ trợ màn hình chữ nổi</H2>
+<P>
+Phần này chứa thông tin về các màn hình chữ nổi được hỗ trợ bởi NVDA.
+</P>
+<A NAME="toc63"></A>
+<H3>11.1. Freedom Scientific Focus/PAC Mate Series</H3>
+<P>
+Tất cả Focus and PAC Mate hiển thị từ <A HREF="http://www.freedomscientific.com/">Freedom Scientific</A> được hỗ trợ khi kết nối qua cổng USB hoặc Bluetooth. 
+Bạn sẽ cần trình điều khiển màn hình chữ nổi Freedom Scientific được cài đặt trên hệ thống của bạn. Nếu bạn không có sẵn chúng, bạn có thể tải chúng từ <A HREF="http://www.freedomscientific.com/downloads/focus-40-blue/focus-40-blue-downloads.asp">http://www.freedomscientific.com/downloads/focus-40-blue/focus-40-blue-downloads.asp</A> . Mặc dù trang này chỉ đề cập đến màn hình Focus 40 Blue, nhưng trình điều khiển của chúng thì hỗ trợ cho tất cả các màn hình Freedom Scientific.
+</P>
+<P>
+Sau đây là các phím chính cho màn hình này. Hãy xem tài liệu của màn hình mô tả những nơi mà các phím này có thể được tìm thấy.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Chức năng</TH>
+<TH>Phím</TH>
+</TR>
+<TR>
+<TD>Bật tắt left wiz wheel action</TD>
+<TD>leftWizWheelPress</TD>
+</TR>
+<TR>
+<TD>Chuyển về sử dụng left wiz wheel action</TD>
+<TD>leftWizWheelUp</TD>
+</TR>
+<TR>
+<TD>Chuyển đến sử dụng using left wiz wheel action</TD>
+<TD>leftWizWheelDown</TD>
+</TR>
+<TR>
+<TD>Bật tắt right wiz wheel action</TD>
+<TD>rightWizWheelPress</TD>
+</TR>
+<TR>
+<TD>Chuyển về sử dụng right wiz wheel action</TD>
+<TD>rightWizWheelUp</TD>
+</TR>
+<TR>
+<TD>Chuyển đến sử dụng right wiz wheel action</TD>
+<TD>rightWizWheelDown</TD>
+</TR>
+<TR>
+<TD>Chuyển đến ô chữ nổi</TD>
+<TD>routing</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc64"></A>
+<H3>11.2. Optelec ALVA BC640/680</H3>
+<P>
+Cả hai màn hình Alva BC680 và BC640 từ <A HREF="http://www.optelec.com/">Optelec</A> được hỗ trợ khi kết nối qua cổng USB hoặc Bluetooth. Bạn không cần cài đặt bất kỳ trình điều khiển cụ thể để sử dụng các màn hình này. Chỉ cần cắm vào màn hình và cấu hình NVDA sử dụng nó.
+</P>
+<P>
+Sau đây là các phím chính cho màn hình này với NVDA. Hãy xem tài liệu mô tả màn hình về nơi mà các phím này có thể được tìm thấy.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Chức năng</TH>
+<TH>Phím</TH>
+</TR>
+<TR>
+<TD>Cuộn trở lại màn hình chữ nổi</TD>
+<TD>t1</TD>
+</TR>
+<TR>
+<TD>Di chuyển màn hình chữ nổi tới dòng trước</TD>
+<TD>t2</TD>
+</TR>
+<TR>
+<TD>Di chuyển màn hình chữ nổi tới dòng tiếp theo</TD>
+<TD>t4</TD>
+</TR>
+<TR>
+<TD>Cuộn tiếp theo màn hình chữ nổi| t5</TD>
+</TR>
+<TR>
+<TD>Chuyển đến ô chữ nổi</TD>
+<TD>routing</TD>
+</TR>
+<TR>
+<TD>shift+tab key</TD>
+<TD>sp1</TD>
+</TR>
+<TR>
+<TD>alt key</TD>
+<TD>sp2</TD>
+</TR>
+<TR>
+<TD>escape key</TD>
+<TD>sp3</TD>
+</TR>
+<TR>
+<TD>tab key</TD>
+<TD>sp4</TD>
+</TR>
+<TR>
+<TD>upArrow key</TD>
+<TD>spUp</TD>
+</TR>
+<TR>
+<TD>downArrow key</TD>
+<TD>spDown</TD>
+</TR>
+<TR>
+<TD>leftArrow key</TD>
+<TD>spLeft</TD>
+</TR>
+<TR>
+<TD>rightArrow key</TD>
+<TD>spRight</TD>
+</TR>
+<TR>
+<TD>enter key</TD>
+<TD>spEnter</TD>
+</TR>
+<TR>
+<TD>NVDA Menu</TD>
+<TD>sp1+sp3</TD>
+</TR>
+<TR>
+<TD>windows+d key (minimise all applications)</TD>
+<TD>sp1+sp4</TD>
+</TR>
+<TR>
+<TD>windows key</TD>
+<TD>sp2+sp3</TD>
+</TR>
+<TR>
+<TD>alt+tab key</TD>
+<TD>sp2+sp4</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc65"></A>
+<H3>11.3. Màn hình Handy Tech</H3>
+<P>
+NVDA hỗ trợ tất cả màn hình từ <A HREF="http://www.handytech.de/">Handy Tech</A> khi kết nối qua cổng USB hoặc Bluetooth. Đối với màn hình kết nối qua USB cũ hơn, bạn sẽ cần phải cài đặt các trình điều khiển USB từ Handy Tech trên hệ thống của bạn.
+</P>
+<P>
+Sau đây là các phím chính cho màn hình này với NVDA. Hãy xem tài liệu mô tả màn hình về nơi mà các phím này có thể được tìm thấy.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Chức năng</TH>
+<TH>Phím</TH>
+</TR>
+<TR>
+<TD>Cuộn trở lại màn hình chữ nổi</TD>
+<TD>left, up</TD>
+</TR>
+<TR>
+<TD>Cuộn tiếp theo màn hình chữ nổi| right, down</TD>
+</TR>
+<TR>
+<TD>Di chuyển màn hình chữ nổi tới dòng trước</TD>
+<TD>b4</TD>
+</TR>
+<TR>
+<TD>Di chuyển màn hình chữ nổi tới dòng tiếp theo</TD>
+<TD>b5</TD>
+</TR>
+<TR>
+<TD>Chuyển đến ô chữ nổi</TD>
+<TD>routing</TD>
+</TR>
+<TR>
+<TD>shift+tab key</TD>
+<TD>esc</TD>
+</TR>
+<TR>
+<TD>alt key</TD>
+<TD>b2+b4+b5</TD>
+</TR>
+<TR>
+<TD>escape key</TD>
+<TD>b4+b6</TD>
+</TR>
+<TR>
+<TD>tab key</TD>
+<TD>enter</TD>
+</TR>
+<TR>
+<TD>enter key</TD>
+<TD>esc+enter</TD>
+</TR>
+<TR>
+<TD>upArrow key</TD>
+<TD>leftSpace</TD>
+</TR>
+<TR>
+<TD>downArrow key</TD>
+<TD>rightSpace</TD>
+</TR>
+<TR>
+<TD>NVDA Menu</TD>
+<TD>b2+b4+b5+b6</TD>
+</TR>
+<TR>
+<TD>Handy Tech configuration</TD>
+<TD>b4+b8</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc66"></A>
+<H3>11.4. MDV Lilli</H3>
+<P>
+Màn hình chữ nổi Lilli được hỗ trợ sẵn từ <A HREF="http://www.mdvbologna.it/">MDV</A>. Bạn không cần cài đặt bất kỳ trình điều khiển cụ thể để sử dụng màn hình này. Chỉ cần cắm vào màn hình và cấu hình NVDA sử dụng nó.
+</P>
+<A NAME="toc67"></A>
+<H3>11.5. Màn hình chữ nổi Baum/Humanware/APH</H3>
+<P>
+Một vài màn hình như <A HREF="http://www.baum.de/cms/en/">Baum</A>, <A HREF="http://www.humanware.com/">HumanWare</A> và <A HREF="http://www.aph.org/">APH</A>được hỗ trợ khi kết nối qua cổng USB hoặc Bluetooth. 
+Chúng bao gồm:
+</P>
+<UL>
+<LI>Baum: SuperVario, PocketVario
+<LI>HumanWare: Brailliant, BrailleConnect
+<LI>APH: Refreshabraille
+</UL>
+
+<P></P>
+<P>
+Một số màn hình khác được sản xuất bởi Baum cũng có thể làm việc, mặc dù điều này chưa được thử nghiệm.
+</P>
+<P>
+Nếu kết nối qua cổng USB, đầu tiên bạn phải cài đặt các trình điều khiển USB được cung cấp bởi nhà sản xuất. Đối với các Refreshabraille APH, các chế độ USB phải được thiết lập để nối tiếp.
+</P>
+<P>
+Sau đây là các phím chính cho màn hình này với NVDA. Hãy xem tài liệu mô tả của màn hình về nơi mà các phím này có thể được tìm thấy.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Chức năng</TH>
+<TH>Phím</TH>
+</TR>
+<TR>
+<TD>Cuộn trở lại màn hình chữ nổi</TD>
+<TD>d2</TD>
+</TR>
+<TR>
+<TD>Cuộn tiếp theo màn hình chữ nổi</TD>
+<TD>d5</TD>
+</TR>
+<TR>
+<TD>Di chuyển màn hình chữ nổi tới dòng trước</TD>
+<TD>d1</TD>
+</TR>
+<TR>
+<TD>Di chuyển màn hình chữ nổi tới dòng tiếp theo</TD>
+<TD>d3</TD>
+</TR>
+<TR>
+<TD>Chuyển đến ô chữ nổi</TD>
+<TD>routing</TD>
+</TR>
+</TABLE>
+
+<P>
+Đối với màn hình có một phím điều khiển:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Chức năng</TH>
+<TH>Phím</TH>
+</TR>
+<TR>
+<TD>upArrow key</TD>
+<TD>up</TD>
+</TR>
+<TR>
+<TD>downArrow key</TD>
+<TD>down</TD>
+</TR>
+<TR>
+<TD>leftArrow key</TD>
+<TD>left</TD>
+</TR>
+<TR>
+<TD>rightArrow key</TD>
+<TD>right</TD>
+</TR>
+<TR>
+<TD>enter key</TD>
+<TD>select</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc68"></A>
+<H3>11.6. BRLTTY</H3>
+<P>
+<A HREF="http://mielke.cc/brltty/">BRLTTY</A> là một chương trình riêng biệt mà có thể được sử dụng để hỗ trợ nhiều màn hìnhị chữ nổi. Để sử dụng, bạn cần phải cài đặt <A HREF="http://brl.thefreecat.org/brltty/">BRLTTY cho Windows</A>. Bạn nên tải về và cài đặt các gói cài đặt mới nhất, ví dụ, brltty-win-4.2-2.exe. Khi cấu hình màn hình và các cổng để sử dụng, hãy chú ý tới các hướng dẫn, đặc biệt là nếu bạn đang sử dụng một màn hình USB và đã có cài đặt trình điều khiển của nhà sản xuất.
+</P>
+<P>
+Sau đây là các phím lệnh BRLTTY cho NVDA. Xin xem <A HREF="http://mielke.cc/brltty/doc/drivers/">tài liệu về các phím BRLTTY</A> để biết thông tin về lệnh BRLTTY được ánh xạ để điều khiển trên màn hình chữ nổi.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Chức năng</TH>
+<TH>Phím lệnh BRLTTY</TH>
+</TR>
+<TR>
+<TD>Cuộn trở lại màn hình chữ nổi</TD>
+<TD>fwinlt (đi trái một cửa sổ)</TD>
+</TR>
+<TR>
+<TD>Cuộn tiếp theo màn hình chữ nổi</TD>
+<TD>fwinrt (đi phải một cửa sổ)</TD>
+</TR>
+<TR>
+<TD>Di chuyển màn hình chữ nổi tới dòng trước</TD>
+<TD>lnup (đi lên một dòng)</TD>
+</TR>
+<TR>
+<TD>Di chuyển màn hình chữ nổi tới dòng tiếp theo</TD>
+<TD>lndn (đi xuống một dòng)</TD>
+</TR>
+<TR>
+<TD>Chuyển đến ô chữ nổi</TD>
+<TD>route (Chuyển con trỏ đến ký tự)</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc69"></A>
+<H2>12. Chủ đề nâng cao</H2>
+<A NAME="toc70"></A>
+<H3>12.1. Ánh xạ lại các phím lệnh và các thao tác đầu vào khác</H3>
+<P>
+Người dùng có thể cung cấp hoặc ghi đè lên các ánh xạ của những thao tác đầu vào (như nhấn phím) bằng những kịch bản (script) được lưu trong một tập tin đặc biệt trong thư mục cấu hình của người dùng NVDA. Tập tin này được gọi là gestures.ini.
+</P>
+<P>
+Tập tin này sử dụng cú pháp theo chuẩn ini. Tập tin có thể chứa nhiều phần và mỗi phần có thể có một hoặc nhiều mục.
+</P>
+<P>
+Mỗi phần cung cấp các ánh xạ cho các kịch bản trong một mô-đun Python đặc biệt và lớp bên trong NVDA.
+</P>
+<UL>
+<LI>Tên của mỗi phần ở các mô-đun Python và lớp nên cách nhau bằng một dấu chấm (.).
+<LI>Khóa chính của mỗi mục là tên của kịch bản và được ràng buộc với các thao tác đầu vào. Ngoài ra, bạn có thể sử dụng chức năng None to unbind các thao tác đầu vào từ một kịch bản mà chúng đã bị ràng buộc trước đó. Mỗi mục khoá chỉ có thể ghi vào danh sách một lần cho mỗi phần, bao gồm phần Không.
+<LI>Giá trị đầu vào là một danh sách cử chỉ nhận dạng được cách nhau bằng dấu phẩy (,) cho các cử chỉ đầu vào mà chúng nên bị ràng buộc.
+Các cử chỉ nhận dạng kết thúc bằng dấu phẩy phải được đóng trong dấu nháy kép "" hoặc dấu nháy đơn '' .
+</UL>
+
+<P></P>
+<P>
+Cử chỉ nhận diện bao gồm mã thiết bị 2 ký tự (kb cho bàn phím và br cho màn hình chữ nổi), một thiết bị phụ tùy chọn, hoặc layout bàn phím trong dấu ngoặc đơn, dấu hai chấm, và sau đó một hoặc nhiều tên chính được phân cách bởi một dấu cộng (+).
+</P>
+<P>
+Để khám phá các cử chỉ nhận dạng, tên kịch bản,lớp và mô-đun, trong đó có chứa chúng, bạn có thể:
+</P>
+<OL>
+<LI>Bật giúp đỡ đầu vào.
+<LI>Kích hoạt các cử chỉ (nhấn phím).
+<LI>Tắt giúp đỡ đầu vào..
+<LI>Kích hoạt file Xem nhật ký trong menu Tools NVDA.
+<LI>Kiểm tra các mục đăng nhập gần đây. 
+Một trong số đó phải cung cấp thông tin về những cử chỉ đầu vào mà bạn gửi, bao gồm các module.class và kịch bản nếu nó được liên kết với một. 
+<P></P>
+Sau đây là một ví dụ về cách bạn có thể kết hợp NVDA+shift+t cho kịch bản thời gian ngày tháng
+<P></P>
+Để tìm ra tên kịch bản chính xác và module.class cho thời gian này, bạn sẽ cần bật trợ giúp đầu vào và nhấn NVDA + F12 (vì đây là cử chỉ hiện tại cho các kịch bản thời gian ngày tháng). Sau đó bạn sẽ tắt phần trợ giúp đầu vào và kiểm tra người xem đăng nhập.
+<P></P>
+Hướng phía dưới, bạn sẽ thấy:
+<P></P>
+<PRE>
+  INFO - inputCore.InputManager._handleInputHelp (13:17:22):
+  Input help: gesture kb(desktop):nvda+f12, bound to script dateTime on globalCommands.GlobalCommands
+</PRE>
+<P></P>
+Từ đó, bạn có thể thấy rằng tên mã là datetime và module.class là globalCommands.GlobalCommands.
+<P></P>
+Nếu file chưa tồn tại, bạn sẽ tạo ra một tập tin văn bản gestures.ini trong thư mục cấu hình người dùng và thêm vào các nội dung sau đây:
+<P></P>
+<PRE>
+  [globalCommands.GlobalCommands]
+  	dateTime = kb:NVDA+shift+t
+</PRE>
+<P></P>
+Điều này sẽ ràng buộc các nhấn phím NVDA+shift+t (trong bất cứ cách bố trí bàn phím) đến các kịch bản ngày giờ.
+<P></P>
+Lưu ý rằng các bản gốc NVDA + F12 liên kết vẫn sẽ làm việc. Nếu bạn muốn loại bỏ ràng buộc này, bạn sẽ thêm dòng sau đây:
+<P></P>
+<PRE>
+  	None = kb:NVDA+f12
+</PRE>
+<P></P>
+Mặc dù bạn có quyền có các kịch bản ràng buộc với bất kỳ phím nào có sẵn, nhưng có thể có vấn đề khi sử dụng phím Alt trên bàn phím. NVDA vẫn gửi phím sửa đổi (chẳng hạn như  shift, control and alt) cho hệ điều hành, ngay cả khi chúng đưa ra kết quả trong kịch bản. Như vậy, nếu bạn sử dụng alt trong một cử chỉ, nhấn tổ hợp phím này có thể kích hoạt thanh menu, cũng như thực hiện kịch bản. Do đó, có lẽ tốt nhất chỉ sử dụng phím Shift, ctrl và các phím bổ trợ NVDA như là phần bổ trợ.
+<P></P>
+<LI>Thông tin thêm +
+Nếu bạn cần thêm thông tin hoặc trợ giúp về NVDA, xin vui lòng truy cập vào trang web NVDA tại <A HREF="http://www.nvda-project.org/">http://www.nvda-project.org/</A> . Tại đây, bạn có thể tìm thấy tài liệu bổ sung, cũng như hỗ trợ kỹ thuật và các tài nguyên của cộng đồng. Trang web này cũng cung cấp thông tin và tài nguyên liên quan đến sự phát triển NVDA.
+</OL>
+
+
+<!-- html code generated by txt2tags 2.5 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags user_docs\vi\userGuide.t2t -->
+</BODY></HTML>

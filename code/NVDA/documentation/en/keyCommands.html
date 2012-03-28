@@ -1,0 +1,1234 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META NAME="generator" CONTENT="http://txt2tags.sf.net">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<TITLE>NVDA 2012.1 Keyboard Commands Quick Reference</TITLE>
+</HEAD><BODY BGCOLOR="white" TEXT="black">
+<P ALIGN="center"><CENTER><H1>NVDA 2012.1 Keyboard Commands Quick Reference</H1>
+<FONT SIZE="4">
+</FONT></CENTER>
+
+<H2>Getting started with NVDA</H2>
+<H3>Basic key commands</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Key</TH>
+<TH>Description</TH>
+</TR>
+<TR>
+<TD>Stop speech</TD>
+<TD>Control</TD>
+<TD>Instantly stops speaking</TD>
+</TR>
+<TR>
+<TD>Pause Speech</TD>
+<TD>Shift</TD>
+<TD>Instantly pauses speech. Pressing it again will continue speaking where it left off (if pausing is supported by the current synthesizer)</TD>
+</TR>
+<TR>
+<TD>NVDA Menu</TD>
+<TD>NVDA+n</TD>
+<TD>Pops up the NVDA menu to allow you to access preferences, tools and help etc</TD>
+</TR>
+<TR>
+<TD>Toggle Speech Mode</TD>
+<TD>NVDA+s</TD>
+<TD>Toggles speech mode between speech, beeps and off.</TD>
+</TR>
+<TR>
+<TD>Toggle Keyboard Help Mode</TD>
+<TD>NVDA+1</TD>
+<TD>Pressing any key in this mode will report the key, and the description of any NVDA command associated with it</TD>
+</TR>
+<TR>
+<TD>Quit NVDA</TD>
+<TD>NVDA+q</TD>
+<TD>Exits NVDA</TD>
+</TR>
+<TR>
+<TD>Pass next key through</TD>
+<TD>NVDA+f2</TD>
+<TD>Tells NVDA to pass the next key press straight through to the active application, even if it is normally treeted as an NVDA key command</TD>
+</TR>
+<TR>
+<TD>Toggle application sleep mode on and off</TD>
+<TD>NVDA+shift+s</TD>
+<TD>sleep mode disables all NVDA commands and speech/braille output for the current application. This is most useful in applications that provide their own speech or screen reading features. Press this command again to disable self voicing mode.</TD>
+</TR>
+</TABLE>
+
+<H3>Reporting System Information</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>key</TH>
+<TH>Description</TH>
+</TR>
+<TR>
+<TD>Report date/time</TD>
+<TD>NVDA+f12</TD>
+<TD>Pressing once reports the current time, pressing twice reports the date</TD>
+</TR>
+<TR>
+<TD>Report battery status</TD>
+<TD>NVDA+shift+b</TD>
+<TD>Reports the battery status i.e. whether AC power is in use or the current charge percentage.</TD>
+</TR>
+<TR>
+<TD>Report clipboard text</TD>
+<TD>NVDA+c</TD>
+<TD>Reports the Text in the clipboard if there is any.</TD>
+</TR>
+</TABLE>
+
+<H2>Navigating with NVDA</H2>
+<A NAME="SystemFocus"></A>
+<H3>Navigating with the System Focus</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>key</TH>
+<TH>Description</TH>
+</TR>
+<TR>
+<TD>Report current focus</TD>
+<TD>NVDA+tab</TD>
+<TD>announces the current object or control that has the System focus. Pressing twice will spell the information</TD>
+</TR>
+<TR>
+<TD>Report title</TD>
+<TD>NVDA+t</TD>
+<TD>Reports the title of the currently active window. Pressing twice will spell the information. Pressing thrice will copy it to the clipboard</TD>
+</TR>
+<TR>
+<TD>Read active window</TD>
+<TD>NVDA+b</TD>
+<TD>reads all the controls in the currently active window (useful for dialogs)</TD>
+</TR>
+<TR>
+<TD>Report Status Bar</TD>
+<TD>NVDA+end</TD>
+<TD>Reports the Status Bar if NVDA finds one. It also moves the navigator object to this location</TD>
+</TR>
+</TABLE>
+
+<A NAME="SystemCaret"></A>
+<H3>Navigating with the System Caret</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Key</TH>
+<TH>Description</TH>
+</TR>
+<TR>
+<TD>Say all</TD>
+<TD>NVDA+downArrow</TD>
+<TD>Starts reading from the current position of the system caret, moving it along as it goes</TD>
+</TR>
+<TR>
+<TD>Read current line</TD>
+<TD>NVDA+upArrow</TD>
+<TD>Reads the line where the system caret is currently situated. Pressing twice spells the line.</TD>
+</TR>
+<TR>
+<TD>Read current text selection</TD>
+<TD>NVDA+Shift+upArrow</TD>
+<TD>Reads any currently selected text</TD>
+</TR>
+</TABLE>
+
+<P>
+When within a table, the following key commands are also available:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Key</TH>
+<TH>Description</TH>
+</TR>
+<TR>
+<TD>Move to previous column</TD>
+<TD>control+alt+leftArrow</TD>
+<TD>Moves the system caret to the previous column (staying in the same row)</TD>
+</TR>
+<TR>
+<TD>Move to next column</TD>
+<TD>control+alt+rightArrow</TD>
+<TD>Moves the system caret to the next column (staying in the same row)</TD>
+</TR>
+<TR>
+<TD>Move to previous row</TD>
+<TD>control+alt+upArrow</TD>
+<TD>Moves the system caret to the previous row (staying in the same column)</TD>
+</TR>
+<TR>
+<TD>Move to next row</TD>
+<TD>control+alt+downArrow</TD>
+<TD>Moves the system caret to the next row (staying in the same column)</TD>
+</TR>
+</TABLE>
+
+<H3>Object Navigation</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Desktop key</TH>
+<TH>Laptop key</TH>
+<TH>Description</TH>
+</TR>
+<TR>
+<TD>Report current object</TD>
+<TD>NVDA+numpad5</TD>
+<TD>NVDA+control+i</TD>
+<TD>Reports the current navigator object. Pressing twice spells the information, and pressing 3 times copies this object's name and value to the clipboard.</TD>
+</TR>
+<TR>
+<TD>Move to containing object</TD>
+<TD>NVDA+numpad8</TD>
+<TD>NVDA+shift+i</TD>
+<TD>Moves to the object containing the current navigator object</TD>
+</TR>
+<TR>
+<TD>Move to previous object</TD>
+<TD>NVDA+numpad4</TD>
+<TD>NVDA+control+j</TD>
+<TD>Moves to the object before the current navigator object</TD>
+</TR>
+<TR>
+<TD>Move to next object</TD>
+<TD>NVDA+numpad6</TD>
+<TD>control+NVDA+l</TD>
+<TD>Moves to the object after the current navigator object</TD>
+</TR>
+<TR>
+<TD>Move to first contained object</TD>
+<TD>NVDA+numpad2</TD>
+<TD>NVDA+shift+comma</TD>
+<TD>Moves to the first object contained by the current navigator object</TD>
+</TR>
+<TR>
+<TD>Move to focus object</TD>
+<TD>NVDA+numpadMinus</TD>
+<TD>NVDA+backspace</TD>
+<TD>Moves to the object that currently has the system focus, and also places the review cursor at the position of the System caret, if it is showing</TD>
+</TR>
+<TR>
+<TD>Activate current navigator object</TD>
+<TD>NVDA+numpadEnter</TD>
+<TD>NVDA+enter</TD>
+<TD>Activates the current navigator object (similar to clicking with the mouse or pressing space when it has the system focus)</TD>
+</TR>
+<TR>
+<TD>Move System focus or caret to current review position</TD>
+<TD>NVDA+shift+numpadMinus</TD>
+<TD>NVDA+shift+backspace</TD>
+<TD>pressed once Moves the System focus to the current navigator object, pressed twice moves the system caret to the position of the review cursor</TD>
+</TR>
+<TR>
+<TD>Report navigator object dimensions</TD>
+<TD>NVDA+numpadDelete</TD>
+<TD>NVDA+delete</TD>
+<TD>Reports the current navigator object's dimensions on screen in per centages (including distance from left and top of screen, and its width and height)</TD>
+</TR>
+</TABLE>
+
+<A NAME="ReviewingText"></A>
+<H3>Reviewing Text</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Desktop key</TH>
+<TH>Laptop key</TH>
+<TH>Description</TH>
+</TR>
+<TR>
+<TD>Move to top line in review</TD>
+<TD>shift+numpad7</TD>
+<TD>NVDA+7</TD>
+<TD>Moves the review cursor to the top line of the text</TD>
+</TR>
+<TR>
+<TD>Move to previous line in review</TD>
+<TD>numpad7</TD>
+<TD>NVDA+u</TD>
+<TD>Moves the review cursor to the previous line of text</TD>
+</TR>
+<TR>
+<TD>Report current line in review</TD>
+<TD>numpad8</TD>
+<TD>NVDA+i</TD>
+<TD>Announces the current line of text where the review cursor is positioned. Pressing twice spells the line. Pressing three times spells the line using character descriptions.</TD>
+</TR>
+<TR>
+<TD>Move to next line in review</TD>
+<TD>numpad9</TD>
+<TD>NVDA+o</TD>
+<TD>Move the review cursor to the next line of text</TD>
+</TR>
+<TR>
+<TD>Move to bottom line in review</TD>
+<TD>shift+numpad9</TD>
+<TD>NVDA+9</TD>
+<TD>Moves the review cursor to the bottom line of text</TD>
+</TR>
+<TR>
+<TD>Move to previous word in review</TD>
+<TD>numpad4</TD>
+<TD>NVDA+j</TD>
+<TD>Moves the review cursor to the previous word in the text</TD>
+</TR>
+<TR>
+<TD>Report current word in review</TD>
+<TD>numpad5</TD>
+<TD>NVDA+k</TD>
+<TD>Announces the current word in the text where the review cursor is positioned. Pressing twice spells the word. Pressing three times spells the word using character descriptions.</TD>
+</TR>
+<TR>
+<TD>Move to next word in review</TD>
+<TD>numpad6</TD>
+<TD>NVDA+l</TD>
+<TD>Move the review cursor to the next word in the text</TD>
+</TR>
+<TR>
+<TD>Move to start of line in review</TD>
+<TD>shift+numpad1</TD>
+<TD>NVDA+shift+u</TD>
+<TD>Moves the review cursor to the start of the current line in the text</TD>
+</TR>
+<TR>
+<TD>Move to previous character in review</TD>
+<TD>numpad1</TD>
+<TD>NVDA+m</TD>
+<TD>Moves the review cursor to the previous character on the current line in the text</TD>
+</TR>
+<TR>
+<TD>Report current character in review</TD>
+<TD>numpad2</TD>
+<TD>NVDA+comma</TD>
+<TD>Announces the current character on the line of text where the review cursor is positioned. Pressing twice reports a description or example of that character. Pressing three times reports the numeric value of the character in decimal and hexadecimal.</TD>
+</TR>
+<TR>
+<TD>Move to next character in review</TD>
+<TD>numpad3</TD>
+<TD>NVDA+dot</TD>
+<TD>Move the review cursor to the next character on the current line of text</TD>
+</TR>
+<TR>
+<TD>Move to end of line in review</TD>
+<TD>shift+numpad3</TD>
+<TD>NVDA+shift+o</TD>
+<TD>Moves the review cursor to the end of the current line of text</TD>
+</TR>
+<TR>
+<TD>Say all with review</TD>
+<TD>numpadPlus</TD>
+<TD>NVDA+shift+downArrow</TD>
+<TD>Reads from the current position of the review cursor, moving it as it goes</TD>
+</TR>
+<TR>
+<TD>Copy from review cursor</TD>
+<TD>NVDA+f9</TD>
+<TD>NVDA+f9</TD>
+<TD>starts copying text from the current position of the review cursor. The actual copy is not performed until you tell NVDA where to copy to</TD>
+</TR>
+<TR>
+<TD>Copy to review cursor</TD>
+<TD>NVDA+f10</TD>
+<TD>NVDA+f10</TD>
+<TD>Copies from the position of the review cursor currently set with Copy from review cursor, to the review cursor's current position. After pressing this key, the text will be copied to the Windows clipboard</TD>
+</TR>
+<TR>
+<TD>Report text formatting</TD>
+<TD>NVDA+f</TD>
+<TD>Reports the formatting of the text where the review cursor is currently situated</TD>
+</TR>
+</TABLE>
+
+<A NAME="FlatReview"></A>
+<H3>Flat Review</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Desktop key</TH>
+<TH>Laptop key</TH>
+<TH>Description</TH>
+</TR>
+<TR>
+<TD>Move to flat review</TD>
+<TD>NVDA+numpad7</TD>
+<TD>NVDA+pageUp</TD>
+<TD>Moves to flat review, placing you at the position of the current navigator object, allowing you to review the screen (or document if you are currently inside one) with the text review commands.</TD>
+</TR>
+<TR>
+<TD>Move to object from flat review</TD>
+<TD>NVDA+numpad1</TD>
+<TD>NVDA+pageDown</TD>
+<TD>navigates to the object represented by the text at the current position of the review cursor in flat review</TD>
+</TR>
+</TABLE>
+
+<H3>Navigating with the Mouse</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Desktop key</TH>
+<TH>Laptop key</TH>
+<TH>Description</TH>
+</TR>
+<TR>
+<TD>Left mouse button click</TD>
+<TD>numpadDivide</TD>
+<TD>NVDA+leftArrow</TD>
+<TD>clicks the left mouse button once. The common double click can be performed by pressing this key twice in quick succession</TD>
+</TR>
+<TR>
+<TD>Left mouse button lock</TD>
+<TD>shift+numpadDivide</TD>
+<TD>NVDA+shift+leftArrow</TD>
+<TD>Locks the left mouse button down. Press again to release it. To drag the mouse, press this key to lock the left button down and then move the mouse either physically or use one of the other mouse routing commands</TD>
+</TR>
+<TR>
+<TD>Right mouse click</TD>
+<TD>numpadMultiply</TD>
+<TD>NVDA+rightArrow</TD>
+<TD>Clicks the right mouse button once.</TD>
+</TR>
+<TR>
+<TD>Right mouse button lock</TD>
+<TD>shift+numpadMultiply</TD>
+<TD>NVDA+shift+rightArrow</TD>
+<TD>Locks the right mouse button down. Press again to release it. To drag the mouse, press this key to lock the right button down and then move the mouse either physically or use one of the other mouse routing commands</TD>
+</TR>
+<TR>
+<TD>Move mouse to current navigator object</TD>
+<TD>NVDA+numpadDivide</TD>
+<TD>NVDA+shift+f9</TD>
+<TD>Moves the mouse to the location of the current navigator object and review cursor</TD>
+</TR>
+<TR>
+<TD>Navigate to the object under the mouse</TD>
+<TD>NVDA+numpadMultiply</TD>
+<TD>NVDA+shift+f10</TD>
+<TD>Set the navigator object to the object located at the position of the mouse</TD>
+</TR>
+</TABLE>
+
+<H2>Browse Mode</H2>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Key</TH>
+<TH>Description</TH>
+</TR>
+<TR>
+<TD>Toggle browse/focus modes</TD>
+<TD>NVDA+space</TD>
+<TD>Toggles between focus mode and browse mode</TD>
+</TR>
+<TR>
+<TD>Exit focus mode</TD>
+<TD>escape</TD>
+<TD>switches back to browse mode if focus mode was previously switched to automatically</TD>
+</TR>
+<TR>
+<TD>Refresh browse mode document</TD>
+<TD>NVDA+f5</TD>
+<TD>Reloads the current document content (useful if certain content seems to be missing from the document)</TD>
+</TR>
+<TR>
+<TD>Find</TD>
+<TD>NVDA+control+f</TD>
+<TD>Pops up a dialog in which you can type some text to find in the current document</TD>
+</TR>
+<TR>
+<TD>Find next</TD>
+<TD>NVDA+f3</TD>
+<TD>Finds the next occurence of the text in the document that you previously searched for</TD>
+</TR>
+<TR>
+<TD>Find previous</TD>
+<TD>NVDA+shift+f3</TD>
+<TD>Finds the previous occurence of the text in the document you previously searched for</TD>
+</TR>
+</TABLE>
+
+<H3>Single Letter Navigation</H3>
+<P>
+The following keys by themselves jump to the next available element, while adding the shift key causes them to jump to the previous element:
+</P>
+<UL>
+<LI>h: heading
+<LI>l: list
+<LI>i: list item
+<LI>t: table
+<LI>k: link
+<LI>n: nonLinked text
+<LI>f: form field
+<LI>u: unvisited link
+<LI>v: visited link
+<LI>e: edit field
+<LI>b: button
+<LI>x: checkbox
+<LI>c: combo box
+<LI>r: radio button
+<LI>q: block quote
+<LI>s: separator
+<LI>m: frame
+<LI>g: graphic
+<LI>d: ARIA landmark
+<LI>o: embedded object
+<LI>1 to 6: headings at levels 1 to 6 respectively
+</UL>
+
+<P></P>
+<H3>The Elements List</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Key</TH>
+<TH>Description</TH>
+</TR>
+<TR>
+<TD>Browse mode elements list</TD>
+<TD>NVDA+f7</TD>
+<TD>Brings up the Elements list which contains links, headings and landmarks from the current document</TD>
+</TR>
+</TABLE>
+
+<H3>Embedded Objects</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Key</TH>
+<TH>Description</TH>
+</TR>
+<TR>
+<TD>Move to containing browse mode document</TD>
+<TD>NVDA+control+space</TD>
+<TD>Moves the focus out of the current embedded object and into the document that contains it</TD>
+</TR>
+</TABLE>
+
+<H2>Application Specific NVDA Commands</H2>
+<H3>foobar2000</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Key</TH>
+<TH>Description</TH>
+</TR>
+<TR>
+<TD>Report remaining time</TD>
+<TD>control+shift+r</TD>
+<TD>Reports the remaining time of the currently playing track, if any.</TD>
+</TR>
+</TABLE>
+
+<H3>Miranda IM</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Key</TH>
+<TH>Description</TH>
+</TR>
+<TR>
+<TD>Report recent message</TD>
+<TD>NVDA+control+1-4</TD>
+<TD>Reports one of the recent messages, depending on the number pressed; e.g. NVDA+control+2 reads the second most recent message.</TD>
+</TR>
+</TABLE>
+
+<H3>Poedit</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Key</TH>
+<TH>Description</TH>
+</TR>
+<TR>
+<TD>Report Comments Window</TD>
+<TD>control+shift+c</TD>
+<TD>Reports any comments in the comments window.</TD>
+</TR>
+<TR>
+<TD>Report automatic comments window</TD>
+<TD>control+shift+a</TD>
+<TD>Reports any comments in the automatic comments window.</TD>
+</TR>
+</TABLE>
+
+<H2>Configuring NVDA</H2>
+<H3>Preferences</H3>
+<A NAME="VoiceSettings"></A>
+<H4>Voice Settings (NVDA+control+v)</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Desktop key</TH>
+<TH>Laptop key</TH>
+<TH>Description</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Punctuation/Symbol Level</TD>
+<TD>NVDA+p</TD>
+<TD>NVDA+p</TD>
+<TD>This allows you to choose the amount of punctuation and other symbols that should be spoken as words.</TD>
+</TR>
+</TABLE>
+
+<A NAME="SynthSettingsRing"></A>
+<H4>Synth settings ring</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Desktop key</TH>
+<TH>Laptop key</TH>
+<TH>Description</TH>
+</TR>
+<TR>
+<TD>Move to next synth setting</TD>
+<TD>NVDA+control+rightArrow</TD>
+<TD>NVDA+control+rightArrow</TD>
+<TD>Moves to the next available speech setting after the current, wrapping around to the first setting again after the last</TD>
+</TR>
+<TR>
+<TD>Move to previous synth setting</TD>
+<TD>NVDA+control+leftArrow</TD>
+<TD>NVDA+control+leftArrow</TD>
+<TD>Moves to the next available speech setting before the current, wrapping around to the last setting after the first</TD>
+</TR>
+<TR>
+<TD>Increment current synth setting</TD>
+<TD>NVDA+control+upArrow</TD>
+<TD>NVDA+control+upArrow</TD>
+<TD>increases the current speech setting you are on. E.g. increases the rate, chooses the next voice, increases the volume</TD>
+</TR>
+<TR>
+<TD>Decrement current synth setting</TD>
+<TD>NVDA+control+downArrow</TD>
+<TD>NVDA+control+downArrow</TD>
+<TD>decreases the current speech setting you are on. E.g. decreases the rate, chooses the previous voice, decreases the volume</TD>
+</TR>
+</TABLE>
+
+<H4>Braille Settings</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Desktop key</TH>
+<TH>Laptop key</TH>
+<TH>Description</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Braille Tethered to</TD>
+<TD>NVDA+control+t</TD>
+<TD>NVDA+control+t</TD>
+<TD>This option allows you to choose whether the braille display will follow the system focus, or whether it follows the navigator object / review cursor.</TD>
+</TR>
+</TABLE>
+
+<H4>Keyboard Settings (NVDA+control+k)</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Desktop key</TH>
+<TH>Laptop key</TH>
+<TH>Description</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Speak Typed Characters</TD>
+<TD>NVDA+2</TD>
+<TD>NVDA+2</TD>
+<TD>When enabled, NVDA will announce all characters you type on the keyboard.</TD>
+</TR>
+<TR>
+<TD ALIGN="center">Speak Typed Words</TD>
+<TD>NVDA+3</TD>
+<TD>NVDA+3</TD>
+<TD>When enabled, NVDA will announce all words you type on the keyboard.</TD>
+</TR>
+<TR>
+<TD ALIGN="center">Speak Command Keys</TD>
+<TD>NVDA+4</TD>
+<TD>NVDA+4</TD>
+<TD>When enabled, NVDA will announce all non-character keys you type on the keyboard. This includes key combinations such as control plus another letter.</TD>
+</TR>
+</TABLE>
+
+<A NAME="MouseSettings"></A>
+<H4>Mouse Settings (NVDA+control+m)</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Desktop key</TH>
+<TH>Laptop key</TH>
+<TH>Description</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Enable mouse tracking</TD>
+<TD>NVDA+m</TD>
+<TD>NVDA+shift+m</TD>
+<TD>When enabled, NVDA will announce the text currently under the mouse pointer, as you move it around the screen. This allows you to find things on the screen, by physically moving the mouse, rather than trying to find them through object navigation.</TD>
+</TR>
+</TABLE>
+
+<H4>Review Cursor Settings</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Desktop key</TH>
+<TH>Laptop key</TH>
+<TH>Description</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Follow System Focus</TD>
+<TD>NVDA+7</TD>
+<TD>NVDA+control+7</TD>
+<TD>When enabled, The review cursor will always be placed in the same object as the current system focus as it changes.</TD>
+</TR>
+<TR>
+<TD ALIGN="center">Follow System Caret</TD>
+<TD>NVDA+6</TD>
+<TD>NVDA+6</TD>
+<TD>When enabled, the review cursor will automatically be moved to the position of the System caret each time it moves.</TD>
+</TR>
+</TABLE>
+
+<H4>Object Presentation Settings (NVDA+control+o)</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Desktop key</TH>
+<TH>Laptop key</TH>
+<TH>Description</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Progress bar output</TD>
+<TD>NVDA+u</TD>
+<TD>NVDA+control+f2</TD>
+<TD>This option controls how nvda reports progress bar updates to you.</TD>
+</TR>
+<TR>
+<TD ALIGN="center">Report dynamic content changes</TD>
+<TD>NVDA+5</TD>
+<TD>NVDA+5</TD>
+<TD>Toggles the announcement of new content in particular objects such as terminals and the history control in chat programs.</TD>
+</TR>
+</TABLE>
+
+<H4>Browse Mode Settings (NVDA+control+b)</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Desktop key</TH>
+<TH>Laptop key</TH>
+<TH>Description</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Use screen layout</TD>
+<TD>NVDA+v</TD>
+<TD>NVDA+v</TD>
+<TD>This option allows you to specify whether content in browse mode should place content such as links and other fields on their own line, or if it should keep them in the flow of text as it is visually shown. If the option is enabled then things will stay as they are visually shown, but if it is disabled then fields will be placed on their own line.</TD>
+</TR>
+</TABLE>
+
+<H3>Saving and Reloading the configuration</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Desktop key</TH>
+<TH>Laptop key</TH>
+<TH>Description</TH>
+</TR>
+<TR>
+<TD>Save configuration</TD>
+<TD>NVDA+control+c</TD>
+<TD>NVDA+control+c</TD>
+<TD>Saves your current configuration so that it is not lost when you exit NVDA</TD>
+</TR>
+<TR>
+<TD>Revert to saved configuration</TD>
+<TD>NVDA+control+r</TD>
+<TD>NVDA+control+r</TD>
+<TD>Restores NVDA to the settings that existed when you last saved NVDA's configuration</TD>
+</TR>
+</TABLE>
+
+<A NAME="SupportedBrailleDisplays"></A>
+<H2>Supported Braille Displays</H2>
+<H3>Freedom Scientific Focus/PAC Mate Series</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Key</TH>
+</TR>
+<TR>
+<TD>Toggle left wiz wheel action</TD>
+<TD>leftWizWheelPress</TD>
+</TR>
+<TR>
+<TD>Move back using left wiz wheel action</TD>
+<TD>leftWizWheelUp</TD>
+</TR>
+<TR>
+<TD>Move forward using left wiz wheel action</TD>
+<TD>leftWizWheelDown</TD>
+</TR>
+<TR>
+<TD>Toggle right wiz wheel action</TD>
+<TD>rightWizWheelPress</TD>
+</TR>
+<TR>
+<TD>Move back using right wiz wheel action</TD>
+<TD>rightWizWheelUp</TD>
+</TR>
+<TR>
+<TD>Move forward using right wiz wheel action</TD>
+<TD>rightWizWheelDown</TD>
+</TR>
+<TR>
+<TD>Route to braille cell</TD>
+<TD>routing</TD>
+</TR>
+</TABLE>
+
+<H3>Optelec ALVA BC640/680</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Key</TH>
+</TR>
+<TR>
+<TD>Scroll braille display back</TD>
+<TD>t1</TD>
+</TR>
+<TR>
+<TD>Move braille display to previous line</TD>
+<TD>t2</TD>
+</TR>
+<TR>
+<TD>Move braille display to next line</TD>
+<TD>t4</TD>
+</TR>
+<TR>
+<TD>Scroll braille display forward</TD>
+<TD>t5</TD>
+</TR>
+<TR>
+<TD>Route to braille cell</TD>
+<TD>routing</TD>
+</TR>
+<TR>
+<TD>shift+tab key</TD>
+<TD>sp1</TD>
+</TR>
+<TR>
+<TD>alt key</TD>
+<TD>sp2</TD>
+</TR>
+<TR>
+<TD>escape key</TD>
+<TD>sp3</TD>
+</TR>
+<TR>
+<TD>tab key</TD>
+<TD>sp4</TD>
+</TR>
+<TR>
+<TD>upArrow key</TD>
+<TD>spUp</TD>
+</TR>
+<TR>
+<TD>downArrow key</TD>
+<TD>spDown</TD>
+</TR>
+<TR>
+<TD>leftArrow key</TD>
+<TD>spLeft</TD>
+</TR>
+<TR>
+<TD>rightArrow key</TD>
+<TD>spRight</TD>
+</TR>
+<TR>
+<TD>enter key</TD>
+<TD>spEnter</TD>
+</TR>
+<TR>
+<TD>NVDA Menu</TD>
+<TD>sp1+sp3</TD>
+</TR>
+<TR>
+<TD>windows+d key (minimize all applications)</TD>
+<TD>sp1+sp4</TD>
+</TR>
+<TR>
+<TD>windows key</TD>
+<TD>sp2+sp3</TD>
+</TR>
+<TR>
+<TD>alt+tab key</TD>
+<TD>sp2+sp4</TD>
+</TR>
+</TABLE>
+
+<H3>Handy Tech Displays</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Key</TH>
+</TR>
+<TR>
+<TD>Scroll braille display back</TD>
+<TD>left, up</TD>
+</TR>
+<TR>
+<TD>Scroll braille display forward</TD>
+<TD>right, down</TD>
+</TR>
+<TR>
+<TD>Move braille display to previous line</TD>
+<TD>b4</TD>
+</TR>
+<TR>
+<TD>Move braille display to next line</TD>
+<TD>b5</TD>
+</TR>
+<TR>
+<TD>Route to braille cell</TD>
+<TD>routing</TD>
+</TR>
+<TR>
+<TD>shift+tab key</TD>
+<TD>esc</TD>
+</TR>
+<TR>
+<TD>alt key</TD>
+<TD>b2+b4+b5</TD>
+</TR>
+<TR>
+<TD>escape key</TD>
+<TD>b4+b6</TD>
+</TR>
+<TR>
+<TD>tab key</TD>
+<TD>enter</TD>
+</TR>
+<TR>
+<TD>enter key</TD>
+<TD>esc+enter</TD>
+</TR>
+<TR>
+<TD>upArrow key</TD>
+<TD>leftSpace</TD>
+</TR>
+<TR>
+<TD>downArrow key</TD>
+<TD>rightSpace</TD>
+</TR>
+<TR>
+<TD>NVDA Menu</TD>
+<TD>b2+b4+b5+b6</TD>
+</TR>
+<TR>
+<TD>Handy Tech configuration</TD>
+<TD>b4+b8</TD>
+</TR>
+</TABLE>
+
+<H3>MDV Lilli</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Key</TH>
+</TR>
+<TR>
+<TD>Scroll braille display backward</TD>
+<TD>LF</TD>
+</TR>
+<TR>
+<TD>Scroll braille display forward</TD>
+<TD>RG</TD>
+</TR>
+<TR>
+<TD>Move braille display to previous line</TD>
+<TD>UP</TD>
+</TR>
+<TR>
+<TD>Move braille display to next line</TD>
+<TD>DN</TD>
+</TR>
+<TR>
+<TD>Route to braille cell</TD>
+<TD>route</TD>
+</TR>
+<TR>
+<TD>shift+tab key</TD>
+<TD>SLF</TD>
+</TR>
+<TR>
+<TD>tab key</TD>
+<TD>SRG</TD>
+</TR>
+<TR>
+<TD>alt+tab key</TD>
+<TD>SDN</TD>
+</TR>
+<TR>
+<TD>alt+shift+tab key</TD>
+<TD>SUP</TD>
+</TR>
+</TABLE>
+
+<H3>Baum/Humanware/APH Braille Displays</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Key</TH>
+</TR>
+<TR>
+<TD>Scroll braille display back</TD>
+<TD>d2</TD>
+</TR>
+<TR>
+<TD>Scroll braille display forward</TD>
+<TD>d5</TD>
+</TR>
+<TR>
+<TD>Move braille display to previous line</TD>
+<TD>d1</TD>
+</TR>
+<TR>
+<TD>Move braille display to next line</TD>
+<TD>d3</TD>
+</TR>
+<TR>
+<TD>Route to braille cell</TD>
+<TD>routing</TD>
+</TR>
+</TABLE>
+
+<P>
+For displays which have a joystick:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Key</TH>
+</TR>
+<TR>
+<TD>upArrow key</TD>
+<TD>up</TD>
+</TR>
+<TR>
+<TD>downArrow key</TD>
+<TD>down</TD>
+</TR>
+<TR>
+<TD>leftArrow key</TD>
+<TD>left</TD>
+</TR>
+<TR>
+<TD>rightArrow key</TD>
+<TD>right</TD>
+</TR>
+<TR>
+<TD>enter key</TD>
+<TD>select</TD>
+</TR>
+</TABLE>
+
+<H3>hedo ProfiLine USB</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Key</TH>
+</TR>
+<TR>
+<TD>Scroll braille display back</TD>
+<TD>K1</TD>
+</TR>
+<TR>
+<TD>Scroll braille display forward</TD>
+<TD>K3</TD>
+</TR>
+<TR>
+<TD>Move braille display to previous line</TD>
+<TD>B2</TD>
+</TR>
+<TR>
+<TD>Move braille display to next line</TD>
+<TD>B5</TD>
+</TR>
+<TR>
+<TD>Route to braille cell</TD>
+<TD>routing</TD>
+</TR>
+<TR>
+<TD>Toggle braille tethered to</TD>
+<TD>K2</TD>
+</TR>
+<TR>
+<TD>Say all</TD>
+<TD>B6</TD>
+</TR>
+</TABLE>
+
+<H3>hedo MobilLine USB</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Key</TH>
+</TR>
+<TR>
+<TD>Scroll braille display back</TD>
+<TD>K1</TD>
+</TR>
+<TR>
+<TD>Scroll braille display forward</TD>
+<TD>K3</TD>
+</TR>
+<TR>
+<TD>Move braille display to previous line</TD>
+<TD>B2</TD>
+</TR>
+<TR>
+<TD>Move braille display to next line</TD>
+<TD>B5</TD>
+</TR>
+<TR>
+<TD>Route to braille cell</TD>
+<TD>routing</TD>
+</TR>
+<TR>
+<TD>Toggle braille tethered to</TD>
+<TD>K2</TD>
+</TR>
+<TR>
+<TD>Say all</TD>
+<TD>B6</TD>
+</TR>
+</TABLE>
+
+<H3>HumanWare Brailliant BI/B Series</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Key</TH>
+</TR>
+<TR>
+<TD>Scroll braille display back</TD>
+<TD>left</TD>
+</TR>
+<TR>
+<TD>Scroll braille display forward</TD>
+<TD>right</TD>
+</TR>
+<TR>
+<TD>Move braille display to previous line</TD>
+<TD>up</TD>
+</TR>
+<TR>
+<TD>Move braille display to next line</TD>
+<TD>down</TD>
+</TR>
+<TR>
+<TD>Route to braille cell</TD>
+<TD>routing</TD>
+</TR>
+<TR>
+<TD>Toggle braille tethered to</TD>
+<TD>up+down</TD>
+</TR>
+<TR>
+<TD>upArrow key</TD>
+<TD>space+dot1</TD>
+</TR>
+<TR>
+<TD>downArrow key</TD>
+<TD>space+dot4</TD>
+</TR>
+<TR>
+<TD>leftArrow key</TD>
+<TD>space+dot3</TD>
+</TR>
+<TR>
+<TD>rightArrow key</TD>
+<TD>space+dot6</TD>
+</TR>
+<TR>
+<TD>NVDA Menu</TD>
+<TD>c1+c3+c4+c5 (command n)</TD>
+</TR>
+<TR>
+<TD>shift+tab key</TD>
+<TD>space+dot1+dot3</TD>
+</TR>
+<TR>
+<TD>tab key</TD>
+<TD>space+dot4+dot6</TD>
+</TR>
+<TR>
+<TD>alt key</TD>
+<TD>space+dot1+dot3+dot4 (space+m)</TD>
+</TR>
+<TR>
+<TD>escape key</TD>
+<TD>space+dot1+dot5 (space+e)</TD>
+</TR>
+<TR>
+<TD>enter key</TD>
+<TD>dot8</TD>
+</TR>
+<TR>
+<TD>windows+d key (minimize all applications)</TD>
+<TD>c1+c4+c5 (command d)</TD>
+</TR>
+<TR>
+<TD>windows key</TD>
+<TD>space+dot3+dot4</TD>
+</TR>
+<TR>
+<TD>alt+tab key</TD>
+<TD>space+dot2+dot3+dot4+dot5 (space+t)</TD>
+</TR>
+<TR>
+<TD>Say all</TD>
+<TD>c1+c2+c3+c4+c5+c6</TD>
+</TR>
+</TABLE>
+
+<H3>BRLTTY</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>BRLTTY command</TH>
+</TR>
+<TR>
+<TD>Scroll braille display back</TD>
+<TD>fwinlt (go left one window)</TD>
+</TR>
+<TR>
+<TD>Scroll braille display forward</TD>
+<TD>fwinrt (go right one window)</TD>
+</TR>
+<TR>
+<TD>Move braille display to previous line</TD>
+<TD>lnup (go up one line)</TD>
+</TR>
+<TR>
+<TD>Move braille display to next line</TD>
+<TD>lndn (go down one line)</TD>
+</TR>
+<TR>
+<TD>Route to braille cell</TD>
+<TD>route (bring cursor to character)</TD>
+</TR>
+</TABLE>
+
+
+<!-- html code generated by txt2tags 2.5 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags user_docs\en\keyCommands.t2t -->
+</BODY></HTML>

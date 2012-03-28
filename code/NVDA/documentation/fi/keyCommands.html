@@ -1,0 +1,1235 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META NAME="generator" CONTENT="http://txt2tags.sf.net">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<TITLE>NVDA 2012.1 - näppäinkomentojen pikaopas</TITLE>
+</HEAD><BODY BGCOLOR="white" TEXT="black">
+<P ALIGN="center"><CENTER><H1>NVDA 2012.1 - näppäinkomentojen pikaopas</H1>
+<FONT SIZE="4">
+</FONT></CENTER>
+
+<H2>Alkuun pääseminen</H2>
+<H3>Perusnäppäinkomennot</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäinkomento</TH>
+<TH>Kuvaus</TH>
+</TR>
+<TR>
+<TD>Keskeytä puhe</TD>
+<TD>Ctrl</TD>
+<TD>Keskeyttää puheen välittömästi.</TD>
+</TR>
+<TR>
+<TD>Tauota puhe</TD>
+<TD>Shift</TD>
+<TD>Tauottaa puheen välittömästi. Uudelleen painaminen jatkaa puhetta kohdasta, johon jäätiin (mikäli sen hetkinen puhesyntetisaattori tukee puheen tauottamista).</TD>
+</TR>
+<TR>
+<TD>NVDA-valikko</TD>
+<TD>NVDA+n</TD>
+<TD>Avaa NVDA-valikon, josta on mahdollista säätää asetuksia, käyttää työkaluja ja lukea ohjetta jne.</TD>
+</TR>
+<TR>
+<TD>Vaihda puhetilaa</TD>
+<TD>NVDA+s</TD>
+<TD>Vaihtaa eri puhetilojen välillä, jotka ovat puhe, äänimerkit ja pois.</TD>
+</TR>
+<TR>
+<TD>Syöteohjetila</TD>
+<TD>NVDA+1</TD>
+<TD>Tässä tilassa minkä tahansa näppäimen painaminen kertoo kyseisen näppäimen nimen ja kaikki siihen määritellyt NVDA-komennot.</TD>
+</TR>
+<TR>
+<TD>Sulje NVDA</TD>
+<TD>NVDA+q</TD>
+<TD>Sulkee NVDA:n.</TD>
+</TR>
+<TR>
+<TD>Välitä seuraava näppäinpainallus</TD>
+<TD>NVDA+f2</TD>
+<TD>Välittää seuraavan näppäinpainalluksen suoraan aktiiviselle sovellukselle suorittamatta sen mahdollista NVDA-komentoa.</TD>
+</TR>
+<TR>
+<TD>Ota lepotila käyttöön tai poista se käytöstä</TD>
+<TD>NVDA+Shift+s</TD>
+<TD>Lepotila poistaa käytöstä kaikki NVDA:n komennot sekä puheen ja pistekirjoituksen tuottamisen nykyisessä sovelluksessa. Tästä on eniten hyötyä sovelluksissa, joissa on  omat puhe- tai ruudunlukutoimintonsa. Lepotila poistetaan käytöstä painamalla uudelleen tätä näppäinyhdistelmää.</TD>
+</TR>
+</TABLE>
+
+<H3>Järjestelmätietojen lukeminen</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäinkomento</TH>
+<TH>Kuvaus</TH>
+</TR>
+<TR>
+<TD>Lue päiväys/aika</TD>
+<TD>NVDA+f12</TD>
+<TD>Lukee kerran painettaessa kellonajan, kahdesti painettaessa päiväyksen.</TD>
+</TR>
+<TR>
+<TD>Lue akun tila</TD>
+<TD>NVDA+Shift+b</TD>
+<TD>Lukee akun tilan, ts. onko verkkovirta käytössä tai kertoo nykyisen varauksen tason prosentteina.</TD>
+</TR>
+<TR>
+<TD>Lue leikepöydällä oleva teksti</TD>
+<TD>NVDA+c</TD>
+<TD>Lukee leikepöydällä mahdollisesti olevan tekstin.</TD>
+</TR>
+</TABLE>
+
+<H2>NVDA:lla navigoiminen</H2>
+<A NAME="Jarjestelmakohdistus"></A>
+<H3>Järjestelmäkohdistuksella navigoiminen</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäinkomento</TH>
+<TH>Kuvaus</TH>
+</TR>
+<TR>
+<TD>Lue nykyinen kohdistus</TD>
+<TD>NVDA+sarkain</TD>
+<TD>Kertoo nykyisen objektin tai säätimen, jossa järjestelmän kohdistus on. Kahdesti painettaessa tiedot tavataan.</TD>
+</TR>
+<TR>
+<TD>Lue nimi</TD>
+<TD>NVDA+t</TD>
+<TD>Lukee aktiivisen ikkunan nimen. Kahdesti painettaessa nimi tavataan, kolmesti painettaessa se kopioidaan leikepöydälle.</TD>
+</TR>
+<TR>
+<TD>Lue aktiivinen ikkuna</TD>
+<TD>NVDA+b</TD>
+<TD>Lukee kaikki aktiivisen ikkunan säätimet (hyödyllinen valintaikkunoissa)</TD>
+</TR>
+<TR>
+<TD>Lue tilarivi</TD>
+<TD>NVDA+End</TD>
+<TD>Lukee tilarivin, mikäli NVDA löytää sen, ja siirtää lisäksi navigointiobjektin sen kohdalle</TD>
+</TR>
+</TABLE>
+
+<A NAME="Jarjestelmakohdistin"></A>
+<H3>Järjestelmäkohdistimella navigoiminen</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäinkomento</TH>
+<TH>Kuvaus</TH>
+</TR>
+<TR>
+<TD>Lue kaikki</TD>
+<TD>NVDA+alanuoli</TD>
+<TD>alkaa lukemaan järjestelmäkohdistimen nykyisestä sijainnista lähtien siirtäen samalla sitä</TD>
+</TR>
+<TR>
+<TD>Lue nykyinen rivi</TD>
+<TD>NVDA+ylänuoli</TD>
+<TD>Lukee järjestelmäkohdistimen kohdalla olevan rivin. Kahdesti painettaessa rivi tavataan.</TD>
+</TR>
+<TR>
+<TD>Lue valittu teksti</TD>
+<TD>NVDA+Shift+ylänuoli</TD>
+<TD>Lukee kaiken valittuna olevan tekstin</TD>
+</TR>
+</TABLE>
+
+<P>
+Taulukoissa ovat käytettävissä lisäksi seuraavat näppäinkomennot:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäinkomento</TH>
+<TH>Kuvaus</TH>
+</TR>
+<TR>
+<TD>Siirrä edelliseen sarakkeeseen</TD>
+<TD>Ctrl+Alt+vasen nuoli</TD>
+<TD>Siirtää järjestelmäkohdistimen edelliseen sarakkeeseen pysyen samalla rivillä.</TD>
+</TR>
+<TR>
+<TD>Siirrä seuraavaan sarakkeeseen</TD>
+<TD>Ctrl+Alt+oikea nuoli</TD>
+<TD>Siirtää järjestelmäkohdistimen seuraavaan sarakkeeseen pysyen samalla rivillä.</TD>
+</TR>
+<TR>
+<TD>Siirrä edelliselle riville</TD>
+<TD>Ctrl+Alt+ylänuoli</TD>
+<TD>Siirtää järjestelmäkohdistimen edelliselle riville pysyen samassa sarakkeessa.</TD>
+</TR>
+<TR>
+<TD>Siirrä seuraavalle riville</TD>
+<TD>Ctrl+Alt+alanuoli</TD>
+<TD>Siirtää järjestelmäkohdistimen seuraavalle riville pysyen samassa sarakkeessa.</TD>
+</TR>
+</TABLE>
+
+<A NAME="Objektinavigointi"></A>
+<H3>Objektinavigointi</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäinkomento pöytäkoneissa</TH>
+<TH>Näppäinkomento kannettavissa</TH>
+<TH>Kuvaus</TH>
+</TR>
+<TR>
+<TD>Lue nykyinen objekti</TD>
+<TD>NVDA+numeroryhmän 5</TD>
+<TD>NVDA+Ctrl+i</TD>
+<TD>Lukee nykyisen navigointiobjektin. Kahdesti painettaessa tiedot tavataan ja kolmasti painettaessa objektin nimi ja arvo kopioidaan leikepöydälle.</TD>
+</TR>
+<TR>
+<TD>Siirrä säilöobjektiin</TD>
+<TD>NVDA+numeroryhmän 8</TD>
+<TD>NVDA+Shift+i</TD>
+<TD>Siirtää objektiin, joka sisältää nykyisen navigointiobjektin.</TD>
+</TR>
+<TR>
+<TD>Siirrä edelliseen objektiin</TD>
+<TD>NVDA+numeroryhmän 4</TD>
+<TD>NVDA+Ctrl+j</TD>
+<TD>Siirtää nykyistä navigointiobjektia edeltävään objektiin.</TD>
+</TR>
+<TR>
+<TD>Siirrä seuraavaan objektiin</TD>
+<TD>NVDA+numeroryhmän 6</TD>
+<TD>Ctrl+NVDA+l</TD>
+<TD>Siirtää nykyisen navigointiobjektin jälkeiseen objektiin.</TD>
+</TR>
+<TR>
+<TD>Siirrä ensimmäiseen sisältöobjektiin</TD>
+<TD>NVDA+numeroryhmän 2</TD>
+<TD>NVDA+Shift+pilkku</TD>
+<TD>Siirtää ensimmäiseen navigointiobjektin sisällä olevaan objektiin.</TD>
+</TR>
+<TR>
+<TD>Siirrä kohdistusobjektiin</TD>
+<TD>NVDA+numeroryhmän miinus</TD>
+<TD>NVDA+askelpalautin</TD>
+<TD>Siirtää objektiin, jossa järjestelmän kohdistus on tällä hetkellä ja sijoittaa tarkastelukohdistimen järjestelmäkohdistimen kohdalle, mikäli se on näkyvissä.</TD>
+</TR>
+<TR>
+<TD>Aktivoi nykyinen navigointiobjekti</TD>
+<TD>NVDA+numeroryhmän Enter</TD>
+<TD>NVDA+Enter</TD>
+<TD>Aktivoi nykyisen navigointiobjektin (vastaa hiiren napsauttamista tai välilyönnin painamista, kun järjestelmän kohdistus on siinä).</TD>
+</TR>
+<TR>
+<TD>Siirrä järjestelmäkohdistus tai -kohdistin tarkastelukohtaan</TD>
+<TD>NVDA+Shift+numeroryhmän miinus</TD>
+<TD>NVDA+Shift+askelpalautin</TD>
+<TD>Siirtää kerran painettaessa järjestelmän kohdistuksen nykyiseen navigointiobjektiin, kahdesti painettaessa siirtää järjestelmäkohdistimen  tarkastelukohdistimen kohdalle.</TD>
+</TR>
+<TR>
+<TD>Lue navigointiobjektin mitat</TD>
+<TD>NVDA+numeroryhmän delete</TD>
+<TD>NVDA+delete</TD>
+<TD>Kertoo prosentteina nykyisen navigointiobjektin mitat ruudulla (mukaan lukien etäisyys ruudun vasemmasta ja yläreunasta, sekä sen leveys ja korkeus).</TD>
+</TR>
+</TABLE>
+
+<A NAME="Tekstinlukeminen"></A>
+<H3>Tekstin lukeminen</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäinkomento pöytäkoneissa</TH>
+<TH>Näppäinkomento kannettavissa</TH>
+<TH>Kuvaus</TH>
+</TR>
+<TR>
+<TD>Siirrä ylimmälle riville</TD>
+<TD>Shift+numeroryhmän 7</TD>
+<TD>NVDA+7</TD>
+<TD>Siirtää tarkastelukohdistimen tekstin ylimmälle riville.</TD>
+</TR>
+<TR>
+<TD>Siirrä edelliselle riville</TD>
+<TD>Numeroryhmän 7</TD>
+<TD>NVDA+u</TD>
+<TD>Siirtää tarkastelukohdistimen tekstin edelliselle riville.</TD>
+</TR>
+<TR>
+<TD>Lue nykyinen rivi</TD>
+<TD>Numeroryhmän 8</TD>
+<TD>NVDA+i</TD>
+<TD>Lukee nykyisen rivin, jolla tarkastelukohdistin on tekstissä. Kahdesti painettaessa rivi tavataan ja kolmesti painettaessa se tavataan merkkikuvauksia käyttäen.</TD>
+</TR>
+<TR>
+<TD>Siirrä seuraavalle riville</TD>
+<TD>Numeroryhmän 9</TD>
+<TD>NVDA+o</TD>
+<TD>Siirtää tarkastelukohdistimen tekstin seuraavalle riville.</TD>
+</TR>
+<TR>
+<TD>Siirrä alimmalle riville</TD>
+<TD>Shift+numeroryhmän 9</TD>
+<TD>NVDA+9</TD>
+<TD>Siirtää tarkastelukohdistimen tekstin alimmalle riville.</TD>
+</TR>
+<TR>
+<TD>Siirrä edelliseen sanaan</TD>
+<TD>Numeroryhmän 4</TD>
+<TD>NVDA+j</TD>
+<TD>Siirtää tarkastelukohdistimen tekstissä edellisen sanan kohdalle.</TD>
+</TR>
+<TR>
+<TD>Lue nykyinen sana</TD>
+<TD>Numeroryhmän 5</TD>
+<TD>NVDA+k</TD>
+<TD>Lukee nykyisen sanan, jonka kohdalla tarkastelukohdistin on tekstissä. Kahdesti painettaessa sana tavataan ja kolmesti painettaessa se tavataan merkkikuvauksia käyttäen.</TD>
+</TR>
+<TR>
+<TD>Siirrä seuraavaan sanaan</TD>
+<TD>Numeroryhmän 6</TD>
+<TD>NVDA+l</TD>
+<TD>Siirtää tarkastelukohdistimen tekstissä seuraavan sanan kohdalle.</TD>
+</TR>
+<TR>
+<TD>Siirrä rivin alkuun</TD>
+<TD>Shift+numeroryhmän 1</TD>
+<TD>NVDA+Shift+u</TD>
+<TD>Siirtää tarkastelukohdistimen tekstissä nykyisen rivin alkuun.</TD>
+</TR>
+<TR>
+<TD>Siirrä edelliseen merkkiin</TD>
+<TD>Numeroryhmän 1</TD>
+<TD>NVDA+m</TD>
+<TD>Siirtää tarkastelukohdistimen tekstissä nykyisen rivin seuraavan merkin kohdalle.</TD>
+</TR>
+<TR>
+<TD>Lue nykyinen merkki</TD>
+<TD>Numeroryhmän 2</TD>
+<TD>NVDA+pilkku</TD>
+<TD>Lukee nykyisen merkin riviltä, jonka kohdalla tarkastelukohdistin on tekstissä. Kahdesti painettaessa luetaan merkin kuvaus tai esimerkki sen käytöstä. Kolmesti painettaessa luetaan merkin numeerinen arvo desimaaleina ja heksadesimaaleina.</TD>
+</TR>
+<TR>
+<TD>Siirrä seuraavaan merkkiin</TD>
+<TD>Numeroryhmän 3</TD>
+<TD>NVDA+piste</TD>
+<TD>Siirtää tarkastelukohdistimen tekstissä nykyisen rivin seuraavan merkin kohdalle.</TD>
+</TR>
+<TR>
+<TD>Siirrä rivin loppuun</TD>
+<TD>Shift+numeroryhmän 3</TD>
+<TD>NVDA+Shift+o</TD>
+<TD>Siirtää tarkastelukohdistimen tekstissä nykyisen rivin loppuun.</TD>
+</TR>
+<TR>
+<TD>Lue kaikki</TD>
+<TD>Numeroryhmän plus</TD>
+<TD>NVDA+Shift+alanuoli</TD>
+<TD>Lukee tarkastelukohdistimen nykyisestä kohdasta lähtien siirtäen samalla sitä.</TD>
+</TR>
+<TR>
+<TD>Merkitse kopioitavan tekstin alkukohta</TD>
+<TD>NVDA+f9</TD>
+<TD>NVDA+f9</TD>
+<TD>Aloittaa tekstin kopioimisen tarkastelukohdistimen nykyisestä kohdasta. Varsinaista kopiointia ei suoriteta ennen kuin NVDA:lle kerrotaan, mihin kopiointi lopetetaan.</TD>
+</TR>
+<TR>
+<TD>Merkitse kopioitavan tekstin loppukohta</TD>
+<TD>NVDA+f10</TD>
+<TD>NVDA+f10</TD>
+<TD>Kopioi tekstin alkukohdan merkitsemiskomennolla asetetusta kohdasta lähtien tarkastelukohdistimen nykyiseen sijaintiin saakka. Kun tätä näppäinyhdistelmää painetaan, teksti kopioidaan leikepöydälle.</TD>
+</TR>
+<TR>
+<TD>Lue tekstin muotoilutiedot</TD>
+<TD>NVDA+f</TD>
+<TD>Lukee järjestelmäkohdistimen nykyisessä sijainnissa olevan tekstin muotoilutiedot.</TD>
+</TR>
+</TABLE>
+
+<A NAME="Kokonaistarkastelu"></A>
+<H3>Kokonaistarkastelu</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäinkomento pöytäkoneissa</TH>
+<TH>Näppäinkomento kannettavissa</TH>
+<TH>Kuvaus</TH>
+</TR>
+<TR>
+<TD>Siirry kokonaistarkasteluun</TD>
+<TD>NVDA+numeroryhmän 7</TD>
+<TD>NVDA+Page up</TD>
+<TD>Siirtää kokonaistarkasteluun tarkastelukohdistimen nykyisessä kohdassa. Tämä mahdollistaa koko ruudun tai asiakirjan sisällön lukemisen tekstinlukukomennoilla.</TD>
+</TR>
+<TR>
+<TD>Siirrä objektiin</TD>
+<TD>NVDA+numeroryhmän 1</TD>
+<TD>NVDA+Page down</TD>
+<TD>Siirtää objektiin, jossa tarkastelukohdistimen kohdalla oleva teksti on kokonaistarkastelussa.</TD>
+</TR>
+</TABLE>
+
+<H3>Hiirellä navigoiminen</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäinkomento pöytäkoneissa</TH>
+<TH>Näppäinkomento kannettavissa</TH>
+<TH>Kuvaus</TH>
+</TR>
+<TR>
+<TD>Vasemman hiiripainikkeen napsautus</TD>
+<TD>Numeroryhmän jakomerkki (/)</TD>
+<TD>NVDA+vasen nuoli</TD>
+<TD>Napsauttaa kerran hiiren vasenta painiketta. Kaksoisnapsautus tehdään painamalla tätä näppäintä kaksi kertaa nopeasti peräkkäin.</TD>
+</TR>
+<TR>
+<TD>Vasemman hiiripainikkeen lukitus</TD>
+<TD>Shift+numeroryhmän jakomerkki (/)</TD>
+<TD>NVDA+Shift+vasen nuoli</TD>
+<TD>Lukitsee vasemman hiiripainikkeen alas. Lukitus vapautetaan painamalla tätä näppäinyhdistelmää uudelleen. Hiirellä vetäminen tehdään painamalla tätä näppäintä vasemman painikkeen lukitsemiseksi ja siirtämällä sitten hiirtä joko fyysisesti tai käyttämällä jotakin muista sen siirtämiskomennoista.</TD>
+</TR>
+<TR>
+<TD>Oikean hiiripainikkeen napsautus</TD>
+<TD>Numeroryhmän kertomerkki (*)</TD>
+<TD>NVDA+oikea nuoli</TD>
+<TD>Napsauttaa kerran hiiren oikeaa painiketta.</TD>
+</TR>
+<TR>
+<TD>Oikean hiiripainikkeen lukitus</TD>
+<TD>Shift+numeroryhmän kertomerkki (*)</TD>
+<TD>NVDA+Shift+oikea nuoli</TD>
+<TD>Lukitsee oikean hiiripainikkeen alas. Lukitus vapautetaan painamalla tätä näppäinyhdistelmää uudestaan. Hiirellä vetäminen tehdään painamalla tätä näppäintä oikean painikkeen lukitsemiseksi ja siirtämällä sitten hiirtä joko fyysisesti tai käyttämällä jotakin muista sen siirtämiskomennoista.</TD>
+</TR>
+<TR>
+<TD>Siirrä hiiri nykyiseen navigointiobjektiin</TD>
+<TD>NVDA+numeroryhmän jakomerkki (/)</TD>
+<TD>NVDA+Shift+f9</TD>
+<TD>Siirtää hiiren nykyisen navigointiobjektin ja tarkastelukohdistimen sijaintiin.</TD>
+</TR>
+<TR>
+<TD>Siirrä hiiren alla olevaan objektiin</TD>
+<TD>NVDA+numeroryhmän kertomerkki (*)</TD>
+<TD>NVDA+Shift+f10</TD>
+<TD>Siirtää navigointiobjektin hiiren alla olevaan objektiin.</TD>
+</TR>
+</TABLE>
+
+<H2>Selaustila</H2>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäinkomento</TH>
+<TH>Kuvaus</TH>
+</TR>
+<TR>
+<TD>Vaihda selaus- ja vuorovaikutustilan välillä</TD>
+<TD>NVDA+välilyönti</TD>
+<TD>Vaihtaa vuorovaikutus- ja selaustilan välillä.</TD>
+</TR>
+<TR>
+<TD>Poistu vuorovaikutustilasta</TD>
+<TD>Esc</TD>
+<TD>Siirtää takaisin selaustilaan, mikäli NVDA siirtyi aiemmin automaattisesti vuorovaikutustilaan.</TD>
+</TR>
+<TR>
+<TD>Päivitä selaustiladokumentti</TD>
+<TD>NVDA+f5</TD>
+<TD>Lataa uudelleen nykyisen dokumentin sisällön (hyödyllistä, jos sivulta vaikuttaa puuttuvan jotakin).</TD>
+</TR>
+<TR>
+<TD>Etsi</TD>
+<TD>NVDA+Ctrl+f</TD>
+<TD>Avaa valintaikkunan, jolla voidaan etsiä tekstiä nykyisestä dokumentista.</TD>
+</TR>
+<TR>
+<TD>Etsi seuraava</TD>
+<TD>NVDA+f3</TD>
+<TD>Etsii dokumentista aiemmin haetun tekstin seuraavan esiintymän.</TD>
+</TR>
+<TR>
+<TD>Etsi edellinen</TD>
+<TD>NVDA+Shift+f3</TD>
+<TD>Etsii dokumentista aiemmin haetun tekstin edellisen esiintymän.</TD>
+</TR>
+</TABLE>
+
+<H3>Pikanavigointinäppäimet</H3>
+<P>
+Sellaisinaan nämä komennot siirtävät seuraavan, ja Shift-näppäimen kanssa painettuna edellisen elementin kohdalle:
+</P>
+<UL>
+<LI>h: otsikko
+<LI>l: lista
+<LI>i: listan kohde
+<LI>t: taulukko
+<LI>k: linkki
+<LI>n: teksti, joka ei ole linkki
+<LI>f: lomakekenttä
+<LI>u: avaamaton linkki
+<LI>v: avattu linkki
+<LI>e: muokkauskenttä
+<LI>b: painike
+<LI>x: valintaruutu
+<LI>c: yhdistelmäruutu
+<LI>r: valintapainike
+<LI>q: kappaleenvaihdollinen sisennys
+<LI>s: erotin
+<LI>m: kehys
+<LI>g: kuva
+<LI>d: ARIA-maamerkki
+<LI>o: upotettu objekti
+<LI>numerot 1 - 6: otsikot tasoilla 1 - 6
+</UL>
+
+<P></P>
+<H3>Elementtilista</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäinkomento</TH>
+<TH>Kuvaus</TH>
+</TR>
+<TR>
+<TD>Selaustilan elementtilista</TD>
+<TD>NVDA+f7</TD>
+<TD>Avaa elementtilistan, joka sisältää nykyisen dokumentin linkit, otsikot ja maamerkit.</TD>
+</TR>
+</TABLE>
+
+<H3>Upotetut objektit</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäinkomento</TH>
+<TH>Kuvaus</TH>
+</TR>
+<TR>
+<TD>Siirrä upotetun objektin sisältävään selaustiladokumenttiin</TD>
+<TD>NVDA+Ctrl+välilyönti</TD>
+<TD>Siirtää kohdistuksen pois nykyisestä upotetusta objektista dokumenttiin, jossa se on.</TD>
+</TR>
+</TABLE>
+
+<H2>Sovelluskohtaiset komennot</H2>
+<H3>foobar2000</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäinkomento</TH>
+<TH>Kuvaus</TH>
+</TR>
+<TR>
+<TD>Lue jäljellä oleva aika</TD>
+<TD>Ctrl+Shift+r</TD>
+<TD>Lukee nykyisen kappaleen jäljellä olevan ajan.</TD>
+</TR>
+</TABLE>
+
+<H3>Miranda IM</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäinkomento</TH>
+<TH>Kuvaus</TH>
+</TR>
+<TR>
+<TD>Lue uusin viesti</TD>
+<TD>NVDA+Ctrl+1-4</TD>
+<TD>Lukee jonkin uusimmista, painettua numeroa vastaavista viesteistä, esim. NVDA+Ctrl+2 lukee toiseksi uusimman.</TD>
+</TR>
+</TABLE>
+
+<H3>Poedit</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäinkomento</TH>
+<TH>Kuvaus</TH>
+</TR>
+<TR>
+<TD>Lue kommentti-ikkuna</TD>
+<TD>Ctrl+Shift+c</TD>
+<TD>Lukee kaikki kommentti-ikkunassa olevat kommentit.</TD>
+</TR>
+<TR>
+<TD>Lue automaattisten kommenttien ikkuna</TD>
+<TD>Ctrl+Shift+a</TD>
+<TD>Lukee kaikki automaattisten kommenttien ikkunassa olevat kommentit.</TD>
+</TR>
+</TABLE>
+
+<H2>NVDA:n asetusten määrittäminen</H2>
+<H3>Asetukset</H3>
+<A NAME="Aaniasetukset"></A>
+<H4>Ääniasetukset (NVDA+Ctrl+v)</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäinkomento pöytäkoneissa</TH>
+<TH>Näppäinkomento kannettavissa</TH>
+<TH>Kuvaus</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Välimerkki- ja symbolitaso</TD>
+<TD>NVDA+p</TD>
+<TD>NVDA+p</TD>
+<TD>Tästä voidaan valita sanoina luettavien välimerkkien ja muiden symboleiden määrä.</TD>
+</TR>
+</TABLE>
+
+<A NAME="Syntetisaattorinasetusrengas"></A>
+<H4>Syntetisaattorin asetusrengas</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäinkomento pöytäkoneissa</TH>
+<TH>Näppäinkomento kannettavissa</TH>
+<TH>Kuvaus</TH>
+</TR>
+<TR>
+<TD>Siirrä seuraavaan syntetisaattorin asetukseen</TD>
+<TD>NVDA+Ctrl+oikea nuoli</TD>
+<TD>NVDA+Ctrl+oikea nuoli</TD>
+<TD>Siirtää nykyisen puheasetuksen jälkeen seuraavana käytettävissä olevaan asetukseen, siirtyen viimeisen jälkeen takaisin ensimmäiseen.</TD>
+</TR>
+<TR>
+<TD>Siirrä edelliseen syntetisaattorin asetukseen</TD>
+<TD>NVDA+Ctrl+vasen nuoli</TD>
+<TD>NVDA+Ctrl+vasen nuoli</TD>
+<TD>Siirtää nykyistä puheasetusta edeltävään käytettävissä olevaan asetukseen, siirtyen ensimmäisen jälkeen takaisin viimeiseen.</TD>
+</TR>
+<TR>
+<TD>Suurenna nykyistä syntetisaattorin asetusta</TD>
+<TD>NVDA+Ctrl+ylänuoli</TD>
+<TD>NVDA+Ctrl+ylänuoli</TD>
+<TD>Suurentaa puheasetusta, joka on valittuna, esim. lisää nopeutta, valitsee seuraavan puheäänen tai lisää äänenvoimakkuutta.</TD>
+</TR>
+<TR>
+<TD>Pienennä nykyistä syntetisaattorin asetusta</TD>
+<TD>NVDA+Ctrl+alanuoli</TD>
+<TD>NVDA+Ctrl+alanuoli</TD>
+<TD>Pienentää puheasetusta, joka on valittuna, esim. vähentää nopeutta, valitsee edellisen puheäänen tai vähentää äänenvoimakkuutta.</TD>
+</TR>
+</TABLE>
+
+<H4>Pistenäytön asetukset</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäinkomento pöytäkoneissa</TH>
+<TH>Näppäinkomento kannettavissa</TH>
+<TH>Kuvaus</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Pistenäyttö seuraa</TD>
+<TD>NVDA+Ctrl+t</TD>
+<TD>NVDA+Ctrl+t</TD>
+<TD>Tällä asetuksella voidaan valita, seuraako pistenäyttö järjestelmän kohdistusta vai navigointiobjektia/tarkastelukohdistinta.</TD>
+</TR>
+</TABLE>
+
+<H4>Näppäimistöasetukset (NVDA+Ctrl+k)</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäinkomento pöytäkoneissa</TH>
+<TH>Näppäinkomento kannettavissa</TH>
+<TH>Kuvaus</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Lue kirjoitetut merkit</TD>
+<TD>NVDA+2</TD>
+<TD>NVDA+2</TD>
+<TD>Kun tämä valintaruutu on valittuna, NVDA lukee kaikki kirjoitetut merkit.</TD>
+</TR>
+<TR>
+<TD ALIGN="center">Lue kirjoitetut sanat</TD>
+<TD>NVDA+3</TD>
+<TD>NVDA+3</TD>
+<TD>Kun tämä valintaruutu on valittuna, NVDA lukee kaikki kirjoitetut sanat.</TD>
+</TR>
+<TR>
+<TD ALIGN="center">Lue komentonäppäimet</TD>
+<TD>NVDA+4</TD>
+<TD>NVDA+4</TD>
+<TD>Kun tämä valintaruutu on valittuna, NVDA puhuu kaikki painetut näppäimet, jotka eivät ole merkkejä. Näitä ovat sellaiset näppäinyhdistelmät kuin Ctrl+jokin muu kirjain.</TD>
+</TR>
+</TABLE>
+
+<A NAME="Hiiriasetukset"></A>
+<H4>Hiiriasetukset (NVDA+Ctrl+m)</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäinkomento pöytäkoneissa</TH>
+<TH>Näppäinkomento kannettavissa</TH>
+<TH>Kuvaus</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Käytä hiiren seurantaa</TD>
+<TD>NVDA+m</TD>
+<TD>NVDA+Shift+m</TD>
+<TD>Kun tämä valintaruutu on valittuna, NVDA lukee hiiriosoittimen alla olevan tekstin. Tällä tavalla on mahdollista löytää asioita ruudulta hiirtä liikuttamalla sen sijaan, että yritettäisiin käyttää objektinavigointia.</TD>
+</TR>
+</TABLE>
+
+<H4>Tarkastelukohdistimen asetukset</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäinkomento pöytäkoneissa</TH>
+<TH>Näppäinkomento kannettavissa</TH>
+<TH>Kuvaus</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Seuraa järjestelmäkohdistusta</TD>
+<TD>NVDA+7</TD>
+<TD>NVDA+Ctrl+7</TD>
+<TD>Kun tämä asetus on käytössä, tarkastelukohdistin sijoitetaan aina samaan objektiin kuin nykyinen järjestelmän kohdistus sen muuttuessa.</TD>
+</TR>
+<TR>
+<TD ALIGN="center">Seuraa järjestelmäkohdistinta</TD>
+<TD>NVDA+6</TD>
+<TD>NVDA+6</TD>
+<TD>Kun tämä asetus on käytössä, tarkastelukohdistin siirretään automaattisesti järjestelmäkohdistimen kohdalle joka kerta sen liikkuessa.</TD>
+</TR>
+</TABLE>
+
+<H4>Objektien lukuasetukset (NVDA+Ctrl+o)</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäinkomento pöytäkoneissa</TH>
+<TH>Näppäinkomento kannettavissa</TH>
+<TH>Kuvaus</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Edistymispalkkien päivitykset</TD>
+<TD>NVDA+u</TD>
+<TD>NVDA+Ctrl+f2</TD>
+<TD>Tästä yhdistelmäruudusta voidaan säätää, miten NVDA ilmaisee edistymispalkkien päivittymisen.</TD>
+</TR>
+<TR>
+<TD ALIGN="center">Lue dynaamisen sisällön muutokset</TD>
+<TD>NVDA+5</TD>
+<TD>NVDA+5</TD>
+<TD>Ottaa käyttöön tai poistaa käytöstä uuden sisällön lukemisen tietyissä objekteissa, kuten pääteohjelmissa ja keskusteluohjelmien historiasäätimissä.</TD>
+</TR>
+</TABLE>
+
+<H4>Selaustilan asetukset (NVDA+Ctrl+b)</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäinkomento pöytäkoneissa</TH>
+<TH>Näppäinkomento kannettavissa</TH>
+<TH>Kuvaus</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Käytä ruutuasettelua</TD>
+<TD>NVDA+v</TD>
+<TD>NVDA+v</TD>
+<TD>Tällä asetuksella voidaan määrittää, sijoitetaanko sellainen sisältö kuten linkit ja muut elementit selaustilassa omille riveilleen, vai säilytetäänkö ne sellaisina kuin ne ruudulla näytetään. Jos asetus on käytössä, kentät jätetään sellaisiksi kuin ne ruudulla näytetään, jos asetus poistetaan käytöstä, kentät sijoitetaan omille riveilleen.</TD>
+</TR>
+</TABLE>
+
+<H3>Asetusten tallentaminen ja palauttaminen</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäinkomento pöytäkoneissa</TH>
+<TH>Näppäinkomento kannettavissa</TH>
+<TH>Kuvaus</TH>
+</TR>
+<TR>
+<TD>Tallenna asetukset</TD>
+<TD>NVDA+Ctrl+c</TD>
+<TD>NVDA+Ctrl+c</TD>
+<TD>Tallentaa nykyiset asetukset, jotta ne eivät häviä, kun NVDA suljetaan</TD>
+</TR>
+<TR>
+<TD>Palauta tallennetut asetukset</TD>
+<TD>NVDA+Ctrl+r</TD>
+<TD>NVDA+Ctrl+r</TD>
+<TD>Palauttaa viimeksi tallennetut NVDA:n asetukset</TD>
+</TR>
+</TABLE>
+
+<A NAME="Tuetutpistenaytot"></A>
+<H2>Tuetut pistenäytöt</H2>
+<H3>Freedom Scientific Focus/PAC Mate</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäin</TH>
+</TR>
+<TR>
+<TD>Vaihda vasemman säätörullan toimintoa</TD>
+<TD>vasemman säätörullan painallus</TD>
+</TR>
+<TR>
+<TD>Siirrä taaksepäin vasenta säätörullaa käyttäen</TD>
+<TD>vasen säätörulla ylös</TD>
+</TR>
+<TR>
+<TD>Siirrä eteenpäin vasenta säätörullaa käyttäen</TD>
+<TD>vasen säätörulla alas</TD>
+</TR>
+<TR>
+<TD>Vaihda oikean säätörullan toimintoa</TD>
+<TD>oikean säätörullan painallus</TD>
+</TR>
+<TR>
+<TD>Siirrä taaksepäin oikeaa säätörullaa käyttäen</TD>
+<TD>oikea säätörulla ylös</TD>
+</TR>
+<TR>
+<TD>Siirrä eteenpäin oikeaa säätörullaa käyttäen</TD>
+<TD>oikea säätörulla alas</TD>
+</TR>
+<TR>
+<TD>Siirrä pistesoluun</TD>
+<TD>kosketuskohdistinnäppäimet</TD>
+</TR>
+</TABLE>
+
+<H3>Optelec ALVA BC640/680</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäin</TH>
+</TR>
+<TR>
+<TD>Vieritä pistenäyttöä taaksepäin</TD>
+<TD>t1</TD>
+</TR>
+<TR>
+<TD>Siirrä pistenäyttö edelliselle riville</TD>
+<TD>t2</TD>
+</TR>
+<TR>
+<TD>Siirrä pistenäyttö seuraavalle riville</TD>
+<TD>t4</TD>
+</TR>
+<TR>
+<TD>Vieritä pistenäyttöä eteenpäin</TD>
+<TD>t5</TD>
+</TR>
+<TR>
+<TD>Siirrä pistesoluun</TD>
+<TD>kosketuskohdistinnäppäimet</TD>
+</TR>
+<TR>
+<TD>Shift+sarkain-näppäimet</TD>
+<TD>sp1</TD>
+</TR>
+<TR>
+<TD>Alt-näppäin</TD>
+<TD>sp2</TD>
+</TR>
+<TR>
+<TD>Escape-näppäin</TD>
+<TD>sp3</TD>
+</TR>
+<TR>
+<TD>Sarkain-näppäin</TD>
+<TD>sp4</TD>
+</TR>
+<TR>
+<TD>ylänuolinäppäin</TD>
+<TD>spUp</TD>
+</TR>
+<TR>
+<TD>alanuolinäppäin</TD>
+<TD>spDown</TD>
+</TR>
+<TR>
+<TD>vasen nuolinäppäin</TD>
+<TD>spLeft</TD>
+</TR>
+<TR>
+<TD>oikea nuolinäppäin</TD>
+<TD>spRight</TD>
+</TR>
+<TR>
+<TD>Enter-näppäin</TD>
+<TD>spEnter</TD>
+</TR>
+<TR>
+<TD>NVDA-valikko</TD>
+<TD>sp1+sp3</TD>
+</TR>
+<TR>
+<TD>Windows+d-näppäimet (pienennä kaikki sovellukset)</TD>
+<TD>sp1+sp4</TD>
+</TR>
+<TR>
+<TD>Windows-näppäin</TD>
+<TD>sp2+sp3</TD>
+</TR>
+<TR>
+<TD>Alt+sarkain-näppäimet</TD>
+<TD>sp2+sp4</TD>
+</TR>
+</TABLE>
+
+<H3>Handy Tech</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäin</TH>
+</TR>
+<TR>
+<TD>Vieritä pistenäyttöä taaksepäin</TD>
+<TD>vasen, ylös</TD>
+</TR>
+<TR>
+<TD>Vieritä pistenäyttöä eteenpäin</TD>
+<TD>oikea, alas</TD>
+</TR>
+<TR>
+<TD>Siirrä pistenäyttö edelliselle riville</TD>
+<TD>b4</TD>
+</TR>
+<TR>
+<TD>Siirrä pistenäyttö seuraavalle riville</TD>
+<TD>b5</TD>
+</TR>
+<TR>
+<TD>Siirrä pistesoluun</TD>
+<TD>kosketuskohdistinnäppäimet</TD>
+</TR>
+<TR>
+<TD>Shift+sarkain-näppäimet</TD>
+<TD>esc</TD>
+</TR>
+<TR>
+<TD>Alt-näppäin</TD>
+<TD>b2+b4+b5</TD>
+</TR>
+<TR>
+<TD>Escape-näppäin</TD>
+<TD>b4+b6</TD>
+</TR>
+<TR>
+<TD>sarkain-näppäin</TD>
+<TD>enter</TD>
+</TR>
+<TR>
+<TD>Enter-näppäin</TD>
+<TD>esc+enter</TD>
+</TR>
+<TR>
+<TD>ylänuolinäppäin</TD>
+<TD>vasen väli</TD>
+</TR>
+<TR>
+<TD>alanuolinäppäin</TD>
+<TD>oikea väli</TD>
+</TR>
+<TR>
+<TD>NVDA-valikko</TD>
+<TD>b2+b4+b5+b6</TD>
+</TR>
+<TR>
+<TD>Handy Techin asetusten määritys</TD>
+<TD>b4+b8</TD>
+</TR>
+</TABLE>
+
+<H3>MDV Lilli</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäin</TH>
+</TR>
+<TR>
+<TD>Vieritä pistenäyttöä taaksepäin</TD>
+<TD>LF</TD>
+</TR>
+<TR>
+<TD>Vieritä pistenäyttöä eteenpäin</TD>
+<TD>RG</TD>
+</TR>
+<TR>
+<TD>Siirrä pistenäyttö edelliselle riville</TD>
+<TD>UP</TD>
+</TR>
+<TR>
+<TD>Siirrä pistenäyttö seuraavalle riville</TD>
+<TD>DN</TD>
+</TR>
+<TR>
+<TD>Siirrä pistesoluun</TD>
+<TD>kosketuskohdistinnäppäimet</TD>
+</TR>
+<TR>
+<TD>Shift+sarkain-näppäimet</TD>
+<TD>SLF</TD>
+</TR>
+<TR>
+<TD>sarkain-näppäin</TD>
+<TD>SRG</TD>
+</TR>
+<TR>
+<TD>Alt+sarkain-näppäimet</TD>
+<TD>SDN</TD>
+</TR>
+<TR>
+<TD>Alt+Shift+sarkain-näppäimet</TD>
+<TD>SUP</TD>
+</TR>
+</TABLE>
+
+<H3>Baum/Humanware/APH</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäin</TH>
+</TR>
+<TR>
+<TD>Vieritä pistenäyttöä taaksepäin</TD>
+<TD>d2</TD>
+</TR>
+<TR>
+<TD>Vieritä pistenäyttöä eteenpäin</TD>
+<TD>d5</TD>
+</TR>
+<TR>
+<TD>Siirrä pistenäyttö edelliselle riville</TD>
+<TD>d1</TD>
+</TR>
+<TR>
+<TD>Siirrä pistenäyttö seuraavalle riville</TD>
+<TD>d3</TD>
+</TR>
+<TR>
+<TD>Siirrä pistesoluun</TD>
+<TD>kosketuskohdistinnäppäimet</TD>
+</TR>
+</TABLE>
+
+<P>
+Pistenäytöissä, joissa on ohjaustappi:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäin</TH>
+</TR>
+<TR>
+<TD>ylänuolinäppäin</TD>
+<TD>ylös</TD>
+</TR>
+<TR>
+<TD>alanuolinäppäin</TD>
+<TD>alas</TD>
+</TR>
+<TR>
+<TD>vasen nuolinäppäin</TD>
+<TD>vasen</TD>
+</TR>
+<TR>
+<TD>oikea nuolinäppäin</TD>
+<TD>oikea</TD>
+</TR>
+<TR>
+<TD>Enter-näppäin</TD>
+<TD>valitse</TD>
+</TR>
+</TABLE>
+
+<H3>hedo ProfiLine USB</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäin</TH>
+</TR>
+<TR>
+<TD>Vieritä pistenäyttöä taaksepäin</TD>
+<TD>K1</TD>
+</TR>
+<TR>
+<TD>Vieritä pistenäyttöä eteenpäin</TD>
+<TD>K3</TD>
+</TR>
+<TR>
+<TD>Siirrä pistenäyttö edelliselle riville</TD>
+<TD>B2</TD>
+</TR>
+<TR>
+<TD>Siirrä pistenäyttö seuraavalle riville</TD>
+<TD>B5</TD>
+</TR>
+<TR>
+<TD>Siirrä pistesoluun</TD>
+<TD>Kosketuskohdistinnäppäimet</TD>
+</TR>
+<TR>
+<TD>Vaihda Pistenäyttö seuraa -asetusta</TD>
+<TD>K2</TD>
+</TR>
+<TR>
+<TD>Lue kaikki</TD>
+<TD>B6</TD>
+</TR>
+</TABLE>
+
+<H3>hedo MobilLine USB</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäinkomento</TH>
+</TR>
+<TR>
+<TD>Vieritä pistenäyttöä taaksepäin</TD>
+<TD>K1</TD>
+</TR>
+<TR>
+<TD>Vieritä pistenäyttöä eteenpäin</TD>
+<TD>K3</TD>
+</TR>
+<TR>
+<TD>Siirrä pistenäyttö edelliselle riville</TD>
+<TD>B2</TD>
+</TR>
+<TR>
+<TD>Siirrä pistenäyttö seuraavalle riville</TD>
+<TD>B5</TD>
+</TR>
+<TR>
+<TD>Siirrä pistesoluun</TD>
+<TD>Kosketuskohdistinnäppäimet</TD>
+</TR>
+<TR>
+<TD>Vaihda Pistenäyttö seuraa -asetusta</TD>
+<TD>K2</TD>
+</TR>
+<TR>
+<TD>Lue kaikki</TD>
+<TD>B6</TD>
+</TR>
+</TABLE>
+
+<H3>HumanWare Brailliant BI/B</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>Näppäin</TH>
+</TR>
+<TR>
+<TD>Vieritä pistenäyttöä taaksepäin</TD>
+<TD>vasen</TD>
+</TR>
+<TR>
+<TD>Vieritä pistenäyttöä eteenpäin</TD>
+<TD>oikea</TD>
+</TR>
+<TR>
+<TD>Siirrä pistenäyttö edelliselle riville</TD>
+<TD>ylös</TD>
+</TR>
+<TR>
+<TD>Siirrä pistenäyttö seuraavalle riville</TD>
+<TD>alas</TD>
+</TR>
+<TR>
+<TD>Siirrä pistesoluun</TD>
+<TD>Kosketuskohdistinnäppäimet</TD>
+</TR>
+<TR>
+<TD>Vaihda Pistenäyttö seuraa -asetusta</TD>
+<TD>ylös+alas</TD>
+</TR>
+<TR>
+<TD>ylänuolinäppäin</TD>
+<TD>välilyönti+piste1</TD>
+</TR>
+<TR>
+<TD>alanuolinäppäin</TD>
+<TD>välilyönti+piste4</TD>
+</TR>
+<TR>
+<TD>vasen nuolinäppäin</TD>
+<TD>välilyönti+piste3</TD>
+</TR>
+<TR>
+<TD>oikea nuolinäppäin</TD>
+<TD>välilyönti+piste6</TD>
+</TR>
+<TR>
+<TD>NVDA-valikko</TD>
+<TD>c1+c3+c4+c5 (komento n)</TD>
+</TR>
+<TR>
+<TD>Shift+sarkain-näppäinyhdistelmä</TD>
+<TD>välilyönti+piste1+piste3</TD>
+</TR>
+<TR>
+<TD>sarkain-näppäin</TD>
+<TD>välilyönti+piste4+piste6</TD>
+</TR>
+<TR>
+<TD>Alt-näppäin</TD>
+<TD>välilyönti+piste1+piste3+piste4 (välilyönti+m)</TD>
+</TR>
+<TR>
+<TD>Escape-näppäin</TD>
+<TD>välilyönti+piste1+piste5 (välilyönti+e)</TD>
+</TR>
+<TR>
+<TD>Enter-näppäin</TD>
+<TD>piste8</TD>
+</TR>
+<TR>
+<TD>Windows+d-näppäinyhdistelmä (pienennä kaikki sovellukset)</TD>
+<TD>c1+c4+c5 (komento d)</TD>
+</TR>
+<TR>
+<TD>Windows-näppäin</TD>
+<TD>välilyönti+piste3+piste4</TD>
+</TR>
+<TR>
+<TD>Alt+sarkain-näppäinyhdistelmä</TD>
+<TD>välilyönti+piste2+piste3+piste4+piste5 (välilyönti+t)</TD>
+</TR>
+<TR>
+<TD>Lue kaikki</TD>
+<TD>c1+c2+c3+c4+c5+c6</TD>
+</TR>
+</TABLE>
+
+<H3>BRLTTY</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Nimi</TH>
+<TH>BRLTTY-komento</TH>
+</TR>
+<TR>
+<TD>Vieritä pistenäyttöä taaksepäin</TD>
+<TD>fwinlt (siirry yksi ikkuna vasemmalle)</TD>
+</TR>
+<TR>
+<TD>Vieritä pistenäyttöä eteenpäin</TD>
+<TD>fwinrt (siirry yksi ikkuna oikealle)</TD>
+</TR>
+<TR>
+<TD>Siirrä pistenäyttö edelliselle riville</TD>
+<TD>lnup (siirry yksi rivi ylöspäin)</TD>
+</TR>
+<TR>
+<TD>Siirrä pistenäyttö seuraavalle riville</TD>
+<TD>lndn (siirry yksi rivi alaspäin)</TD>
+</TR>
+<TR>
+<TD>siirrä pistesoluun</TD>
+<TD>kosketuskohdistinnäppäimet (tuo kohdistin merkin kohdalle)</TD>
+</TR>
+</TABLE>
+
+
+<!-- html code generated by txt2tags 2.5 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags user_docs\fi\keyCommands.t2t -->
+</BODY></HTML>

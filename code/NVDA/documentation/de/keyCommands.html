@@ -1,0 +1,1228 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META NAME="generator" CONTENT="http://txt2tags.sf.net">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<TITLE>NVDA 2012.1 Kurztasten und Befehlsreferenz</TITLE>
+</HEAD><BODY BGCOLOR="white" TEXT="black">
+<P ALIGN="center"><CENTER><H1>NVDA 2012.1 Kurztasten und Befehlsreferenz</H1>
+<FONT SIZE="4">
+</FONT></CENTER>
+
+<H2>Erste Schritte mit NVDA</H2>
+<H3>Allgemeine Tastenkombinationen</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Tastenkombination</TH>
+<TH>Beschreibung</TH>
+</TR>
+<TR>
+<TD>Sprechen stoppen</TD>
+<TD>Steuerung</TD>
+<TD>Unterbricht augenblicklich den laufenden Sprechvorgang.</TD>
+</TR>
+<TR>
+<TD>Sprechen anhalten</TD>
+<TD>Umschalt</TD>
+<TD>Hält sofort den Lesevorgang an oder setzt bei erneutem Drücken den Lesevorgang fort (sofern das von der Sprachausgabe unterstützt wird).</TD>
+</TR>
+<TR>
+<TD>NVDA-Menü</TD>
+<TD>NVDA+N</TD>
+<TD>Öffnet das NVDA-Menü von wo aus Sie auf die Einstellungen, Extras, etc. zugreifen können.</TD>
+</TR>
+<TR>
+<TD>Sprachmodus umschalten</TD>
+<TD>NVDA+s</TD>
+<TD>Schaltet den Sprachmodus zwischen Sprache, Signaltöne und aus um.</TD>
+</TR>
+<TR>
+<TD>Modus der Eingabehilfe umschalten</TD>
+<TD>NVDA+1</TD>
+<TD>Bei Drücken einer Taste in diesem Modus, wird die in NVDA assoziierte Taste und die dazugehörige Beschreibung angesagt und in Braille als Blitzmeldungen angezeigt.</TD>
+</TR>
+<TR>
+<TD>NVDA beenden</TD>
+<TD>NVDA+Q</TD>
+<TD>Beendet NVDA.</TD>
+</TR>
+<TR>
+<TD>Taste durchreichen</TD>
+<TD>NVDA+F2</TD>
+<TD>Veranlasst NVDA, dass die nächst betätigte Taste nicht von NVDA abgefangen wird, sondern direkt an die laufende Anwendung weitergereicht wird (sogar wenn es sich um einen Tastenbefehl von NVDA handelt).</TD>
+</TR>
+<TR>
+<TD>Schlafmodus umschalten</TD>
+<TD>nvda+umschalt+s</TD>
+<TD>legt fest, ob die aktuelle Anwendung eine eigene sprachunterstützung besitzt, nützlich für Programme oder spiele, die im System installierte Sprachausgaben selbsttätig ansteuern (z.B. speakon oder Klango) oder eine eigene Sprachausgabe zur Verfügung stellen (wie z.B. Spiele wie shades of doom, Top speed o.ä.)</TD>
+</TR>
+</TABLE>
+
+<H3>Informationen des Systems ausgeben</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Tastenkombination</TH>
+<TH>Beschreibung</TH>
+</TR>
+<TR>
+<TD>Datum/Uhrzeit ansagen</TD>
+<TD>NVDA+F12</TD>
+<TD>Bei ein mal Drücken wird die aktuelle Uhrzeit angesagt. Bei zwei Mal Das Datum. Diese Daten werden auch als Blitzmeldung in Braille angezeigt.</TD>
+</TR>
+<TR>
+<TD>Akku Status ansagen</TD>
+<TD>NVDA+Umschalt+B</TD>
+<TD>Sagt den Ladezustand des Akkus an und wenn kein Akkumulator angeschlossen ist. Diese information wird auch in Braille als Blitzmeldung angezeigt.</TD>
+</TR>
+<TR>
+<TD>Text der Zwischenablage ansagen</TD>
+<TD>NVDA+C</TD>
+<TD>Sagt den Text an, der sich in der Zwischenablage befindet und wenn kein Text gefunden wurde. Diese Information wird auch in Braille als Blitzmeldung angezeigt.</TD>
+</TR>
+</TABLE>
+
+<H2>Mit NVDA navigieren</H2>
+<A NAME="SystemFocus"></A>
+<H3>Mit dem Systemfokus navigieren</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Tastenkombination</TH>
+<TH>Beschreibung</TH>
+</TR>
+<TR>
+<TD>Aktuellen Fokus ansagen</TD>
+<TD>NVDA+Tabulatortaste</TD>
+<TD>Spricht das aktuell fokusierte Objekt. Bei zweimal Drücken werden die Informationen buchstabiert.</TD>
+</TR>
+<TR>
+<TD>Titelleiste ansagen</TD>
+<TD>NVDA+T</TD>
+<TD>Liest die Titelleiste der aktuellen Anwendung vor. Bei zweimal Drücken, werden die Informationen buchstabiert. Bei drei Mal wird der Text in die Zwischenablage kopiert. Diese Information wird auch in Braille als Blitzmeldung angezeigt.</TD>
+</TR>
+<TR>
+<TD>Aktives Fenster vorlesen</TD>
+<TD>NVDA+B</TD>
+<TD>Liest alle Steuerelemente im aktiven Fenster vor (hilfreich für Dialogfelder).</TD>
+</TR>
+<TR>
+<TD>Statuszeile lesen</TD>
+<TD>NVDA+ende</TD>
+<TD>Liest die Statuszeile vor, falls eine gefunden wird und platziert den Anzeige-Cursor darauf. Die Statuszeile wird auch in Braille als Blitzmeldung angezeigt.</TD>
+</TR>
+</TABLE>
+
+<A NAME="SystemCaret"></A>
+<H3>Mit dem System-Cursor navigieren</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Tastenkombination</TH>
+<TH>Beschreibung</TH>
+</TR>
+<TR>
+<TD>Alles ansagen</TD>
+<TD>NVDA+Pfeil nach unten</TD>
+<TD>Beginnt ab der aktuellen Position des System-Cursors vorzulesen und zieht diesen mit.</TD>
+</TR>
+<TR>
+<TD>Aktuelle Zeile vorlesen</TD>
+<TD>NVDA+Pfeiltaste nach oben</TD>
+<TD>Liest die aktuelle Zeile, in der sich der System-Cursor befindet, vor. Bei zweimal Drücken wird die Zeile buchstabiert.</TD>
+</TR>
+<TR>
+<TD>Aktuelle Textauswahl vorlesen</TD>
+<TD>NVDA+Umschalt+Pfeil nach oben</TD>
+<TD>Liest den aktuell markierten Text vor.</TD>
+</TR>
+</TABLE>
+
+<P>
+Für die Navigation in Tabellen stehen folgende Tastenkombinationen zur Verfügung:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Tastenkombination</TH>
+<TH>Beschreibung</TH>
+</TR>
+<TR>
+<TD>Zur vorherigen Spalte springen</TD>
+<TD>Steuerung+Alt+Pfeiltaste nach links</TD>
+<TD>Zieht den System-Cursor zur vorherigen Spalte (bleibt in der gleichen Zeile).</TD>
+</TR>
+<TR>
+<TD>Zur nächsten Spalte springen</TD>
+<TD>Steuerung+Alt+Pfeiltaste nach rechts</TD>
+<TD>Zieht den System-Cursor zur nächsten Spalte (bleibt in der gleichen Zeile).</TD>
+</TR>
+<TR>
+<TD>Zur vorherigen Zeile springen</TD>
+<TD>Steuerung+Alt+Pfeiltaste nach oben</TD>
+<TD>Zieht den System-Cursor zur vorherigen Zeile (bleibt in der gleichen Spalte).</TD>
+</TR>
+<TR>
+<TD>Zur nächsten Zeile springen</TD>
+<TD>Steuerung+Alt+Pfeiltaste nach unten</TD>
+<TD>Zieht den System-Cursor zur nächsten Zeile (bleibt in der gleichen Spalte).</TD>
+</TR>
+</TABLE>
+
+<H3>Objekt-Navigation</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>"Desktop"-Tastenkombination</TH>
+<TH>"Laptop"-Tastenkombination</TH>
+<TH>Beschreibung</TH>
+</TR>
+<TR>
+<TD>Aktuelles Objekt ansagen</TD>
+<TD>NVDA+Nummerntaste 5</TD>
+<TD>NVDA+STRG+I</TD>
+<TD>Sagt das aktuelle Navigator-Objekt an. Bei zweimal Drücken werden die Informationen buchstabiert und bei drei mal wird die Information in die Zwischenablage kopiert. |&gt;&gt;&gt;</TD>
+</TR>
+<TR>
+<TD>Zum übergeordneten Objekt navigieren</TD>
+<TD>NVDA+Nummerntaste 8</TD>
+<TD>NVDA+Umschalt+I</TD>
+<TD>Navigiert zur übergeordneten Ebene des aktuellen Navigator-Objekts.</TD>
+</TR>
+<TR>
+<TD>Zum vorherigen Objekt navigieren</TD>
+<TD>NVDA+Nummerntaste 4</TD>
+<TD>NVDA+STRG+J</TD>
+<TD>Navigiert zum vorherigen Navigator-Objekt.</TD>
+</TR>
+<TR>
+<TD>Zum nächsten Objekt navigieren</TD>
+<TD>NVDA+Nummerntaste 6</TD>
+<TD>NVDA+STRG+L</TD>
+<TD>Navigiert zum nächsten Navigator-Objekt.</TD>
+</TR>
+<TR>
+<TD>Zum ersten untergeordneten Objekt navigieren</TD>
+<TD>NVDA+Nummerntaste 2</TD>
+<TD>NVDA+Umschalt+Komma</TD>
+<TD>Navigiert zum ersten untergeordneten Objekt ausgehend vom aktuellen Navigator-Objekt.</TD>
+</TR>
+<TR>
+<TD>Zum Fokus-Objekt navigieren</TD>
+<TD>NVDA+Nummerntaste Minus</TD>
+<TD>NVDA+Backspace</TD>
+<TD>Navigiert zum aktuell fokussierten Objekt und zieht Anzeige-Cursor mit. Bei der Position des System-Cursors ist es sichtbar.</TD>
+</TR>
+<TR>
+<TD>Aktuelles Navigator-Objekt aktivieren</TD>
+<TD>NVDA+Nummerntaste Eingabetaste</TD>
+<TD>NVDA+Eingabetaste</TD>
+<TD>Aktiviert das aktuelle Navigator-Objekt (ähnlich eines Mausklicks oder die Leertaste drücken, wenn es fokussiert ist).</TD>
+</TR>
+<TR>
+<TD>System-Cursor zum aktuellen Navigator-Objekt oder die Einfügemarke zum nvda-cursor ziehen</TD>
+<TD>NVDA+Umschalt+Nummerntaste Minus</TD>
+<TD>NVDA+Umschalt+Rücktaste</TD>
+<TD>Wird diese Tastenkombination einmal gedrückt, wird der System-Cursor zum aktuellen Navigator-Objektgezogen. Wird sie zweimal gedrückt, so wird die Einfügemarke zum nvda-Cursor gezogen.</TD>
+</TR>
+<TR>
+<TD>Dimensionen des Navigator-Objektes ansagen</TD>
+<TD>NVDA+Nummerntaste Entfernen</TD>
+<TD>NVDA+Entferntaste</TD>
+<TD>Sagt die aktuellen Größen (Dimensionen) des aktuellen Navigator-Objektes vom Bildschirm in Prozentwerten an (inkl. Abstand vom linken und oberen Bildschirmrand sowie die Breite und Höhe).</TD>
+</TR>
+</TABLE>
+
+<A NAME="ReviewingText"></A>
+<H3>Befehle zum Betrachten von Text</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>"Desktop"-Tastenkombination</TH>
+<TH>"Laptop"-Tastenkombination</TH>
+<TH>Beschreibung</TH>
+</TR>
+<TR>
+<TD>Zur obersten Zeile der Anzeige springen</TD>
+<TD>Umschalt+Nummerntaste 7</TD>
+<TD>NVDA+7</TD>
+<TD>Zieht den Anzeige-Cursor in die erste Zeile des Textes.</TD>
+</TR>
+<TR>
+<TD>Zur vorherigen Zeile in der Anzeige springen</TD>
+<TD>Num 7</TD>
+<TD>NVDA+U</TD>
+<TD>Zieht die Cursor-Anzeige zur vorherigen Zeile des Textes.</TD>
+</TR>
+<TR>
+<TD>Aktuelle Zeile der Anzeige ansagen</TD>
+<TD>Num 8</TD>
+<TD>NVDA+I</TD>
+<TD>Sagt die aktuelle Zeile im Text an, in der sich die Cursor-Anzeige befindet. Bei zweimal Drücken wird sie buchstabiert.</TD>
+</TR>
+<TR>
+<TD>Zur nächsten Zeile in der Anzeige springen</TD>
+<TD>Num 9</TD>
+<TD>NVDA+O</TD>
+<TD>Zieht die Cursor-Anzeige zur nächsten Zeile des Textes.</TD>
+</TR>
+<TR>
+<TD>Zur untersten Zeile der Anzeige springen</TD>
+<TD>Umschalt+Nummerntaste 9</TD>
+<TD>NVDA+9</TD>
+<TD>Zieht die Cursor-Anzeige in die letzte Zeile des Textes.</TD>
+</TR>
+<TR>
+<TD>Zum vorherigen Wort in der Anzeige springen</TD>
+<TD>Num 4</TD>
+<TD>NVDA+J</TD>
+<TD>Zieht die Cursor-Anzeige zum vorherigen Wort im Text.</TD>
+</TR>
+<TR>
+<TD>Aktuelles Wort in der Anzeige ansagen</TD>
+<TD>Num 5</TD>
+<TD>NVDA+K</TD>
+<TD>Sagt das aktuelle Wort im Text an, in dem sich der Anzeige-Cursor befindet. Bei zweimal Drücken wird es buchstabiert.</TD>
+</TR>
+<TR>
+<TD>Zum nächsten Wort in der Anzeige springen</TD>
+<TD>Num 6</TD>
+<TD>NVDA+L</TD>
+<TD>Zieht den Anzeige-Cursor zum nächsten Wort im Text.</TD>
+</TR>
+<TR>
+<TD>Zum Zeilenanfang in der Anzeige springen</TD>
+<TD>Umschalt+Nummerntaste 1</TD>
+<TD>NVDA+Umschalt+U</TD>
+<TD>Zieht die Cursor-Anzeige zum Zeilenanfang im Text.</TD>
+</TR>
+<TR>
+<TD>Zum vorherigen Zeichen in der Anzeige springen</TD>
+<TD>Num 1</TD>
+<TD>NVDA+M</TD>
+<TD>Zieht die Cursor-Anzeige zum vorherigen Zeichen der aktuellen Zeile im Text.</TD>
+</TR>
+<TR>
+<TD>Aktuelles Zeichen in der Anzeige ansagen</TD>
+<TD>Num 2</TD>
+<TD>NVDA+Komma</TD>
+<TD>Sagt das aktuelle Zeichen in der Zeile im Text an, in dem sich der Anzeige-Cursor befindet. Bei zweimal Drücken werden die numerischen Dezimal- und Hexadezimalwerte angesagt.</TD>
+</TR>
+<TR>
+<TD>Zum nächsten Zeichen in der Anzeige springen</TD>
+<TD>Num 3</TD>
+<TD>NVDA+Punkt</TD>
+<TD>Zieht den Anzeige-Cursor zum nächsten Zeichen der aktuellen Zeile im Text.</TD>
+</TR>
+<TR>
+<TD>Zum Zeilenende in der Anzeige springen</TD>
+<TD>Umschalt+Nummerntaste 3</TD>
+<TD>NVDA+Umschalt+O</TD>
+<TD>Zieht den Anzeige-Cursor zum Zeilenende im Text.</TD>
+</TR>
+<TR>
+<TD>Alles in der Anzeige ansagen</TD>
+<TD>Num Plus</TD>
+<TD>NVDA+Umschalt+Pfeiltaste nach unten</TD>
+<TD>Liest von der aktuellen Cursor-Position den Text in der Anzeige vor.</TD>
+</TR>
+<TR>
+<TD>Textformatierung ansagen</TD>
+<TD>NVDA+F</TD>
+<TD>Sagt die Formatierungen unter dem nvda-Cursor an. Diese info wird auch in Braille als Blitzmeldung angezeigt.|</TD>
+</TR>
+<TR>
+<TD>Ab nvda-Cursor kopieren</TD>
+<TD>NVDA+F9</TD>
+<TD>NVDA+F9</TD>
+<TD>Startet von der aktuellen Cursor-Position den Kopiervorgang. Der Text wird nicht von NVDA kopiert, wenn Sie nicht festlegen, bis wohin  kopiert werden soll.</TD>
+</TR>
+<TR>
+<TD>Bis nvda-Cursor kopieren</TD>
+<TD>NVDA+F10</TD>
+<TD>NVDA+F10</TD>
+<TD>Kopiert von der Position die vorhin (mit "ab nvda-Cursor kopieren" festgelegt wurde) bis zur akttuellen Position des nvda-Cursors. Nach dem Betätigen der Tastenkombination, wird der Text in die Zwischenablage kopiert.</TD>
+</TR>
+</TABLE>
+
+<A NAME="FlatReview"></A>
+<H3>Der Flächenmodus</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>"Desktop"-Tastenkombination</TH>
+<TH>"Laptop"-Tastenkombination</TH>
+<TH>Beschreibung</TH>
+</TR>
+<TR>
+<TD>In den Flächenmodus wechseln</TD>
+<TD>NVDA+Nummerntaste 7</TD>
+<TD>NVDA+Bild nach oben</TD>
+<TD>Wechselt in den Flächenmodus und positioniert Sie an die Stelle des aktuellen Navigator-Objektes. Von hier aus können Sie sich den Inhalt des bildschirms oder des angezeigten Dokuments mit Hilfe der Befehls zum Betrachten von Text ansehen.</TD>
+</TR>
+<TR>
+<TD>an der aktuellen Position im Flächenmodus zur Objektnavigation wechseln</TD>
+<TD>NVDA+Nummerntaste 1</TD>
+<TD>NVDA+Bild nach unten</TD>
+<TD>bewegt den Navigator zu demjenigen Objekt, das sich an der aktuellen Position im Flächenmodus befindet.</TD>
+</TR>
+</TABLE>
+
+<H3>Mit der Maus navigieren</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>"Desktop"-Tastenkombination</TH>
+<TH>"Laptop"-Tastenkombination</TH>
+<TH>Beschreibung</TH>
+</TR>
+<TR>
+<TD>linksklick</TD>
+<TD>Num Schrägstrich</TD>
+<TD>NVDA+Pfeiltaste nach links</TD>
+<TD>Führt einen Linksklick aus. Bei zwei Mal wird ein Doppelklick ausgeführt.</TD>
+</TR>
+<TR>
+<TD>linke Maustaste feststellen</TD>
+<TD>Umschalt+Nummerntaste Schrägstrich</TD>
+<TD>NVDA+Umschalt+Pfeiltaste nach links</TD>
+<TD>Sperrt die linke Maustaste. Wird die Tastenkombination  erneut gedrückt, wird die Maustaste wieder freigegeben. Um "Drag and Drop" durchzuführen, führen Sie diesen Schritt erneut auf einem Objekt aus und wandern anschließend mit der Maus oder auch mit den Navigationstasten für die Simulation der Maus an eine andere Stelle des Bildschirms und lösen die linke Maustaste wieder.</TD>
+</TR>
+<TR>
+<TD>Rechtsklick</TD>
+<TD>Num Stern</TD>
+<TD>NVDA+Pfeiltaste nach rechts</TD>
+<TD>Führt einen Rechtsklick aus.</TD>
+</TR>
+<TR>
+<TD>Rechte Maustaste feststellen</TD>
+<TD>Umschalt+Nummerntaste Stern</TD>
+<TD>NVDA+Umschalt+Pfeiltaste nach rechts</TD>
+<TD>Sperrt die rechte Maustaste.</TD>
+</TR>
+</TABLE>
+
+<P>
+Wird die Tastenkombination erneut gedrückt, wird die Maustaste wieder freigegeben. Um "Drag and Drop" durchzuführen, führen Sie diesen Schritt erneut auf einem Objekt aus und wandern anschließend mit der Maus oder auch mit den Navigationstasten für die Simulation der Maus an eine andere Stelle des Bildschirms und lösen die rechte Maustaste wieder. |
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>Die Maus zum aktuellen Navigator-Objekt ziehen</TD>
+<TD>NVDA+Nummerntaste Schrägstrich</TD>
+<TD>NVDA+Umschalt+F9</TD>
+<TD>Zieht die Maus zum aktuellen Standort des Navigator-Objektes Bzw. des nvda-cursors.</TD>
+</TR>
+<TR>
+<TD>Zum Objekt unter der Maus navigieren</TD>
+<TD>NVDA+Nummerntaste Stern</TD>
+<TD>NVDA+Umschalt+F10</TD>
+<TD>Bewegt das Navigator-Objekt zum Standort des Objekts an der Mausposition.</TD>
+</TR>
+</TABLE>
+
+<H2>Lese-Modus</H2>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Tastenkombination</TH>
+<TH>Beschreibung</TH>
+</TR>
+<TR>
+<TD>Zwischen Lese- und Fokusmodus wechseln</TD>
+<TD>NVDA+Leertaste</TD>
+<TD>Schaltet zwischen Fokus- und Lesemodus um.</TD>
+</TR>
+<TR>
+<TD>Fokusmodus schließen</TD>
+<TD>Escape-Taste</TD>
+<TD>Schaltet zurück in den Lesemodus, wenn zuvor der Fokusmodus automatisch aktiviert wurde.</TD>
+</TR>
+<TR>
+<TD>Lesemodus aktualisieren</TD>
+<TD>NVDA+F5</TD>
+<TD>Baut den Lesemodus neu auf (sinnvoll, wenn vielleicht einige Elemente auf der Seite fehlen sollten).</TD>
+</TR>
+<TR>
+<TD>Suchen</TD>
+<TD>NVDA+STRG+F</TD>
+<TD>Öffnet ein weiteres Fenster, in der Sie einen Text eingeben können, wo nach im aktuellen Dokument gesucht werden soll.</TD>
+</TR>
+<TR>
+<TD>Vorwärts suchen</TD>
+<TD>NVDA+F3</TD>
+<TD>Sucht die nächste Zeichenkette des gesuchten Textes im aktuellen Dokument, welche zuvor eingegeben wurde.</TD>
+</TR>
+<TR>
+<TD>Rückwärts suchen</TD>
+<TD>NVDA+Umschalt+F3</TD>
+<TD>Sucht die vorherige Zeichenkette des gesuchten Textes im aktuellen Dokument, die zuvor eingegeben wurde.</TD>
+</TR>
+</TABLE>
+
+<H3>Die Schnellnavigationstasten</H3>
+<P>
+Folgende Befehle springen ohne Umschalttaste gedrückt zum nächsten Element; zusammen mit der Umschalttaste springen Sie zum vorherigen Objekt zurück.
+</P>
+<UL>
+<LI>H: Überschrift
+<LI>L: Liste
+<LI>I: Listeneintrag
+<LI>T: Tabelle
+<LI>K: Link
+<LI>N: Nichtverlinkter Text
+<LI>F: Formularfeld
+<LI>U: Unbesuchter Link
+<LI>V: Besuchter Linkk
+<LI>E: Eingabefeld
+<LI>B: Schalter
+<LI>X: Kontrollfeld
+<LI>C: Kombinationsfeld
+<LI>R: Auswahlschalter
+<LI>Q: Zitatblock
+<LI>S: Trennlinie
+<LI>M: Rahmen
+<LI>G: Grafik
+<LI>D: ARIA-Sprungmarke
+<LI>O: Eingebettetes Objekt
+<LI>1 bis 6: Entsprechende Überschriftsebene 1 bis 6
+</UL>
+
+<P></P>
+<H3>Die Liste der Elemente</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Tastenkombination</TH>
+<TH>Beschreibung</TH>
+</TR>
+<TR>
+<TD>Liste der Elemente des Lesemodus</TD>
+<TD>NVDA+F7</TD>
+<TD>Zeigt eine Auflistung aller Elemente an, die Links, Überschriften sowie ARIA-Sprungmarken aus dem aktuellen Lesemodus beinhalten.|</TD>
+</TR>
+</TABLE>
+
+<H3>Eingebettete Objekte</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Tastenkombination</TH>
+<TH>Beschreibung</TH>
+</TR>
+<TR>
+<TD>Zum Inhalt des Lesemodus zurückkehren</TD>
+<TD>NVDA+STRG+Leertaste</TD>
+<TD>Verlässt den Fokus des eingebetteten Objekts und kehrt in den Lesemodus zurück.</TD>
+</TR>
+</TABLE>
+
+<H2>Anwendungsspezifische Befehle für NVDA</H2>
+<H3>foobar2000</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Tastenkombination</TH>
+<TH>Beschreibung</TH>
+</TR>
+<TR>
+<TD>verbleibende Zeit ausgeben</TD>
+<TD>strg+umschalt+r</TD>
+<TD>Falls grade ein Titel abgespielt wird, wird die verbleibende Zeit ausgegeben.</TD>
+</TR>
+</TABLE>
+
+<H3>Miranda IM</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Tastenkombination</TH>
+<TH>Beschreibung</TH>
+</TR>
+<TR>
+<TD>letzte Nachricht ausgeben</TD>
+<TD>NVDA+strg+1-4</TD>
+<TD>Gibt die zur Nummer passende Nachricht aus; nvda+strg+2 gibt beispielsweise die zweitletzte Nachricht aus</TD>
+</TR>
+</TABLE>
+
+<H3>Poedit</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Tastenkombination</TH>
+<TH>Beschreibung</TH>
+</TR>
+<TR>
+<TD>Kommentare ausgeben</TD>
+<TD>Steuerung+Umschalt+c</TD>
+<TD>Gibt alle Kommentare aus.</TD>
+</TR>
+<TR>
+<TD>Automatische Kommentare ausgeben</TD>
+<TD>Steuerung+Umschalt+a</TD>
+<TD>Gibt alle automatischen Kommentare aus.</TD>
+</TR>
+</TABLE>
+
+<H2>NVDA konfigurieren</H2>
+<H3>Das Menü "Einstellungen"</H3>
+<A NAME="SynthSettingsRing"></A>
+<H4>Einstellungsring der Sprachausgabe</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>"Desktop"-Tastenkombination</TH>
+<TH>"Laptop"-Tastenkombination</TH>
+<TH>Beschreibung</TH>
+</TR>
+<TR>
+<TD>Zur nächsten Sprachausgabeneinstellung springen</TD>
+<TD>NVDA+STRG+Pfeiltaste nach rechts</TD>
+<TD>NVDA+STRG+Pfeiltaste nach rechts</TD>
+<TD>Springt zur nächsten verfügbaren Sprachausgabeneinstellung ausgehend von der aktuellen Einstellung; begint von vorne, nach dem letzten Eintrag.</TD>
+</TR>
+<TR>
+<TD>Zur vorherigen Sprachausgabeneinstellung springen</TD>
+<TD>NVDA+STRG+Pfeiltaste nach links</TD>
+<TD>NVDA+STRG+Pfeiltaste nach links</TD>
+<TD>Springt zur vorherigen verfügbaren Sprachausgabeneinstellung ausgehend von der aktuellen Einstellung; begint von vorne, nach dem letzten Eintrag.</TD>
+</TR>
+<TR>
+<TD>Aktuelle Sprachausgabeneinstellung stufenweise erhöhen</TD>
+<TD>NVDA+STRG+Pfeiltaste nach oben</TD>
+<TD>NVDA+STRG+Pfeiltaste nach oben</TD>
+<TD>Erhöht ausgehend die aktuelle Einstellung (im Allgemeinen die Sprechgeschwindigkeit erhöhen, wählt die nächste STimme aus, erhöht die Lautstärke).</TD>
+</TR>
+<TR>
+<TD>Aktuelle Sprachausgabeneinstellung stufenweise verringern</TD>
+<TD>NVDA+STRG+Pfeiltaste nach unten</TD>
+<TD>NVDA+STRG+Pfeiltaste</TD>
+<TD>Verringert ausgehend die aktuelle Einstellung (im Allgemeinen</TD>
+</TR>
+</TABLE>
+
+<P>
+die Sprechgeschwindigkeit verringern, wählt die vorherige STimme aus, verringert die Lautstärke). |
+</P>
+<H4>Braille-Einstellungen</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>"Desktop"-Tastenkombination</TH>
+<TH>"Laptop"-Tastenkombination</TH>
+<TH>Beschreibung</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Braillezeile gekoppelt an</TD>
+<TD>NVDA+STRG+T</TD>
+<TD>NVDA+STRG+T</TD>
+<TD>Diese Option legt fest, ob die Braillezeile dem System-Cursor oder dem Navigatorobjekt / nvda-Cursor folgen soll.</TD>
+</TR>
+</TABLE>
+
+<H4>Tastatureinstellungen (NVDA+STRG+K)</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>"Desktop"-Tastenkombination</TH>
+<TH>"Laptop"-Tastenkombination</TH>
+<TH>Beschreibung</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Eingegebene Zeichen ansagen</TD>
+<TD>NVDA+2</TD>
+<TD>NVDA+2</TD>
+<TD>Wenn dieses Kontrollfeld aktiviert ist, gibt NVDA jedes Zeichen wieder, dass Sie auf der Tastatur eingegeben haben.</TD>
+</TR>
+<TR>
+<TD ALIGN="center">Eingegebene Wörter ansagen</TD>
+<TD>NVDA+3</TD>
+<TD>NVDA+3</TD>
+<TD>Wenn dieses Kontrollfeld aktiviert ist, gibt NVDA jedes Wort wieder, dass Sie auf der Tastatur eingegeben haben.</TD>
+</TR>
+<TR>
+<TD ALIGN="center">Funktionstasten ansagen</TD>
+<TD>NVDA+4</TD>
+<TD>NVDA+4</TD>
+<TD>Wenn dieses Kontrollfeld aktiviert ist, gibt NVDA alle Tasten wieder, die nicht mit einem Zeichen belegt  sind. Das können Tastenkombination wie z. B. &lt;Steuerung+Buchstabe&gt; sein.</TD>
+</TR>
+</TABLE>
+
+<A NAME="MouseSettings"></A>
+<H4>Mauseinstellungen (NVDA+STRG+M)</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>"Desktop"-Tastenkombination</TH>
+<TH>"Laptop"-Tastenkombination</TH>
+<TH>Beschreibung</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Mausverfolgung einschalten</TD>
+<TD>NVDA+M</TD>
+<TD>NVDA+Umschalt+M</TD>
+<TD>Dieses Kontrollfeld weist NVDA an, den Text unter dem Mauszeiger vorzulesen. Das erleichtert Ihnen das Auffinden nach Informationen am Bildschirm, wenn Sie mit der Maus über das Feld wandern.</TD>
+</TR>
+</TABLE>
+
+<H4>Einstellungen des nvda-Cursors</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>"Desktop"-Tastenkombination</TH>
+<TH>"Laptop"-Tastenkombination</TH>
+<TH>Beschreibung</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Systemfokus verfolgen</TD>
+<TD>NVDA+7</TD>
+<TD>NVDA+STRG+7</TD>
+<TD>Wenn eingeschaltet, platziert sich der nvda-Cursor immer auf dem gleichen Objekt, dass auch der aktuelle Systemfokus besitzt.</TD>
+</TR>
+<TR>
+<TD ALIGN="center">System-Cursor verfolgen</TD>
+<TD>NVDA+6</TD>
+<TD>NVDA+6</TD>
+<TD>Bei eingeschalteter Option wird automatisch bei Bewegung der Anzeige-Cursor zur Position des System-Cursors gezogen.</TD>
+</TR>
+</TABLE>
+
+<H4>Einstellungen zur Objektdarstellung (NVDA+STRG+O)</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>"Desktop"-Tastenkombination</TH>
+<TH>"Laptop"-Tastenkombination</TH>
+<TH>Beschreibung</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Ausgabe des Fortschrittsbalkens</TD>
+<TD>NVDA+U</TD>
+<TD>NVDA+STRG+F2</TD>
+<TD>Diese Option kontrolliert wie NVDA die Aktualisierungen der Fortschrittsbalken ansagen soll.</TD>
+</TR>
+<TR>
+<TD ALIGN="center">dynamische Änderungen des Inhaltes ansagen</TD>
+<TD>NVDA+5</TD>
+<TD>NVDA+5</TD>
+<TD>Schaltet die Ansage von neuen Inhalten in bestimmten Programmen wie Terminals und Chatprogramme ein bzw. aus.</TD>
+</TR>
+</TABLE>
+
+<H4>Einstellungen für den Lesemodus (NVDA+STRG+B)</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>"Desktop"-Tastenkombination</TH>
+<TH>"Laptop"-Tastenkombination</TH>
+<TH>Beschreibung</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Bildschirmlayout verwenden</TD>
+<TD>NVDA+V</TD>
+<TD>NVDA+V</TD>
+<TD>Diese Option legt fest, wie der Inhalt einer Seite in den Lesemodus übernommen werden soll.</TD>
+</TR>
+</TABLE>
+
+<H3>Speichern und die Konfiguration neu laden</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>"Desktop"-Tastenkombination</TH>
+<TH>"Laptop"-Tastenkombination</TH>
+<TH>Beschreibung</TH>
+</TR>
+<TR>
+<TD>Konfiguration speichern</TD>
+<TD>NVDA+STRG+C</TD>
+<TD>NVDA+STRG+C</TD>
+<TD>Speichert Ihre Konfiguration, so dass sie nicht beim Beenden von NVDA verloren gehen.</TD>
+</TR>
+<TR>
+<TD>Gespeicherte Konfiguration zurücksetzen</TD>
+<TD>NVDA+STRG+R</TD>
+<TD>NVDA+STRG+R</TD>
+<TD>Setzt auf die zuletzt gespeicherte Konfiguration zurück, die vor dem Starten von NVDA existierte.</TD>
+</TR>
+</TABLE>
+
+<A NAME="SupportedBrailleDisplays"></A>
+<H2>Unterstützte Braillezeilen</H2>
+<H3>Die Focus/PAC-Mate-Serien von FreedomScientific</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Taste</TH>
+</TR>
+<TR>
+<TD>Umschalten der Aktion am linken Rollrädchen</TD>
+<TD>Linkes Rollrädchen drücken</TD>
+</TR>
+<TR>
+<TD>Rückwärtsscrollen des verwendeten linken Rollrädchens</TD>
+<TD>Linkes Rollrädchen nach oben</TD>
+</TR>
+<TR>
+<TD>Vorwärtsscrollen des verwendeten linken Rollrädchens</TD>
+<TD>Linkes Rollrädchen nach unten</TD>
+</TR>
+<TR>
+<TD>Umschalten der Aktion am rechten Rollrädchen</TD>
+<TD>Rechtes Rollrädchen drücken</TD>
+</TR>
+<TR>
+<TD>Rückwärtsscrollen des verwendeten rechten Rollrädchens</TD>
+<TD>Rechtes Rollrädchen nach oben</TD>
+</TR>
+<TR>
+<TD>Vorwärtsscrollen des verwendeten rechten Rollrädchens</TD>
+<TD>Rechtes Rollrädchen nach unten</TD>
+</TR>
+<TR>
+<TD>Zum aktuellen Modul auf der Braillezeile springen</TD>
+<TD>Routing</TD>
+</TR>
+</TABLE>
+
+<H3>Optelec ALVA BC640 / BC680</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Taste</TH>
+</TR>
+<TR>
+<TD>Braillezeile zurückscrollen</TD>
+<TD>T1</TD>
+</TR>
+<TR>
+<TD>Braillezeile zur vorherigen Zeile ziehen</TD>
+<TD>T2</TD>
+</TR>
+<TR>
+<TD>Braillezeile zur nächsten Zeile ziehen</TD>
+<TD>T4</TD>
+</TR>
+<TR>
+<TD>Braillezeile weiterscrollen</TD>
+<TD>T5</TD>
+</TR>
+<TR>
+<TD>Zum aktuellen Modul auf der Brailezeile springen</TD>
+<TD>Routing</TD>
+</TR>
+<TR>
+<TD>Umschalt+Tabulatortaste</TD>
+<TD>Sp1</TD>
+</TR>
+<TR>
+<TD>Alt-Taste</TD>
+<TD>Sp2</TD>
+</TR>
+<TR>
+<TD>Escape-Taste</TD>
+<TD>Sp3</TD>
+</TR>
+<TR>
+<TD>Tabulatortaste</TD>
+<TD>Sp4</TD>
+</TR>
+<TR>
+<TD>Pfeiltaste nach oben</TD>
+<TD>SpUp</TD>
+</TR>
+<TR>
+<TD>Pfeiltaste nach unten</TD>
+<TD>SpDown</TD>
+</TR>
+<TR>
+<TD>Pfeiltaste nach links</TD>
+<TD>SpLeft</TD>
+</TR>
+<TR>
+<TD>Pfeiltaste nach rechts</TD>
+<TD>SpRight</TD>
+</TR>
+<TR>
+<TD>Eingabetaste</TD>
+<TD>SpEnter</TD>
+</TR>
+<TR>
+<TD>NVDA-Menü</TD>
+<TD>Sp1+Sp3</TD>
+</TR>
+<TR>
+<TD>Windows-Taste+D (alle Anwendungen minimieren)</TD>
+<TD>Sp1+Sp4</TD>
+</TR>
+<TR>
+<TD>Windows-Taste</TD>
+<TD>Sp2+Sp3</TD>
+</TR>
+<TR>
+<TD>Alt+Tabulatortaste</TD>
+<TD>Sp2+Sp4</TD>
+</TR>
+</TABLE>
+
+<H3>HandyTech-Braillezeilen</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Taste</TH>
+</TR>
+<TR>
+<TD>Braillezeile zurück scrollen</TD>
+<TD>Links, nach oben</TD>
+</TR>
+<TR>
+<TD>Braillezeile weiter scrollen</TD>
+<TD>Rechts, nach unten</TD>
+</TR>
+<TR>
+<TD>Eine Zeile nach oben springen</TD>
+<TD>B4</TD>
+</TR>
+<TR>
+<TD>Eine Zeile nach unten springen</TD>
+<TD>B5</TD>
+</TR>
+<TR>
+<TD>Zum Brailemodul springen</TD>
+<TD>Routing</TD>
+</TR>
+<TR>
+<TD>Umschalt+Tabulatortaste</TD>
+<TD>ESC</TD>
+</TR>
+<TR>
+<TD>Alt-Taste</TD>
+<TD>B2+B4+B5</TD>
+</TR>
+<TR>
+<TD>Escape-Taste</TD>
+<TD>B4+B6</TD>
+</TR>
+<TR>
+<TD>Tabulatortaste</TD>
+<TD>Eingabe</TD>
+</TR>
+<TR>
+<TD>Eingabetaste</TD>
+<TD>ESC+Eingabe</TD>
+</TR>
+<TR>
+<TD>Pfeiltaste nach oben</TD>
+<TD>Linke Leertaste</TD>
+</TR>
+<TR>
+<TD>Pfeiltaste nach unten</TD>
+<TD>Rechte Leertaste</TD>
+</TR>
+<TR>
+<TD>NVDA-Menü</TD>
+<TD>B2+B4+B5+B6</TD>
+</TR>
+<TR>
+<TD>HandyTech-Konfiguration</TD>
+<TD>B4+B8</TD>
+</TR>
+</TABLE>
+
+<H3>MDV Lilli</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Taste</TH>
+</TR>
+<TR>
+<TD>Braillezeile zurückscrollen</TD>
+<TD>LF</TD>
+</TR>
+<TR>
+<TD>Braillezeile vorwärts scrollen</TD>
+<TD>RG</TD>
+</TR>
+<TR>
+<TD>Braillezeile zur vorigen Zeile bewegen</TD>
+<TD>UP</TD>
+</TR>
+<TR>
+<TD>Braillezeile zur nächsten Zeile bewegen</TD>
+<TD>DN</TD>
+</TR>
+<TR>
+<TD>Cursor zum Braille-Modul ziehen</TD>
+<TD>route</TD>
+</TR>
+<TR>
+<TD>Umschalt+Tabulatortaste</TD>
+<TD>SLF</TD>
+</TR>
+<TR>
+<TD>Tabulatortaste</TD>
+<TD>SRG</TD>
+</TR>
+<TR>
+<TD>Alt+Tabulatortaste</TD>
+<TD>SDN</TD>
+</TR>
+<TR>
+<TD>Alt+Umschalt+Tabulatortaste</TD>
+<TD>SUP</TD>
+</TR>
+</TABLE>
+
+<H3>Braillezeilen von Baum/HumanWare/APH</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Taste</TH>
+</TR>
+<TR>
+<TD>Braillezeile zurückscrollen</TD>
+<TD>d2</TD>
+</TR>
+<TR>
+<TD>Braillezeile vorwärts scrollen</TD>
+<TD>d5</TD>
+</TR>
+<TR>
+<TD>Braillezeile zur vorigen Zeile bewegen</TD>
+<TD>d1</TD>
+</TR>
+<TR>
+<TD>Braillezeile zur nächsten Zeile bewegen</TD>
+<TD>d3</TD>
+</TR>
+<TR>
+<TD>Cursor zum Braille-Modul ziehen</TD>
+<TD>routing</TD>
+</TR>
+</TABLE>
+
+<P>
+für Braillezeilen, die einen Joystick besitzen:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Taste</TH>
+</TR>
+<TR>
+<TD>Taste "pfeil auf"</TD>
+<TD>auf</TD>
+</TR>
+<TR>
+<TD>Taste "Pfeil ab"</TD>
+<TD>ab</TD>
+</TR>
+<TR>
+<TD>Taste "Pfeil links"</TD>
+<TD>links</TD>
+</TR>
+<TR>
+<TD>Taste "Pfeil rechts"</TD>
+<TD>rechts</TD>
+</TR>
+<TR>
+<TD>Eingabetaste</TD>
+<TD>auswahl</TD>
+</TR>
+</TABLE>
+
+<H3>Hedo Profiline usb</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Tastenkombination</TH>
+</TR>
+<TR>
+<TD>Braillezeile zurückscrollen</TD>
+<TD>K1</TD>
+</TR>
+<TR>
+<TD>Braillezeile vorwärtsscrollen</TD>
+<TD>K3</TD>
+</TR>
+<TR>
+<TD>Braillezeile zur vorigen Zeile bewegen</TD>
+<TD>B2</TD>
+</TR>
+<TR>
+<TD>Braillezeile zur nächsten Zeile bewegen</TD>
+<TD>B5</TD>
+</TR>
+<TR>
+<TD>Cursor zum Braillemodul bewegen</TD>
+<TD>routing</TD>
+</TR>
+<TR>
+<TD>Kopplung der Braillezeile umschalten</TD>
+<TD>K2</TD>
+</TR>
+<TR>
+<TD>alles lesen</TD>
+<TD>B6</TD>
+</TR>
+</TABLE>
+
+<H3>Hedo MobilLine USB</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Tastenkombination</TH>
+</TR>
+<TR>
+<TD>Braillezeile zurückscrollen</TD>
+<TD>K1</TD>
+</TR>
+<TR>
+<TD>Braillezeile vorwärtsscrollen</TD>
+<TD>K3</TD>
+</TR>
+<TR>
+<TD>Braillezeile zur vorigen Zeile bewegen</TD>
+<TD>B2</TD>
+</TR>
+<TR>
+<TD>Braillezeile zur nächsten Zeile bewegen</TD>
+<TD>B5</TD>
+</TR>
+<TR>
+<TD>Cursor zum Braillemodul bewegen</TD>
+<TD>routing</TD>
+</TR>
+<TR>
+<TD>Kopplung der Braillezeile umschalten</TD>
+<TD>K2</TD>
+</TR>
+<TR>
+<TD>alles lesen</TD>
+<TD>B6</TD>
+</TR>
+</TABLE>
+
+<H3>HumanWare Brailliant BI/B-Serie</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Taste</TH>
+</TR>
+<TR>
+<TD>Braillezeile zurückscrollen</TD>
+<TD>links</TD>
+</TR>
+<TR>
+<TD>Braillezeile vorwärtsscrollen</TD>
+<TD>rechts</TD>
+</TR>
+<TR>
+<TD>Braillezeile zur vorigen Zeile bewegen</TD>
+<TD>auf</TD>
+</TR>
+<TR>
+<TD>Braillezeile zur nächsten Zeile bewegen</TD>
+<TD>ab</TD>
+</TR>
+<TR>
+<TD>Cursor zum Braille-modul bewegen</TD>
+<TD>routing</TD>
+</TR>
+</TABLE>
+
+<P>
+|Braillezeile koppeln an | auf+ab |
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>Taste Pfeil nach oben</TD>
+<TD>Leertaste+Punkt1</TD>
+</TR>
+<TR>
+<TD>Taste Pfeil nach unten</TD>
+<TD>Leertaste+Punkt4</TD>
+</TR>
+<TR>
+<TD>Taste Pfeil nach links</TD>
+<TD>Leertaste+Punkt3</TD>
+</TR>
+<TR>
+<TD>Taste Pfeil nach links</TD>
+<TD>Leertaste+Punkt6</TD>
+</TR>
+<TR>
+<TD>NVDA-Menü</TD>
+<TD>c1+c3+c4+c5 (Befehl n)</TD>
+</TR>
+<TR>
+<TD>Umschalt+Tabulator-Taste</TD>
+<TD>Leertaste+Punkt1+Punkt3</TD>
+</TR>
+<TR>
+<TD>Tabulator-Taste</TD>
+<TD>Leertaste+Punkt4+Punkt6</TD>
+</TR>
+<TR>
+<TD>Alt-Taste</TD>
+<TD>Leertaste+Punkt1+Punkt3+Punkt4 (Leertaste+m)</TD>
+</TR>
+<TR>
+<TD>Escape-Taste</TD>
+<TD>Leertaste+Punkt1+Punkt5 (Leertaste+e)</TD>
+</TR>
+<TR>
+<TD>Eingabetaste</TD>
+<TD>Punkt8</TD>
+</TR>
+<TR>
+<TD>Windowstaste+d (alle Anwendungen minimieren)</TD>
+<TD>c1+c4+c5 (Befehl d)</TD>
+</TR>
+<TR>
+<TD>Windows-Taste</TD>
+<TD>Leertaste+Punkt3+Punkt4</TD>
+</TR>
+<TR>
+<TD>Alt+Tabulatortaste</TD>
+<TD>Leertaste+Punkt2+Punkt3+Punkt4+Punkt5 (Leertaste+t)</TD>
+</TR>
+<TR>
+<TD>Alles lesen</TD>
+<TD>c1+c2+c3+c4+c5+c6</TD>
+</TR>
+</TABLE>
+
+<H3>BRLTTY</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>BRLTTY-Befehl</TH>
+</TR>
+<TR>
+<TD>Braillezeile zurückscrollen</TD>
+<TD>fwinlt (eine Zeilenlänge nach links bewegen)</TD>
+</TR>
+<TR>
+<TD>Braillezeile vorwärtsscrollen</TD>
+<TD>fwinrt (eine Zeilenlänge nach rechts bewegen)</TD>
+</TR>
+<TR>
+<TD>Braillezeile zur vorigen Zeile bewegen</TD>
+<TD>lnup (eine Zeile nach oben bewegen)</TD>
+</TR>
+<TR>
+<TD>Braillezeile zur nächsten Zeile bewegen</TD>
+<TD>lndn (eine Zeile nach unten bewegen)</TD>
+</TR>
+<TR>
+<TD>Cursor zum Braillemodul ziehen</TD>
+<TD>route (Cursor zum Zeichen bewegen)</TD>
+</TR>
+</TABLE>
+
+
+<!-- html code generated by txt2tags 2.5 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags user_docs\de\keyCommands.t2t -->
+</BODY></HTML>

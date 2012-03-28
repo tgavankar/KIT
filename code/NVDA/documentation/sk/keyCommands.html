@@ -1,0 +1,1194 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META NAME="generator" CONTENT="http://txt2tags.sf.net">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<TITLE>NVDA 2012.1 Zoznam klávesových príkazov</TITLE>
+</HEAD><BODY BGCOLOR="white" TEXT="black">
+<P ALIGN="center"><CENTER><H1>NVDA 2012.1 Zoznam klávesových príkazov</H1>
+<FONT SIZE="4">
+</FONT></CENTER>
+
+<H2>Začíname pracovať s NVDA</H2>
+<H3>Všeobecné klávesové príkazy</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka</TH>
+<TH>Popis</TH>
+</TR>
+<TR>
+<TD>Zastaviť reč</TD>
+<TD>Control</TD>
+<TD>Okamžite zastaví reč</TD>
+</TR>
+<TR>
+<TD>Pozastaviť reč</TD>
+<TD>Shift</TD>
+<TD>Okamžite pozastaví reč. Po nasledujúcom stlačení bude reč pokračovať na prerušenom mieste ak to práve používaný hlasový výstup podporuje</TD>
+</TR>
+<TR>
+<TD>Ponuka NVDA</TD>
+<TD>NVDA+n</TD>
+<TD>Zobrazí ponuku NVDA, odkiaľ je možné pristupovať k nastaveniam, nástrojom a pomocníkovi</TD>
+</TR>
+<TR>
+<TD>Prepnúť režim reči</TD>
+<TD>NVDA+s</TD>
+<TD>Prepína režim reči medzi hovoriť, pípať a vypnuté.</TD>
+</TR>
+<TR>
+<TD>Nápoveda vstupu</TD>
+<TD>NVDA+1</TD>
+<TD>Zapína a vypína nápovedu vstupu. Keď je zapnutá, nvda oznámi názov a popis skriptu, ktorý je s klávesom asociovaný. Pre vypnutie stlačte znova NVDA+.1</TD>
+</TR>
+<TR>
+<TD>Ukončiť NVDA</TD>
+<TD>NVDA+q</TD>
+<TD>Opýta sa či naozaj chcete ukončiť NVDA. V dialógu všeobecné nastavenia je voľba, ktorou sa otázka pred ukončením dá vypnúť.</TD>
+</TR>
+<TR>
+<TD>Prepustiť nasledujúci kláves</TD>
+<TD>NVDA+f2</TD>
+<TD>Prinúti NVDA nasledujúci stlačený kláves prepustiť aktívnej aplikácii aj keď sa jedná o príkaz programu NVDA.</TD>
+</TR>
+<TR>
+<TD>Prepnúť režim spánku</TD>
+<TD>NVDA+shift+s</TD>
+<TD>Režim spánku deaktivuje všetky klávesové skratky a hlasový a braillový výstup. Toto je užitočné pre aplikácie, ktoré sami poskytujú niektorý z takýchto druhov výstupu.</TD>
+</TR>
+</TABLE>
+
+<H3>Oznamovanie systémových informácii</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>Čas a dátum</TD>
+<TD>NVDA+f12</TD>
+<TD>Oznámi čas; stlačené 2 krát rýchlo po sebe oznámia dátum.</TD>
+</TR>
+<TR>
+<TD>Stav napájania z batérie</TD>
+<TD>NVDA+shift+b</TD>
+<TD>Oznámi informácie o stave napájania. Buď oznámi stav nabitia batérie v percentách, alebo oznámi nabíjanie zo siete.</TD>
+</TR>
+<TR>
+<TD>Oznámiť text v schránke Windows</TD>
+<TD>NVDA+c</TD>
+<TD>Ak je v schránke Windows text, NVDA ho oznámi.</TD>
+</TR>
+</TABLE>
+
+<H2>Pohyb v NVDA</H2>
+<A NAME="SystemFocus"></A>
+<H3>Pohyb pomocou zamerania systémového fokusu</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka</TH>
+<TH>Popis</TH>
+</TR>
+<TR>
+<TD>Fokus</TD>
+<TD>NVDA+tab</TD>
+<TD>Oznámi alebo vyhláskuje meno objektu, ktorý má systémový fokus</TD>
+</TR>
+<TR>
+<TD>názov okna</TD>
+<TD>NVDA+t</TD>
+<TD>Oznámi titulok aktuálneho aplikačného okna alebo okna v popredí. Stlačené 2 krát rýchlo za sebou vyhláskuje názov okna a stlačené 3 krát rýchlo za sebou skopíruje názov aktuálneho okna do schránky.</TD>
+</TR>
+<TR>
+<TD>obsah okna v popredí</TD>
+<TD>NVDA+b</TD>
+<TD>Oznámi všetky prvky aktuálneho okna v popredí (užitočné pre dialógy)</TD>
+</TR>
+<TR>
+<TD>Stavový riadok</TD>
+<TD>NVDA+end</TD>
+<TD>Oznámi obsah stavového riadku ak ho NVDA dokáže nájsť. Tiež je možné týmto príkazom premiestniť navigačný objekt na stavový riadok.</TD>
+</TR>
+</TABLE>
+
+<A NAME="SystemCaret"></A>
+<H3>Pohyb pomocou textového kurzora</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka</TH>
+<TH>Popis</TH>
+</TR>
+<TR>
+<TD>Plynulé čítanie</TD>
+<TD>NVDA+šípka dolu</TD>
+<TD>Prečíta text od pozície systémového kurzora do konca textu pri čom sa systémový kurzor posúva</TD>
+</TR>
+<TR>
+<TD>Aktuálny riadok</TD>
+<TD>NVDA+šípka hore</TD>
+<TD>Oznámi alebo vyhláskuje aktuálny riadok zameraný systémovým kurzorom</TD>
+</TR>
+<TR>
+<TD>Aktuálny výber</TD>
+<TD>NVDA+Shift+šípka hore</TD>
+<TD>Oznámi práve vybratý text</TD>
+</TR>
+</TABLE>
+
+<P>
+Pri navigácii v tabuľkách sú tiež dostupné tieto klávesové príkazy:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka</TH>
+<TH>Popis</TH>
+</TR>
+<TR>
+<TD>Predchádzajúci stĺpec</TD>
+<TD>control+alt+ľavá šípka</TD>
+<TD>Prejde do predchádzajúcej bunky v aktuálnom riadku</TD>
+</TR>
+<TR>
+<TD>Nasledujúci stĺpec</TD>
+<TD>control+alt+pravá šípka</TD>
+<TD>Prejde do nasledujúcej bunky v aktuálnom riadku</TD>
+</TR>
+<TR>
+<TD>Predchádzajúci riadok</TD>
+<TD>control+alt+šípka hore</TD>
+<TD>Prejde do aktuálnej bunky v predchádzajúcom riadku</TD>
+</TR>
+<TR>
+<TD>Ďalší riadok</TD>
+<TD>control+alt+šípka dolu</TD>
+<TD>Prejde do aktuálnej bunky v nasledujúcom riadku</TD>
+</TR>
+</TABLE>
+
+<A NAME="ObjectNavigation"></A>
+<H3>Objektová navigácia</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka pre desktop</TH>
+<TH>Klávesová skratka pre laptop</TH>
+<TH>Popis</TH>
+</TR>
+<TR>
+<TD>Aktuálny objekt</TD>
+<TD>NVDA+numpad5</TD>
+<TD>NVDA+control+i</TD>
+<TD>Oznámenie aktuálneho objektu - pri stlačení 2 krát je informácia vyhláskovaná a tri krát rýchlo za sebou je obsah skopírovaný do schránky.</TD>
+</TR>
+<TR>
+<TD>Nadradený objekt</TD>
+<TD>NVDA+numpad8</TD>
+<TD>NVDA+shift+i</TD>
+<TD>Prejde na objekt, ktorý obsahuje aktuálny navigačný objekt</TD>
+</TR>
+<TR>
+<TD>Predchádzajúci objekt</TD>
+<TD>NVDA+numpad4</TD>
+<TD>NVDA+control+j</TD>
+<TD>Prejde na predchádzajúci objekt od navigačného objektu</TD>
+</TR>
+<TR>
+<TD>nasledujúci objekt</TD>
+<TD>NVDA+numpad6</TD>
+<TD>control+NVDA+l</TD>
+<TD>Prejde na nasledujúci objekt od navigačného objektu</TD>
+</TR>
+<TR>
+<TD>Prvý podradený objekt</TD>
+<TD>NVDA+numpad2</TD>
+<TD>NVDA+shift+čiarka</TD>
+<TD>Pohyb na prvý objekt, ktorý je vo vnútri navigačného objektu</TD>
+</TR>
+<TR>
+<TD>navigačný objekt na fokus</TD>
+<TD>NVDA+numpadMínus</TD>
+<TD>NVDA+backspace</TD>
+<TD>Premiestni navigačný objekt na prvok, ktorý má systémový fokus. Ak je zobrazený systémový kurzor, pokúsi sa nastaviť na jeho pozíciu aj prehliadací kurzor</TD>
+</TR>
+<TR>
+<TD>Predvolená akcia</TD>
+<TD>NVDA+numpadEnter</TD>
+<TD>NVDA+enter</TD>
+<TD>Aktivuje prvok práve zameraný objektovou navigáciou - rovnaké ako stlačenie klávesu enter alebo dvojité kliknutie.</TD>
+</TR>
+<TR>
+<TD>Fokus alebo systémový kurzor na pozíciu prehliadacieho kurzora</TD>
+<TD>NVDA+shift+numpad mínus</TD>
+<TD>NVDA+shift+backspace</TD>
+<TD>Po prvom stlačení nastaví fokus na navigačný objekt, po druhom stlačení sa pokúsi umiestniť systémový kurzor na pozíciu prehliadacieho kurzora</TD>
+</TR>
+<TR>
+<TD>Súradnice objektu</TD>
+<TD>NVDA+numpadDelete</TD>
+<TD>NVDA+delete</TD>
+<TD>Oznamuje súradnice objektu vzhľadom na vlastnosti obrazovky</TD>
+</TR>
+</TABLE>
+
+<A NAME="ReviewingText"></A>
+<H3>Zobrazenie textu navigačného objektu</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka pre desktop</TH>
+<TH>Klávesová skratka pre Laptop</TH>
+<TH>Popis</TH>
+</TR>
+<TR>
+<TD>Prehliadací kurzor do prvého riadku</TD>
+<TD>shift+numpad7</TD>
+<TD>NVDA+7</TD>
+<TD>Presunie prehliadací kurzor do prvého riadku textu</TD>
+</TR>
+<TR>
+<TD>Prehliadací kurzor do predchádzajúceho riadku</TD>
+<TD>numpad7</TD>
+<TD>NVDA+u</TD>
+<TD>Presunie prehliadací kurzor do predchádzajúceho riadku textu</TD>
+</TR>
+<TR>
+<TD>Aktuálny riadok prehliadacieho kurzora</TD>
+<TD>numpad8</TD>
+<TD>NVDA+i</TD>
+<TD>Oznámi riadok, na ktorý ukazuje prehliadací kurzor. Dvojnásobné stlačenie vyhláskuje riadok. Stlačené tri krát rýchlo za sebou foneticky vyhláskuje riadok.</TD>
+</TR>
+<TR>
+<TD>Prehliadací kurzor do nasledujúceho riadku</TD>
+<TD>numpad9</TD>
+<TD>NVDA+o</TD>
+<TD>Presunie prehliadací kurzor do nasledujúceho riadku textu</TD>
+</TR>
+<TR>
+<TD>Prehliadací kurzor do posledného riadku</TD>
+<TD>shift+numpad9</TD>
+<TD>NVDA+9</TD>
+<TD>Presunie prehliadací kurzor do posledného riadku textu</TD>
+</TR>
+<TR>
+<TD>Prehliadací kurzor na predchádzajúce slovo</TD>
+<TD>numpad4</TD>
+<TD>NVDA+j</TD>
+<TD>Presunie prehliadací kurzor na predchádzajúce slovo textu</TD>
+</TR>
+<TR>
+<TD>Aktuálne slovo prehliadacieho kurzora</TD>
+<TD>numpad5</TD>
+<TD>NVDA+k</TD>
+<TD>Oznámi slovo, na ktoré práve ukazuje prehliadací kurzor. Dvojnásobné stlačenie vyhláskuje slovo. Stlačené tri krát rýchlo za sebou foneticky vyhláskuje aktuálne slovo.</TD>
+</TR>
+<TR>
+<TD>Prehliadací kurzor na nasledujúce slovo</TD>
+<TD>numpad6</TD>
+<TD>NVDA+l</TD>
+<TD>Presunie prehliadací kurzor na nasledujúce slovo textu</TD>
+</TR>
+<TR>
+<TD>Prehliadací kurzor na začiatok riadku</TD>
+<TD>shift+numpad1</TD>
+<TD>NVDA+shift+u</TD>
+<TD>Presunie prehliadací kurzor na začiatok aktuálneho riadku textu</TD>
+</TR>
+<TR>
+<TD>Prehliadací kurzor na predchádzajúci znak</TD>
+<TD>numpad1</TD>
+<TD>NVDA+m</TD>
+<TD>Presunie prehliadací kurzor na predchádzajúci znak v aktuálnom riadku textu</TD>
+</TR>
+<TR>
+<TD>Aktuálny znak prehliadacieho kurzora</TD>
+<TD>numpad2</TD>
+<TD>NVDA+čiarka</TD>
+<TD>Oznámi aktuálny znak prehliadacieho kurzora. Dvojnásobné stlačenie vyhláskuje alebo oznámi príklad použitia znaku. Stlačené tri krát rýchlo po sebe oznámi ten istý znak v numerickom a hexadecimálnom formáte.</TD>
+</TR>
+<TR>
+<TD>Prehliadací kurzor na nasledujúci znak</TD>
+<TD>numpad3</TD>
+<TD>NVDA+bodka</TD>
+<TD>Presunie prehliadací kurzor na nasledujúci znak v aktuálnom riadku textu</TD>
+</TR>
+<TR>
+<TD>Prehliadací kurzor na koniec riadku</TD>
+<TD>shift+numpad3</TD>
+<TD>NVDA+shift+o</TD>
+<TD>Presunie prehliadací kurzor na koniec aktuálneho riadku textu</TD>
+</TR>
+<TR>
+<TD>Plynulé čítanie prehliadacím kurzorom</TD>
+<TD>numpadPlus</TD>
+<TD>NVDA+shift+šípka dolu</TD>
+<TD>Číta od aktuálnej pozície prehliadacieho kurzora a posúva sa smerom dolu.</TD>
+</TR>
+<TR>
+<TD>Začiatok bloku kopírovania prehliadacím kurzorom</TD>
+<TD>NVDA+f9</TD>
+<TD>NVDA+f9</TD>
+<TD>Označí aktuálnu pozíciu ako začiatok bloku na kopírovanie do schránky. Kopírovanie sa neuskutoční kým neurčíte cieľ kopírovania.</TD>
+</TR>
+<TR>
+<TD>Koniec bloku kopírovania prehliadacím kurzorom</TD>
+<TD>NVDA+f10</TD>
+<TD>NVDA+f10</TD>
+<TD>Skopíruje text od značky nastavenej ako začiatok kopírovania prehliadacím kurzorom po aktuálnu pozíciu do schránky Windows.</TD>
+</TR>
+<TR>
+<TD>formátovanie textu</TD>
+<TD>NVDA+f</TD>
+<TD>NVDA+f</TD>
+<TD>Oznámi formátovanie textu na pozícii prehliadacieho kurzora</TD>
+</TR>
+</TABLE>
+
+<A NAME="FlatReview"></A>
+<H3>Plošné prehliadanie</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka pre desktop</TH>
+<TH>Klávesová skratka pre laptop</TH>
+<TH>Popis</TH>
+</TR>
+<TR>
+<TD>Prepnúť do plošného prehliadania</TD>
+<TD>NVDA+numpad7</TD>
+<TD>NVDA+pageup</TD>
+<TD>Prejde do plošného prehliadania na miesto, kde sa nachádza navigačný objekt, čo umožní čítať text aplikačného okna alebo dokumentu príkazmi prehliadacieho kurzora.</TD>
+</TR>
+<TR>
+<TD>Prepnúť do objektovej navigácie</TD>
+<TD>NVDA+numpad1</TD>
+<TD>NVDA+pageDown</TD>
+<TD>Prejde do objektovej navigácie na pozícii prehliadacieho kurzora v režime plošného prehliadania. Toto nájde objekt, ktorého text práve čítate pomocou plošného prehliadania, zameria ho objektovou navigáciou a umožní pomocou prehliadacieho kurzora čítať obsah tohoto objektu alebo objektovú navigáciu po susediacich objektoch.</TD>
+</TR>
+</TABLE>
+
+<H3>Pohyb myšou</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka pre desktop</TH>
+<TH>Klávesová skratka pre laptop</TH>
+<TH>Popis</TH>
+</TR>
+<TR>
+<TD>Ľavý klik</TD>
+<TD>numpad lomeno</TD>
+<TD>NVDA+ľavá šípka</TD>
+<TD>Vykoná klik ľavým tlačidlom myši. Dvojklik je možné nasimulovať stlačením tejto skratky dva krát rýchlo za sebou.</TD>
+</TR>
+<TR>
+<TD>Zamknúť ľavé tlačidlo myši</TD>
+<TD>shift+numpad lomeno</TD>
+<TD>NVDA+shift+ľavá šípka</TD>
+<TD>Stlačí a uzamkne ľavé tlačidlo myši. Stlačte znovu na uvoľnenie. Operáciu drag &amp; drop môžete začať uzamknutím tlačidla použitím tohoto príkazu a následne posunúť myš fyzicky alebo pomocou iných klávesových príkazov.</TD>
+</TR>
+<TR>
+<TD>Pravý klik</TD>
+<TD>numpad hviezdička</TD>
+<TD>NVDA+pravá šípka</TD>
+<TD>Vykoná klik pravým tlačidlom myši.</TD>
+</TR>
+<TR>
+<TD>Zamknúť pravé tlačidlo myši</TD>
+<TD>shift+numpad hviezdička</TD>
+<TD>NVDA+shift+pravá šípka</TD>
+<TD>Stlačí a uzamkne pravé tlačidlo myši. Stlačte znovu na uvoľnenie. Operáciu drag &amp; drop môžete začať uzamknutím tlačidla použitím tohoto príkazu a následne posunúť myš fyzicky alebo pomocou iných klávesových príkazov.</TD>
+</TR>
+<TR>
+<TD>Myš na navigačný objekt</TD>
+<TD>NVDA+numpad lomeno</TD>
+<TD>NVDA+shift+f9</TD>
+<TD>Premiestni ukazovateľ myši na miesto aktuálneho prvku zameraného objektovou navigáciou na mieste, kde ukazuje prehliadací kurzor</TD>
+</TR>
+<TR>
+<TD>Objektová navigácia na myš</TD>
+<TD>NVDA+numpad hviezdička</TD>
+<TD>NVDA+shift+f10</TD>
+<TD>Nastaví objektovú navigáciu na prvok, na ktorého umiestnenie ukazuje kurzor myši</TD>
+</TR>
+</TABLE>
+
+<H2>Režim prehliadania</H2>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka</TH>
+<TH>Popis</TH>
+</TR>
+<TR>
+<TD>Prepnúť režimy fokusu / prehliadania</TD>
+<TD>NVDA+medzera</TD>
+<TD>Prepína medzi režimom fokusu a režimom prehliadania</TD>
+</TR>
+<TR>
+<TD>Ukončiť režim fokusu</TD>
+<TD>escape</TD>
+<TD>Prepína do režimu prehliadania, ak bol režim fokusu aktivovaný automaticky</TD>
+</TR>
+<TR>
+<TD>Obnoviť dokument v režime prehliadania</TD>
+<TD>NVDA+f5</TD>
+<TD>Obnoví obsah aktuálneho dokumentu (užitočné ak časť obsahu nebola správne načítaná)</TD>
+</TR>
+<TR>
+<TD>Hľadať</TD>
+<TD>NVDA+control+f</TD>
+<TD>Zobrazí dialóg, ktorý umožní vyhľadávanie textu v aktuálnom dokumente</TD>
+</TR>
+<TR>
+<TD>Hľadať ďalej</TD>
+<TD>NVDA+f3</TD>
+<TD>Vyhľadá nasledujúci výskyt textu v aktívnom dokumente, ktorý Ste už hľadali</TD>
+</TR>
+<TR>
+<TD>Hľadať späť</TD>
+<TD>NVDA+shift+f3</TD>
+<TD>Vyhľadá predchádzajúci výskyt textu v aktívnom dokumente, ktorý Ste už hľadali</TD>
+</TR>
+</TABLE>
+
+<H3>Príkazy rýchlej navigácie</H3>
+<P>
+Za pomoci nasledujúcich klávesov sa môžete posúvať na nasledujúci prvok dokumente v opačnom smere sa môžete pohybovať kombinovaním príkazov s klávesom shift.
+</P>
+<UL>
+<LI>h: nadpis
+<LI>l: zoznam
+<LI>i: položka zoznamu
+<LI>t: tabuľka
+<LI>k: odkaz
+<LI>n: text, ktorý nie je odkazom
+<LI>f: prvok formulára
+<LI>u: nenavštívený odkaz
+<LI>v: navštívený odkaz
+<LI>e: editačné pole
+<LI>b: tlačítko
+<LI>x: začiarkávacie políčko
+<LI>c: zoznamový rámik
+<LI>r: prepínač
+<LI>q: citácia
+<LI>s: oddeľovač
+<LI>m: rámik
+<LI>g: grafika
+<LI>d: oblasť stránky
+<LI>o: vnorený objekt
+<LI>1-6: nadpis príslušnej úrovne
+</UL>
+
+<P></P>
+<H3>Zoznam prvkov</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka</TH>
+<TH>Popis</TH>
+</TR>
+<TR>
+<TD>Zoznam prvkov v režime prehliadania</TD>
+<TD>NVDA+f7</TD>
+<TD>Zobrazí dialóg zoznam prvkov aktuálneho dokumentu kde sú dostupné všetky odkazy, nadpisy a oblasti stránky</TD>
+</TR>
+</TABLE>
+
+<H3>Vnorené objekty</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka</TH>
+<TH>Popis</TH>
+</TR>
+<TR>
+<TD>Prejsť do nadradeného dokumentu</TD>
+<TD>NVDA+control+medzera</TD>
+<TD>Premiestni fokus z aktuálneho vnoreného objektu do nadradeného dokumentu ktorý tento objekt obsahuje</TD>
+</TR>
+</TABLE>
+
+<H2>Príkazy NVDA špecifické pre aplikácie</H2>
+<H3>foobar2000</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka</TH>
+<TH>Popis</TH>
+</TR>
+<TR>
+<TD>Oznámiť zostávajúci čas</TD>
+<TD>control+shift+r</TD>
+<TD>V prípade, že je práve prehrávaná skladba, oznámi zostávajúci čas.</TD>
+</TR>
+</TABLE>
+
+<H3>Miranda IM</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka</TH>
+<TH>Popis</TH>
+</TR>
+<TR>
+<TD>Oznámiť poslednú správu</TD>
+<TD>NVDA+control+1-4</TD>
+<TD>Oznámi jednu z posledných správ. napr. NVDA+control+2 oznámi predposlednú správu.</TD>
+</TR>
+</TABLE>
+
+<H3>Poedit</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka</TH>
+<TH>Popis</TH>
+</TR>
+<TR>
+<TD>Oznámiť okno komentáre</TD>
+<TD>control+shift+c</TD>
+<TD>Oznamuje komentáre z okna komentár.</TD>
+</TR>
+<TR>
+<TD>Oznámiť okno automatické komentáre</TD>
+<TD>control+shift+a</TD>
+<TD>Oznamuje komentáre z okna automatický komentár.</TD>
+</TR>
+</TABLE>
+
+<H2>Konfigurácia NVDA</H2>
+<H3>Ponuka možnosti</H3>
+<H4>Nastavenia hlasu (NVDA+control+v)</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka pre desktop</TH>
+<TH>Klávesová skratka pre laptop</TH>
+<TH>Popis</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Úroveň interpunkcie</TD>
+<TD>NVDA+p</TD>
+<TD>NVDA+p</TD>
+<TD>Ak je toto napríklad nastavené na všetko, všetky symboly budú vyslovované ako slová.</TD>
+</TR>
+</TABLE>
+
+<A NAME="SynthSettingsRing"></A>
+<H4>Kruh nastavení hlasového výstupu</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka pre desktop</TH>
+<TH>Klávesová skratka pre laptop</TH>
+<TH>Popis</TH>
+</TR>
+<TR>
+<TD>ďalšie nastavenie hlasového výstupu</TD>
+<TD>NVDA+control+pravá šípka</TD>
+<TD>NVDA+control+pravá šípka</TD>
+<TD>Prejde na nasledujúce dostupné nastavenie hlasového výstupu. Z posledného nastavenia NVDA automaticky prejde na prvé.</TD>
+</TR>
+<TR>
+<TD>Predchádzajúce nastavenie hlasového výstupu</TD>
+<TD>NVDA+control+ľavá šípka</TD>
+<TD>NVDA+control+ľavá šípka</TD>
+<TD>Prejde na predchádzajúce dostupné nastavenie hlasového výstupu. Z prvého NVDA automaticky prejde na posledné nastavenie.</TD>
+</TR>
+<TR>
+<TD>Zvýšiť hodnotu nastavenia hlasového výstupu</TD>
+<TD>NVDA+control+šípka hore</TD>
+<TD>NVDA+control+šípka hore</TD>
+<TD>Zvýši hodnotu aktuálne zameraného nastavenia hlasového výstupu. napríklad zrýchli tempo, vyberie nasledujúci hlas, zosilní hlasitosť</TD>
+</TR>
+<TR>
+<TD>Znížiť hodnotu nastavenia hlasu</TD>
+<TD>NVDA+control+šípka dolu</TD>
+<TD>NVDA+control+šípka dolu</TD>
+<TD>Zníži hodnotu aktuálne zameraného nastavenia hlasového výstupu. Napríklad spomalí tempo, vyberie predchádzajúci hlas, stíši hlasitosť.</TD>
+</TR>
+</TABLE>
+
+<H4>Nastavenia braillu</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka pre desktop</TH>
+<TH>Klávesová skratka pre laptop</TH>
+<TH>Popis</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Braillovský kurzor zviazaný s</TD>
+<TD>NVDA+control+t</TD>
+<TD>NVDA+control+t</TD>
+<TD>Táto voľba umožňuje nastaviť či bude braillovský kurzor sledovať systémový kurzor, alebo či bude braillovský kurzor sledovať prehliadací kurzor navigačného objektu.</TD>
+</TR>
+</TABLE>
+
+<H4>Nastavenia klávesnice (NVDA+control+k)</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka pre desktop</TH>
+<TH>Klávesová skratka pre laptop</TH>
+<TH>Popis</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Čítať napísané znaky</TD>
+<TD>NVDA+2</TD>
+<TD>NVDA+2</TD>
+<TD>Ak je zapnuté, NVDA bude oznamovať všetky napísané znaky.</TD>
+</TR>
+<TR>
+<TD ALIGN="center">Čítať po slovách</TD>
+<TD>NVDA+3</TD>
+<TD>NVDA+3</TD>
+<TD>Ak je zapnuté, NVDA bude čítať pri písaní text po slovách.</TD>
+</TR>
+<TR>
+<TD ALIGN="center">Čítať príkazové skratky</TD>
+<TD>NVDA+4</TD>
+<TD>NVDA+4</TD>
+<TD>Ak je zapnuté, NVDA bude čítať klávesové skratky použité ako príkazy, teda nie samotné znaky. Do tejto funkcie spadajú kombinácie znakov a klávesov napr. s klávesom Control.</TD>
+</TR>
+</TABLE>
+
+<A NAME="MouseSettings"></A>
+<H4>Nastavenia myši</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka pre desktop</TH>
+<TH>Klávesová skratka pre laptop</TH>
+<TH>Popis</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Povoliť sledovanie kurzora myši</TD>
+<TD>NVDA+m</TD>
+<TD>NVDA+shift+m</TD>
+<TD>Ak je možnosť povolená, NVDA bude oznamovať text cez ktorý prechádza kurzor myši. Takto môžete nájsť položky na obrazovke za pomoci myši a nemusíte použiť objektovú navigáciu.</TD>
+</TR>
+</TABLE>
+
+<H4>Prehliadací kurzor a objektová navigácia</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka pre desktop</TH>
+<TH>Klávesová skratka pre laptop</TH>
+<TH>Popis</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Sledovať systémový fokus</TD>
+<TD>NVDA+7</TD>
+<TD>NVDA+control+7</TD>
+<TD>Ak je táto voľba zapnutá objektová navigácia bude vždy pri zmene ukazovať na objekt, ktorý má systémový fokus.</TD>
+</TR>
+<TR>
+<TD ALIGN="center">Sledovať systémový kurzor</TD>
+<TD>NVDA+6</TD>
+<TD>NVDA+6</TD>
+<TD>Ak je táto voľba zapnutá, prehliadací kurzor sa vždy pri zmene posunie na miesto, na ktoré ukazuje systémový kurzor.</TD>
+</TR>
+</TABLE>
+
+<H4>Nastavenia prezentácie objektov (NVDA+control+o)</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka pre desktop</TH>
+<TH>Klávesová skratka pre laptop</TH>
+<TH>Popis</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Oznamovanie aktualizácie indikátora priebehu</TD>
+<TD>NVDA+u</TD>
+<TD>NVDA+control+f2</TD>
+<TD>Táto voľba nastavuje ako bude NVDA oznamovať zmenu počas aktualizácie indikátora priebehu.</TD>
+</TR>
+<TR>
+<TD ALIGN="center">Oznamovať dynamicky menený obsah</TD>
+<TD>NVDA+5</TD>
+<TD>NVDA+5</TD>
+<TD>Prepína automatické oznamovanie obsahu v niektorých objektoch ako sú napríklad terminály alebo prichádzajúci text v chatovacích programoch.</TD>
+</TR>
+</TABLE>
+
+<H4>Režim prehliadania</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka pre desktop</TH>
+<TH>Klávesová skratka pre laptop</TH>
+<TH>Popis</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Zachovať vzhľad ako na obrazovke</TD>
+<TD>NVDA+v</TD>
+<TD>NVDA+v</TD>
+<TD>Umožňuje nastaviť zalamovanie obsahu dokumentu v režime prehliadania. Ak je táto voľba zapnutá, všetky prvky budú zobrazené tak, ako sú rozmiestnené na obrazovke. Naopak ak je toto vypnuté, odkazy a tiež ďalšie prvky budú zobrazené samostatne na riadku.</TD>
+</TR>
+</TABLE>
+
+<H3>Uloženie a opätovné načítanie konfigurácie</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka pre desktop</TH>
+<TH>Klávesová skratka pre laptop</TH>
+<TH>Popis</TH>
+</TR>
+<TR>
+<TD>Uložiť nastavenia</TD>
+<TD>NVDA+control+c</TD>
+<TD>NVDA+control+c</TD>
+<TD>Uloží aktuálne nastavenia NVDA tak, aby sa pri ukončení nestratili</TD>
+</TR>
+<TR>
+<TD>Obnoviť uloženú konfiguráciu</TD>
+<TD>NVDA+control+r</TD>
+<TD>NVDA+control+r</TD>
+<TD>Obnoví nastavenia z času, čo Ste naposledy konfiguráciu uložili</TD>
+</TR>
+</TABLE>
+
+<A NAME="SupportedBrailleDisplays"></A>
+<H2>Podporované braillovské zobrazovače</H2>
+<H3>Riadky Focus/PAC Mate od spoločnosti Freedom Scientific</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka</TH>
+</TR>
+<TR>
+<TD>Prepnúť akciu ľavého kolieska</TD>
+<TD>Stlačenie ľavého kolieska</TD>
+</TR>
+<TR>
+<TD>posunúť späť pomocou ľavého kolieska</TD>
+<TD>ľavé koliesko hore</TD>
+</TR>
+<TR>
+<TD>Posunúť vpred použitím ľavého kolieska</TD>
+<TD>ľavé koliesko dolu</TD>
+</TR>
+<TR>
+<TD>Prepnúť akciu pravého kolieska</TD>
+<TD>Stlačenie pravého kolieska</TD>
+</TR>
+<TR>
+<TD>posunúť späť pomocou pravého kolieska</TD>
+<TD>pravé koliesko hore</TD>
+</TR>
+<TR>
+<TD>Posunúť vpred použitím pravého kolieska</TD>
+<TD>pravé koliesko dolu</TD>
+</TR>
+<TR>
+<TD>Prejsť na znak v brailly</TD>
+<TD>smerové tlačidlá</TD>
+</TR>
+</TABLE>
+
+<H3>Optelec ALVA BC640/680</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka</TH>
+</TR>
+<TR>
+<TD>posunúť riadok späť</TD>
+<TD>t1</TD>
+</TR>
+<TR>
+<TD>predchádzajúci riadok</TD>
+<TD>t2</TD>
+</TR>
+<TR>
+<TD>nasledujúci riadok</TD>
+<TD>t4</TD>
+</TR>
+<TR>
+<TD>posunúť riadok vpred</TD>
+<TD>t5</TD>
+</TR>
+<TR>
+<TD>Prejsť na znak v brailly</TD>
+<TD>smerové tlačidlá</TD>
+</TR>
+<TR>
+<TD>emulácia shift+tab</TD>
+<TD>sp1</TD>
+</TR>
+<TR>
+<TD>emulácia alt</TD>
+<TD>sp2</TD>
+</TR>
+<TR>
+<TD>emulácia escape</TD>
+<TD>sp3</TD>
+</TR>
+<TR>
+<TD>emulácia tab</TD>
+<TD>sp4</TD>
+</TR>
+<TR>
+<TD>šípka hore</TD>
+<TD>spUp</TD>
+</TR>
+<TR>
+<TD>šípka dolu</TD>
+<TD>spDown</TD>
+</TR>
+<TR>
+<TD>šípka vľavo</TD>
+<TD>spLeft</TD>
+</TR>
+<TR>
+<TD>šípka vpravo</TD>
+<TD>spRight</TD>
+</TR>
+<TR>
+<TD>enter</TD>
+<TD>spEnter</TD>
+</TR>
+<TR>
+<TD>NVDA Menu</TD>
+<TD>sp1+sp3</TD>
+</TR>
+<TR>
+<TD>klávesová skratka windows+d (minimalizovať všetky aplikácie)</TD>
+<TD>sp1+sp4</TD>
+</TR>
+<TR>
+<TD>kláves windows</TD>
+<TD>sp2+sp3</TD>
+</TR>
+<TR>
+<TD>klávesová skratka alt+tab</TD>
+<TD>sp2+sp4</TD>
+</TR>
+</TABLE>
+
+<H3>Zobrazovače od spoločnosti Handy Tech</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka</TH>
+</TR>
+<TR>
+<TD>posunúť riadok späť</TD>
+<TD>ľavá šípka, šípka hore</TD>
+</TR>
+<TR>
+<TD>posunúť riadok vpred</TD>
+<TD>pravá šípka, šípka dolu</TD>
+</TR>
+<TR>
+<TD>predchádzajúci riadok</TD>
+<TD>b4</TD>
+</TR>
+<TR>
+<TD>nasledujúci riadok</TD>
+<TD>b5</TD>
+</TR>
+<TR>
+<TD>Prejsť na znak v brailly</TD>
+<TD>smerové tlačidlá</TD>
+</TR>
+<TR>
+<TD>shift+tab</TD>
+<TD>esc</TD>
+</TR>
+<TR>
+<TD>emulácia alt</TD>
+<TD>b2+b4+b5</TD>
+</TR>
+<TR>
+<TD>emulácia klávesu escape</TD>
+<TD>b4+b6</TD>
+</TR>
+<TR>
+<TD>tab</TD>
+<TD>enter</TD>
+</TR>
+<TR>
+<TD>enter</TD>
+<TD>esc+enter</TD>
+</TR>
+<TR>
+<TD>šípka hore</TD>
+<TD>ľavá medzera</TD>
+</TR>
+<TR>
+<TD>šípka dolu</TD>
+<TD>pravá medzera</TD>
+</TR>
+<TR>
+<TD>NVDA Menu</TD>
+<TD>b2+b4+b5+b6</TD>
+</TR>
+<TR>
+<TD>Správca konfigurácii Handy Tech</TD>
+<TD>b4+b8</TD>
+</TR>
+</TABLE>
+
+<H3>MDV Lilli</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka</TH>
+</TR>
+<TR>
+<TD>posunúť riadok späť</TD>
+<TD>LF</TD>
+</TR>
+<TR>
+<TD>posunúť riadok vpred</TD>
+<TD>RG</TD>
+</TR>
+<TR>
+<TD>predchádzajúci riadok</TD>
+<TD>UP</TD>
+</TR>
+<TR>
+<TD>nasledujúci riadok</TD>
+<TD>DN</TD>
+</TR>
+<TR>
+<TD>Prejsť na znak v brailly</TD>
+<TD>smerové tlačidlá</TD>
+</TR>
+<TR>
+<TD>shift+tab</TD>
+<TD>SLF</TD>
+</TR>
+<TR>
+<TD>tab key</TD>
+<TD>SRG</TD>
+</TR>
+<TR>
+<TD>alt+tab</TD>
+<TD>SDN</TD>
+</TR>
+<TR>
+<TD>alt+shift+tab</TD>
+<TD>SUP</TD>
+</TR>
+</TABLE>
+
+<H3>Zobrazovače Baum/Humanware/APH</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka</TH>
+</TR>
+<TR>
+<TD>Posunúť riadok späť</TD>
+<TD>d2</TD>
+</TR>
+<TR>
+<TD>Posunúť riadok vpred</TD>
+<TD>d5</TD>
+</TR>
+<TR>
+<TD>Predchádzajúci riadok</TD>
+<TD>d1</TD>
+</TR>
+<TR>
+<TD>Nasledujúci riadok</TD>
+<TD>d3</TD>
+</TR>
+<TR>
+<TD>Prejsť na znak v brailly</TD>
+<TD>smerové tlačidlá</TD>
+</TR>
+</TABLE>
+
+<P>
+Pre zobrazovače, ktoré majú džojstik:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka</TH>
+</TR>
+<TR>
+<TD>šípka hore</TD>
+<TD>up</TD>
+</TR>
+<TR>
+<TD>šípka dolu</TD>
+<TD>down</TD>
+</TR>
+<TR>
+<TD>ľavá šípka</TD>
+<TD>left</TD>
+</TR>
+<TR>
+<TD>pravá šípka</TD>
+<TD>right</TD>
+</TR>
+<TR>
+<TD>kláves enter</TD>
+<TD>select</TD>
+</TR>
+</TABLE>
+
+<H3>hedo ProfiLine a hedo MobilLine USB</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka</TH>
+</TR>
+<TR>
+<TD>posunúť riadok späť</TD>
+<TD>K1</TD>
+</TR>
+<TR>
+<TD>posunúť riadok vpred</TD>
+<TD>K3</TD>
+</TR>
+<TR>
+<TD>Predchádzajúci riadok</TD>
+<TD>B2</TD>
+</TR>
+<TR>
+<TD>nasledujúci riadok</TD>
+<TD>B5</TD>
+</TR>
+<TR>
+<TD>Prejsť na znak v brailly</TD>
+<TD>smerové tlačidlá</TD>
+</TR>
+<TR>
+<TD>Prepnúť nastavenie braillovský kurzor zviazaný s</TD>
+<TD>K2</TD>
+</TR>
+<TR>
+<TD>Plynulé čítanie</TD>
+<TD>B6</TD>
+</TR>
+</TABLE>
+
+<H3>HumanWare Brailliant BI/B</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>Klávesová skratka</TH>
+</TR>
+<TR>
+<TD>posunúť riadok späť</TD>
+<TD>left</TD>
+</TR>
+<TR>
+<TD>posunúť riadok vpred</TD>
+<TD>right</TD>
+</TR>
+<TR>
+<TD>predchádzajúci riadok</TD>
+<TD>up</TD>
+</TR>
+<TR>
+<TD>nasledujúci riadok</TD>
+<TD>down</TD>
+</TR>
+<TR>
+<TD>Prejsť na znak v brailly</TD>
+<TD>smerové tlačidlá</TD>
+</TR>
+<TR>
+<TD>Prepnúť nastavenie braillovský kurzor zviazaný s</TD>
+<TD>up+down</TD>
+</TR>
+<TR>
+<TD>šípka hore</TD>
+<TD>medzera+bod1</TD>
+</TR>
+<TR>
+<TD>šípka dolu</TD>
+<TD>medzera+bod4</TD>
+</TR>
+<TR>
+<TD>ľavá šípka</TD>
+<TD>medzera+bod3</TD>
+</TR>
+<TR>
+<TD>pravá šípka</TD>
+<TD>medzera+bod6</TD>
+</TR>
+<TR>
+<TD>Ponuka NVDA</TD>
+<TD>c1+c3+c4+c5 (command n)</TD>
+</TR>
+<TR>
+<TD>shift+tab</TD>
+<TD>medzera+bod1+bod3</TD>
+</TR>
+<TR>
+<TD>tab</TD>
+<TD>medzera+bod4+bod6</TD>
+</TR>
+<TR>
+<TD>alt</TD>
+<TD>medzera+bod1+bod3+bod4 (medzera+m)</TD>
+</TR>
+<TR>
+<TD>escape</TD>
+<TD>medzera+bod1+bod5 (medzera+e)</TD>
+</TR>
+<TR>
+<TD>enter</TD>
+<TD>bod8</TD>
+</TR>
+<TR>
+<TD>windows+d (minimalizovať všetky aplikácie)</TD>
+<TD>c1+c4+c5 (command d)</TD>
+</TR>
+<TR>
+<TD>kláves windows</TD>
+<TD>medzera+bod3+bod4</TD>
+</TR>
+<TR>
+<TD>alt+tab</TD>
+<TD>medzera+bod2+bod3+bod4+bod5 (medzera+t)</TD>
+</TR>
+<TR>
+<TD>Čítať všetko</TD>
+<TD>c1+c2+c3+c4+c5+c6</TD>
+</TR>
+</TABLE>
+
+<H3>BRLTTY</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Názov</TH>
+<TH>príkaz brltty</TH>
+</TR>
+<TR>
+<TD>posunúť riadok späť</TD>
+<TD>fwinlt (go left one window)</TD>
+</TR>
+<TR>
+<TD>posunúť riadok vpred</TD>
+<TD>fwinrt (go right one window)</TD>
+</TR>
+<TR>
+<TD>predchádzajúci riadok</TD>
+<TD>lnup (go up one line)</TD>
+</TR>
+<TR>
+<TD>nasledujúci riadok</TD>
+<TD>lndn (go down one line)</TD>
+</TR>
+<TR>
+<TD>Prejsť na znak v brailly</TD>
+<TD>route (bring cursor to character)</TD>
+</TR>
+</TABLE>
+
+
+<!-- html code generated by txt2tags 2.5 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags user_docs\sk\keyCommands.t2t -->
+</BODY></HTML>

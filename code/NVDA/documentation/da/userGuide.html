@@ -1,0 +1,2041 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META NAME="generator" CONTENT="http://txt2tags.sf.net">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<TITLE>NVDA 2012.1 User Guide</TITLE>
+</HEAD><BODY BGCOLOR="white" TEXT="black">
+<P ALIGN="center"><CENTER><H1>NVDA 2012.1 User Guide</H1>
+<FONT SIZE="4">
+<I>Last update: 23 August 2010</I><BR>
+</FONT></CENTER>
+
+<A NAME="toc"></A>
+<H2>Table of Contents</H2>
+  <UL>
+
+  <LI><A HREF="#toc2">1. Introduktion</A>
+    <UL>
+    <LI><A HREF="#toc3">1.1. Generelle funktioner</A>
+    <LI><A HREF="#toc4">1.2. Internationalisering</A>
+    <LI><A HREF="#toc5">1.3. Understøttelse for talesynteser</A>
+    <LI><A HREF="#toc6">1.4. Understøttelse af punktskrift</A>
+    <LI><A HREF="#toc7">1.5. Licens og  copyright</A>
+    </UL>
+  <LI><A HREF="#toc8">2. Systemkrav</A>
+  <LI><A HREF="#toc9">3. Hente NVDA</A>
+  <LI><A HREF="#toc10">4. Installation af NVDA</A>
+    <UL>
+    <LI><A HREF="#toc11">4.1. NVDA Installationsprogrammet</A>
+    <LI><A HREF="#toc12">4.2. NVDA transportabel version</A>
+    </UL>
+  <LI><A HREF="#toc13">5. Kom i gang med at bruge NVDA</A>
+    <UL>
+    <LI><A HREF="#toc14">5.1. Start NVDA</A>
+    <LI><A HREF="#toc15">5.2. Om NVDA tastaturkommandoer</A>
+      <UL>
+      <LI><A HREF="#toc16">5.2.1. NVDA-tasten</A>
+      <LI><A HREF="#toc17">5.2.2. Tastaturhjælp</A>
+      <LI><A HREF="#toc18">5.2.3. Tastatur-Layouts</A>
+      </UL>
+    <LI><A HREF="#toc19">5.3. NVDA-menuen</A>
+    <LI><A HREF="#toc20">5.4. Grundlæggende tastaturkommandoer</A>
+    </UL>
+  <LI><A HREF="#toc21">6. Navigering med NVDA</A>
+    <UL>
+    <LI><A HREF="#toc22">6.1. Navigering med systemfokus</A>
+    <LI><A HREF="#toc23">6.2. Navigering med systemmarkøren (System Caret</A>
+    <LI><A HREF="#toc24">6.3. Objektbaseret navigering</A>
+    <LI><A HREF="#toc25">6.4. Gennemse teksten i det aktuelle objekt</A>
+    <LI><A HREF="#toc26">6.5. Flad visning</A>
+    <LI><A HREF="#toc27">6.6. Navigering ved brug af musen</A>
+    </UL>
+  <LI><A HREF="#toc28">7. Virtuelle Buffers</A>
+    <UL>
+    <LI><A HREF="#toc29">7.1. Enkelttegns navigering</A>
+    <LI><A HREF="#toc30">7.2. Elementlisten</A>
+    </UL>
+  <LI><A HREF="#toc31">8. + Indlejrede objekter+</A>
+  <LI><A HREF="#toc32">9. Konfigurering af NVDA</A>
+    <UL>
+    <LI><A HREF="#toc33">9.1. Indstillinger</A>
+      <UL>
+      <LI><A HREF="#toc34">9.1.1. Generelle Indstillinger  (NVDA+control+g)</A>
+      <LI><A HREF="#toc35">9.1.2. Talesyntesedialogen(NVDA+control+s)</A>
+      <LI><A HREF="#VoiceSettings">9.1.3. Stemeindstillinger  (NVDA+control+v)</A>
+      <LI><A HREF="#SynthSettingsRing">9.1.4. Runden talesyntese-indstillinger</A>
+      <LI><A HREF="#toc38">9.1.5. Braille-indstillinger</A>
+      <LI><A HREF="#toc39">9.1.6. Tastatur-indstillinger (NVDA+control+k)</A>
+      <LI><A HREF="#toc40">9.1.7. Indstillinger for musen (NVDA+control+m)</A>
+      <LI><A HREF="#toc41">9.1.8. Indstillinger for den ubegrænsede markør</A>
+      <LI><A HREF="#toc42">9.1.9. Objekt-præsentations indstillinger  (NVDA+control+o)</A>
+      <LI><A HREF="#toc43">9.1.10. Indstillinger for virtuelle buffers (NVDA+control+b)</A>
+      <LI><A HREF="#DocumentFormattingSettings">9.1.11. Indstillinger for dokumentformatering  (NVDA+control+d)</A>
+      <LI><A HREF="#toc45">9.1.12. Taleordbøger</A>
+      </UL>
+    <LI><A HREF="#toc46">9.2. Gemme og genindlæse  konfigurationen</A>
+    <LI><A HREF="#toc47">9.3. Konfigurationsfiler og brugerprofiler</A>
+    </UL>
+  <LI><A HREF="#toc48">10. Ekstra værktøjer</A>
+    <UL>
+    <LI><A HREF="#toc49">10.1. Vis log</A>
+    <LI><A HREF="#toc50">10.2. Talevisning</A>
+    <LI><A HREF="#toc51">10.3. Python konsollen</A>
+    </UL>
+  <LI><A HREF="#toc52">11. Yderligere oplysninger</A>
+  <LI><A HREF="#SupportedSpeechSynth">12. Understøttede talesynteser</A>
+    <UL>
+    <LI><A HREF="#toc54">12.1. eSpeak</A>
+    <LI><A HREF="#toc55">12.2. Microsoft Speech API version 4 (SAPI 4)</A>
+    <LI><A HREF="#toc56">12.3. Microsoft Speech API version 5 (SAPI 5)</A>
+    <LI><A HREF="#toc57">12.4. Audiologic Tts3</A>
+    <LI><A HREF="#toc58">12.5. Newfon</A>
+    </UL>
+  </UL>
+
+<P></P>
+<A NAME="toc2"></A>
+<H2>1. Introduktion</H2>
+<A NAME="toc3"></A>
+<H3>1.1. Generelle funktioner</H3>
+<P>
+Giver feedback via syntetisk tale og punktskrift. Nonvisual Desktop
+Access (NVDA) giver blinde og mennesker med nedsat syn mulighed for at få adgang til og interagere
+med Windows-operativsystemet og mange tredjeparts-applikationer.
+</P>
+<P>
+Af væsentlige funktioner kan nævnes:
+</P>
+<UL>
+<LI>Kan køres fra en USB-stik eller andre bærbare medier
+uden behov for installation
+<LI>Talende installation der er Let at bruge  
+<LI>Surfe på internettet med Mozilla Firefox eller Windows Internet Explorer
+<LI>Arbejde med e-mail med Mozilla Thunderbird, Outlook Express, Windows
+Mail eller Windows Live Mail
+<LI>Understøtter Microsoft Word og Excel
+<LI>Understøtter Java-programmer
+<LI>Understøtter Adobe Reader
+<LI>Understøtter IBM Lotus Symphony
+<LI>Supporterer Windows Kommandoprompt og konsol applikationer
+<LI>Læser automatisk teksten under musen op og valgfri akustisk
+angivelse af musens position
+<LI>Understøtter mange opdaterbare punktskriftdisplays
+</UL>
+
+<A NAME="toc4"></A>
+<H3>1.2. Internationalisering</H3>
+<P>
+Det er vigtigt, at folk overalt i verden, uanset hvilket 
+sprog de taler, får lige adgang til teknologi.
+Udover engelsk er NVDA blevet oversat til over 20 sprog
+herunder: Arabisk, brasiliansk portugisisk, kroatisk, tjekkisk, finsk,
+Fransk, galicisk, tysk, ungarsk, italiensk, japansk, portugisisk,
+Russisk, slovakisk, spansk, thai, traditionelt kinesisk, ukrainsk,
+Afrikaans, polsk og vietnamesisk.
+</P>
+<A NAME="toc5"></A>
+<H3>1.3. Understøttelse for talesynteser</H3>
+<P>
+Udover at programmets meddelelser og brugerflade findes på flere sprog,
+kan NVDA også sætte brugeren i stand til at læse tekster på alle sprog, så længe
+de har en talesyntese, der kan tale det pågældende sprog.
+</P>
+<P>
+NVDA leveres med <A HREF="http://espeak.sourceforge.net/">eSpeak</A>, en gratis,
+open-source, flersproget talesyntese.
+</P>
+<P>
+Oplysninger om andre talesynteser som NVDA understøtter kan 
+findes i <A HREF="#SupportedSpeechSynths">Supported Speech Synthesizers</A> afsnittet.
+</P>
+<A NAME="toc6"></A>
+<H3>1.4. Understøttelse af punktskrift</H3>
+<P>
+For brugere som ejer et opdaterbart punktdisplay kan man med NVDA ligeledes få teksten ud på punktskrift.
+Se venligst afsnittet <A HREF="#SupportedBrailleDisplays">Supported Braille Displays</A> 
+for oplysninger om understøttede braille displays.
+</P>
+<P>
+NVDA understøtter punktskrift koder for mange sprog, herunder forkortet,
+fuldskrift og computer braille koder for visse sprog.
+</P>
+<A NAME="toc7"></A>
+<H3>1.5. Licens og  copyright</H3>
+<P>
+NVDA er ophavsret 2006-2012 NVDA bidragydere.
+</P>
+<P>
+NVDA er dækket under GNU General Public License (version 2).
+Du har lov til at dele eller ændre denne software så længe du distribuerer licensen sammen med softwaren og stiller hele kildekoden til rådighed for alle, der ønsker det.
+Dette gælder både originale og modificerede kopier af softwaren, plus
+software, der anvender kode taget fra denne software.
+</P>
+<P>
+For yderligere oplysninger, kan du [view the full licence. 
+<A HREF="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</A>]
+</P>
+<A NAME="toc8"></A>
+<H2>2. Systemkrav</H2>
+<UL>
+<LI>Operativsystemer: alle 32-bit og 64-bit versioner af Windows XP,
+Windows Vista og Windows 7 (inkl. server styresystemer), kan
+delvis arbejde med Windows 2000.
+<LI>Hukommelse: 256 MB eller mere RAM
+<LI>Processor hastighed: 1,0 GHz eller højere
+<LI>Omkring 50 MB lagerplads.
+</UL>
+
+<P></P>
+<A NAME="toc9"></A>
+<H2>3. Hente NVDA</H2>
+<P>
+Hvis du endnu ikke har fået en kopi af NVDA, kan du hente den fra
+<A HREF="http://www.nvda-project.org/">Www.nvda-project.org</A>.
+</P>
+<P>
+Gå til download sektionen, hvor du  finder et link til at downloade
+den nyeste version af NVDA.
+</P>
+<P>
+Der er i øjeblikket to måder at hente NVDA på.
+Den ene er en installationspakke, som med tale, vil hjælpe dig gennem installationen af NVDA så
+Du derefter til enhver tid kan  køre den fra Start Menuen.
+Den anden er en selvudpakkende arkivfil, der indeholder en fuldt
+transportabel udgave af NVDA, som du kan køre hvor som helst, herunder på en
+USB memory nøgle eller CD.
+</P>
+<P>
+For at få adgang til Windows-logon dialogboksen, dialogboksen til kontrol af brugerkonti  (UAC) eller andre sikre Windows dialogbokse, samt applikationer, der kører
+som administrator i Windows Vista og nyere, skal du installere NVDA på
+dit system ved hjælp af installationsprogrammet.
+Disse dialogbokse kan man ikke få adgang til ved hjælp af en bærbar kopi af NVDA.
+</P>
+<A NAME="toc10"></A>
+<H2>4. Installation af NVDA</H2>
+<A NAME="toc11"></A>
+<H3>4.1. NVDA Installationsprogrammet</H3>
+<P>
+Hvis du allerede har installationsprogrammet til NVDA, skal du blot trykke på enter eller dobbeltklikke på filen og installationsprogrammet starter.
+</P>
+<P>
+Under opstart af installationsprogrammet vil du høre en melodi der indikere at NVDA installationen er startet.
+En midlertidig kopi af NVDA, som automatisk startes op,  giver dig mulighed for at svare på de spørgsmål der skal til for at installere NVDA.
+Bemærk: Hvis der kører en anden kopi af NVDA på det tidspunkt, du
+startede installationsprogrammet, vises der en dialogboks der fortæller dig, at din
+tidligere kopi af NVDA vil blive lukket.
+Når du trykker enter på denne besked, vil installationsprogrammet lukke din
+tidligere NVDA ned, og starte sin egen op.
+Dette er nødvendigt for, at installationsprogrammet kan opdatere eventuelle ændrede
+filer.
+Hvis du På dette tidspunkt, allerede har installeret en anden kopi af NVDA ,
+vil installationsprogrammet afinstallere det for dig, og så vil det begynde at
+installere NVDA.
+</P>
+<P>
+Når du har fuldført installationen, vil programmet informere dig om, at installationen af NVDA er afsluttet.
+Hvis der var tale om en geninstallation af NVDA, vil du måske blive spurgt om at genstarte systemet.
+Det er meget vigtigt, at du genstarter systemet, hvis det ikke gøres, vil
+det have uønskede konsekvenser.
+Hvis du ikke bliver spurgt om at genstarte, vil tryk på afslut knappen lukke
+installationsprogrammet og starte den nyligt installerede version af NVDA op.
+</P>
+<A NAME="toc12"></A>
+<H3>4.2. NVDA transportabel version</H3>
+<P>
+Hvis du har den bærbare version af NVDA, så skal du blot trykke enter eller dobbeltklikke på filen og følge instruktionerne.
+Programet vil spørge dig, hvor på dit system, du ønsker at placere filerne.
+</P>
+<A NAME="toc13"></A>
+<H2>5. Kom i gang med at bruge NVDA</H2>
+<A NAME="toc14"></A>
+<H3>5.1. Start NVDA</H3>
+<P>
+Hvis du har installeret NVDA med installationsprogrammet, kan du blot starte NVDA ved enten at trykke Ctrl + Alt + n eller vælge NVDA fra NVDA menuen under Programmer i menuen Start.
+Derudover kan du skrive NVDA i dialogboksen Kør, og tryk på Enter.
+</P>
+<P>
+Hvis du vil starte den bærbare version, skal du åbne den mappe hvori du udpakkede NVDA, 
+og tryk enter eller dobbeltklik på nvda.exe.
+</P>
+<P>
+Du vil høre en stigende række af toner  under opstart af NVDA.
+Afhængig af hvor hurtigt din computer er, eller hvis du kører NVDA fra en
+USB-nøgle eller andet langsommere medium, kan det tage lidt tid at starte.
+Hvis det tager ekstra lang tid, bør NVDA sige "Starter NVDA.
+Vent venligst ... "
+</P>
+<P>
+Hvis du ikke hører noget af dette, eller du hører Windows lyden der indikere en fejl eller en
+faldende række af toner, så betyder det, at NVDA har en fejl, og du
+bliver nødt til eventuelt at rapportere en fejl til udviklerne.
+Venligst tjek på NVDA hjemmesiden for hvordan du gør dette.
+</P>
+<P>
+Når NVDA starter for første gang, vil du blive mødt af en dialogboks
+som giver dig nogle grundlæggende oplysninger om NVDA tasten og NVDA menuen.
+(Se efterfølgende afsnit om disse emner).
+Dialogboksen indeholder også to afkrydsningsfelter.
+Den første giver dig mulighed for at bestemme, om NVDA skal bruge capslock som en NVDA
+tast, og den anden lader dig styre, om denne Velkomstdialog boks
+skal vises hver gang NVDA starter..
+</P>
+<A NAME="toc15"></A>
+<H3>5.2. Om NVDA tastaturkommandoer</H3>
+<A NAME="toc16"></A>
+<H4>5.2.1. NVDA-tasten</H4>
+<P>
+De fleste NVDA-specifikke tastaturkommandoer består normalt af at trykke på en
+særlig tastt kaldet NVDA tasten, samtidig med en
+eller flere andre taster. 
+En undtagelse herfra er de læse kommandoer som kun bruger de
+numeriske  taster.
+</P>
+<P>
+NVDA kan konfigureres således, at enten den numeriske  Indsæt Udvidede
+Indsæt, eller capslock-tasten kan bruges som NVDA-tast.
+</P>
+<P>
+Som standard er både Numerisk Indsæt og udvidet Indsæt tasterne indstillet som
+NVDA-tast.
+</P>
+<P>
+Hvis du ønsker at få en af NVDA-tasterne til at brue dens
+oprindelige funktion (for eksempel, hvis du ønsker at tænde capslock, når du har
+valgt CapsLock til at være en NVDA tast) kan du trykke på tasten to gange
+i hurtig rækkefølge.
+</P>
+<A NAME="toc17"></A>
+<H4>5.2.2. Tastaturhjælp</H4>
+<P>
+Mange vigtige kommandoer er nævnt i resten af denne brugervejledning,
+men en nem måde at udforske alle de forskellige tastekommandoer er ved at starte 
+tastaturhjælpen.
+</P>
+<P>
+For At gøre dette, skal du trykke på NVDA +1.
+For At slå NVDA-hjælpen fra igen, tryk på NVDA + 1.
+Når tastatur hjælp er slået til, vil tryk på en tast annoncere, hvad den gør 
+Tasterne vil ikke rent faktisk udfører deres funktion, mens tastatur hjælpen er slåët til, 
+</P>
+<P>
+så du kan blot trykke på de taster du vil.
+</P>
+<A NAME="toc18"></A>
+<H4>5.2.3. Tastatur-Layouts</H4>
+<P>
+NVDA har for øjeblikket to tastaturlayouts.
+Der er et layout til stationære computere og et layout til bærbare computere.
+Som standard er  NVDA sat til at bruge Desktop layout, men du kan skifte
+til det bærbare computer layout i Tastaturindstillinger, under Indstillinger som findes 
+i NVDA menuen.
+</P>
+<P>
+Desktop layout bruger i høj grad det numeriske tastatur (med numlock slået fra).
+Selvom de fleste bærbare computere ikke har et fysisk numerisk tastatur, kan nogle bærbare
+computere efterligne et ved at holde Fn-tasten nede og trykke på bogstaver og tal
+på højre side af tastaturet (7 8 9 u i o j k l osv).
+Hvis din bærbare computer ikke kan gøre brug af dette, eller ikke tillader dig at slå 
+numlock fra, kan du skifte til det bærbare layout i stedet.
+</P>
+<A NAME="toc19"></A>
+<H3>5.3. NVDA-menuen</H3>
+<P>
+I NVDA-menuen kan du styre NVDA indstillingerne, få adgang til hjælp,
+gemme / fortryde din konfiguration, Ændre tale ordbøger, få adgang
+til yderligere værktøjer og afslutte NVDA.
+</P>
+<P>
+For at komme til NVDA menuen fra et hvilket som helst sted i Windows, mens NVDA kører,
+Tryk NVDA + n.
+Du kan også komme til NVDA menuen via windows system bakken.
+Enten højre-klik på nvda ikonet i systembakken, eller
+få adgang til systembakken ved at trykke på Windows-tasten + B, pil ned til
+NVDA ikonet og tryk på applikationstasten, som er placeret centralt ved siden af højre
+kontroltast på de fleste tastaturer.
+Når menuen kommer op, kan du bruge piletasterne til at navigere rundt i menuen,
+og tryk på Enter-tasten for at aktivere et element.
+</P>
+<A NAME="toc20"></A>
+<H3>5.4. Grundlæggende tastaturkommandoer</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>| Navn</TD>
+<TD>Tast</TD>
+<TD>Beskrivelse</TD>
+</TR>
+<TR>
+<TD>Stop tale</TD>
+<TD>Kontrol</TD>
+<TD>stopper talen med det samme</TD>
+</TR>
+<TR>
+<TD>Pause Tale</TD>
+<TD>Shift</TD>
+<TD>pauser straks tale. ved Tryk på den igen vil</TD>
+</TR>
+</TABLE>
+
+<P>
+talen fortsætte, hvor den slap (hvis pause er understøttet af
+nuværende talesyntese) |
+</P>
+<TABLE CELLPADDING="4">
+<TR>
+<TD>NVDA Menu</TD>
+<TD>NVDA + n</TD>
+<TD>Fremkalder NVDA menuen, så du får adgang</TD>
+</TR>
+</TABLE>
+
+<P>
+til indstillinger, værktøjer og hjælp osv. |
+</P>
+<TABLE CELLPADDING="4">
+<TR>
+<TD>Skift Tastatur Hjælp tilstand</TD>
+<TD>NVDA +1</TD>
+<TD>Hvis du trykker på en tast i denne tilstand</TD>
+</TR>
+</TABLE>
+
+<P>
+vil tasten blive oplæst, sammen med den eventuelle NVDA kommando der er tilknyttet tasten |
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>Afslut NVDA</TD>
+<TD>NVDA + q</TD>
+<TD>Afslutter NVDA</TD>
+</TR>
+<TR>
+<TD>Annoncer dato / tid</TD>
+<TD>NVDA + F12</TD>
+<TD>Ved et tryk,  rapporteres det aktuelle tidspunkt,</TD>
+</TR>
+</TABLE>
+
+<P>
+ved 2 tryk rapporteres datoen |
+</P>
+<TABLE CELLPADDING="4">
+<TR>
+<TD>Slip næste tast igennem</TD>
+<TD>NVDA + F2</TD>
+<TD>Fortæller NVDA at den næste tast</TD>
+</TR>
+</TABLE>
+
+<P>
+slippes lige igennem til den aktive applikation, selv om det normalt er 
+en NVDA kommando |
+</P>
+<A NAME="toc21"></A>
+<H2>6. Navigering med NVDA</H2>
+<A NAME="toc22"></A>
+<H3>6.1. Navigering med systemfokus</H3>
+<P>
+Den mest almindelige måde at navigere rundt med NVDA i Windows er simpelthen
+ved at bevæge sig rundt med de almindelige Windows-tastatur kommandoer, såsom at trykke på
+Tab og Skift + TAB for at flytte frem og tilbage mellem kontrol elementerne og trykke
+ALT for at komme til menulinjen og derefter bruge pilene til at navigere i menuer,
+og ved hjælp af ALT + TAB for at flytte mellem kørende programmer.
+Dette flytter systemfokus dvs. det objekt, der tager imod det, du indtaster på tastaturet. 
+Mens du gør dette, vil NVDA informere dig om oplysninger om objektet som har fokus såsom dets navn, type, værdi, tilstand, beskrivelse, tastatur
+genvej og positionelle oplysninger.
+</P>
+<P>
+Der er nogle nyttige kommandoer,, når du flytter fokus rundt i systemet:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>| Navn</TD>
+<TD>Tast</TD>
+<TD>Beskrivelse</TD>
+</TR>
+<TR>
+<TD>Annoncer aktuelt fokus</TD>
+<TD>NVDA + Tab</TD>
+<TD>annoncerer det aktuelle objekt eller</TD>
+</TR>
+</TABLE>
+
+<P>
+kontrol, der er i fokus. ved at Trykke to gange vil oplysningerne blive stavet |
+</P>
+<TABLE CELLPADDING="4">
+<TR>
+<TD>Annoncer titel</TD>
+<TD>NVDA + t</TD>
+<TD>annoncerer titlen på det aktuelle aktive</TD>
+</TR>
+</TABLE>
+
+<P>
+vindue. Ved at trykke to gange vil oplysningerne blive stavet. Ved at trykke tre gange vil
+oplysningerne blive kopieret til udklips holderen |
+</P>
+<TABLE CELLPADDING="4">
+<TR>
+<TD>Læs aktiv vindue</TD>
+<TD>NVDA + b</TD>
+<TD>læser alle kontrolelementerne i det aktive vindue (nyttigt</TD>
+</TR>
+</TABLE>
+
+<P>
+i dialogbokse) |
+</P>
+<A NAME="toc23"></A>
+<H3>6.2. Navigering med systemmarkøren (System Caret</H3>
+<P>
+Når fokus er på et objekt, der har en markør (på engelsk: system caret), kan du med piletasterne  flytte markøren 
+</P>
+<P>
+rundt og redigere som du normalt ville.
+NVDA vil annoncere mens du bevæger dig imellem tegn, ord og linie, og vil
+også annoncere markeret og fra valgt tekst.
+</P>
+<P>
+Følgende taste kommandoer kan bruges i forbindelse med markøren:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>| Navn</TD>
+<TD>Tast</TD>
+<TD>Beskrivelse</TD>
+</TR>
+<TR>
+<TD>Læs alt</TD>
+<TD>NVDA + pil ned</TD>
+<TD>Starter læsningen fra markørens nuværende position</TD>
+</TR>
+</TABLE>
+
+<P>
+og flytter markøren med ned i teksten |
+</P>
+<TABLE CELLPADDING="4">
+<TR>
+<TD>Læs den nuværende linje</TD>
+<TD>NVDA + pil op</TD>
+<TD>Læser den linje, hvor markøren for øjeblikket</TD>
+</TR>
+</TABLE>
+
+<P>
+befinder sig. Ved at trykke to gange vil linien blive stavet. |
+</P>
+<TABLE CELLPADDING="4">
+<TR>
+<TD>Læs nuværende tekstmarkering</TD>
+<TD>NVDA + Skift + pil op</TD>
+<TD>Læser den tekst der pt. er</TD>
+</TR>
+</TABLE>
+
+<P>
+markeret |
+</P>
+<TABLE CELLPADDING="4">
+<TR>
+<TD>Annoncer tekstformatering</TD>
+<TD>NVDA + f</TD>
+<TD>annoncerer formateringen af teksten</TD>
+</TR>
+</TABLE>
+
+<P>
+hvor markøren i øjeblikket befinder sig |
+</P>
+<P>
+Når man er i en tabel, er følgende kommandoer også tilgængelige:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>| Navn</TD>
+<TD>tast</TD>
+<TD>Beskrivelse</TD>
+</TR>
+<TR>
+<TD>Flyt til forrige kolonne</TD>
+<TD>Ctrl + Alt + venstre pil</TD>
+<TD>Flytter markøren til den forrige</TD>
+</TR>
+</TABLE>
+
+<P>
+kolonne (i samme række) |
+</P>
+<TABLE CELLPADDING="4">
+<TR>
+<TD>Flyt til næste kolonne</TD>
+<TD>Ctrl + Alt + højre pilw</TD>
+<TD>Flytter markøren</TD>
+</TR>
+</TABLE>
+
+<P>
+til den næste kolonne (i samme række) |
+</P>
+<TABLE CELLPADDING="4">
+<TR>
+<TD>Flyt til forrige række</TD>
+<TD>Ctrl + Alt + pil op</TD>
+<TD>Flytter markøren til</TD>
+</TR>
+</TABLE>
+
+<P>
+den forrige række (i den samme kolonne) |
+</P>
+<TABLE CELLPADDING="4">
+<TR>
+<TD>Flyt til næste række</TD>
+<TD>Ctrl + Alt + pil ned</TD>
+<TD>Flytter markøren til</TD>
+</TR>
+</TABLE>
+
+<P>
+næste række (i den samme kolonne) |
+</P>
+<A NAME="toc24"></A>
+<H3>6.3. Objektbaseret navigering</H3>
+<P>
+Hvis du ønsker at udforske det aktuelle program eller operativsystemet
+uden at flytte fokus, kan du bruge NVDA's ubegrænsede markør.
+Dette giver dig mulighed for at flytte imellem og få oplysninger om de enkelte
+objekter som tekst, knapper, afkrydsningsfelter, skydere, lister og redigerbar
+tekstfelter.
+Når du flytter til et objekt, vil NVDA rapportere det på samme måde som ved systemfokus.
+</P>
+<P>
+I stedet for at at skulle flytte frem og tilbage mellem hvert enkelt objekt i 
+systemet, er objekterne grupperet hierarkisk.
+Dette betyder, at du skal åbne objekterne for at få adgang til objekter
+inde i det pågældende objekt.
+For eksempel, i stedet for at flytte gennem alle listeelementer, når du støder på en listboks, skal du flytte ind i listboksen (dvs. gå til dens første
+barneobjekt) for at få adgang til dens elementer.
+Du kan flytte ud af listen (navigere til det overordnede objekt) for at fortsætte
+forbi listboksen.
+På samme måde forholder det sig, hvis du støder på en værktøjslinje, skal du flytte ind i værktøjslinjen
+(Gå til dens første barn) for at få adgang til kontrollerne i værktøjslinjen.
+</P>
+<P>
+Som standard, flytter navigator objektet sammen med System fokus,
+Men denne adfærd kan slås til og fra.
+</P>
+<P>
+For at navigere imellem objekter, skal du bruge følgende taster:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>| Navn</TD>
+<TD>Desktop Tast</TD>
+<TD>Laptop tast</TD>
+<TD>Beskrivelse</TD>
+</TR>
+<TR>
+<TD>Annoncer det aktuelle objekt</TD>
+<TD>NVDA + numpad5</TD>
+<TD>NVDA + kontrol + i</TD>
+<TD>Rapporterer</TD>
+</TR>
+</TABLE>
+
+<P>
+det nuværende navigator objekt. Ved at Trykke to gange bliver oplysningerne stavet. |
+</P>
+<TABLE CELLPADDING="4">
+<TR>
+<TD>Naviger til overordnede objekt</TD>
+<TD>NVDA + numpad8</TD>
+<TD>NVDA + shift + i</TD>
+<TD>Navigerer til</TD>
+</TR>
+</TABLE>
+
+<P>
+det overordnede (container) objekt i forhold til det aktuelle navigator objekt |
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>Naviger til forrige objekt</TD>
+<TD>NVDA + numpad4</TD>
+<TD>NVDA + kontrol + j</TD>
+</TR>
+</TABLE>
+
+<P>
+Navigerer til objektet lige før det nuværende navigator objekt |
+</P>
+<TABLE CELLPADDING="4">
+<TR>
+<TD>Naviger til næste objekt</TD>
+<TD>NVDA + numpad6</TD>
+<TD>kontrol + NVDA + l</TD>
+<TD>Navigerer til</TD>
+</TR>
+</TABLE>
+
+<P>
+Det objekt der findes efter det nuværende navigator objekt |
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>Gå til første barneobjekt</TD>
+<TD>NVDA + numpad2</TD>
+<TD>NVDA + shift + komma</TD>
+</TR>
+</TABLE>
+
+<P>
+Navigerer til det første barn der indgår i det nuværende navigator objekt |
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>Naviger til det objekt der er i fokus</TD>
+<TD>NVDA + numpadMinus</TD>
+<TD>NVDA + Backspace</TD>
+</TR>
+</TABLE>
+
+<P>
+Navigerer til det objekt, der i øjeblikket er i fokus, og 
+placere den ubegrænsede markør ved systemets markør, hvis den er synlig |
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>Aktiver nuværende navigator objekt</TD>
+<TD>NVDA + numpadEnter</TD>
+<TD>NVDA + ind</TD>
+</TR>
+</TABLE>
+
+<P>
+Aktiverer det nuværende navigator objekt (svarende til at klikke med
+musen eller trykke på mellemrums tasten, når det er i fokus) |
+</P>
+<TABLE CELLPADDING="4">
+<TR>
+<TD>Flyt System fokus til det nuværende navigator objekt</TD>
+<TD>NVDA + shift + numpadMinus</TD>
+</TR>
+<TR>
+<TD>NVDA + shift + Backspace</TD>
+<TD>Flytter System fokus til det nuværende navigator</TD>
+</TR>
+</TABLE>
+
+<P>
+objekt, hvis det er muligt |
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>Annoncer navigator objektets dimensioner</TD>
+<TD>NVDA + numpadSlet</TD>
+<TD>NVDA + slette</TD>
+</TR>
+</TABLE>
+
+<P>
+Annoncerer det nuværende navigator objekts dimensioner på skærmen i procent (herunder afstand fra venstre og toppen af skærmen, og dens bredde
+og højde) |
+</P>
+<P>
+Bemærk: for at få numpad tasterne til at fungere korrekt, kræver det at det numeriske tastatur er slået fra.
+</P>
+<A NAME="toc25"></A>
+<H3>6.4. Gennemse teksten i det aktuelle objekt</H3>
+<P>
+NVDA giver dig mulighed for at læse indholdet af det aktuelle navigator objekt ved 
+enten at flytte imellem tegn, ord eller linjer.
+Dette er for det meste nyttigt i Windows kommando konsol vinduer og andre
+steder, hvor der er en begrænset eller ikke-eksisterende system markør.
+Når man bevæger sig rundt med den ubegrænsede markør flytter systemets markør ikke med,
+så du kan gennemse teksten på skærmen uden at flytte systemets markør.
+Men når du flytter rundt med systemets markør, følger den ubegrænsede markør som standard med.
+Dette kan slåes til og fra.
+</P>
+<P>
+Følgende tastekommandoer er tilgængelige for gennemgang af tekst:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Navn</TH>
+<TH>Desktoptast</TH>
+<TH>Laptoptast</TH>
+<TH>Beskrivelse</TH>
+</TR>
+<TR>
+<TD>flyt den ubegrænsede markør til øverste linje</TD>
+<TD>shift+numpad7</TD>
+<TD>NVDA+7</TD>
+<TD>Flytter den ubegrænsede markør til den første linje i teksten</TD>
+</TR>
+<TR>
+<TD>flyt den ubegrænsede markør til forrige linje</TD>
+<TD>numpad7</TD>
+<TD>NVDA+u</TD>
+<TD>Flytter den ubegrænsede markør til den forrige linje i teksten</TD>
+</TR>
+<TR>
+<TD>oplæs nuværende linje hvor den ubegrænset markør er placeret</TD>
+<TD>numpad8</TD>
+<TD>NVDA + i</TD>
+</TR>
+</TABLE>
+
+<P>
+annoncerer
+den linje i teksten, hvor den ubegrænsede markør er placeret. Ved at trykke
+to gange vil teksten blive stavet |
+</P>
+<TABLE CELLPADDING="4">
+<TR>
+<TD>Flyt den ubegrænsede markør til næste linje i teksten</TD>
+<TD>numpad9</TD>
+<TD>NVDA + o</TD>
+<TD>Flytter den</TD>
+</TR>
+</TABLE>
+
+<P>
+den ubegrænsede markør til næste linje med tekst |
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>Flyt den ubegrænsede markør til den sidste linie i teksten</TD>
+<TD>shift + numpad9</TD>
+<TD>NVDA 9</TD>
+</TR>
+</TABLE>
+
+<P>
+Flytter
+den ubegrænsede markør til den nederste linje i teksten |
+</P>
+<TABLE CELLPADDING="4">
+<TR>
+<TD>Flyt den ubegrænsede markør til det forrige ord i teksten</TD>
+<TD>numpad4</TD>
+<TD>NVDA + j</TD>
+<TD>Flytter</TD>
+</TR>
+</TABLE>
+
+<P>
+den ubegrænsede 
+markør til det forrige ord i teksten |
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>oplæs det aktuelle ord hvor den ubegrænsede markør er placeret</TD>
+<TD>numpad5</TD>
+<TD>NVDA + k</TD>
+</TR>
+</TABLE>
+
+<P>
+annoncerer
+nuværende ord i teksten, hvor den ubegrænsede markør er placeret.
+Ved at trykke to gange bliver ordet stavet. |
+</P>
+<TABLE CELLPADDING="4">
+<TR>
+<TD>Flyt den ubegrænsede markør til næste ord i teksten</TD>
+<TD>numpad6</TD>
+<TD>NVDA + l</TD>
+<TD>Flyt den</TD>
+</TR>
+</TABLE>
+
+<P>
+ubegrænsede 
+markør til det næste ord i teksten |
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>Gå til starten af linjen i teksten</TD>
+<TD>shift + numpad1</TD>
+<TD>NVDA + shift + u</TD>
+</TR>
+</TABLE>
+
+<P>
+Flytter den ubegrænsede markør til starten af den aktuelle linje i teksten |
+</P>
+<TABLE CELLPADDING="4">
+<TR>
+<TD>Flyt den ubegrænsede markør til forrige tegn i teksten</TD>
+<TD>numpad1</TD>
+<TD>NVDA + m</TD>
+<TD>Flytter</TD>
+</TR>
+</TABLE>
+
+<P>
+den ubegrænsede markør til det forrige tegn på den aktuelle linje i teksten |
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>oplæs det aktuelle tegn hvor den ubegrænsede markør er placeret</TD>
+<TD>numpad2</TD>
+<TD>NVDA + komma</TD>
+</TR>
+</TABLE>
+
+<P>
+annoncerer
+det aktuelle tegn på den tekstlinje, hvor den ubegrænsede markør er
+placeret. Ved at trykke to gange bliver tegnet oplæst som en numerisk værdi og 
+</P>
+<P>
+hexadecimalt. |
+</P>
+<TABLE CELLPADDING="4">
+<TR>
+<TD>Flyt den ubegrænsede markør til næste tegn i teksten</TD>
+<TD>numpad3</TD>
+<TD>NVDA + prik</TD>
+<TD>Flyt</TD>
+</TR>
+</TABLE>
+
+<P>
+den ubegrænsede markør til det næste tegn på den aktuelle linie med tekst |
+</P>
+<TABLE CELLPADDING="4">
+<TR>
+<TD>Flyt den ubegrænsede markør til slutningen af linjen i teksten</TD>
+<TD>shift + numpad3</TD>
+<TD>NVDA +</TD>
+</TR>
+</TABLE>
+
+<P>
+shift + o | Flytter
+den ubegrænsede markør til slutningen af den aktuelle linje med tekst |
+</P>
+<TABLE CELLPADDING="4">
+<TR>
+<TD>oplæs alt tekst fra den ubegrænsede markørs position</TD>
+<TD>numpadPlus</TD>
+<TD>NVDA + shift + pil ned</TD>
+</TR>
+</TABLE>
+
+<TABLE CELLPADDING="4">
+<TR>
+<TD>Læser fra</TD>
+</TR>
+</TABLE>
+
+<P>
+den ubegrænsede markørs aktuelle position, samtidig med at den ubegrænsede markør flytter med 
+</P>
+<P>
+|
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>Flyt markøren til den ubegrænsede markør</TD>
+<TD>kontrol + numpadMinus</TD>
+</TR>
+</TABLE>
+
+<P>
+NVDA + kontrol + Backspace | Flytter System markøren til placeringen af
+den ubegrænsede markør |
+</P>
+<TABLE CELLPADDING="4">
+<TR>
+<TD>Kopier fra den ubegrænsede markør</TD>
+<TD>NVDA + f9</TD>
+<TD>NVDA + f9</TD>
+<TD>begynder at kopiere tekst fra</TD>
+</TR>
+</TABLE>
+
+<P>
+den ubegrænsede markørs position. Den faktiske kopiering får ikke
+virkning, før du fortæller NVDA hvor du skal kopiere til |
+</P>
+<TABLE CELLPADDING="4">
+<TR>
+<TD>Kopier til den ubegrænset markør</TD>
+<TD>NVDA + F10</TD>
+<TD>NVDA + F10</TD>
+<TD>Kopierer fra den position</TD>
+</TR>
+</TABLE>
+
+<P>
+hvor du før startede kopieringen fra den ubegrænsede markør med NVDA + f9   og så til den 
+</P>
+<P>
+nuværende position af den ubegrænsede markør. Efter der er trykket på denne tast, vil teksten blive kopieret til Windows Udklipsholder |
+</P>
+<P>
+Bemærk: for at kunne bruge numpad tasterne kræver det at numlock tasten er slået fra.
+</P>
+<P>
+For at hjælpe dig med at huske disse kommandoer, er de grundlæggende læsekommandoer organiseret i et gitter af tre x tre, fra øverst til nederst. Placeringen er sådan, at linje er i det øverste lag, dernæst kommer ord og til sidst tegn i nederste lag. Tasterne i venstre side bruges til at flytte tilbage til forrige linje, ord og tegn, søjlen i midten bruges til aktuelle linje, ord og tegn, og den højre søjle af taster henviser til næste linje, ord og tegn, hvis man  tæller fra oven på det numeriske tastatur:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>Forrige linie</TD>
+<TD>Nuværende linie</TD>
+<TD>Næste linje</TD>
+</TR>
+<TR>
+<TD>Forrige ord</TD>
+<TD>Nuværende ord</TD>
+<TD>Næste ord</TD>
+</TR>
+<TR>
+<TD>Forrige tegn</TD>
+<TD>Nuværende tegn</TD>
+<TD>Næste tegn</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc26"></A>
+<H3>6.5. Flad visning</H3>
+<P>
+ligesom ved at gennemgå indholdet af et enkelt objekt, giver NVDA dig mulighed for at
+gennemgå hele indholdet af et dokument eller teksten på skærmen.
+Dette kaldes flad visning.
+</P>
+<P>
+De følgende to kommandoer bruges til at skifte til / fra flad visning:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>| Navn</TD>
+<TD>Desktop tast</TD>
+<TD>Laptop tast</TD>
+<TD>Beskrivelse</TD>
+</TR>
+<TR>
+<TD>Skift til flad visning</TD>
+<TD>NVDA + numpad7</TD>
+<TD>NVDA + ALT +7</TD>
+<TD>Flytter til flad</TD>
+</TR>
+</TABLE>
+
+<P>
+visning, hvilket placerer dig i det aktuelle navigator objekt,
+så du kan gennemgå skærmen (eller dokumentet, hvis du for øjeblikket befinder dig i et dokument), med kommandoerne til den ubegrænset markør.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>Flyt til objektet fra flad visning</TD>
+<TD>NVDA + numpad1</TD>
+<TD>NVDA + Alt + J</TD>
+</TR>
+</TABLE>
+
+<P>
+navigerer til objektet der er repræsenteret af teksten på den aktuelle position
+af den ubegrænset markør i flad visning |
+</P>
+<A NAME="toc27"></A>
+<H3>6.6. Navigering ved brug af musen</H3>
+<P>
+Når du bevæger dig rundt med musen, rapporter NVDA  som standard  tekst, der er
+direkte under musemarkøren, når den bevæger sig over teksten.
+I de kontroller, hvor dette understøttes, kan NVDA bringes til at læse et tekstafsnit, selvom visse kontroller kun giver linjevis oplæsning.
+</P>
+<P>
+NVDA kan desuden konfigureres til også at annoncere typen af den kontrol eller
+objekt musen bevæger sig over, (f.eks listboks, trykknap osv.).
+Dette kan være nyttigt for helt blinde brugere hvor teksten ikke er nok.
+</P>
+<P>
+NVDA gør det muligt for brugerne at finde ud af, hvor musen er placeret 
+på skærmen, ved at afspille musens position som biptoner.
+Jo højere musen befinder sig på skærmen, jo højere tonehøjde bip.
+Jo mere til venstre eller højre musen er på skærmen, jo mere til venstre eller
+højre vil lyden synes at komme fra (under forudsætning at brugeren har stereo
+højttalere).
+</P>
+<P>
+Disse ekstra muse funktioner er ikke slået til som standard i NVDA, men hvis
+man ønsker at drage fordel af dem, kan de konfigureres fra
+Muse indstillinger dialogboksen som findes i menuen Indstillinger i NVDA menuen.
+</P>
+<P>
+Selv om en fysisk mus eller pegeplade skal bruges til at navigere musen med, har NVDA  et par vigtige kommandoer relateret til musen:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>| Navn</TD>
+<TD>Desktop tast</TD>
+<TD>Laptop tast</TD>
+<TD>Beskrivelse</TD>
+</TR>
+<TR>
+<TD>Venstre museknap</TD>
+<TD>numpadDivision</TD>
+<TD>NVDA + Venstre pil</TD>
+<TD>simulere et enkelt venstre museklik. et dobbeltklik kan udføres ved</TD>
+</TR>
+</TABLE>
+
+<P>
+at trykke på denne tast to gange hurtigt efter hinanden |
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>Låse Venstre museknap</TD>
+<TD>skift + numpadDivision</TD>
+<TD>NVDA + skift + venstre pil</TD>
+</TR>
+</TABLE>
+
+<P>
+Låser den venstre museknap. Tryk igen for at frigive den. for At trække
+musen, skal du trykke på denne tast for at låse den venstre museknap nede og derefter flytte
+musen enten fysisk eller ved at bruge en af de andre muse flytte kommandoer |
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>Højre klik med musen</TD>
+<TD>numpadMultiplicer</TD>
+<TD>NVDA + højre pil</TD>
+<TD>Simulere et enkelt højre museklik.</TD>
+</TR>
+<TR>
+<TD>Lås Højre museknap</TD>
+<TD>skift + numpadMultiplicer</TD>
+<TD>NVDA + skift + højre pil</TD>
+<TD>Låse højre museknap. Tryk igen for at frigive den. for At trække</TD>
+</TR>
+</TABLE>
+
+<P>
+musen, skal du trykke på denne tast for at låse højre knap og derefter flytte
+musen enten fysisk eller brug en af de andre muse flytte kommandoer |
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>Flyt musen til det nuværende navigator objekt</TD>
+<TD>NVDA + numpadDivision</TD>
+</TR>
+</TABLE>
+
+<P>
+NVDA + skift + f9 | Flytter musen til placeringen af det nuværende navigator
+objekt og ubegrænset markør |
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>Navigere til objektet under musen</TD>
+<TD>NVDA + numpadMultiplicer</TD>
+</TR>
+</TABLE>
+
+<P>
+NVDA + skift + F10 | Placer navigator objektet til objektet ved musens position |
+</P>
+<A NAME="toc28"></A>
+<H2>7. Virtuelle Buffers</H2>
+<P>
+Komplekse ikke redigerbare dokumenter, såsom web-sider, præsenteres af NVDA via en virtuel Buffer.
+</P>
+<P>
+En virtuel buffer er en flad repræsentation af indhold, såsom en webside,
+der kan flyttes rundt i med piletasterne.
+Oplysninger såsom, om teksten er et link, overskrift etc bliver annonceret
+sammen med teksten mens du bevæger dig rundt.
+</P>
+<P>
+Mens man er i en virtuel buffer, er der to måder at arbejde på.
+I browser tilstand kan du flytte rundt i hele teksten ved hjælp af en virtuel
+markør, ligesom med system markøren. 
+Faktisk vil alle NVDA system markør tastekommandoerne kunne bruges i denne tilstand
+(Fx Oplæs alt, rapporter formatering, alle tabel navigationskommandoer osv).
+I Fokus tilstand kan du direkte arbejde med kontroller såsom  (redigeringsfelter, kombobokse, radio knapper) ved hjælp af de taster du normalt ville bruge.
+Når du er i browser tilstand, vil NVDA automatisk skifte til fokus tilstand, hvis du
+tabber til eller klikker på en særlig kontrol, der kræver det.
+Bemærk, ved at trykke på Enter eller mellemrumstasten på kontroller, der kræver det også vil skifte til fokus tilstand.
+Hvis NVDA automatisk har skiftet til fokus tilstand, når man tabber til, eller
+ved at klikke på et objekt, som ikke kræver fokus tilstand(f.eks et link eller
+et stykke tekst) skiftes automatisk tilbage til browsertilstand.
+Ved at trykke på Escape tasten, skiftes ligeledes tilbage til browsertilstand hvis fokus tilstand automatisk var slået til.
+Du kan også manuelt skifte mellem fokus og browser tilstand.
+Dog vil NVDA, når der manuelt skiftes til fokus tilstand, blive i denne tilstand og ikke længere automatisk skifte, medmindre du manuelt
+skifter tilbage til browsertilstand.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>| Navn</TD>
+<TD>tast</TD>
+<TD>Beskrivelse</TD>
+</TR>
+<TR>
+<TD>Skift virtuel buffer tilstand</TD>
+<TD>NVDA + mellemrum</TD>
+<TD>Skifter mellem fokus tilstand</TD>
+</TR>
+</TABLE>
+
+<P>
+og browser tilstand |
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>Afslut fokus tilstanden</TD>
+<TD>Escape</TD>
+<TD>skifter tilbage til browsertilstand hvis der tidligere  automatisk  var skiftet til  fokus tilstand</TD>
+</TR>
+<TR>
+<TD>Opdater virtuel buffer</TD>
+<TD>NVDA + f5</TD>
+<TD>Genindlæser indholdet af den nuværende virtuelle buffer</TD>
+</TR>
+</TABLE>
+
+<P>
+(Nyttigt hvis der mangler noget af siden) |
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>Søg</TD>
+<TD>NVDA + kontrol + f</TD>
+<TD>Viser en dialogboks, hvor du kan skrive en tekst du vil finde i det aktuelle dokument</TD>
+</TR>
+<TR>
+<TD>Find næste</TD>
+<TD>NVDA + F3</TD>
+<TD>Finder den næste forekomst af teksten i</TD>
+</TR>
+</TABLE>
+
+<P>
+dokumentet, som du tidligere søgte i |
+</P>
+<TABLE CELLPADDING="4">
+<TR>
+<TD>Find forrige</TD>
+<TD>NVDA + Skift + F3</TD>
+<TD>Finder den forrige forekomst af den</TD>
+</TR>
+</TABLE>
+
+<P>
+tekst i det dokument, du tidligere har søgt i |
+</P>
+<P>
+I øjeblikket bruger  NVDA Virtuelle Buffere til at læse dokumenter i Mozilla
+Firefox, Microsoft Internet Explorer, Google Chrome, Adobe Reader, og
+Adobe Flash.
+</P>
+<A NAME="toc29"></A>
+<H3>7.1. Enkelttegns navigering</H3>
+<P>
+For hurtigere at kunne navigere når du er i browse-tilstand,   giver NVDA også mulighed for  ved hjælp af et enkelt bogstav at springe til bestemte områder i den virtuelle buffer.
+</P>
+<P>
+Følgende taster flytter til det næste element,
+ved at tilføje skift-tasten flyttes til det forrige element:
+</P>
+<UL>
+<LI>H: overskrift
+<LI>L: liste
+<LI>I: listeelement
+<LI>T: tabel
+<LI>K: link
+<LI>N: tekst som ikke er et link
+<LI>F: formularfelt
+<LI>U: ubesøgt link
+<LI>V: besøgt link
+<LI>E: redigeringsfelt
+<LI>B: knap
+<LI>X: afkrydsningsfelt
+<LI>C: komboboks
+<LI>R: radioknap
+<LI>Q: blok citat
+<LI>S: separator
+<LI>M: ramme
+<LI>G: grafik
+<LI>D: landmærke 
+<LI>O: indlejret objekt
+<LI>1 til 6: overskrifter på niveau 1 til 6 
+</UL>
+
+<P></P>
+<A NAME="toc30"></A>
+<H3>7.2. Elementlisten</H3>
+<P>
+Element Listen giver adgang til en liste med enten links, overskrifter eller
+landmærker på siden.
+Radioknapper tillader dig at skifte mellem disse tre typer af information.
+Du kan via Et tekst felt filtrere
+listen,  så du kan søge efter et bestemt element på siden.
+Når du har valgt et element, kan du bruge knapperne i
+Dialogen til at flytte til, eller aktivere det pågældende element.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>| Navn</TD>
+<TD>Tast</TD>
+<TD>Beskrivelse</TD>
+</TR>
+<TR>
+<TD>Virtual buffer element liste</TD>
+<TD>NVDA + F7</TD>
+<TD>Giver Element listen</TD>
+</TR>
+</TABLE>
+
+<P>
+som indeholder links, overskrifter og landmærker fra den nuværende virtuelle
+buffer |
+</P>
+<A NAME="toc31"></A>
+<H2>8. + Indlejrede objekter+</H2>
+<P>
+Sider kan ved hjælp af teknologier som Adobe Flash
+og Sun Java bringes til at vise forskellige former for indhold. Når man støder på disse objekter i  i en virtuel buffer, vil NVDA annoncere
+"Indlejret objekt".
+Du kan trykke på retur tasten på disse objekter for at aktivere dem.
+Hvis objektet er tilgængeligt, kan du derefter tabbe rundt indenfor den og interagere med det
+som ethvert andet program
+Man kan med et tastetryk vende tilbage til den oprindelige side, der indeholder
+det indlejrede objekt:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>| Navn</TD>
+<TD>Tast</TD>
+<TD>Beskrivelse</TD>
+</TR>
+<TR>
+<TD>Flyt til indholdet af den overordnede virtuelle buffer</TD>
+<TD>NVDA + kontrol + mellemrum</TD>
+<TD>Flytter</TD>
+</TR>
+</TABLE>
+
+<P>
+fokus ud af det aktuelle indlejrede objekt og ind i den virtuelle buffer |
+</P>
+<A NAME="toc32"></A>
+<H2>9. Konfigurering af NVDA</H2>
+<A NAME="toc33"></A>
+<H3>9.1. Indstillinger</H3>
+<P>
+De fleste indstillinger kan nås fra dialogbokse, som åbnes via undermenuen Indstillinger i NVDA-menuen.
+I alle NVDAs indstillingsdialoger aktiveres knappen OK for at godkende de ændringer, der er foretaget.
+_Aktiver knappen "Annuller" eller tryk Escape-tasten for at annullere dine ændringer.
+Nogle indstillinger kan ligeledes ændres ved hjælp af genvejstaster, der anføres i de enkelte afsnit i det følgende, hvor det er relevant..
+</P>
+<A NAME="toc34"></A>
+<H4>9.1.1. Generelle Indstillinger  (NVDA+control+g)</H4>
+<P>
+Dialogboksen med generelle indstillinger findes i menuen Indstillinger.
+Den indeholder følgende indstillingsmuligheder:
+</P>
+<H5>Sprog</H5>
+<P>
+Det er en komboboks, hvor sproget på NVAs brugerflade og meddelelser kan indstilles.
+Der er mange sprog. Som standard sættes sproget imidlertid til "User Default, Windows".
+Denne valgmulighed giver NVDA besked på at benytte det sprog, som Windows aktuelt er sat til at bruge.
+</P>
+<P>
+Bemærk, at NVDA skal genstartes efter ændring af sproget. 
+Hvis du ændrer denne indstilling, beder NVDA dig bekræfte, om du ønsker at genstarte. 
+Tryk OK, hvorefter NVDA genstarter.
+</P>
+<H5>Gem konfiguration ved afslutning</H5>
+<P>
+Denne indstilling er en tjekboks, der får NVDA til automatisk at gemme den aktuelle konfiguration ved afslutning, når den er slået til.
+</P>
+<H5>Advar får NVDA afsluttes</H5>
+<P>
+Denne indstillingsmulighed er en tjekboks, der giver mulighed for at vælge, hvorvidt en dialog skal fremkomme ved afslutning af NVDA med spørgsmålet om du virkelig ønsker at afslutte.
+Når den er slået til, fremkommer en dialog, når du forsøger at afslutte NVDA, hvor du skal tage stilling til, hvorvidt du ønsker at afslutte eller ej.
+</P>
+<H5>Logningsniveau</H5>
+<P>
+Dette er en komboboks, hvor du kan bestemme, hvor meget NVDA skal logge under afvikling.
+Generelt bør det ikke være nødvendigt for brugeren at ændre denne indstilling, idet der ikke logges for meget.
+Det kan imidlertid være en nyttig funktion, hvis du ønsker at give tilbagemelding i forbindelse med fejlfinding til en bugrapport.
+</P>
+<H5>Automatisk start af NVDA, når duer logget på Windows</H5>
+<P>
+Hvis denne funktion er slået til, vil NVDA starte, så snart du er logget på Windows.
+Denne funktion er kun tilgængelig i installationsversionen af NVDA.
+</P>
+<H5>Brug NVDA på Logon skærmen (kræver administratorrettigheder)</H5>
+<P>
+Hvis du skal angive brugernavn og password for at logge på Windows, kan denne funktion slås til, og NVDA startes automatisk op på logonskærmbilledet..
+Denne funktion er kun tilgængelig i installationsversionen af NVDA.
+</P>
+<H5>Benyt de aktuelt gemte indstillinger på logon- og andre beskyttede skærmbilleder</H5>
+<P>
+Aktivering af denne knap kopierer dine aktuelt gemte brugerindstillinger i  NVDA til NVDA's systemkonfigurationsmappe, så NVDA vil bruge dem, når du befinder dig på logon, brugerkontokontrol (UAC) og andre beskyttede skærmbilleder.
+For at være sikker på at alle dine indstillinger bliver kopieret, skal du først gemme dine indstillinger med  control+NVDA+c eller gem konfiguration in NVDA-menuen.
+Denne funktion er kun tilgængelig i installationsversionen af NVDA.
+</P>
+<A NAME="toc35"></A>
+<H4>9.1.2. Talesyntesedialogen(NVDA+control+s)</H4>
+<P>
+Talesyntesedialogen, som findes under "talesyntese" i indstillingsmenuen, lader dig vælge hvilken talesyntese NVDA skal bruge.
+Så snart du har valgt en talesyntese med piletasterne, kan du trykke  Ok og nvda vil benytte den valgte talesyntese..
+Hvis NVDA ikke kan anvende den talesyntese du har valgt, vil NVDA give dig en fejlbesked, og fortsætte med at bruge den tidligere anvendte talesyntese.
+</P>
+<H5>Talesyntese</H5>
+<P>
+Her har du mulighed for at bestemme, hvilken talesyntese NVDA skal benytte til taleoutput.
+</P>
+<P>
+For en liste over de talesynteser, som NVDA understøtter, se venligst afsnittet <A HREF="#SupportedSpeechSynths">Supported Speech Synthesizers</A>.
+</P>
+<P>
+Der er en særlig indstilling, som altid vil være at finde i denne liste, nemlig "Ingen tale". Den gør det muligt at benytte NVDA uden nogen som helst form for taleoutput.
+Dette kan være nyttigt for dem, der ønsker at bruge NVDA udelukkende med punktskrift eller for seende udviklere, der kun ønsker at bruge Talevisningen.
+</P>
+<H5>Output enhed</H5>
+<P>
+Denne valgmulighed brues til at bestemme, hvilket lydkort den aktuelt valgte talesyntese skal tale igennem.
+</P>
+<A NAME="VoiceSettings"></A>
+<H4>9.1.3. Stemeindstillinger  (NVDA+control+v)</H4>
+<P>
+Dialogen Stemmeindstillinger, der findes i menuen Indstillinger, rumer valgmuligheder til ændring af talens lyd.
+Du finder en alternativ, hurtigere måde til styring af taleparametre fra et hvilket som helst sted i afsnittet  <A HREF="#SynthSettingsRing">Synth Settings Ring</A>.
+</P>
+<P>
+Dialogboksen Stemeindstillinger indeholder følgende valgmuligheder:
+</P>
+<H5>Stemme</H5>
+<P>
+Den første valgmulighed i denne dialog er en komboboks med en liste over alle stemmerne i den aktuelt valgte talesyntese.
+Med piletasterne kan du lytte til de enkelte stemmemuligheder.
+Pil Venstre og Pil Op fører dig opad i listen, Pil Højre og Pil Ned flytter nedad i listen.
+</P>
+<H5>Variant</H5>
+<P>
+Hvis du bruger talesyntesen ESpeak, som følger med NVDA, indeholder denne komboboks en liste, hvorfra du kan vælge den variant, som talesyntesen skal tale med.
+ESpeaks Varianter minder om  stemmer, idet de tilbyder en række attributter til kontrol af ESpeak-stemmen.
+Nogle varianter lyder som en mand, nogle som en kvinde, andre lyder enddog som en frøg.
+</P>
+<H5>Hastighed</H5>
+<P>
+Denne indstilling gør det muligt at ændre hastigheden for den aktuelle stemme.
+Det er en skyderkontrol, der går fra 0 til 100, (0 er den langsommeste, 100 er den hurtigste).
+</P>
+<H5>Tonehøjde</H5>
+<P>
+Denne indstilling giver mulighed for at ændre tonehøjden for den aktuelle stemme.
+Det er en skyderkontrol, der går fra 0 til 100, (0 er den laveste tonehøjde og 100 er den højeste).
+</P>
+<H5>lydstyrke</H5>
+<P>
+Denne indstilling gør det muligt at ændre lydstyrken for den aktuelle stemme.
+Det er en skyderkontrol, der går fra 0 til 100, (0 laveste lydstyrke, 100 er den højeste).
+</P>
+<P>
+n==== Variation i tonehøjde ====
+Denne indstilling er en skydeknap, som giver mulighed for at bestemme, hvor stort spring i tonehøjde (stigning og fald i tonehøjde) den pågældende talesyntese skal bruge under oplæsning. (Den eneste talesyntese med understøttelse for denne funktion p.t er eSpeak).
+</P>
+<H5>Oplæs alle sætningstegn</H5>
+<P>
+Tast: NVDA+p
+</P>
+<P>
+Når denne indstilling er slået til, læser NVDA alle sætningstegn som ord. Dette er især nyttigt ved korrekturlæsning.
+</P>
+<H5>Hæv tonehøjde ved stort bogstav</H5>
+<P>
+Hvis denne indstilling er slået til, hæves tonehøjden ved store bogstaver.
+</P>
+<H5>Sig "Stort" før store bogstav</H5>
+<P>
+Denne indstilling er en tjekboks. Når den er afkrydset, oplæser NVDA ordet "stort" før hvert stort bogstav, når markøren flyttes hen over bogstavet med piletasterne, eller under skrivning.
+NVDA vil normalt hæve tonelejet en anelse ved hvert store bogstav. Nogle talesynteser understøtter imidlertid ikke denne funktion, så muligheden for at høre "stort" i stedet kan eventuelt være at foretrække.
+</P>
+<H5>Bip ved stort bogstav</H5>
+<P>
+Hvis denne tjekboks er afkrydset, bipper NVDA hver gang der forekommer et stort bogstav.
+Ligesom ved brug af tjekboksen 'Sig stort ved stort bogstav' er denne indstilling nyttig i forbindelse med talesynteser, der ikke kan ændre tonehøjden ved stort bogstav.
+</P>
+<A NAME="SynthSettingsRing"></A>
+<H4>9.1.4. Runden talesyntese-indstillinger</H4>
+<P>
+Hvis du hurtigt ønsker at ændre taleindstillingerne uden først at skulle åbne dialogboksen med stemmeindstillingerne, findes en række NVDA tastaturkommandoer, der giver mulighed for at flytte mellem de mest almindelige indstillinger for talesyntesen fra et hvilket som helst sted, hvis blot NVDA kører:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Name</TH>
+<TH>Desktop key</TH>
+<TH>Laptop key</TH>
+<TH>Description</TH>
+</TR>
+<TR>
+<TD>Flyt til næste talesynteseindstilling</TD>
+<TD>NVDA+control+rightArrow</TD>
+<TD>NVDA+control+rightArrow</TD>
+<TD>Flytter til den næste tilgængeligetalesyntese-indstilling før den aktuelle og folder rundt til den første indstilling efter den sidste</TD>
+</TR>
+<TR>
+<TD>Flyt til forrige talesynteseindstilling</TD>
+<TD>NVDA+control+leftArrow</TD>
+<TD>NVDA+control+leftArrow</TD>
+<TD>Flytter til den forrige tilgængeligetalesyntese-indstilling før den aktuelle og folder rundt til den sidste indstilling efter den første</TD>
+</TR>
+<TR>
+<TD COLSPAN="2">Forøg aktuelle synteseindstilling</TD>
+<TD>NVDA+control+upArrow</TD>
+<TD>NVDA+control+upArrow</TD>
+<TD>forøger den synteseindstilling, som du i øjeblikket er ved at ændre fx forøger hastigheden, vælger den næste stemme, forøger lydstyrken</TD>
+</TR>
+<TR>
+<TD>Formindsk aktuelle synteseindstilling</TD>
+<TD>NVDA+control+ downArrow</TD>
+<TD>NVDA+control+downArrow</TD>
+<TD>formindsker den synteseindstilling, som du i øjeblikket er ved at ændre fx formindsker hastigheden, vælger den forrige stemme, formindsker lydstyrken</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc38"></A>
+<H4>9.1.5. Braille-indstillinger</H4>
+<P>
+Dialogboksen Braille-indstillinger kan nås fra menuen Indstillinger og derefter gå til punktet braille-indstillinger.
+</P>
+<H5>Brailledisplay</H5>
+<P>
+Den første valgmulighed du møder i indstillingsdialogen Braille er en komboboks, hvor der står "brailledisplay".
+Her finder du forskellige muligheder alt efter, hvilke punktdisplay-drivere der er tilgængelige på dit system.
+Brug piletasterne til at flytte imellem de forskellige valgmuligheder.
+</P>
+<P>
+"Ingen punkt" betyder, at du i øjeblikket ikke bruger noget punktdisplay.
+</P>
+<P>
+Der henvises til afsnittet <A HREF="#SupportedBrailleDisplays">Supported Braille Displays</A> for yderligere oplysninger om understøttede punktdisplays.
+</P>
+<H5>Oversættelsestabel</H5>
+<P>
+Den næste valgmulighed, du kommer til i denne dialogboks, er komboboksen Punkttabel.
+I denne komboboks finder du punkttabeller for en lang række sprog. Med piletasterne flytter du fra den ene punkttabel til den næste på listen.
+</P>
+<H5>Udvid ordet ved cursoren til computer-braille</H5>
+<P>
+Denne valgmulighed tillader ordet under cursoren at blive vist i uforkortet computerbraille.
+</P>
+<H5>Cursor Blinkhastighed</H5>
+<P>
+Denne indstillingsmulighed er et felt til indtastning af en talværdi, som giver mulighed for at ændre cursorens blinkhastighed i millisekunder.
+</P>
+<H5>Besked vises i (sek)</H5>
+<P>
+Denne indstillingsmulighed er et felt til indtastning af en talværdi, som styrer, hvor længe systemmeddelelser vises på punktdisplayet.
+</P>
+<H5>Braille følger</H5>
+<P>
+Key: NVDA+control+t
+</P>
+<P>
+Denne indstilling giver mulighed for at bestemme, om punktdisplayet skal følge  systemfokus, eller om det skal følge navigatorobjektet / den ubegrænsede markør.
+</P>
+<A NAME="toc39"></A>
+<H4>9.1.6. Tastatur-indstillinger (NVDA+control+k)</H4>
+<P>
+Denne dialogboks findes i menuen Indstillinger under punktet Tastatur-indstillinger...".
+Den indeholder følgende indstillingsmuligheder:
+</P>
+<H5>Tastaturlayout</H5>
+<P>
+Denne comboboks giver mulighed for at vælge, hvilken type tastaturlayout NVDA skal benytte. De 2, der i øjeblikket er inkluderet i NVDA er Desktop og Laptop.
+</P>
+<H5>Brug capslock som NVDA-tast</H5>
+<P>
+Hvis denne tjekboks er afkrydset, kan tasten CapsLock bruges som NVDA-tast.
+</P>
+<H5>Brug udvidet Insert som NVDA-tast</H5>
+<P>
+hvis denne tjekboks er afkrydset, kan den udvidede Insert-tast (findes som regel oven over piletasterne, i nærheden af Home og End) bruges som NVDA-tast.
+</P>
+<H5>Brug numerisk Insert som NVDA-tast  key</H5>
+<P>
+Hvis denne tjekboks er afkrydset, kan Insert-tasten på det numeriske tastatur bruges som NVDA-tast.
+</P>
+<H5>Oplæs indtastede tegn</H5>
+<P>
+Key: NVDA+2
+</P>
+<P>
+Når denne funktion er slået til, oplæser NVDA alle de tegn, du skriver på tastaturet.
+</P>
+<H5>Oplæs indtastet ord</H5>
+<P>
+Key: NVDA+3
+</P>
+<P>
+Når denne funktion er slået til, oplæser NVDA alle de ord, du skriver på tastaturet.
+</P>
+<H5>Oplæs funktionstaster</H5>
+<P>
+Key: NVDA+4
+</P>
+<P>
+Nårdenne funktion er slået til, oplæser NVDA alle taster på tastaturet, der ikke er bogstaver, når du trykker på dem. Dette omfatter ligeledes tastekombinationer som control plus et bogstav.
+</P>
+<A NAME="toc40"></A>
+<H4>9.1.7. Indstillinger for musen (NVDA+control+m)</H4>
+<P>
+Dialogen med indstillinger for musen findes i menuen "Indstillinger", under "Muse-indstillinger".
+Den indeholder følgende valgmuligheder:
+</P>
+<H5>Oplæs ændringer i musemarkørens form</H5>
+<P>
+Dette er en tjekboks der, når den er afkrydset, bevirker at NVDA oplæser formen på musemarkøren, når den ændrer sig.
+I Windows ændrer musemarkøren form for at videregive visse typer af information som f.eks. når noget kan redigeres,, når noget er ved at blive indlæst osv. .
+</P>
+<H5>Slå musefølgning til</H5>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>Desktop key</TD>
+<TD>NVDA+m</TD>
+</TR>
+<TR>
+<TD>Laptop key</TD>
+<TD>NVDA+shift+m</TD>
+</TR>
+</TABLE>
+
+<P>
+Når denne funktion er slået til, oplæser NVDA den tekst, der i øjeblikket befinder sig under musemarkøren i takt med, at musemarkøren flyttes rundt på skærmen. Det giver mulighed for at finde ting på skærmen ved fysisk at bevæge musen, i stedet for at lede efter dem ved hjælp af objektnavigation.
+</P>
+<H5>Opløsning for tekstenhed</H5>
+<P>
+Hvis NVDA er indstillet til at oplæse teksten under musen ved flytning af musen, giver denne indstilling mulighed for at bestemme præcist, hvor meget tekst der læses op.
+Indstillingsmulighederne er  tegn, ord, linje og afsnit.
+</P>
+<H5>Oplæs rolle når musen flyttes ind over et objekt</H5>
+<P>
+Hvis denne tjekboks er afkrydset, oplæser NVDA rollen (typen) på objektet, når musen bevæger sig ind i det pågældende objekt.
+</P>
+<H5>Afspil lydkoordinater under flytning af mus</H5>
+<P>
+Hvis denne tjekboks er afkrydset, bipper NVDA under flytning af musen. Derved kan brugeren følge med i, hvor musen netop nu er placeret i forhold til skærmens dimensioner.
+</P>
+<H5>Lysstyrke kontrollerer lydstyrke for lydkoordinater</H5>
+<P>
+Hvis tjekboksen    'afspil lydkoordinater under flytning af mus' er slået til, bevirker afkrydsning af denne tjekboks, at lydstyrken på biptonen ved  lydkoordinaterne bestemmes af, hvor lys skærmbilledet under musen er. Dette kan medføre forringelse i ydeevnen under Windows Vista, så den er som standard ikke afkrydset.
+</P>
+<A NAME="toc41"></A>
+<H4>9.1.8. Indstillinger for den ubegrænsede markør</H4>
+<P>
+Findes i menuen Indstillinger under Ubegrænset Markør.
+Denne dialogboks indeholder følgende valgmuligheder :
+</P>
+<H5>Følg systemfokus</H5>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>Desktop tast</TD>
+<TD>NVDA+7</TD>
+</TR>
+<TR>
+<TD>Laptop tast</TD>
+<TD>NVDA+control+7</TD>
+</TR>
+</TABLE>
+
+<P>
+Når denne funktion er slået til, placeres den ubegrænsede markør altid i samme objekt som det aktuelle systemfokus, når det ændrer sig.
+</P>
+<H5>Følg systemmarkøren</H5>
+<P>
+Tast: NVDA+6
+</P>
+<P>
+Når denne funktion er slået til, flyttes den ubegrænsede markør automatisk til systemmarkørens position, hver gang den flytter sig.
+</P>
+<H5>Følg musemarkør</H5>
+<P>
+Når dette punkt er afkrydset, følger den ubegrænsede markør musen, når musen flytter sig.
+</P>
+<H5>Enkel gennemsynstilstand</H5>
+<P>
+Hvis denne funktion er slået til, filtrerer NVDA objektshierarkiet, så alle uanvendelige objekter ikke vises sammen med de objekter, der kan navigeres rundt i.
+</P>
+<A NAME="toc42"></A>
+<H4>9.1.9. Objekt-præsentations indstillinger  (NVDA+control+o)</H4>
+<P>
+Findes i menuen Indstillinger under "Objekt-præsentation...".
+Denne dialogboks indeholder følgende indstillinger:
+</P>
+<H5>Oplæs værktøjstips</H5>
+<P>
+Dette er en tjekboks der, når den er afkrydset, bevirker, at NVDA oplæser værktøjstips, når de fremkommer.
+En del vinduer og kontroller viser en lille meddelelse (eller værktøjstip), når musemarkøren flyttes hen over dem, eller i visse tilfælde  når fokus flyttes til dem.
+</P>
+<H5>Oplæs hjælpeballoner</H5>
+<P>
+Når denne tjekboks er afkrydset, oplæser NVDA hjælpeballonerne, når de fremkommer.
+Hjælpeballoner ligner værktøjstips med den forskel, at de som regel er større og er tilknyttet systemevents såsom at et netværkskabel er fjernet eller muligvis for at henlede opmærksomheden på Windows sikkerhedsproblemer.
+</P>
+<H5>Oplæs objekts genvejstaster</H5>
+<P>
+Når denne tjekboks er afkrydset, medtager NVDA den genvejstast, der hører til et objekt eller en kontrol, under oplæsningen af det givne element.
+Som eksempel kan nævnes filmenuen på en menulinje, der kan have genvejstasten alt+f.
+</P>
+<H5>Oplæs information om objekts placering</H5>
+<P>
+Denne indstilling giver dig mulighed for at vælge, om du ønsker at få et objekts position (dvs. 1 af 4) læst op, når du flytter til objektet med enten fokusnavigation eller objektnavigation.
+</P>
+<H5>Oplæs objekts beskrivelse</H5>
+<P>
+Afkryds denne tjekboks, hvis du ikke føler det nødvendigt at høre beskrivelsen af et objekt samtidig med selve objektet.
+</P>
+<H5>Output for behandlingslinje</H5>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>Desktop tast</TD>
+<TD>NVDA+u</TD>
+</TR>
+<TR>
+<TD>Laptop tast</TD>
+<TD>NVDA+control+f2</TD>
+</TR>
+</TABLE>
+
+<P>
+Denne indstilling bestemmer, hvordan NVDA annoncerer opdateringer af behandlingslinjer.
+</P>
+<P>
+Der er følgende muligheder:
+</P>
+<UL>
+<LI>Fra: Ændringer i behandlingslinjer annonceres ikke.
+<LI>Tale: NVDA oplæser behandlingslinjen i procent. hver gang behandlingslinjen ændres, oplæser NVDA den nye værdi.
+<LI>Bip: Denne mulighed får NVDA til at bippe hver gang behandlingslinjen ændrer sig. Jo højere biptonen 0er, desto nærmere er behandlingslinjen til at være fuldført. 
+<LI>Bip og tal: Indstillingen får NVDA til både at tale og bippe, når en behandlingslinje ændrer sig.
+</UL>
+
+<H5>Oplæs baggrunds behandlingslinjer</H5>
+<P>
+Dette er en indstilling, der, når den er krydset af, får NVDA til at annoncere en behandlingslinje, selvom den ikke fysisk er i forgrunden.
+Hvis du minimerer et vindue eller skifter til et andet vindue end det, der indeholder behandlingslinjen, bliver NVDA ved med at overvåge den, hvilket gør det muligt for dig at lave andre ting samtidig med, at NVDA overvåger behandlingslinjen.
+</P>
+<A NAME="toc43"></A>
+<H4>9.1.10. Indstillinger for virtuelle buffers (NVDA+control+b)</H4>
+<P>
+dialogboksen med indstillingerne for virtuelle buffers findes under menupunktet "Indstillinger",  "Virtuelle Buffers...".
+</P>
+<P>
+Dialogen rummer følgende indstillinger:
+</P>
+<H5>Antal tegn på én linje</H5>
+<P>
+Denne indstilling bestemmer længden på en linje i en virtuel buffer (antal tegn).
+</P>
+<H5>Antal linjer pr. side</H5>
+<P>
+Selvom virtuelle buffers ikke består af egentlige sider, kan du med denne indstilling bestemme antallet af linjer, der skal flyttes ved tryk på PageUp eller PageDown, imens du er i en virtuel buffer.
+</P>
+<H5>Brug skærmlayout</H5>
+<P>
+Kommando: NVDA+v
+</P>
+<P>
+Denne indstilling giver dig mulighed for at bestemme, om indhold i den virtuelle buffer skal præsentere indhold som links og andre felter på en selvstændig linje, eller om indholdet skal beholdes i selve tekstens rækkefølge på samme måde, som det vises visuelt.
+Hvis indstillingen er slået til, vises indholdet som det vises visuelt. Hvis den derimod er slået fra, placeres hvert feldt på sin egen linje.
+</P>
+<H5>Indiker layout-tabeller</H5>
+<P>
+Når denne indstilling er slået fra, bevirker den, at NVDA kun annoncerer tabeller med tabeldata, der giver mening for at informere om, at der er tale oom en tabel. 
+Men hvis den er slået til, bevirker det, at NVDA også annoncerer de tabeller, der er brugt udelukkende af hensyn til den visuelle præsentation.
+</P>
+<H5>Konfigurer indikering af felter  som  links og overskrifter</H5>
+<P>
+Tidligere versioner af NVDA gav mulighed for at bruge dialogboksen Virtuelle buffers til at bestemme, hvorvidt NVDA skulle indikere, hvilke typer af felter der skulle annonceres under læsning af webindhold. 
+Eksempler på felttyper er  links, overskrifter, tabeller og lister.
+Hvis du vil konfigurere disse indstillinger, skal du åbne dialogboksen  <A HREF="#DocumentFormattingSettings">Document Formatting Settings dialog</A> for at finde disse indstillinger.
+Nu har disse indstillinger imidlertid ikke kun betydning for virtuelle buffers men for alle typer af dokumenter, hvor disse felter kan blive annonceret.  
+</P>
+<H5>Automatisk fokustilstand ved ændringer af fokus</H5>
+<P>
+Denne funktion gør det muligt automatisk at fremkalde fokustilstand, når fokus ændres.
+Hvis du fx befinder dig på en webside, trykker tab og lander i en formular, skiftes automatisk til fokustilstand, hvis denne indstilling er valgt.
+</P>
+<H5>Automatisk fokustilstand  ved markørflytning</H5>
+<P>
+Når denne indstilling er valgt, er det muligt at få NVDA til at skifte til og fra fokustilstand under flytning med piletasterne.
+Hvis du fx flytter ned over en webside med pil-ned og NVDA støder på et skrivefelt, skifter NVDA automatisk til fokustilstand. Når du med piletasterne bevæger dig ud af for skrivefeltet, skiftes automatisk tilbage til gennemsynstilstand.
+</P>
+<H5>Lydindikering af fokustilstand og gennemsynstilstand</H5>
+<P>
+Hvis denne indstilling er slået til, afspiller NVDA en særlig lyd i stedet for at læse ændringen af tilstand op i en virtuel buffer, når NVDA skifter imellem gennemsynstilstand og fokustilstand.
+</P>
+<A NAME="DocumentFormattingSettings"></A>
+<H4>9.1.11. Indstillinger for dokumentformatering  (NVDA+control+d)</H4>
+<P>
+Denne dialogboks findes i menuen Indstillinger under "Dokumentformatering...".
+</P>
+<P>
+De fleste tjekbokse i denne dialog bruges til at angive, hvilken type formatering, du automatisk ønsker oplæst, når du flytter markøren rundt inden i dokumenter.
+Hvis du fx afkrydser tjekboksen "oplæs skrifttypenavn", hører du navnet på skrifttypen, hver gang du med piletasterne bevæger dig hen over tekst med en anden skrifttype. 
+</P>
+<P>
+Du kan tilpasse annoncering af:
+</P>
+<UL>
+<LI>navn på skrifttype 
+<LI>størrelse på skrifttype 
+<LI>Skrifttypes attributter 
+<LI>typografi 
+<LI>Tekstjustering 
+<LI>Tekstens typografi 
+<LI>tabeller
+<LI>overskrifter på tabels række og kolonne 
+<LI>sidetal 
+<LI>linjenumre 
+<LI>stavefejl 
+<LI>links
+<LI>overskrifter 
+<LI>lister
+<LI>blockquotes
+<LI>Landmærker
+</UL>
+
+<P></P>
+<H5>Annoncer ændringer i formatering efter cursoren</H5>
+<P>
+Hvis denne indstilling er slået til, betyder det at NVDA forsøger at spore alle ændringer i formateringen på en linje, når den læses op, selvom dette måtte sænke NVDAs hastighed.   
+</P>
+<P>
+NVDA vil som standard spore ændringer i formateringen på markørens eller den ubegrænsede markørs position og af og til også på resten af linjen, med mindre hastigheden derved reduceres.
+</P>
+<P>
+Slå denne funktion til ved korrekturlæsning af dokumenter i programmer som Microsoft Word, hvor formatering har betydning.  
+</P>
+<A NAME="toc45"></A>
+<H4>9.1.12. Taleordbøger</H4>
+<P>
+Menuen Taleordbøger "som findes i menuen Indstillinger) indeholder dialogbokse, der giver mulighed for at styre,  hvordan NVDA udtaler bestemte ord eller tekstbidder. 
+Der er i øjeblikket 3 typer af taleordbøger.
+Disse er:
+</P>
+<UL>
+<LI>Standard: Reglerne i denne ordbog gælder for al tale i NVDA.
+<LI>Stemme: Regler i denne ordbog gælder for den talesyntese-stemme, der i øjeblikket er i brug.
+<LI>Midlertidig: Regler i denne ordbog gælder for al tale i NVDA, dog kun for den aktuelle session. Disse regler er midlertidige og forsvinder, næste gang NVDA genstartes.
+</UL>
+
+<P></P>
+<P>
+Alle ordbogsdialogerne indeholder en liste med regler, som bruges ved frembringelse af talen.
+Dialogboksen indeholder også knapperne Tilføj, Redigér og Fjern.
+</P>
+<P>
+For at tilføje en ny regel til ordbogen skal du  vælge knappen Tilføj, udfylde felterne i den dialogboks, der fremkommer, og derefter trykke Ok.
+Den nye regel vises derefter i regellisten.
+Men for at være helt sikker på, at din regel virkelig bliver gemt, skal du trykke Ok for at lukke ordbogsdialogen helt, når du er færdig med at tilføje/redigere regler.
+</P>
+<P>
+Reglerne i NVDAs taleordbøger giver dig mulighed for at lave en tekststrengs tegn om til nogle andre..
+Et enkelt eksempel kunne være, at du ville have, at NVDA sagde ordet frø hver gang der stod fugl.
+Den nemmeste måde at gøre det på, er at skrive ordet fugl i dialogboksen Tilføj regel i feltet Mønster, og derefter at skrive ordet frø i feltet Erstatning.
+  Det kan også være, at du ønsker at lave en beskrivelse af reglen i feltet Kommentar (som fx: ændrer fugl til frø).
+</P>
+<P>
+NVDAs taleordbøger er imidlertid langt mere righoldige på muligheder end blot at kunne erstatte tekst.
+Dialogen Tilføj regel indeholder også en tjekboks til at bestemme, om du ønsker reglen skal være følsom for store og små bogstaver (altså om NVDA skal gøre forskel på, om bogstaverne står med stort eller lille.
+NVDA gør som standard ikke forskel på store og små bogstaver).
+</P>
+<P>
+Der findes en anden tjekboks, som giver dig mulighed for at indikere, hvorvidt din regel er et regulært udtryk.
+Et regulært udtryk er en række af specielle symboler, som sætter dig i stand til at søge på mere end et tegn ad gangen, at søge udelukkende på tal eller udelukkende på bogstaver for blot at nævne nogle få eksempler. .
+Regulære udtryk beskrives ikke nærmere i denne brugervejledning. Men der findes en mængde materiale om emnet på webben, hvor du kan finde yderligere oplysninger.
+</P>
+<A NAME="toc46"></A>
+<H3>9.2. Gemme og genindlæse  konfigurationen</H3>
+<P>
+Som standard gemmer NVDA ikke dine indstillinger automatisk. Hvis du afslutter NVDA og derefter starter programmet igen, vil indstillingerne være sat til deres oprindelige værdier.
+Du skal dog være opmærksm på, at denne indstilling kan ændres under de generelle indstillinger i menuen Indstillinger.
+Gem derefter indstillingerne ved at aktivere "Gem konfiguration" i NVDAs hovedmenu.
+</P>
+<P>
+Hvis NVDA kører på et skrivebeskyttet filsystem som f.eks. en cd, kan programmet ikke gemme dine indstillinger. Du bliver umiddelbart oplyst herom.
+</P>
+<P>
+Hvis du laver fejl i dine indstillinger og ønsker at vende tilbage til de gemte indstillinger, vælger du "Vend tilbage til gemt konfiguration" i NVDAs hovedmenu.
+</P>
+<P>
+Følgende NVDA-genvejstaster kan være nyttige:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Navn</TH>
+<TH>Desktop-tast</TH>
+<TH>Laptop-tast</TH>
+<TH>Beskrivelse</TH>
+</TR>
+<TR>
+<TD>Gem konfiguration</TD>
+<TD>NVDA+control+c</TD>
+<TD>NVDA+control+c</TD>
+<TD ALIGN="center">Gemmer dine aktuelle indstillinger, så de ikke går tabt, når du afslutter NVDA</TD>
+</TR>
+<TR>
+<TD>Vend tilbage til konfiguration</TD>
+<TD>NVDA+control+r</TD>
+<TD>NVDA+control+r</TD>
+<TD>Gendanner de indstillinger, som NVDA havde, da du senest gemte NVDAs konfiguration</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc47"></A>
+<H3>9.3. Konfigurationsfiler og brugerprofiler</H3>
+<P>
+Flytbare versioner af NVDA opbevarer alle indstillinger, særlige app-moduler og særlige drivere i en mappe med navnet userConfig, som findes i NVDA-mappen.
+</P>
+<P>
+Installerede versioner af NVDA opbevarer alle indstillinger, særlige app-moduler og særlige drivere i en bestemt NVDA-mappe, som findes i din Windows brugerprofil.
+Det betyder, at alle brugere på systemet kan have hver sine NVDA-indstillinger.
+Hvis du bruger en installeret udgave af NVDA, kommer du til mappen med dine NVDA-indstillinger ved at gå til Start-menuen og derefter Programmer -&gt; NVDA -&gt; Udforsk mappen med bruger-indstillinger.
+</P>
+<P>
+De indstillinger, som NVDA bruger ved kørsel på logon-skærmen eller skærmbilledet i forbindelse med brugerkonto-kontrol findes i mappen systemConfig i NVDAs installationsmappe.
+Det er normalt ikke nødvendigt at ændre disse indstillinger.
+Hvis du vil ændre indstillingerne, som NVDA benytter på logon-skærmen eller skærmbilledet i forbindelse med brugerkonto-kontrol, skal du sætte NVDAs indstillinger, som du ønsker dem, mens du er logget ind på dit Windows-system. Aktivér derefter knappen til kopiering af dine indstillinger til logon-skærmen i dialogboksen Generelle indstillinger.
+</P>
+<A NAME="toc48"></A>
+<H2>10. Ekstra værktøjer</H2>
+<A NAME="toc49"></A>
+<H3>10.1. Vis log</H3>
+<P>
+Log visning, der findes under Værktøjer i NVDA-menuen, giver mulighed for at gennemse al output, der indtil nu og fra NVDA blev startet er blevet gemt i loggen.
+</P>
+<P>
+Udover muligheden for at gennemse indholdet, er det også muligt at gemme en kopi af logfilen eller genopfriske viseren, så det seneste output fra logvisningen blev startet er den, der vises.
+Disse funktioner kan findes under viserens Log menu.
+</P>
+<A NAME="toc50"></A>
+<H3>10.2. Talevisning</H3>
+<P>
+Af hensyn til seende software-udviklere og personer, der ønsker at demonstrere NVDA for seende indeholder NVDA et flydende vindue, der giver mulighed for at se al den tekst, som NVDA i øjeblikket læser op.
+</P>
+<P>
+Talevisning slås til ved at sætte kryds i menupunktet  "Talevisning" under Værktøjer" i NVDa-menuen.
+Fjern krydset fra punktet for at slå det fra.
+</P>
+<P>
+Så længe talevisning er slået til, opdateres den konstant med den tekst, der netop nu læses op.
+Hvis der klikkes i viseren, eller hvis den får fokus, stoppes opdateringen dog midlertidigt, så det er muligt at markere eller kopiere det aktuelle indhold.
+</P>
+<A NAME="toc51"></A>
+<H3>10.3. Python konsollen</H3>
+<P>
+NVDAs Python-konsol, der ligger under Værktøjer i NVDA-menuen, er et udviklerværktøj. Det er især velegnet til brug ved debugging, generel inspektion af interne processer i NVDA eller inspektion af tilgængelighedshierarkiet i en applikation.
+For yderligere oplysninger henvises til<A HREF="http://www.nvda-project.org/wiki/PythonConsole">artiklen om Python-konsollen på NVDAs netsted</A>.
+</P>
+<A NAME="toc52"></A>
+<H2>11. Yderligere oplysninger</H2>
+<P>
+Hvis du ønsker yderligere oplysninger eller hjælp til NVDA, er du velkommen til at besøge NVDAs netsted på <A HREF="http://www.nvda-project.org/">http://www.nvda-project.org/</A>.
+her kan du finde supplerende dokumentation samt teknisk support og resourcer fra fællesskabet.
+Netstedet indeholder også informationer og henvisninger vedrørende NVDAs udvikling.
+</P>
+<A NAME="SupportedSpeechSynth"></A>
+<H2>12. Understøttede talesynteser</H2>
+<P>
+Dette afsnit indeholder informationer om de talesynteser, som NVDA understøtter.
+</P>
+<A NAME="toc54"></A>
+<H3>12.1. eSpeak</H3>
+<P>
+Talesyntesen <A HREF="http://espeak.sourceforge.net/">eSpeak</A> er bygget direkte ind i NVDA og kræver ingen installation af særskilte drivere eller komponenter for at fungere.
+NVDA bruger som standard eSpeak ved opstart.
+Eftersom denne talesyntese er bygget ind i NVDA, er den et godt valg til de situationer, hvor NVDA afvikles fra en USB-pen eller fra en cd på flere forskellige systemer.
+</P>
+<P>
+Der er et sprog tilknyttet enhver af de stmmer, som følger med eSpeak. 
+Der findes mere end 20 forskellige sprog i eSpeak.
+</P>
+<P>
+Der findes også mange forskellige varianter, der kan vælges for at ændre den enkelte stemmes tonehøjde. 
+</P>
+<A NAME="toc55"></A>
+<H3>12.2. Microsoft Speech API version 4 (SAPI 4)</H3>
+<P>
+SAPI 4 er en ældre standard fra Microsoft for software talesynteser.
+Der findes en lang række talesynteser, der opfylder denne standard. De kan enten hentes gratis eller købes fra forskellige firmaer og hjemmesider.
+Når denne talesyntese vælges i NVDA, indeholder listen (som nås med <A HREF="#VoiceSettings">dialogboksen Stemmeindstillinger</A> eller via den cirkulære menu Talesyntese-indstillinger #SynthSettingsRing]) en oversigt over de tilgængelige stemmer fra samtlige SAPI 4 talesynteser, der er installeret på dit system.
+</P>
+<P>
+Hvis dine installerede SAPI 4 talesynteser ikke fremkommer i NVDAs liste med talesynteser, skal du installere SAPI 4.0 pakkerne (SAPI 4.0 runtime binaries). De kan hentes på <A HREF="http://activex.microsoft.com/activex/controls/sapi/spchapi.exe">http://activex.microsoft.com/activex/controls/sapi/spchapi.exe</A>.
+</P>
+<A NAME="toc56"></A>
+<H3>12.3. Microsoft Speech API version 5 (SAPI 5)</H3>
+<P>
+SAPI 5 er en standard fra Microsoft for software talesynteser.
+En lang række af de talesynteser, der overholder denne standard, kan enten købes eller hentes gratis fra forskellige firmaer og netsteder. Din computer har sandsynligvis allerede én SAPI 5 talesyntese præinstalleret.
+</P>
+<P>
+Når denne talesyntese vælges i NVDA, indeholder listen (som nås med <A HREF="#VoiceSettings">dialogboksen Stemmeindstillinger</A> eller via den cirkulære menu Talesyntese-indstillinger #SynthSettingsRing]) en oversigt over de tilgængelige stemmer fra samtlige SAPI 5 talesynteser, der er installeret på dit system.
+</P>
+<A NAME="toc57"></A>
+<H3>12.4. Audiologic Tts3</H3>
+<P>
+Dette er en kommerciel talesyntese, der er specielt produceret til italiensk.   
+</P>
+<P>
+Talesyntesen skal være installeret på dit system, før den kan bruges med NVDA.
+</P>
+<P>
+For yderligere oplysninger om talesyntesen henvises til Audiologics netsted på <A HREF="http://www.audiologic.it">www.audiologic.it</A>.
+</P>
+<A NAME="toc58"></A>
+<H3>12.5. Newfon</H3>
+<P>
+Newfon er en fri og kommerciel talesyntese, som er skrevet af Sergey Shishmintzev. Den understøtter russisk og ukrainsk. 
+</P>
+<P>
+Hvis du ønsker at hente denne talesyntese, henvises til NVDAs russiske fællesskab under sektionen for downloads: <A HREF="http://ru.nvda-community.org/?page_id=10">http://ru.nvda-community.org/?page_id=10</A>
+</P>
+<OL>
+<LI>Understøttede punktdisplays+<A HREF="punktdisplays">Understøttede</A>
+Dette kapitel indeholder oplysninger om de punktdisplays, som NVDA understøtter.
+<P></P>
+++ Freedom Scientific Focus/PAC Mate Series ++
+Der er undersøttelse for alle Focus og PAC Mate displays fra <A HREF="http://www.freedomscientific.com/">Freedom Scientific</A>.
+Brailledisplay-driverne fra Freedom Scientific skal vær installeret på dit system. 
+Hvis du ikke allerede har dem, kan du hente dem fra <A HREF="http://www.freedomscientific.com/downloads/focus-40-blue/focus-40-blue-downloads.asp">http://www.freedomscientific.com/downloads/focus-40-blue/focus-40-blue-downloads.asp</A>.
+Selvom siden kun henviser til displayet Focus 40 Blue,understøtter driveren alle displays fra Freedom Scientific.
+<P></P>
+++ Optelec ALVA BC640/680 ++
+Der er understøttelse for både ALVA BC640 og BC680 punktdisplays fra <A HREF="http://www.optelec.com/">Optelec</A>.
+Der kræves ingen særskilte drivere installeret for at bruge disse displays.
+Sæt blot displayet til computeren og indstil NVDA til at bruge det.
+<P></P>
+++ Handy Tech Displays ++
+NVDA understøtter alle displays fra <A HREF="http://www.handytech.de/">Handy Tech</A>.
+Nogle USB-displays kræver dog, at du installerer USB-driveren fra handy Tech på computeren.
+Derudover skal handy Techs universaldriver installeres. Den kan hentes på <A HREF="ftp://ftp.handytech.de/public/Software/BrailleDriver/bsd1206a.exe">ftp://ftp.handytech.de/public/Software/BrailleDriver/bsd1206a.exe</A>
+<P></P>
+++ MDV Lilli ++
+Punkttdisplayet Lilli fra <A HREF="http://www.mdvbologna.it/">MDV</A> er understøttet.
+Installation af særskilte drivere er ikke nødvendig for at kunne bruge dette display.
+Tilslut blot displayet og indstil NVDA til at bruge det.
+<P></P>
+++ BRLTTY ++
+<A HREF="http://mielke.cc/brltty/">BRLTTY</A> er et særskilt program, der understøtter yderligere en lang række punktdisplays. For at kunne bruge det, skal programmet 
+<A HREF="http://brl.thefreecat.org/brltty/">BRLTTY for Windows</A>.
+Det anbefales, at du henter og installerer den seneste installationspakke, som f.eks. kan have navnet brltty-win-4.2-2.exe.
+Under konfigurationen af displayet og den port, der skal bruges, skal du følge instruktionerne nøje, især hvis du benytter et USB-display og allerede har installeret producentens drivere.
+<P></P>
+</OL>
+
+
+<!-- html code generated by txt2tags 2.5 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags user_docs\da\userGuide.t2t -->
+</BODY></HTML>
