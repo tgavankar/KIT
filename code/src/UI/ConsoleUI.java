@@ -1,6 +1,6 @@
 package UI;
 
-import java.sql.SQLException;
+import Controllers.Controller;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -11,22 +11,23 @@ import adapters.db.sqlite.upcMap.UPCEntry;
 import adapters.scanner.KeyboardInScannerAdapter;
 import adapters.scanner.ScannerAdapter;
 
-import commands.Command;
-import commands.CommandNotFoundCommand;
-import commands.ExportCommand;
 import commands.ExportParameters;
 import commands.ExportParameters.ExportType;
-import commands.QuitCommand;
-import commands.ShowHelpCommand;
-import commands.StartScannerCommand;
-
 
 public class ConsoleUI implements UI {
 	private boolean isRunning;
-	
+    private Controller c;
+	private boolean quiet;
+    
 	public ConsoleUI() {
 		isRunning = false;
+        quiet = false;
 	}
+    
+    @Override
+    public void setController(Controller c){
+        this.c = c;
+    }
 	
 	@Override
 	public void showMainScreen() {
@@ -36,36 +37,20 @@ public class ConsoleUI implements UI {
 		System.out.println("Please note that you can enter 'h' or 'help' at the prompt to get a full list of commands");
 		isRunning = true;
 	}
-
+    
 	@Override
 	public boolean isRunning() {
 		return isRunning;
 	}
-
+    
 	@Override
-	public Command getCommand() {
+	public String getCommand() {
 		System.out.print("Enter command> ");
 		Scanner scanner = new Scanner(System.in);
 		String command = scanner.next().trim().toLowerCase();
-		Command cmd;
-		if(command.equals("scan") || command.equals("s")) {
-			cmd = new StartScannerCommand(this);
-		}
-		else if(command.equals("help") || command.equals("h")) {
-			cmd = new ShowHelpCommand(this);
-		}
-		else if(command.equals("export") || command.equals("e")) {
-			cmd = new ExportCommand(this);
-		}
-		else if(command.equals("quit") || command.equals("q")) {
-			cmd = new QuitCommand(this);
-		}
-		else {
-			cmd = new CommandNotFoundCommand(this, command);
-		}
-		return cmd;
+		return command;
 	}
-
+    
 	@Override
 	public void showHelp() {
 		System.out.println("\r\nEnter one of the following commands (or shortcut):\r\n" + 
@@ -75,25 +60,26 @@ public class ConsoleUI implements UI {
 				"export (e) - starts the export list process");
 		
 	}
-
+    
 	@Override
 	public void stopRunning() {
 		System.out.println("Shutting down...");
 		isRunning = false;
 	}
-
+    
 	@Override
 	public void commandNotFound(String c) {
 		System.out.println("Command '" + c + "' not found. Enter 'h' for help.");
 		
 	}
-
+    
 	@Override
 	public void startScanMode() {
+        quiet = false;
 		System.out.println("Starting scan mode...");
-		System.out.println("Please start scanning your items. Type 'stop' or 's' to stop scanning and return to the main screen.");
-		
-		ScannerAdapter scanner = new KeyboardInScannerAdapter(this, System.in);
+		scanModeUsage();
+        
+		ScannerAdapter scanner = new KeyboardInScannerAdapter(this, System.in, c);
 		try {
 			scanner.run();
 		} catch (Exception e) {
@@ -102,22 +88,42 @@ public class ConsoleUI implements UI {
 		}
 		System.out.println("Exiting scan mode...");
 	}
-
+    
 	@Override
 	public void scannedItem(UPCEntry upc) {
 		if(upc == null) {
 			System.out.println("Invalid UPC");
 		}
 		else {
-
-			System.out.println("Added: " + upc.toString());
+            if(quiet){
+                System.out.println("Added " + upc.getItemName());
+            } else {
+                System.out.println("Added: " + upc.toString());
+            }
 		}
 	}
-	
+    
 	public void scanModePrompt() {
-		System.out.print("Scan Mode ('s' to stop scanning)> ");
+        if(quiet){
+            System.out.print(">");
+        } else {
+            System.out.print("Scan Mode > ");
+        }
 	}
-
+    
+    public void scanModeUsage(){
+        System.out.println("Usage: ");
+        System.out.println(" Scan items with barcode scanner to enter items");
+        System.out.println(" 's' to exist scan mode");
+        System.out.println(" 'q' to activate quiet mode");
+        System.out.println(" 'u' to undo last action");
+        System.out.println(" 'h' to show available actions");
+    }
+    
+    public void toggleQuietMode(){
+        quiet = !quiet;
+    }
+    
 	@Override
 	public ExportParameters getExportParameters() {
 		ExportParameters out = new ExportParameters();
@@ -174,13 +180,33 @@ public class ConsoleUI implements UI {
 	public UPCEntry promptUnknonwnUPCEntry(String upc) {
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.println("Unknown UPC code.\nPlease enter the name of the item:");
+        if(quiet){
+            System.out.println("name:");
+        } else {
+            System.out.println("Unknown UPC code.\nPlease enter the name of the item:");
+        }
 		String itemName = scanner.nextLine().trim();
 		
-		System.out.println("What's the amount of the item?");
-		String itemAmount = scanner.nextLine().trim();
+        if(quiet){
+            System.out.println("amount:");
+        } else {
+            System.out.println("What's the amount of the item?");
+        }
+        String itemAmount = scanner.nextLine().trim();
 				
 		return new UPCEntry(upc, itemName, itemAmount);
 	}
+    
+    public void promptNetworkQuery(){
+        if(quiet){
+            System.out.println("searching...");
+        } else {
+            System.out.println("Not found in local DB, hitting cloud...");
+        }
+    }
+    
+    public void promptQuietMode(){
+        System.out.println("Entering quiet mode");
+    }
 
 }

@@ -1,8 +1,8 @@
 package UI;
 
+import Controllers.Controller;
 import adapters.db.sqlite.upcMap.UPCEntry;
 
-import commands.Command;
 import commands.ExportParameters;
 
 public class GraphicUI implements UI {
@@ -17,12 +17,6 @@ public class GraphicUI implements UI {
 	public boolean isRunning() {
 		// TODO Auto-generated method stub
 		return false;
-	}
-
-	@Override
-	public Command getCommand() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 	@Override
@@ -72,5 +66,35 @@ public class GraphicUI implements UI {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+    @Override
+    public void setController(Controller c) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public String getCommand() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void scanModeUsage() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void toggleQuietMode() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void promptNetworkQuery() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void promptQuietMode() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 
 }

@@ -99,4 +99,67 @@ public class DBInventoryDAO extends InventoryDAO {
 	    }
 		return (count != 0);
 	}
+	
+	public boolean removeEntry(UPCEntry upc) {
+		PreparedStatement select = null;
+        PreparedStatement remove = null;
+		boolean success = false;
+        
+		try {
+			//conn.setAutoCommit(false);
+			String statement = "SELECT * FROM " + inventoryName + " WHERE upc_id=? ORDER BY created DESC";
+            select = conn.prepareStatement(statement);
+            select.setInt(1, upc.getID());
+            
+            ResultSet results = select.executeQuery();
+            
+            results.next();
+            
+            statement = "DELETE FROM " + inventoryName + " WHERE created=?";
+            remove = conn.prepareStatement(statement);
+            remove.setInt(1, results.getInt(3));
+            
+            success = remove.execute();
+           
+			//conn.commit();
+		}
+		catch(SQLException ex) {
+			ex.printStackTrace();
+			
+	        if (conn != null) {
+	            try {
+	                System.out.println("Transaction is being rolled back");
+	                conn.rollback();
+	            } catch(SQLException excep) {
+	                excep.printStackTrace();
+	            }
+	        }
+	    } finally {
+	        if (select != null) {
+	            try {
+					select.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	        }
+            
+            if (remove != null) {
+	            try {
+					remove.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	        }
+	       
+	        try {
+				conn.setAutoCommit(true);
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	    }
+		return success;
+	}
 }

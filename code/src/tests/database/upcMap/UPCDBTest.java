@@ -41,9 +41,8 @@ public class UPCDBTest {
 	@Test
 	public void RemoveTest(){
 		try{
-			UPCEntry entry = new UPCEntry("000120000","Whatever","EACH");
-			assertFalse(db.removeEntry(new UPCEntry("0102012","ThisDoesNotExist","EACH")));
-			assertTrue(db.removeEntry(entry));
+			assertFalse(db.removeEntry("0102012"));
+			assertTrue(db.removeEntry("000120000"));
 		}catch(Exception e){
 			e.printStackTrace();
 			fail();

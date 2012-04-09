@@ -1,24 +1,22 @@
 package commands;
 
-import java.io.IOException;
 import java.util.ArrayList;
 
-import Config.Statics;
-import UI.UI;
+import Controllers.Controller;
 import exporter.FileExporter;
 import exporter.ListGenerator;
 
 public class ExportCommand implements Command {
-	UI ui;
+	Controller Controller;
 	
-	public ExportCommand(UI ui) {
-		this.ui = ui;
+	public ExportCommand(Controller Controller) {
+		this.Controller = Controller;
 	}
 	
 	@Override
 	public void execute() {
 		// TODO Auto-generated method stub
-		ExportParameters param = ui.getExportParameters();
+		ExportParameters param = Controller.getExportParameters();
 		
 		switch(param.type){
 			case Email: 

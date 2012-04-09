@@ -115,7 +115,71 @@ public class DBUPCDAO extends UPCDAO  {
 	}
 	
 	public synchronized boolean removeEntry(UPCEntry entry){
-		// TODO
-		return false;
+		PreparedStatement ps1 = null;
+        PreparedStatement ps2 = null;
+        boolean success1 = false;
+        boolean success2 = false;
+        
+        try {
+			UPCEntry delete = lookUp(entry);
+            if(delete == null){
+                return true;
+            }
+            
+            String statement;
+            conn.setAutoCommit(false);
+            
+            statement = "DELETE FROM " + mapName + " WHERE upc=? AND name=? AND amount=?";
+            ps1 = conn.prepareStatement(statement);
+            ps1.setString(1, delete.getUPC());
+			ps1.setString(2, delete.getItemName());
+			ps1.setString(3, delete.getAmount());
+            
+            success1 = ps1.execute();
+            
+            statement = "DELETE FROM " + customName + " WHERE upc_id=?";
+            ps2 = conn.prepareStatement(statement);
+            ps2.setInt(1, delete.getID());
+            
+            success2 = ps2.execute();
+            
+            conn.commit();
+        } catch (SQLException e){
+            e.printStackTrace();
+			
+	        if (conn != null) {
+	            try {
+	                System.out.println(
+	                    "Transaction is being rolled back");
+	                conn.rollback();
+	            } catch(SQLException excep) {
+	                excep.printStackTrace();
+	            }
+	        }
+        } finally {
+            if (ps1 != null) {
+	            try {
+					ps1.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	        }
+	        if (ps2 != null) {
+	            try {
+					ps2.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	        }
+	        try {
+				conn.setAutoCommit(true);
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+        }
+		return (success1 && success2);
 	}
 }

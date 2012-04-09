@@ -1,16 +1,19 @@
 package UI;
 
+import Controllers.Controller;
 import adapters.db.sqlite.upcMap.UPCEntry;
 
-import commands.Command;
 import commands.ExportParameters;
 
 public interface UI {
+    
+    public void setController(Controller c);
+    
 	public void showMainScreen();
 	
 	public boolean isRunning();
 	
-	public Command getCommand();
+	public String getCommand();
 	
 	public void showHelp();
 	
@@ -24,7 +27,14 @@ public interface UI {
 	
 	public void scanModePrompt();
 	
+    public void scanModeUsage();
 	
+    public void toggleQuietMode();
+    
+    public void promptNetworkQuery();
+    
+    public void promptQuietMode();
+    
 	// called by outside members 
 	public UPCEntry promptUnknonwnUPCEntry(String upc);
 	

@@ -1,17 +1,17 @@
 package commands;
 
-import UI.UI;
+import Controllers.Controller;
 
 public class QuitCommand implements Command {
-	UI ui;
+	Controller Controller;
 	
-	public QuitCommand(UI ui) {
-		this.ui = ui;
+	public QuitCommand(Controller Controller) {
+		this.Controller = Controller;
 	}
 	
 	@Override
 	public void execute() {
-		ui.stopRunning();
+		Controller.stopRunning();
 	}
 
 }

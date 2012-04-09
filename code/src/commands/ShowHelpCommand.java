@@ -1,18 +1,18 @@
 package commands;
 
-import UI.UI;
+import Controllers.Controller;
 
 public class ShowHelpCommand implements Command {
-	UI ui;
+	Controller Controller;
 	
-	public ShowHelpCommand(UI ui) {
-		this.ui = ui;
+	public ShowHelpCommand(Controller Controller) {
+		this.Controller = Controller;
 	}
 	
 	@Override
 	public void execute() {
 		// TODO Auto-generated method stub
-		ui.showHelp();
+		Controller.showHelp();
 	}
 
 }

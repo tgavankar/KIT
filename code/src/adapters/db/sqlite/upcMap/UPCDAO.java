@@ -1,4 +1,4 @@
-package adapters.db.sqlite.upcMap;
+	package adapters.db.sqlite.upcMap;
 
 import java.sql.SQLException;
 

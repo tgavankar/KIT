@@ -1,20 +1,20 @@
 package commands;
 
-import UI.UI;
+import Controllers.Controller;
 
 public class CommandNotFoundCommand implements Command {
-	UI ui;
+	Controller Controller;
 	String cmd;
 	
-	public CommandNotFoundCommand(UI ui, String c) {
-		this.ui = ui;
+	public CommandNotFoundCommand(Controller Controller, String c) {
+		this.Controller = Controller;
 		this.cmd = c;
 	}
 	
 	@Override
 	public void execute() {
 		// TODO Auto-generated method stub
-		ui.commandNotFound(cmd);
+		Controller.commandNotFound(cmd);
 	}
 
 }
