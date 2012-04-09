@@ -1,3 +1,4 @@
+package tests.database;
 
 import static org.junit.Assert.*;
 
@@ -74,6 +75,42 @@ public class InventoryDAOTest {
 		InventoryEntry inve = new InventoryEntry(entry, currTime);
 		assertTrue(invd.addEntry(inve));
 		
-		assertTrue(invd.lookUp(currTime-10, currTime+10).size() > 0);
+		assertTrue(invd.lookUp(currTime - 10, currTime + 10).size() > 0);
+	}
+	
+	@Test
+	public void lookupIncorrectTimeEntry() {
+		long currTime = System.currentTimeMillis();
+		InventoryEntry inve = new InventoryEntry(entry, currTime);
+		assertTrue(invd.addEntry(inve));
+		
+		assertTrue(invd.lookUp(0, 0).size() == 0);
+	}
+	
+	@Test
+	public void lookupBoundaryLowerTimeEntry() {
+		long currTime = System.currentTimeMillis();
+		InventoryEntry inve = new InventoryEntry(entry, currTime);
+		assertTrue(invd.addEntry(inve));
+		
+		assertTrue(invd.lookUp(currTime, currTime + 10).size() > 0);
+	}
+	
+	@Test
+	public void lookupBoundaryUpperTimeEntry() {
+		long currTime = System.currentTimeMillis();
+		InventoryEntry inve = new InventoryEntry(entry, currTime);
+		assertTrue(invd.addEntry(inve));
+		
+		assertTrue(invd.lookUp(currTime - 10, currTime).size() > 0);
+	}
+	
+	@Test
+	public void lookupBoundarySingleTimeEntry() {
+		long currTime = System.currentTimeMillis();
+		InventoryEntry inve = new InventoryEntry(entry, currTime);
+		assertTrue(invd.addEntry(inve));
+		
+		assertTrue(invd.lookUp(currTime, currTime).size() > 0);
 	}
 }
