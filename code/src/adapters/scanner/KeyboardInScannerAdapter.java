@@ -18,6 +18,7 @@ public class KeyboardInScannerAdapter implements ScannerAdapter {
 	private UI ui;
 	private Controller cont;
     private Stack undo;
+    
 	public KeyboardInScannerAdapter(UI ui, InputStream in, Controller c) {
 		this.scanner = new Scanner(in);
 		this.ui = ui;
