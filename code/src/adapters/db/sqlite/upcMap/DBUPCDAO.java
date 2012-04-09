@@ -114,7 +114,7 @@ public class DBUPCDAO extends UPCDAO  {
 		return (count != 0 && count2 != 0);
 	}
 	
-	public synchronized boolean removeEntry(UPCEntry entry){
+	public synchronized boolean removeEntry(String entry){
 		PreparedStatement ps1 = null;
         PreparedStatement ps2 = null;
         boolean success1 = false;

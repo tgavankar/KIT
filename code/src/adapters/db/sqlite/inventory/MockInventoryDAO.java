@@ -1,5 +1,6 @@
 package adapters.db.sqlite.inventory;
 
+import adapters.db.sqlite.upcMap.UPCEntry;
 import java.util.ArrayList;
 
 public class MockInventoryDAO extends InventoryDAO{
@@ -37,4 +38,9 @@ public class MockInventoryDAO extends InventoryDAO{
 		
 		return false;
 	}
+
+    @Override
+    public boolean removeEntry(UPCEntry entry) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 }

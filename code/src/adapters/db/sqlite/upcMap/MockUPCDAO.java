@@ -33,12 +33,12 @@ public class MockUPCDAO extends UPCDAO {
 	}
 
 	@Override
-	public boolean removeEntry(UPCEntry entry) {
-		if(addedMap.containsKey(entry.getUPC())) {
-			addedMap.remove(entry.getUPC());
+	public boolean removeEntry(String entry) {
+		if(addedMap.containsKey(entry)) {
+			addedMap.remove(entry);
 			return true;
 		}else{
-			removedMap.put(entry.getUPC(), entry);
+			removedMap.put(entry, null);
 			return true;
 		}
 	}

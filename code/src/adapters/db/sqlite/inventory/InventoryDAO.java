@@ -1,5 +1,6 @@
 package adapters.db.sqlite.inventory;
 
+import adapters.db.sqlite.upcMap.UPCEntry;
 import java.sql.SQLException;
 import java.util.ArrayList;
 

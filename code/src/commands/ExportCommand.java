@@ -1,5 +1,6 @@
 package commands;
 
+import Config.Statics;
 import java.util.ArrayList;
 
 import Controllers.Controller;
