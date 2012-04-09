@@ -27,4 +27,8 @@ public class InventoryEntry {
 	public String toString() {
 		return getUPC().toString() + " (Created: " + getCreated() + ")";
 	}
+	
+	public String toCSV(){
+		return getUPC() + "," + upc.getItemName() + "," + upc.getAmount() + "," + getCreated();
+	}
 }

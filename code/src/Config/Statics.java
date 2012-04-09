@@ -17,5 +17,7 @@ public class Statics {
 	
 	public static final String ProdJDBCDatabasePath = "jdbc:sqlite:" + ProdDatabasePath;
 	public static final String DevJDBCDatabasePath = "jdbc:sqlite:" + DevDatabasePath;
+	public static final String TestJDBCDatabasePath = "jdbc:sqlite:" + TestDatabasePath;
 	
+	public static final String ExportPath = "export/inventorylist.csv";
 }
