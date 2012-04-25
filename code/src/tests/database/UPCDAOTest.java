@@ -49,17 +49,17 @@ public class UPCDAOTest {
 		new File(Statics.TestDatabasePath).delete();
 	}
 
-	@Test(expected=NullPointerException.class)
+	@Test(expected=IllegalArgumentException.class)
 	public void addEntryNullTest() {
 		upcd.addEntry(null, null);
 	}
 	
-	@Test(expected=NullPointerException.class)
+	@Test(expected=IllegalArgumentException.class)
 	public void addEntryNullSourceTest() {
 		upcd.addEntry(entry, null);
 	}
 	
-	@Test(expected=NullPointerException.class)
+	@Test(expected=IllegalArgumentException.class)
 	public void addEntryNullEntryTest() {
 		upcd.addEntry(null, "user");
 	}
@@ -70,14 +70,14 @@ public class UPCDAOTest {
 		assertTrue(upcd.addEntry(entry, "user"));
 	}
 	
-	@Test
+	@Test(expected=IllegalArgumentException.class)
 	public void addEntryEmptySource() {
-		assertFalse(upcd.addEntry(entry, ""));
+		upcd.addEntry(entry, "");
 	}
 	
-	@Test
+	@Test(expected=IllegalArgumentException.class)
 	public void addEntryWrongSource() {
-		assertFalse(upcd.addEntry(entry, "thisisfake"));
+		upcd.addEntry(entry, "thisisfake");
 	}
 	
 	@Test
