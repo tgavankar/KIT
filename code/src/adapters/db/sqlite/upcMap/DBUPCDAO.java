@@ -48,8 +48,8 @@ public class DBUPCDAO extends UPCDAO  {
 	
 	//TODO make source enum?
 	public synchronized boolean addEntry(UPCEntry entry, String source) {
-		if(entry == null || !(source == "user" || source == "online")) {
-			return false;
+		if(entry == null || source == null || !(source == "user" || source == "online")) {
+			throw new IllegalArgumentException();
 		}
 		PreparedStatement ps = null;
 		PreparedStatement ps2 = null;

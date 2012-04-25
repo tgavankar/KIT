@@ -30,12 +30,44 @@ public class FileExporterTest {
 	}
 	
 	@Test
-	public void simpleExport() throws IOException, Exception{
+	public void simpleExport() throws IOException, Exception {
 		Scanner scanner = new Scanner(exportFile);
 		FileExporter exporter = new FileExporter(0,0);
 		exporter.export(exportTestPath);
 		if(scanner.hasNext()) fail();
 	}	
+	
+	@Test(expected=IllegalArgumentException.class)
+	public void negativeStartExport() throws IOException, Exception {
+		Scanner scanner = new Scanner(exportFile);
+		FileExporter exporter = new FileExporter(-1,0);
+	}
+	
+	@Test(expected=IllegalArgumentException.class)
+	public void negativeEndExport() throws IOException, Exception {
+		Scanner scanner = new Scanner(exportFile);
+		FileExporter exporter = new FileExporter(0,-1);
+	}
+	
+	@Test(expected=IllegalArgumentException.class)
+	public void incorrectOrderArgsExport() throws IOException, Exception {
+		Scanner scanner = new Scanner(exportFile);
+		FileExporter exporter = new FileExporter(10,0);
+	}
+	
+	@Test(expected=IllegalArgumentException.class)
+	public void nullFileExport() throws IOException, Exception {
+		Scanner scanner = new Scanner(exportFile);
+		FileExporter exporter = new FileExporter(0,0);
+		exporter.export(null);
+	}
+	
+	@Test(expected=IllegalArgumentException.class)
+	public void emptyFileExport() throws IOException, Exception {
+		Scanner scanner = new Scanner(exportFile);
+		FileExporter exporter = new FileExporter(0,0);
+		exporter.export("");
+	}
 	
 	@After
 	public void tearDown(){
