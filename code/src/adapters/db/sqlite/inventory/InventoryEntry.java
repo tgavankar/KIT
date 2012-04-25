@@ -6,9 +6,12 @@ public class InventoryEntry {
 	private UPCEntry upc = null;
 	private String created = null;
 	
+	/*
+	 * timestamp should be in seconds
+	 */
 	public InventoryEntry(UPCEntry upc, long timestamp) {
 		this.upc = upc;
-		this.created = Long.toString(timestamp / 1000);
+		this.created = Long.toString(timestamp);
 	}
 	
 	public InventoryEntry(UPCEntry upc, String created) {

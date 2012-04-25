@@ -52,6 +52,8 @@ public class InventoryDAOTest {
 
 	@After
 	public void tearDownAfterClass() throws Exception {
+		UPCDAO.removeInstance();
+		InventoryDAO.removeInstance();
 		new File(Statics.TestDatabasePath).delete();
 	}
 

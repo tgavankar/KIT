@@ -46,6 +46,7 @@ public class UPCDAOTest {
 
 	@After
 	public void tearDownAfterClass() throws Exception {
+		UPCDAO.removeInstance();
 		new File(Statics.TestDatabasePath).delete();
 	}
 
