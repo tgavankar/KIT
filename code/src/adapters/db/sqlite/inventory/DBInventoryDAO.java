@@ -26,7 +26,7 @@ public class DBInventoryDAO extends InventoryDAO {
 		try {
 			String select = "SELECT " + mapName + ".id, " + mapName + ".upc, " + mapName + ".name, " + mapName + ".amount, " + inventoryName + ".created " +
 							"FROM " + mapName + ", " + inventoryName + 
-							" WHERE " + mapName + ".id=" + inventoryName + ".upc_id AND " + inventoryName + ".created > ? AND " + inventoryName + ".created < ?";
+							" WHERE " + mapName + ".id=" + inventoryName + ".upc_id AND " + inventoryName + ".created >= ? AND " + inventoryName + ".created <= ?";
 			ps = conn.prepareStatement(select);
 			ps.setLong(1, start);
 			ps.setLong(2, end);

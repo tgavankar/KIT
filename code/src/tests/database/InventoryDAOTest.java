@@ -96,6 +96,8 @@ public class InventoryDAOTest {
 		InventoryEntry inve = new InventoryEntry(entry, currTime);
 		assertTrue(invd.addEntry(inve));
 		
+		currTime/=1000;
+		
 		assertTrue(invd.lookUp(currTime, currTime + 10).size() > 0);
 	}
 	
@@ -105,6 +107,8 @@ public class InventoryDAOTest {
 		InventoryEntry inve = new InventoryEntry(entry, currTime);
 		assertTrue(invd.addEntry(inve));
 		
+		currTime/=1000;
+		
 		assertTrue(invd.lookUp(currTime - 10, currTime).size() > 0);
 	}
 	
@@ -113,6 +117,8 @@ public class InventoryDAOTest {
 		long currTime = System.currentTimeMillis();
 		InventoryEntry inve = new InventoryEntry(entry, currTime);
 		assertTrue(invd.addEntry(inve));
+		
+		currTime/=1000;
 		
 		assertTrue(invd.lookUp(currTime, currTime).size() > 0);
 	}
