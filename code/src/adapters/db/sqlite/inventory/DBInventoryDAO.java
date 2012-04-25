@@ -64,7 +64,7 @@ public class DBInventoryDAO extends InventoryDAO {
 			String insert = "INSERT INTO " + inventoryName + " (upc_id, created) VALUES (?, ?)";
 			ps = conn.prepareStatement(insert);
 			ps.setString(1, Integer.toString(entry.getUPC().getID()));
-			ps.setString(2, entry.getCreated());
+			ps.setLong(2, Long.parseLong(entry.getCreated()));
 			count = ps.executeUpdate();
 			
 			conn.commit();

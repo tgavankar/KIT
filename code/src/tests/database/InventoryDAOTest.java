@@ -45,6 +45,8 @@ public class InventoryDAOTest {
 		
 		upcd.addEntry(entry, "user");
 		
+		entry = upcd.lookUp(entry.getUPC());
+		
 		invd = InventoryDAO.getInstance();
 	}
 
@@ -76,7 +78,7 @@ public class InventoryDAOTest {
 		long currTime = System.currentTimeMillis();
 		InventoryEntry inve = new InventoryEntry(entry, currTime);
 		assertTrue(invd.addEntry(inve));
-		assertTrue(invd.lookUp(currTime/1000 - 10, currTime/1000 + 10).size() > 0);
+		assertEquals(1, invd.lookUp(currTime/1000 - 100, currTime/1000 + 100).size());
 	}
 	
 	@Test
