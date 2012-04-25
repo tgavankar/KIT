@@ -11,7 +11,7 @@ public class InventoryEntry {
 	 */
 	public InventoryEntry(UPCEntry upc, long timestamp) {
 		this.upc = upc;
-		this.created = Long.toString(timestamp);
+		this.created = Long.toString(timestamp / 1000);
 	}
 	
 	public InventoryEntry(UPCEntry upc, String created) {
