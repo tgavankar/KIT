@@ -49,14 +49,12 @@ public class DBUPCDAO extends UPCDAO  {
 	//TODO make source enum?
 	public synchronized boolean addEntry(UPCEntry entry, String source){
 		if(entry == null || source == null){
-			throw new NullPointerException();
+			throw new IllegalArgumentException();
 		}else if (!(source == "user" || source == "online")) {
 			return false;
 		}else if (lookUp(entry.getUPC()) != null){
 			return false;
 		}
-		
-		
 		
 		PreparedStatement ps = null;
 		PreparedStatement ps2 = null;
