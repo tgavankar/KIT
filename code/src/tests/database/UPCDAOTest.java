@@ -28,7 +28,7 @@ public class UPCDAOTest {
 	@Before
 	public void setUpBeforeClass() throws Exception {
 		new File(Statics.TestDatabasePath).delete();
-		InputStream in = new FileInputStream(Statics.TestCleanDatabasePath);
+		InputStream in = new FileInputStream(Statics.CleanDatabasePath);
 		OutputStream out = new FileOutputStream(Statics.TestDatabasePath);
 		byte[] buf = new byte[1024];
 		int len;
