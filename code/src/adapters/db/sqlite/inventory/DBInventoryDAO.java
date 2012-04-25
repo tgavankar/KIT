@@ -54,17 +54,17 @@ public class DBInventoryDAO extends InventoryDAO {
 	}
 	
 	public boolean addEntry(InventoryEntry entry) {
+		if(entry == null) throw new NullPointerException();
+		
 		PreparedStatement ps = null;
 		int count = 0;
-		java.util.Date now = new java.util.Date();
-		long time = now.getTime() / 1000;
 		
 		try {
 			conn.setAutoCommit(false);
 			String insert = "INSERT INTO " + inventoryName + " (upc_id, created) VALUES (?, ?)";
 			ps = conn.prepareStatement(insert);
 			ps.setString(1, Integer.toString(entry.getUPC().getID()));
-			ps.setString(2, Long.toString(time));
+			ps.setString(2, entry.getCreated());
 			count = ps.executeUpdate();
 			
 			conn.commit();

@@ -16,6 +16,7 @@ import adapters.db.sqlite.upcMap.UPCDAO;
 import adapters.db.sqlite.upcMap.UPCEntry;
 
 import Config.Statics;
+import Config.Config.ModeType;
 
 
 public class UPCDAOTest {
@@ -37,6 +38,7 @@ public class UPCDAOTest {
 		in.close();
 		out.close(); 
 		
+		Config.Config.Mode = ModeType.Test;
 		upcd = UPCDAO.getInstance();
 
 		entry = new UPCEntry("000120000","Whatever","EACH");
@@ -64,6 +66,7 @@ public class UPCDAOTest {
 	
 	@Test
 	public void addEntryUser() {
+		System.out.println(upcd.lookUp("000120000"));
 		assertTrue(upcd.addEntry(entry, "user"));
 	}
 	

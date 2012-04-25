@@ -47,10 +47,17 @@ public class DBUPCDAO extends UPCDAO  {
 	}
 	
 	//TODO make source enum?
-	public synchronized boolean addEntry(UPCEntry entry, String source) {
-		if(entry == null || !(source == "user" || source == "online")) {
+	public synchronized boolean addEntry(UPCEntry entry, String source){
+		if(entry == null || source == null){
+			throw new NullPointerException();
+		}else if (!(source == "user" || source == "online")) {
+			return false;
+		}else if (lookUp(entry.getUPC()) != null){
 			return false;
 		}
+		
+		
+		
 		PreparedStatement ps = null;
 		PreparedStatement ps2 = null;
 		int count = 0;
@@ -63,14 +70,11 @@ public class DBUPCDAO extends UPCDAO  {
 			ps.setString(2, entry.getItemName());
 			ps.setString(3, entry.getAmount());
 			count = ps.executeUpdate();
-			
-			java.util.Date now = new java.util.Date();
-			long t = now.getTime() / 1000;
-			
+						
 			String select = "INSERT INTO " + customName + " (upc_id, source, created) VALUES ((select last_insert_rowid()), ?, ?)";
 			ps2 = conn.prepareStatement(select);
 			ps2.setString(1, source);
-			ps2.setString(2, Long.toString(t));
+			ps2.setString(2, Long.toString( System.currentTimeMillis() / 1000));
 			count2 = ps2.executeUpdate();
 			
 			conn.commit();

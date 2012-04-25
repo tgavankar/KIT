@@ -17,13 +17,13 @@ public class KeyboardInScannerAdapter implements ScannerAdapter {
 	private Scanner scanner;
 	private UI ui;
 	private Controller cont;
-    private Stack undo;
+    private Stack<Command> undo;
     
 	public KeyboardInScannerAdapter(UI ui, InputStream in, Controller c) {
 		this.scanner = new Scanner(in);
 		this.ui = ui;
         this.cont = c;
-        this.undo = new Stack();
+        this.undo = new Stack<Command>();
 	}
 
 	@Override

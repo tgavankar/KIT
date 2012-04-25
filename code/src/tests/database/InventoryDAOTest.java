@@ -15,6 +15,7 @@ import adapters.db.sqlite.inventory.InventoryEntry;
 import adapters.db.sqlite.upcMap.UPCDAO;
 import adapters.db.sqlite.upcMap.UPCEntry;
 
+import Config.Config.ModeType;
 import Config.Statics;
 
 
@@ -36,6 +37,7 @@ public class InventoryDAOTest {
 		}
 		in.close();
 		out.close(); 
+		Config.Config.Mode = ModeType.Test;
 		
 		upcd = UPCDAO.getInstance();
 
@@ -66,7 +68,7 @@ public class InventoryDAOTest {
 	public void addDuplicateEntry() {
 		InventoryEntry inve = new InventoryEntry(entry, System.currentTimeMillis());
 		assertTrue(invd.addEntry(inve));
-		assertFalse(invd.addEntry(inve));
+		assertTrue(invd.addEntry(inve));
 	}
 	
 	@Test
@@ -74,8 +76,7 @@ public class InventoryDAOTest {
 		long currTime = System.currentTimeMillis();
 		InventoryEntry inve = new InventoryEntry(entry, currTime);
 		assertTrue(invd.addEntry(inve));
-		
-		assertTrue(invd.lookUp(currTime - 10, currTime + 10).size() > 0);
+		assertTrue(invd.lookUp(currTime/1000 - 10, currTime/1000 + 10).size() > 0);
 	}
 	
 	@Test

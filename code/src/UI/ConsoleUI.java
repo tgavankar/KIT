@@ -114,7 +114,7 @@ public class ConsoleUI implements UI {
     public void scanModeUsage(){
         System.out.println("Usage: ");
         System.out.println(" Scan items with barcode scanner to enter items");
-        System.out.println(" 's' to exist scan mode");
+        System.out.println(" 's' to exit scan mode");
         System.out.println(" 'q' to activate quiet mode");
         System.out.println(" 'u' to undo last action");
         System.out.println(" 'h' to show available actions");
