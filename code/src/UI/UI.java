@@ -13,7 +13,7 @@ public interface UI {
 	
 	public boolean isRunning();
 	
-	public String getCommand();
+	public String getCommand(String prompt);
 	
 	public void showHelp();
 	
@@ -25,7 +25,9 @@ public interface UI {
 	
 	public void scannedItem(UPCEntry upc);
 	
-	public void scanModePrompt();
+	public String getScanModePrompt();
+	
+	public String getMainMenuPrompt();
 	
     public void scanModeUsage();
 	

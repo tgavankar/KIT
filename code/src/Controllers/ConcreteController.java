@@ -59,7 +59,7 @@ public class ConcreteController implements Controller {
 
     @Override
     public Command getCommand() {
-        String command = myUI.getCommand();
+        String command = myUI.getCommand(myUI.getMainMenuPrompt());
         Command cmd;
 		if(command.equals("scan") || command.equals("s")) {
 			cmd = new StartScannerCommand(this);

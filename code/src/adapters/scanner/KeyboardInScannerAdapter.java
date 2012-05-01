@@ -14,13 +14,11 @@ import commands.UndoUPCEntryCommand;
 import java.util.Stack;
 
 public class KeyboardInScannerAdapter implements ScannerAdapter {
-	private Scanner scanner;
 	private UI ui;
 	private Controller cont;
     private Stack<Command> undo;
     
-	public KeyboardInScannerAdapter(UI ui, InputStream in, Controller c) {
-		this.scanner = new Scanner(in);
+	public KeyboardInScannerAdapter(UI ui, Controller c) {
 		this.ui = ui;
         this.cont = c;
         this.undo = new Stack<Command>();
@@ -28,9 +26,8 @@ public class KeyboardInScannerAdapter implements ScannerAdapter {
 
 	@Override
 	public void run() throws ClassNotFoundException, SQLException, Exception {
-		ui.scanModePrompt();
-		while(scanner.hasNext()) {
-			String padded = scanner.next().trim();
+		while(true) {
+			String padded = ui.getCommand(ui.getScanModePrompt());
 			if(padded.equals("s") || padded.equals("stop")) {
 				break;
             } else if (padded.equals("u") || padded.equals("undo")) {
@@ -38,16 +35,13 @@ public class KeyboardInScannerAdapter implements ScannerAdapter {
                     Command c = (Command) undo.pop();
                     c.execute();
                 }
-                ui.scanModePrompt();
                 continue;
             } else if (padded.equals("h") || padded.equals("help")) {
                 ui.scanModeUsage();
-                ui.scanModePrompt();
                 continue;
             } else if (padded.equals("q") || padded.equals("quiet")) {
                 ui.promptQuietMode();
                 ui.toggleQuietMode();
-                ui.scanModePrompt();
                 continue;
             }
 			
@@ -70,7 +64,6 @@ public class KeyboardInScannerAdapter implements ScannerAdapter {
                 
                 ui.scannedItem(upc);
 			}
-			ui.scanModePrompt();
 		}
 	}
 }
