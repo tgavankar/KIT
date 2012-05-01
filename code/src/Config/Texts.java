@@ -2,8 +2,8 @@ package Config;
 
 public class Texts {
 	public static final String WELCOME_MESSAGE = 	"Welcome to Kitchen Inventory Tracker\n" +
-													"Please note that you can enter 'h' or 'help' at the prompt to get a full list of commands\n";
-	public static final String SHUTDOWN_MESSAGE =	"Shutting down...\n";
+													"Enter 'h' or 'help' for a the commands\n";
+	public static final String SHUTDOWN_MESSAGE =	"Goodbye...\n";
 	public static final String HELP_MENU = 			"\r\nEnter one of the following commands (or shortcut):\r\n" + 
 													"scan (s) - starts scanning\r\n" + 
 													"quit (q) - quits the program\r\n" + 
@@ -12,9 +12,9 @@ public class Texts {
 	public static final String START_SCANMODE = 	"Starting scan mode...\n";
 	public static final String EXIT_SCANMODE = 		"Exiting scan mode ...\n";
 	public static final String INVALID_UPC = 		"Invalid UPC";
-	public static final String PROMPT_CMD = 		"Enter command> ";
-	public static final String PROMPT_SCAN_QUIET = 	">";
-	public static final String PROMPT_SCAN_VERBOSE ="Scan Mode > ";
+	public static final String PROMPT_CMD = 		"Command> ";
+	public static final String PROMPT_SCAN_QUIET = 	"> ";
+	public static final String PROMPT_SCAN_VERBOSE ="Scan Mode> ";
 	public static final String HELP_MENU_SCAN = 	"Usage: \n" +
 													" Scan items with barcode scanner to enter items\n" +
 													" 's' to exit scan mode\n" +
@@ -22,13 +22,13 @@ public class Texts {
 													" 'u' to undo last action\n" +
 													" 'h' to show available actions\n";
 	
-	public static final String EXPORT_PROMPT =		"How do you want to export the inventory (f for file, u for screen output)?";
+	public static final String EXPORT_PROMPT =		"Select export format: (f for file, u for screen output)>";
 	public static final String INVALID_EXPORT_TYPE ="Invalid export type.\n";
-	public static final String PROMPT_NAME_VERBOSE ="Unknown UPC code.\nPlease enter the name of the item: ";
-	public static final String PROMPT_NAME_QUIET =	"name: ";
-	public static final String PROMPT_AMOUNT_VERBOSE="What's the amount of the item?";
-	public static final String PROMPT_AMOUNT_QUIET ="amount: ";
-	public static final String IDLE_SEARCHING_QUIET = "searching...\n";
+	public static final String PROMPT_NAME_VERBOSE ="Unknown UPC.\nEnter name of this item> ";
+	public static final String PROMPT_NAME_QUIET =	"Name> ";
+	public static final String PROMPT_AMOUNT_VERBOSE="Enter size of the item> ";
+	public static final String PROMPT_AMOUNT_QUIET ="Amount> ";
+	public static final String IDLE_SEARCHING_QUIET = "Searching...\n";
 	public static final String IDLE_SEARCHING_VERBOSE = "Not found in local DB, hitting cloud...\n";
 	public static final String QUIET_MODE_NOTIFY = "Entering quiet mode\n";
 	public static final String PROMPT_START_DATE = 	"Enter start date (MM-DD-YYYY)> ";
