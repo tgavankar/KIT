@@ -42,6 +42,7 @@ public class CommandPrompt extends JTextArea implements KeyListener, CaretListen
 		char c = e.getKeyChar();
 		
 		if(c == '\b' && buffer.length() > 0){
+			buffer.deleteCharAt(buffer.length()-1);
 			return;
 		}else if(c == '\n' || c == '\r'){
 			synchronized (buffer){
