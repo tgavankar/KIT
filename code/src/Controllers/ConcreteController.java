@@ -15,6 +15,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -180,4 +181,23 @@ public class ConcreteController implements Controller {
         
         return true;
     }
+
+	@Override
+	public void clearInventory() {
+		myUI.promptClearingInventory();
+		ArrayList<String> removed = new ArrayList<String>();
+		InventoryDAO dao = null;
+		try {
+			dao = InventoryDAO.getInstance();						
+			for(InventoryEntry entry : dao.getAll()){
+				if(removed.contains(entry.getUPC().getUPC())) continue;
+				dao.removeEntry(entry.getUPC());
+				removed.add(entry.getUPC().getUPC());
+			}	
+		} catch (Exception e) {
+			System.err.println("encountered SQL error while getting a DAO.");
+			e.printStackTrace();
+			return;
+		}	
+	}
 }

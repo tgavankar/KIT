@@ -162,4 +162,9 @@ public class DBInventoryDAO extends InventoryDAO {
 	    }
 		return success;
 	}
+
+	@Override
+	public ArrayList<InventoryEntry> getAll() {
+		return lookUp(0, System.currentTimeMillis()/1000);
+	}
 }

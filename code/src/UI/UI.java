@@ -37,6 +37,8 @@ public interface UI {
     
     public void promptQuietMode();
     
+    public void promptClearingInventory();
+    
 	// called by outside members 
 	public UPCEntry promptUnknonwnUPCEntry(String upc);
 	

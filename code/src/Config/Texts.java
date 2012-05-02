@@ -20,6 +20,7 @@ public class Texts {
 													" 's' to exit scan mode\n" +
 													" 'q' to activate quiet mode\n" + 
 													" 'u' to undo last action\n" +
+													" 'c' to clear inventory\n" + 
 													" 'h' to show available actions\n";
 	
 	public static final String EXPORT_PROMPT =		"Select export format: (f for file, u for screen output)>";
@@ -34,6 +35,7 @@ public class Texts {
 	public static final String PROMPT_START_DATE = 	"Enter start date (MM-DD-YYYY)> ";
 	public static final String PROMPT_END_DATE = 	"Enter end date or 'now' (MM-DD-YYYY))> ";
 	public static final String INVALID_DATE_ERROR = "Invalid date format\n";
+	public static final String CLEARING_INV_ENTRIES = "Clearing all entries.  You may undo this by pressing 'u'\n";
 	
 	/* string builders */
 	

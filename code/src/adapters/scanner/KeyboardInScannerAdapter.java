@@ -7,8 +7,10 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 
 import UI.UI;
+import adapters.db.sqlite.inventory.InventoryDAO;
 import adapters.db.sqlite.upcMap.UPCEntry;
 import commands.Command;
+import commands.UndoClearInventoroyCommand;
 import commands.UndoInventoryEntryCommand;
 import commands.UndoUPCEntryCommand;
 import java.util.Stack;
@@ -43,6 +45,10 @@ public class KeyboardInScannerAdapter implements ScannerAdapter {
                 ui.promptQuietMode();
                 ui.toggleQuietMode();
                 continue;
+            } else if(padded.equals("c") || padded.equals("clear")) {
+            	undo.push(new UndoClearInventoroyCommand(InventoryDAO.getInstance().getAll()));
+            	cont.clearInventory();         
+            	continue;
             }
 			
 			String next = padded.replaceFirst("^0+(?!$)", "");
@@ -53,8 +59,6 @@ public class KeyboardInScannerAdapter implements ScannerAdapter {
 				UPCEntry upc = cont.lookupUPC(next, padded);
                 if(upc == null) {
                     cont.addEntry(next);
-                    Command c = new UndoUPCEntryCommand(next, cont);
-                    undo.push(c);
                 }
                 // make sure that we have the upc info that is in the database
                 upc = cont.lookupUPC(next, padded);

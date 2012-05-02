@@ -171,18 +171,24 @@ public class ConsoleUI implements UI {
 	@Override
 	public UPCEntry promptUnknonwnUPCEntry(String upc) {
         if(quiet){
-            System.out.println(Texts.PROMPT_NAME_QUIET);
+            System.out.print(Texts.PROMPT_NAME_QUIET);
         } else {
-            System.out.println(Texts.PROMPT_NAME_VERBOSE);
+            System.out.print(Texts.PROMPT_NAME_VERBOSE);
         }
-		String itemName = scanner.nextLine().trim();
+		String itemName;
+		do{
+			itemName = scanner.nextLine().trim();
+		}while(itemName.equals(""));
 		
         if(quiet){
-            System.out.println(Texts.PROMPT_AMOUNT_QUIET);
+            System.out.print(Texts.PROMPT_AMOUNT_QUIET);
         } else {
-            System.out.println(Texts.PROMPT_AMOUNT_VERBOSE);
+            System.out.print(Texts.PROMPT_AMOUNT_VERBOSE);
         }
-        String itemAmount = scanner.nextLine().trim();
+        String itemAmount;
+        do{
+        	itemAmount = scanner.nextLine().trim();
+        }while(itemAmount.equals(""));
 				
 		return new UPCEntry(upc, itemName, itemAmount);
 	}
@@ -198,5 +204,10 @@ public class ConsoleUI implements UI {
     public void promptQuietMode(){
         System.out.print(Texts.QUIET_MODE_NOTIFY);
     }
+
+	@Override
+	public void promptClearingInventory() {
+		System.out.print(Texts.CLEARING_INV_ENTRIES);		
+	}
 
 }

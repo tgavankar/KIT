@@ -216,5 +216,7 @@ public class GraphicUI implements UI {
     public void promptQuietMode() {
     	prompt.writeMessage(Texts.QUIET_MODE_NOTIFY);
     }
-
+    public void promptClearingInventory() {
+    	prompt.writeMessage(Texts.CLEARING_INV_ENTRIES);		
+	}
 }

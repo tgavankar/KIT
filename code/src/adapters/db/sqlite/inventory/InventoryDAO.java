@@ -31,4 +31,5 @@ public abstract class InventoryDAO {
 	public abstract ArrayList<InventoryEntry> lookUp(long start, long end);
 	public abstract boolean addEntry(InventoryEntry entry);
 	public abstract boolean removeEntry(UPCEntry entry);
+	public abstract ArrayList<InventoryEntry> getAll();
 }

@@ -43,4 +43,9 @@ public class MockInventoryDAO extends InventoryDAO{
     public boolean removeEntry(UPCEntry entry) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
+
+	@Override
+	public ArrayList<InventoryEntry> getAll() {
+		return list;
+	}
 }

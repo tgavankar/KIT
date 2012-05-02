@@ -27,4 +27,5 @@ public interface Controller {
     public boolean addToInventory(UPCEntry upc);
     public boolean removeUPCEntry(String upc);
     public boolean removeInventoryEntry(UPCEntry upc);
+    public void clearInventory();
 }
