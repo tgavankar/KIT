@@ -4,13 +4,15 @@ import Controllers.Controller;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.List;
 import java.util.Scanner;
 
 import Config.Config.ModeType;
 import Config.Texts;
 import adapters.db.sqlite.upcMap.UPCEntry;
-import adapters.scanner.KeyboardInScannerAdapter;
+import adapters.scanner.InventoryKeyboardInScannerAdapter;
 import adapters.scanner.ScannerAdapter;
+import adapters.scanner.UPCKeyboardInScannerAdapter;
 
 import commands.ExportParameters;
 import commands.ExportParameters.ExportType;
@@ -74,7 +76,7 @@ public class ConsoleUI implements UI {
 		System.out.println(Texts.START_SCANMODE);
 		scanModeUsage();
         
-		ScannerAdapter scanner = new KeyboardInScannerAdapter(this, controller);
+		ScannerAdapter scanner = new InventoryKeyboardInScannerAdapter(this, controller);
 		try {
 			scanner.run();
 		} catch (Exception e) {
@@ -208,6 +210,43 @@ public class ConsoleUI implements UI {
 	@Override
 	public void promptClearingInventory() {
 		System.out.print(Texts.CLEARING_INV_ENTRIES);		
+	}
+
+	@Override
+	public void startModifyMode() {
+		System.out.println(Texts.START_MODIFYMODE);
+		editModeUsage();
+        
+		ScannerAdapter scanner = new UPCKeyboardInScannerAdapter(this, controller);
+		try {
+			scanner.run();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println(Texts.EXIT_MODIFYMODE);
+		
+	}
+
+	public void editModeUsage() {
+		System.out.println(Texts.EDITMODE_HELP);		
+	}
+
+	@Override
+	public String getEditModePrompt() {
+		return Texts.EDITMODE_PROMPT;
+	}
+
+	@Override
+	public void promptEntryExists(String itemName, String amount) {
+		System.out.println("Item exists with the following information:");
+		System.out.println("Item name: " + itemName);
+		System.out.println("Item amount: "+ amount);			
+	}
+
+	@Override
+	public void listEntries(List<String> list) {
+		for(String s : list) System.out.println(s);		
 	}
 
 }

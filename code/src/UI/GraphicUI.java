@@ -3,14 +3,16 @@ package UI;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.List;
 import java.util.Scanner;
 
 import Config.Config.ModeType;
 import Config.Texts;
 import Controllers.Controller;
 import adapters.db.sqlite.upcMap.UPCEntry;
-import adapters.scanner.KeyboardInScannerAdapter;
+import adapters.scanner.InventoryKeyboardInScannerAdapter;
 import adapters.scanner.ScannerAdapter;
+import adapters.scanner.UPCKeyboardInScannerAdapter;
 
 import commands.ExportParameters;
 import commands.ExportParameters.ExportType;
@@ -74,7 +76,7 @@ public class GraphicUI implements UI {
 		prompt.writeMessage(Texts.START_SCANMODE);
 		scanModeUsage();
         
-		ScannerAdapter scanner = new KeyboardInScannerAdapter(this, controller);
+		ScannerAdapter scanner = new InventoryKeyboardInScannerAdapter(this, controller);
 		try {
 			scanner.run();
 		} catch (Exception e) {
@@ -116,7 +118,6 @@ public class GraphicUI implements UI {
 	public ExportParameters getExportParameters() {
 		ExportParameters out = new ExportParameters();
 		DateFormat df = new SimpleDateFormat("MM-dd-yyyy");
-		Scanner scanner = new Scanner(System.in);
 
 		ExportType exportType = ExportType.Other;
 		
@@ -146,7 +147,7 @@ public class GraphicUI implements UI {
 		
 		while(out.endDate == 0) {
 			prompt.writeMessage(Texts.PROMPT_END_DATE);
-			String end = prompt.getUserInput();
+			String end = prompt.getUserInput().toLowerCase().trim();;
 			if(end.equals("now")) {
 				out.endDate = (new java.util.Date()).getTime() / 1000;
 			}
@@ -218,5 +219,44 @@ public class GraphicUI implements UI {
     }
     public void promptClearingInventory() {
     	prompt.writeMessage(Texts.CLEARING_INV_ENTRIES);		
+	}
+
+	@Override
+	public void startModifyMode() {
+		prompt.writeMessage(Texts.START_MODIFYMODE);
+		editModeUsage();
+        
+		ScannerAdapter scanner = new UPCKeyboardInScannerAdapter(this, controller);
+		try {
+			scanner.run();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		prompt.writeMessage(Texts.EXIT_MODIFYMODE);
+	}
+
+	@Override
+	public String getEditModePrompt() {
+		return Texts.EDITMODE_PROMPT;
+	}
+	
+	public void editModeUsage(){
+		prompt.writeMessage(Texts.EDITMODE_HELP);
+	}
+
+	@Override
+	public void promptEntryExists(String itemName, String amount) {
+		prompt.writeMessage("Item exists with the following information:");
+		prompt.writeMessage("Item name: " + itemName);
+		prompt.writeMessage("Item amount: "+ amount);		
+	}
+
+	@Override
+	public void listEntries(List<String> list) {
+		for(String s: list){
+			prompt.writeMessage(s + "\n");
+		}
+		
 	}
 }

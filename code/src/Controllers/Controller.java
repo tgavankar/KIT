@@ -4,6 +4,9 @@
  */
 package Controllers;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import adapters.db.sqlite.upcMap.UPCEntry;
 import adapters.scanner.ScannerAdapter;
 import commands.Command;
@@ -28,4 +31,6 @@ public interface Controller {
     public boolean removeUPCEntry(String upc);
     public boolean removeInventoryEntry(UPCEntry upc);
     public void clearInventory();
+	public void startModifyMode();
+	public void listEntries(List<String> list);
 }

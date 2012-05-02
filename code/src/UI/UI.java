@@ -1,5 +1,7 @@
 package UI;
 
+import java.util.List;
+
 import Controllers.Controller;
 import adapters.db.sqlite.upcMap.UPCEntry;
 
@@ -44,5 +46,14 @@ public interface UI {
 	
 	// Returns a long[] of size 2, where long[0] = start-time and long[1] = end-time
 	public ExportParameters getExportParameters();
+
+	public void startModifyMode();
+
+	public String getEditModePrompt();
 	
+	public void editModeUsage();
+
+	public void promptEntryExists(String itemName, String amount);
+	
+	public void listEntries(List<String> list);
 }

@@ -74,6 +74,9 @@ public class ConcreteController implements Controller {
 		else if(command.equals("quit") || command.equals("q")) {
 			cmd = new QuitCommand(this);
 		}
+		else if(command.equals("edit") || command.equals("d")){
+			cmd = new EditUPCCommand(this);
+		}
 		else {
 			cmd = new CommandNotFoundCommand(this, command);
 		}
@@ -185,19 +188,26 @@ public class ConcreteController implements Controller {
 	@Override
 	public void clearInventory() {
 		myUI.promptClearingInventory();
-		ArrayList<String> removed = new ArrayList<String>();
 		InventoryDAO dao = null;
 		try {
 			dao = InventoryDAO.getInstance();						
 			for(InventoryEntry entry : dao.getAll()){
-				if(removed.contains(entry.getUPC().getUPC())) continue;
 				dao.removeEntry(entry.getUPC());
-				removed.add(entry.getUPC().getUPC());
 			}	
 		} catch (Exception e) {
 			System.err.println("encountered SQL error while getting a DAO.");
 			e.printStackTrace();
 			return;
 		}	
+	}
+
+	@Override
+	public void startModifyMode() {
+		myUI.startModifyMode();		
+	}
+
+	@Override
+	public void listEntries(List<String> list) {
+		myUI.listEntries(list);		
 	}
 }

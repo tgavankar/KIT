@@ -25,7 +25,7 @@ public class Texts {
 	
 	public static final String EXPORT_PROMPT =		"Select export format: (f for file, u for screen output)>";
 	public static final String INVALID_EXPORT_TYPE ="Invalid export type.\n";
-	public static final String PROMPT_NAME_VERBOSE ="Unknown UPC.\nEnter name of this item> ";
+	public static final String PROMPT_NAME_VERBOSE ="Enter name of this item> ";
 	public static final String PROMPT_NAME_QUIET =	"Name> ";
 	public static final String PROMPT_AMOUNT_VERBOSE="Enter size of the item> ";
 	public static final String PROMPT_AMOUNT_QUIET ="Amount> ";
@@ -36,6 +36,10 @@ public class Texts {
 	public static final String PROMPT_END_DATE = 	"Enter end date or 'now' (MM-DD-YYYY))> ";
 	public static final String INVALID_DATE_ERROR = "Invalid date format\n";
 	public static final String CLEARING_INV_ENTRIES = "Clearing all entries.  You may undo this by pressing 'u'\n";
+	public static final String START_MODIFYMODE = 	"Starting UPC edit mode...\n";
+	public static final String EXIT_MODIFYMODE = 	"Exting edit mode...\n";
+	public static final String EDITMODE_HELP = 	"Scan an item to begin editing the item entry.\n";
+	public static final String EDITMODE_PROMPT = 	"Edit Mode> ";
 	
 	/* string builders */
 	
@@ -43,4 +47,7 @@ public class Texts {
 	
 	/* internal texts */
 	public static final String DEV_MODE_NOTIFICATION= "#### YOU ARE IN DEV MODE ####\n";
+	
+	
+	
 }
