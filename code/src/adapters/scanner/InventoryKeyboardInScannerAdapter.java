@@ -7,20 +7,20 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 
 import UI.UI;
+import adapters.db.sqlite.inventory.InventoryDAO;
 import adapters.db.sqlite.upcMap.UPCEntry;
 import commands.Command;
+import commands.UndoClearInventoroyCommand;
 import commands.UndoInventoryEntryCommand;
 import commands.UndoUPCEntryCommand;
 import java.util.Stack;
 
-public class KeyboardInScannerAdapter implements ScannerAdapter {
-	private Scanner scanner;
+public class InventoryKeyboardInScannerAdapter implements ScannerAdapter {
 	private UI ui;
 	private Controller cont;
     private Stack<Command> undo;
     
-	public KeyboardInScannerAdapter(UI ui, InputStream in, Controller c) {
-		this.scanner = new Scanner(in);
+	public InventoryKeyboardInScannerAdapter(UI ui, Controller c) {
 		this.ui = ui;
         this.cont = c;
         this.undo = new Stack<Command>();
@@ -28,9 +28,8 @@ public class KeyboardInScannerAdapter implements ScannerAdapter {
 
 	@Override
 	public void run() throws ClassNotFoundException, SQLException, Exception {
-		ui.scanModePrompt();
-		while(scanner.hasNext()) {
-			String padded = scanner.next().trim();
+		while(true) {
+			String padded = ui.getCommand(ui.getScanModePrompt());
 			if(padded.equals("s") || padded.equals("stop")) {
 				break;
             } else if (padded.equals("u") || padded.equals("undo")) {
@@ -38,17 +37,18 @@ public class KeyboardInScannerAdapter implements ScannerAdapter {
                     Command c = (Command) undo.pop();
                     c.execute();
                 }
-                ui.scanModePrompt();
                 continue;
             } else if (padded.equals("h") || padded.equals("help")) {
                 ui.scanModeUsage();
-                ui.scanModePrompt();
                 continue;
             } else if (padded.equals("q") || padded.equals("quiet")) {
                 ui.promptQuietMode();
                 ui.toggleQuietMode();
-                ui.scanModePrompt();
                 continue;
+            } else if(padded.equals("c") || padded.equals("clear")) {
+            	undo.push(new UndoClearInventoroyCommand(InventoryDAO.getInstance().getAll()));
+            	cont.clearInventory();         
+            	continue;
             }
 			
 			String next = padded.replaceFirst("^0+(?!$)", "");
@@ -59,8 +59,6 @@ public class KeyboardInScannerAdapter implements ScannerAdapter {
 				UPCEntry upc = cont.lookupUPC(next, padded);
                 if(upc == null) {
                     cont.addEntry(next);
-                    Command c = new UndoUPCEntryCommand(next, cont);
-                    undo.push(c);
                 }
                 // make sure that we have the upc info that is in the database
                 upc = cont.lookupUPC(next, padded);
@@ -70,7 +68,6 @@ public class KeyboardInScannerAdapter implements ScannerAdapter {
                 
                 ui.scannedItem(upc);
 			}
-			ui.scanModePrompt();
 		}
 	}
 }

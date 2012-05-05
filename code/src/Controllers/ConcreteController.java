@@ -15,6 +15,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -59,7 +60,7 @@ public class ConcreteController implements Controller {
 
     @Override
     public Command getCommand() {
-        String command = myUI.getCommand();
+        String command = myUI.getCommand(myUI.getMainMenuPrompt());
         Command cmd;
 		if(command.equals("scan") || command.equals("s")) {
 			cmd = new StartScannerCommand(this);
@@ -72,6 +73,9 @@ public class ConcreteController implements Controller {
 		}
 		else if(command.equals("quit") || command.equals("q")) {
 			cmd = new QuitCommand(this);
+		}
+		else if(command.equals("edit") || command.equals("d")){
+			cmd = new EditUPCCommand(this);
 		}
 		else {
 			cmd = new CommandNotFoundCommand(this, command);
@@ -180,4 +184,30 @@ public class ConcreteController implements Controller {
         
         return true;
     }
+
+	@Override
+	public void clearInventory() {
+		myUI.promptClearingInventory();
+		InventoryDAO dao = null;
+		try {
+			dao = InventoryDAO.getInstance();						
+			for(InventoryEntry entry : dao.getAll()){
+				dao.removeEntry(entry.getUPC());
+			}	
+		} catch (Exception e) {
+			System.err.println("encountered SQL error while getting a DAO.");
+			e.printStackTrace();
+			return;
+		}	
+	}
+
+	@Override
+	public void startModifyMode() {
+		myUI.startModifyMode();		
+	}
+
+	@Override
+	public void listEntries(List<String> list) {
+		myUI.listEntries(list);		
+	}
 }
