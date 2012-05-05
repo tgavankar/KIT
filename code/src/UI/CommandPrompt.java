@@ -79,10 +79,11 @@ public class CommandPrompt extends JTextArea implements KeyListener, CaretListen
 		moveCaretToEnd();
 	}
 	
-	private void moveCaretToEnd(){
+	private void moveCaretToEnd(){		
 		this.setCaretPosition(this.getDocument().getEndPosition().getOffset()-1);
 	}
 	
+	/*
 	public static void main(String args[]){
 		final CommandPrompt prompt = new CommandPrompt();
 		
@@ -92,6 +93,7 @@ public class CommandPrompt extends JTextArea implements KeyListener, CaretListen
             }
         });
 	}
+	*/
 	public void close(){
 		frame.dispose();
 	}

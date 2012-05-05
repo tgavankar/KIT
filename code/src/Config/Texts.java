@@ -6,6 +6,7 @@ public class Texts {
 	public static final String SHUTDOWN_MESSAGE =	"Goodbye...\n";
 	public static final String HELP_MENU = 			"\r\nEnter one of the following commands (or shortcut):\r\n" + 
 													"scan (s) - starts scanning\r\n" + 
+													"edit (d) - edit database entries\r\n" +
 													"quit (q) - quits the program\r\n" + 
 													"help (h) - shows this help\r\n" +
 													"export (e) - starts the export list process\n";
