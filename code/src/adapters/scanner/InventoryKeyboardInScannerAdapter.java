@@ -36,6 +36,7 @@ public class InventoryKeyboardInScannerAdapter implements ScannerAdapter {
                 if(!undo.isEmpty()){
                     Command c = (Command) undo.pop();
                     c.execute();
+                    ui.showMessage("Removed item");
                 }
                 continue;
             } else if (padded.equals("h") || padded.equals("help")) {

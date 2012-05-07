@@ -259,4 +259,11 @@ public class GraphicUI implements UI {
 		}
 		
 	}
+
+	@Override
+	public void showMessage(String message) {
+		if(quiet){
+			prompt.writeMessage(message);
+		}
+	}
 }

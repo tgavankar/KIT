@@ -56,4 +56,6 @@ public interface UI {
 	public void promptEntryExists(String itemName, String amount);
 	
 	public void listEntries(List<String> list);
+	
+	public void showMessage(String message);
 }

@@ -249,4 +249,11 @@ public class ConsoleUI implements UI {
 		for(String s : list) System.out.println(s);		
 	}
 
+	@Override
+	public void showMessage(String message) {
+		if(!quiet){
+			System.out.println(message);
+		}
+	}
+
 }
