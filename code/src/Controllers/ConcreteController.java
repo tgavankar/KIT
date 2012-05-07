@@ -210,4 +210,18 @@ public class ConcreteController implements Controller {
 	public void listEntries(List<String> list) {
 		myUI.listEntries(list);		
 	}
+
+	@Override
+	public boolean updateEntry(int id, String upc) {
+		try {
+            UPCDAO upcDAO = UPCDAO.getInstance();
+            UPCEntry entry = myUI.promptUnknonwnUPCEntry(upc);
+            
+            upcDAO.updateEntry(new UPCEntry(id, entry.getUPC(), entry.getItemName(), entry.getAmount()), "user");
+        } catch (Exception e) {
+            return false;
+        }
+        
+        return true;
+	}
 }

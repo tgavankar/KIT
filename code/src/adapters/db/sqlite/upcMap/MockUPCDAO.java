@@ -42,4 +42,11 @@ public class MockUPCDAO extends UPCDAO {
 			return true;
 		}
 	}
+
+	@Override
+	public boolean updateEntry(UPCEntry upcEntry, String string) {
+		this.removeEntry(upcEntry.getUPC());
+		this.addEntry(upcEntry, string);		
+		return true;
+	}
 }

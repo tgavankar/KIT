@@ -27,4 +27,6 @@ abstract public class UPCDAO {
 	abstract public boolean addEntry(UPCEntry entry, String source);
 	abstract public UPCEntry lookUp(String upc);
 	abstract public boolean removeEntry(String entry);
+
+	abstract public boolean updateEntry(UPCEntry upcEntry, String string);
 }
