@@ -44,8 +44,7 @@ public class UPCKeyboardInScannerAdapter implements ScannerAdapter {
 				if(upc != null){
 					ui.promptEntryExists(upc.getItemName(), upc.getAmount());
 				}
-				cont.removeUPCEntry(next);
-				cont.addEntry(next);	
+				cont.updateEntry(upc.getID(), next);
 			}			
 			
 		}

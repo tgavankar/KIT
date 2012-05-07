@@ -33,4 +33,5 @@ public interface Controller {
     public void clearInventory();
 	public void startModifyMode();
 	public void listEntries(List<String> list);
+	public boolean updateEntry(int id, String next);
 }

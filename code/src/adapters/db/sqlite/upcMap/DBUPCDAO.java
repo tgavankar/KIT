@@ -182,4 +182,71 @@ public class DBUPCDAO extends UPCDAO  {
         }
 		return (success1 && success2);
 	}
+
+	@Override
+	public boolean updateEntry(UPCEntry entry, String source) {
+		if(entry == null || source == null || !(source == "user" || source == "online")){
+			throw new IllegalArgumentException();
+		}
+		
+		PreparedStatement ps = null;
+		PreparedStatement ps2 = null;
+		int count = 0;
+		int count2 = 0;
+		try {
+			conn.setAutoCommit(false);
+			String insert = "UPDATE " + mapName + " SET name = ?, amount = ? WHERE id = ?";
+			ps = conn.prepareStatement(insert);
+			ps.setString(1, entry.getItemName());
+			ps.setString(2, entry.getAmount());
+			ps.setInt(3, entry.getID());
+			count = ps.executeUpdate();
+						/*
+			String select = "UPDATE " + customName + " (upc_id, source, created) VALUES ((select last_insert_rowid()), ?, ?)";
+			ps2 = conn.prepareStatement(select);
+			ps2.setString(1, source);
+			ps2.setString(2, Long.toString( System.currentTimeMillis() / 1000));
+			count2 = ps2.executeUpdate();
+			*/
+			conn.commit();
+		}
+		catch(SQLException ex) {
+			ex.printStackTrace();
+			
+	        if (conn != null) {
+	            try {
+	                System.out.println(
+	                    "Transaction is being rolled back");
+	                conn.rollback();
+	            } catch(SQLException excep) {
+	                excep.printStackTrace();
+	            }
+	        }
+	    } finally {
+	        if (ps != null) {
+	            try {
+					ps.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	        }
+	        if (ps2 != null) {
+	            try {
+					ps2.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	        }
+	        try {
+				conn.setAutoCommit(true);
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	    }
+		return (count != 0 && count2 != 0);
+			
+	}
 }
