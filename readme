@@ -1,3 +1,89 @@
-Documentation - contains manuals and documentation
-Deliverables - weekly reports and scrum related documents
-Code - contains the code base, libraries, executables, etc.
+*******************************************************************************
+************************** Kitchen Inventory Tracker **************************
+*******************************************************************************
+
+The Kitchen Inventory Tracker (KIT) is a tool that can be used to keep track of
+what you need to buy the next time from the grocery store. It is primarily 
+designed and tested for blind users, and so different flavors allow usage of a
+packaged screen reader (NVDA), or a simple console version to use your own 
+screen reader. There is also a simple GUI version incase you do not wish to use
+the console.
+
+An internet connection is suggested (as KIT will try to pull UPC info from 
+online if it is not locally found), but if an internet connection is not 
+detected, then KIT will ask you to input information for the item (name and
+amount).
+
+A barcode scanner is also suggested, but not required. A keyboard (typing in 
+the UPC) can easily replace a barcode scanner. 
+
+
+*************
+*** Modes ***
+*************
+
+** Main screen
+    * Prompt
+    Command>
+    
+    * Usecase
+    Get to other modes
+    
+    * Commands
+    s - (Scan) starts scanning
+    d - (eDit) edit database entries
+    e - (Export) starts the export list process
+    q - (Quit) quits the program
+    h - (Help) shows main screen help
+    
+** Scan mode
+    * Prompt
+    Scan Mode>
+    
+    * Usecase
+    Scan items into inventory
+    
+    * Commands
+    Scan items with barcode scanner (or type in UPC) to enter items
+    s - (Stop) exit scan mode and return to main screen
+    q - (Quiet) activate quiet mode
+    u - (Undo) undo last action
+    c - (Clear) clear inventory
+    h - (Help) show available actions
+    
+** Edit Mode
+    * Prompt
+    Edit Mode>
+    
+    * Usecase
+    Scan items into database without scanning into inventory. Useful if 
+    internet access is limited or if you don't want to type in the names of
+    items while performing inventory scanning. You can also overwrite the name
+    and amount of items by modifying it in edit mode. For example, if you have
+    2-3 different types of plastic wrap, you can rename each one to simply
+    be "plastic wrap" as a reminder for when you go to the grocery store since
+    you don't care about the exact company. 
+    
+    * Commands
+    Scan an item to begin editing the item entry
+    s - (Stop) exit edit mode and return to main screen
+    
+** Export
+    * Prompt
+    (Prompts for export options)
+    
+    * Usecase
+    Allows export of inventory list (given date range) to CSV file (for use in
+    Excel, etc) or to screen (for quick overview). 
+    
+    * Commands
+    Follow onscreen directions
+    
+*************
+*** Notes ***
+*************
+
+This utility is completely portable - no installation is required. Simply unzip
+the files and everything is self-contained and ready to work.
+
+KIT supports Windows. For other OS's, download and run the JAR file. 
