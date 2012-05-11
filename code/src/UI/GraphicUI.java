@@ -81,7 +81,7 @@ public class GraphicUI implements UI {
 			scanner.run();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+
 		}
 		prompt.writeMessage(Texts.EXIT_SCANMODE);
 	}
@@ -231,7 +231,7 @@ public class GraphicUI implements UI {
 			scanner.run();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+
 		}
 		prompt.writeMessage(Texts.EXIT_MODIFYMODE);
 	}

@@ -125,12 +125,10 @@ public class ConcreteController implements Controller {
                     }
                 }
                 catch(Exception e) {
-                    e.printStackTrace();
                     ret = null;
                 }
             }
         } catch (Exception e){
-            e.printStackTrace();
             ret = null;
         }
         return ret;
@@ -195,15 +193,13 @@ public class ConcreteController implements Controller {
 				dao.removeEntry(entry.getUPC());
 			}	
 		} catch (Exception e) {
-			System.err.println("encountered SQL error while getting a DAO.");
-			e.printStackTrace();
 			return;
 		}	
 	}
 
 	@Override
 	public void startModifyMode() {
-		myUI.startModifyMode();		
+		myUI.startModifyMode();	
 	}
 
 	@Override

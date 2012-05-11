@@ -41,10 +41,15 @@ public class UPCKeyboardInScannerAdapter implements ScannerAdapter {
 				ui.scannedItem(null);
             } else {
 				UPCEntry upc = cont.lookupUPC(next, padded);
-				if(upc != null){
-					ui.promptEntryExists(upc.getItemName(), upc.getAmount());
+				if(upc != null) {
+					if(upc.getID() > 0) {
+						ui.promptEntryExists(upc.getItemName(), upc.getAmount());
+						cont.updateEntry(upc.getID(), next);
+					}
 				}
-				cont.updateEntry(upc.getID(), next);
+				else {
+                    cont.addEntry(next);
+				}
 			}			
 			
 		}

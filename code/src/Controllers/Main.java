@@ -42,7 +42,7 @@ public class Main  {
 					//nvdap = new ProcessBuilder("NVDA/nvda.exe").start();
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
-					e.printStackTrace();
+
 					Config.withNVDA = false;
 				}
 				
@@ -80,7 +80,7 @@ public class Main  {
 				r.keyPress(KeyEvent.VK_Q);
 			} catch (AWTException e) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
+
 			}
 		}
 	}

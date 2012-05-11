@@ -38,7 +38,7 @@ public class DBInventoryDAO extends InventoryDAO {
 			return out;
 		}
 		catch(SQLException e) {
-			e.printStackTrace();
+
 		}
 		finally {
 			if(ps != null) {
@@ -46,7 +46,7 @@ public class DBInventoryDAO extends InventoryDAO {
 					ps.close();
 				} catch (SQLException e) {
 					// TODO Auto-generated catch block
-					e.printStackTrace();
+
 				}
 		    }
 		}
@@ -70,14 +70,14 @@ public class DBInventoryDAO extends InventoryDAO {
 			conn.commit();
 		}
 		catch(SQLException ex) {
-			ex.printStackTrace();
+
 			
 	        if (conn != null) {
 	            try {
 	                System.out.println("Transaction is being rolled back");
 	                conn.rollback();
 	            } catch(SQLException excep) {
-	                excep.printStackTrace();
+
 	            }
 	        }
 	    } finally {
@@ -86,7 +86,7 @@ public class DBInventoryDAO extends InventoryDAO {
 					ps.close();
 				} catch (SQLException e) {
 					// TODO Auto-generated catch block
-					e.printStackTrace();
+
 				}
 	        }
 	       
@@ -94,7 +94,7 @@ public class DBInventoryDAO extends InventoryDAO {
 				conn.setAutoCommit(true);
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
+
 			}
 	    }
 		return (count != 0);
@@ -124,14 +124,14 @@ public class DBInventoryDAO extends InventoryDAO {
 			//conn.commit();
 		}
 		catch(SQLException ex) {
-			ex.printStackTrace();
+
 			
 	        if (conn != null) {
 	            try {
 	                System.out.println("Transaction is being rolled back");
 	                conn.rollback();
 	            } catch(SQLException excep) {
-	                excep.printStackTrace();
+
 	            }
 	        }
 	    } finally {
@@ -140,7 +140,7 @@ public class DBInventoryDAO extends InventoryDAO {
 					select.close();
 				} catch (SQLException e) {
 					// TODO Auto-generated catch block
-					e.printStackTrace();
+
 				}
 	        }
             
@@ -149,7 +149,7 @@ public class DBInventoryDAO extends InventoryDAO {
 					remove.close();
 				} catch (SQLException e) {
 					// TODO Auto-generated catch block
-					e.printStackTrace();
+
 				}
 	        }
 	       
@@ -157,7 +157,7 @@ public class DBInventoryDAO extends InventoryDAO {
 				conn.setAutoCommit(true);
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
+
 			}
 	    }
 		return success;

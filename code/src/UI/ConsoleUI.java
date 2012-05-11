@@ -81,7 +81,7 @@ public class ConsoleUI implements UI {
 			scanner.run();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+
 		}
 		System.out.println(Texts.EXIT_SCANMODE);
 	}

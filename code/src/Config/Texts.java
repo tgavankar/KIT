@@ -38,7 +38,7 @@ public class Texts {
 	public static final String INVALID_DATE_ERROR = "Invalid date format\n";
 	public static final String CLEARING_INV_ENTRIES = "Clearing all entries.  You may undo this by pressing 'u'\n";
 	public static final String START_MODIFYMODE = 	"Starting UPC edit mode...\n";
-	public static final String EXIT_MODIFYMODE = 	"Exting edit mode...\n";
+	public static final String EXIT_MODIFYMODE = 	"Exiting edit mode...\n";
 	public static final String EDITMODE_HELP = 	"Scan an item to begin editing the item entry.\n" + 
 												"(s) to exit.\n";
 	public static final String EDITMODE_PROMPT = 	"Edit Mode> ";

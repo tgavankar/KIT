@@ -26,7 +26,7 @@ public class ExportCommand implements Command {
 					exp.export(Statics.ExportPath);
 				} catch (Exception e1) {
 					System.err.println("encountered IO error while exporting to a file.");
-					e1.printStackTrace();
+
 				}
 				break;
 			case UI: 
@@ -40,7 +40,7 @@ public class ExportCommand implements Command {
 					controller.listEntries(list);
 				} catch (Exception e1){
 					System.err.println("encountered IO error while exporting to a file.");
-					e1.printStackTrace();
+
 				}
 			default: break; 
 		}		

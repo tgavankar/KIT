@@ -31,7 +31,7 @@ public class DBUPCDAO extends UPCDAO  {
 			}
 		}
 		catch(SQLException e) {
-			e.printStackTrace();
+
 		}
 		finally {
 			if(ps != null) {
@@ -39,7 +39,7 @@ public class DBUPCDAO extends UPCDAO  {
 					ps.close();
 				} catch (SQLException e) {
 					// TODO Auto-generated catch block
-					e.printStackTrace();
+
 				}
 		    }
 		}
@@ -76,7 +76,7 @@ public class DBUPCDAO extends UPCDAO  {
 			conn.commit();
 		}
 		catch(SQLException ex) {
-			ex.printStackTrace();
+
 			
 	        if (conn != null) {
 	            try {
@@ -84,7 +84,7 @@ public class DBUPCDAO extends UPCDAO  {
 	                    "Transaction is being rolled back");
 	                conn.rollback();
 	            } catch(SQLException excep) {
-	                excep.printStackTrace();
+
 	            }
 	        }
 	    } finally {
@@ -93,7 +93,7 @@ public class DBUPCDAO extends UPCDAO  {
 					ps.close();
 				} catch (SQLException e) {
 					// TODO Auto-generated catch block
-					e.printStackTrace();
+
 				}
 	        }
 	        if (ps2 != null) {
@@ -101,14 +101,14 @@ public class DBUPCDAO extends UPCDAO  {
 					ps2.close();
 				} catch (SQLException e) {
 					// TODO Auto-generated catch block
-					e.printStackTrace();
+
 				}
 	        }
 	        try {
 				conn.setAutoCommit(true);
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
+
 			}
 	    }
 		return (count != 0 && count2 != 0);
@@ -145,7 +145,7 @@ public class DBUPCDAO extends UPCDAO  {
             
             conn.commit();
         } catch (SQLException e){
-            e.printStackTrace();
+
 			
 	        if (conn != null) {
 	            try {
@@ -153,7 +153,7 @@ public class DBUPCDAO extends UPCDAO  {
 	                    "Transaction is being rolled back");
 	                conn.rollback();
 	            } catch(SQLException excep) {
-	                excep.printStackTrace();
+
 	            }
 	        }
         } finally {
@@ -162,7 +162,7 @@ public class DBUPCDAO extends UPCDAO  {
 					ps1.close();
 				} catch (SQLException e) {
 					// TODO Auto-generated catch block
-					e.printStackTrace();
+
 				}
 	        }
 	        if (ps2 != null) {
@@ -170,14 +170,14 @@ public class DBUPCDAO extends UPCDAO  {
 					ps2.close();
 				} catch (SQLException e) {
 					// TODO Auto-generated catch block
-					e.printStackTrace();
+
 				}
 	        }
 	        try {
 				conn.setAutoCommit(true);
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
+
 			}
         }
 		return (success1 && success2);
@@ -211,7 +211,7 @@ public class DBUPCDAO extends UPCDAO  {
 			conn.commit();
 		}
 		catch(SQLException ex) {
-			ex.printStackTrace();
+
 			
 	        if (conn != null) {
 	            try {
@@ -219,7 +219,7 @@ public class DBUPCDAO extends UPCDAO  {
 	                    "Transaction is being rolled back");
 	                conn.rollback();
 	            } catch(SQLException excep) {
-	                excep.printStackTrace();
+
 	            }
 	        }
 	    } finally {
@@ -228,7 +228,7 @@ public class DBUPCDAO extends UPCDAO  {
 					ps.close();
 				} catch (SQLException e) {
 					// TODO Auto-generated catch block
-					e.printStackTrace();
+
 				}
 	        }
 	        if (ps2 != null) {
@@ -236,14 +236,14 @@ public class DBUPCDAO extends UPCDAO  {
 					ps2.close();
 				} catch (SQLException e) {
 					// TODO Auto-generated catch block
-					e.printStackTrace();
+
 				}
 	        }
 	        try {
 				conn.setAutoCommit(true);
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
+
 			}
 	    }
 		return (count != 0 && count2 != 0);
